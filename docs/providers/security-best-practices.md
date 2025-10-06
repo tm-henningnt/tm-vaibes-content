@@ -40,7 +40,25 @@ Secrets management
 - Options: Azure Key Vault, AWS Secrets Manager, HashiCorp Vault.
 - Inject at runtime; do not write secrets to disk on hosts or containers.
 
+Threat model (starter)
+
+- Risks: key leakage, prompt/response data leakage, overuse/cost spikes, dependency supply-chain.
+- Mitigations: server-only keys, rate limits, minimal logging, dependency pinning and scanning.
+
+Proxy pattern (enforcement sketch)
+
+```ts
+// Pseudo-code: enforce quotas and input constraints
+app.post('/ai', requireAuth, rateLimit, validateBody, async (req, res) => {
+  // call provider with server-held key
+  // record minimal metrics; redact sensitive values
+});
+```
+
+Rotation playbook
+
+- Create new key → deploy → switch traffic → invalidate old key → verify logs show only new key in use.
+
 References
 
 - OpenAI security guidance; Azure Key Vault docs
-

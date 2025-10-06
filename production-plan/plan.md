@@ -19,6 +19,21 @@ Status legend
 
 - [x] done • [ ] pending • [~] in progress
 
+Clarity expansion pass (multi-audience)
+
+- [x] /docs/quickstarts/try-genai-in-10-min.md
+- [x] /docs/quickstarts/js-server-route.md
+- [x] /docs/quickstarts/python-fastapi.md
+- [x] /docs/providers/openai/auth-models-limits.md
+- [x] /docs/providers/compare-providers.md
+- [x] /docs/providers/security-best-practices.md
+- [x] /docs/troubleshooting/provider-errors.md
+- [x] /docs/operations/content-sync-deep-dive.md
+- [x] /docs/evaluations/overview.md
+- [x] /docs/patterns/rag/basics.md
+- [x] /docs/patterns/tools/function-calling.md
+- [x] /docs/operations/github-flow-for-docs.md
+
 ## Main tools / platform focus (Not exclusive)
 
 > These reflect the company toolset and inform where our docs go deeper. We still link to alternatives when helpful.
@@ -311,25 +326,25 @@ search_keywords: ["term one", "term two", "term three"]
 
 ### 9) Tutorials (7)
 
-44. **/docs/tutorials/agentic-helpdesk.md** *(expand seed with tool schema & evals)*
+44. [x] **/docs/tutorials/agentic-helpdesk.md** *(expand seed with tool schema & evals)*
 
-45. **/docs/tutorials/rag-starter.md** *(expand seed with dataset curation & eval loop)*
+45. [x] **/docs/tutorials/rag-starter.md** *(expand seed with dataset curation & eval loop)*
 
-46. **/docs/tutorials/cost-guardrails.md** *(expand seed with budgets + alerts)*
+46. [x] **/docs/tutorials/cost-guardrails.md** *(expand seed with budgets + alerts)*
 
-47. **/docs/tutorials/observability-end-to-end.md**
+47. [x] **/docs/tutorials/observability-end-to-end.md**
     **Purpose:** logs → traces → dashboards; sampling & PII guards.
 
-48. **/docs/tutorials/production-hardening.md**
+48. [x] **/docs/tutorials/production-hardening.md**
     **Purpose:** retries, rate limits, backpressure, circuit breakers.
 
-49. **/docs/tutorials/mcp-in-vscode.md**
+49. [x] **/docs/tutorials/mcp-in-vscode.md**
     **Purpose:** use MCP servers in VS Code to connect tools securely; examples and common pitfalls.
     **Audience:** developer.
     **Success:** install steps, configuration file samples, verify with a sample tool server.
     **Pointers:** Official MCP docs (link when available) and VS Code guides.
 
-50. **/docs/tutorials/prisma-and-postgres-for-sessions.md**
+50. [x] **/docs/tutorials/prisma-and-postgres-for-sessions.md**
     **Purpose:** (for app projects) schema modeling with Prisma for session storage; migrations & rollback.
     **Audience:** developer.
     **Success:** Prisma schema snippet, migration commands, rollback recipe.
@@ -337,37 +352,37 @@ search_keywords: ["term one", "term two", "term three"]
 
 ### 10) Case studies & examples (5)
 
-49. **/docs/examples/content-drafter.md**
+49. [x] **/docs/examples/content-drafter.md**
     **Purpose:** straight‑through generation with tone/voice controls; success: draft quality rubric.
 
-50. **/docs/examples/meeting-summarizer.md**
+50. [x] **/docs/examples/meeting-summarizer.md**
     **Purpose:** structured notes + action items; success: action completion rate.
 
-51. **/docs/examples/data-quality-qa.md**
+51. [x] **/docs/examples/data-quality-qa.md**
     **Purpose:** tool calls to SQL/read‑only APIs; success: defects caught, false positives.
 
-52. **/docs/examples/ai-customer-support-triage.md**
+52. [x] **/docs/examples/ai-customer-support-triage.md**
     **Purpose:** router agent with escalation rules.
 
-53. **/docs/examples/a2a-coordination.md**
+53. [x] **/docs/examples/a2a-coordination.md**
     **Purpose:** show two agents collaborating (planner ↔ executor or QA ↔ fixer) with a transcript and outcome metrics.
 
 ### 11) Advanced reference & governance (6)
 
-53. **/docs/reference/session-record-schema.md** *(expand seed with audit fields)*
+53. [x] **/docs/reference/session-record-schema.md** *(expand seed with audit fields)*
 
-54. **/docs/reference/provider-abstraction.md** *(expand seed with retries/timeouts/fallbacks)*
+54. [x] **/docs/reference/provider-abstraction.md** *(expand seed with retries/timeouts/fallbacks)*
 
-55. **/docs/reference/components.md**
+55. [x] **/docs/reference/components.md**
     **Purpose:** MDX components (Tabs, Callout, CodeBlock w/ copy); usage snippets.
     **Pointers:** MDX official docs.
 
-56. **/docs/operations/backups-retention.md** *(expand seed with rotation cadences & exports)*
+56. [x] **/docs/operations/backups-retention.md** *(expand seed with rotation cadences & exports)*
 
-57. **/docs/operations/runbooks.md**
+57. [x] **/docs/operations/runbooks.md**
     **Purpose:** “Page me when…” (webhook failures; auth outage; provider 5xx spikes).
 
-58. **/docs/reference/data-platform-integration-guides.md**
+58. [x] **/docs/reference/data-platform-integration-guides.md**
     **Purpose:** index page that links to Fabric, Snowflake, Databricks, Qlik Cloud pages.
 
 ---

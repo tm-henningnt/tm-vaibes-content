@@ -53,3 +53,15 @@ Operational tips
 - Log metadata (status, request ID) rather than full prompts/outputs.
 - Break glass: fall back to a smaller model or cached answer when upstream is unavailable.
 
+Map codes to actions
+
+- 401/403 → verify env keys loaded on server only; check header names.
+- 404/400 → confirm route/path and, for Azure, deployment name vs model ID.
+- 429 → temporarily back off; enable per-user quotas; consider queueing.
+- 5xx → jittered retries with caps; open a circuit breaker on sustained failures.
+
+Sample structured log (Node)
+
+```json
+{ "route": "/api/chat", "status": 429, "retry": 1, "model": "gpt-4o-mini", "ms": 812 }
+```

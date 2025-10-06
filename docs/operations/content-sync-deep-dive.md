@@ -52,3 +52,20 @@ Dashboard signals
 - Last manifest hash and fetch timestamp.
 - Stale threshold (e.g., >30m) → yellow; webhook failures → red.
 
+Set up GitHub webhook (steps)
+
+- In your repo → Settings → Webhooks → Add webhook.
+- Payload URL: your deployed `POST /api/revalidate` route; Content type: `application/json`.
+- Secret: generate and set `REVALIDATE_SECRET` in your app.
+- Select events: “Just the push event” (or choose more if needed).
+
+Webhook payload sketch
+
+```json
+{ "ref": "refs/heads/main", "repository": { "full_name": "org/repo" } }
+```
+
+Edge cases
+
+- Multiple pushes quickly: dedupe by commit or debounce revalidation.
+- Cold starts: consider a small warmup ping on deploy.

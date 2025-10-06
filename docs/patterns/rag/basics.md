@@ -35,3 +35,25 @@ Quality
 
 - Evaluate faithfulness (no unsupported claims) and citation accuracy; see `/docs/evaluations/grounded-qa-evals.md`.
 
+Embeddings (Node sketch)
+
+```ts
+// Pseudo-code: embed chunks and upsert to a vector store
+const chunks = splitIntoChunks(text);
+for (const c of chunks) {
+  const vec = await openai.embeddings.create({ model: 'text-embedding-3-small', input: c.content });
+  await upsert({ id: c.id, vector: vec.data[0].embedding, metadata: { source: c.source } });
+}
+```
+
+Retrieval (Node sketch)
+
+```ts
+const vecQ = await openai.embeddings.create({ model: 'text-embedding-3-small', input: query });
+const hits = await search(vecQ.data[0].embedding, { k: 6 });
+```
+
+Pitfalls
+
+- Overlapping or redundant excerpts can drown the answer. Deduplicate and cap at top‑k.
+- Long excerpts reduce the model’s capacity to reason. Prefer shorter, focused spans.

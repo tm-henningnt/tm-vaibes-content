@@ -23,7 +23,21 @@ Golden sets
 
 - Curate representative prompts and expected answers; include edge cases.
 
+Roles
+
+- Owner: defines goals and acceptance thresholds.
+- Implementer: maintains harness and scoring logic.
+- Reviewer: samples results and calibrates rubrics.
+
 Review loop
 
 - Run offline batches nightly; surface diffs; sample for human review.
 
+Golden set format (example)
+
+```json
+[
+  { "id": "faq-001", "prompt": "How do I rotate keys?", "expected": "...", "tags": ["security", "faq"] },
+  { "id": "faq-002", "prompt": "What is RAG?", "expected": "...", "tags": ["concepts"] }
+]
+```

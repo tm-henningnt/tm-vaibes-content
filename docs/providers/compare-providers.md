@@ -28,7 +28,17 @@ Notes
 - Exact token limits, pricing, and model catalogs change frequently—always verify in official docs.
 - Choose based on data locality, compliance needs, and feature fit (e.g., tool use, multi-modal, embeddings).
 
+Quick decision guide
+
+- Need enterprise Azure controls and regional data locality → Azure OpenAI.
+- Need broad SDK ecosystem and fastest start → OpenAI.
+- Prefer strong instruction adherence and explicit safety levers → Anthropic.
+
+Migration pointers
+
+- OpenAI → Azure OpenAI: use deployment names and `api-version`; see `/docs/providers/azure-openai/migrate-from-openai.md`.
+- Cross-provider tools: keep function schemas minimal and idempotent; see `/docs/patterns/tools/function-calling.md`.
+
 References
 
 - OpenAI, Anthropic, and Azure OpenAI official docs
-

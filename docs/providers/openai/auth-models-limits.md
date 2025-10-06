@@ -52,13 +52,30 @@ Model selection (guidelines)
 - For embeddings and RAG: use the recommended embeddings model from the provider docs.
 - Always check current provider docs for latest models, capabilities, and token limits.
 
+Choose a model by task
+
+- Brainstorming and rewriting: small 4o/mini models for speed and cost.
+- Multi-step reasoning or tool orchestration: larger 4o/o series with tool support.
+- RAG: pair chat model with the provider’s embeddings model; evaluate faithfulness.
+- Long documents: check context window limits and stream to improve UX.
+
 Limits and practical guardrails
 
 - Add `max_tokens` and keep prompts compact to control latency and cost.
 - Stream when building UIs to improve perceived performance.
 - Handle 401/403/429/5xx with short retries and backoff. See `/docs/troubleshooting/provider-errors.md`.
 
+Tokens in practice
+
+- Tokens roughly map to subword pieces; long prompts or outputs increase cost and latency.
+- Summarize or truncate early conversation turns to stay within budget.
+
+Common pitfalls
+
+- Missing API key or wrong environment: confirm server-only keys.
+- Over-long prompts: trim boilerplate, move instructions to system role, and cache static context.
+- Ignoring rate limits: add backoff and per-user quotas on your server routes.
+
 References
 
 - OpenAI API overview and model reference
-

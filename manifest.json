@@ -1,8 +1,8 @@
 {
   "$schema": "./tools/schemas/manifest.schema.json",
   "version": "2025.10.0",
-  "generated_at": "2025-10-06T20:40:19.294Z",
-  "hash": "c7e463093838af59",
+  "generated_at": "2025-10-06T20:52:15.447Z",
+  "hash": "63a90e794366800e",
   "docs": [
     {
       "path": "/docs/index.md",
@@ -60,119 +60,6 @@
       "related": []
     },
     {
-      "path": "/docs/faq/index.md",
-      "title": "FAQ",
-      "description": "Frequently asked questions about the docs and wizard.",
-      "audience_levels": [
-        "beginner",
-        "intermediate"
-      ],
-      "personas": [
-        "non-technical",
-        "PM",
-        "developer",
-        "admin"
-      ],
-      "categories": [
-        "faq"
-      ],
-      "tags": [
-        "questions",
-        "help"
-      ],
-      "min_read_minutes": 5,
-      "last_reviewed": "2025-10-06T00:00:00.000Z",
-      "search_keywords": [],
-      "related": []
-    },
-    {
-      "path": "/docs/faq/providers-and-costs.md",
-      "title": "Providers and Costs: Basics",
-      "description": "Understand cost drivers, rate limits, and when to switch providers.",
-      "audience_levels": [
-        "beginner",
-        "intermediate"
-      ],
-      "personas": [
-        "PM",
-        "developer",
-        "admin"
-      ],
-      "categories": [
-        "faq"
-      ],
-      "tags": [],
-      "min_read_minutes": 5,
-      "last_reviewed": "2025-10-06T00:00:00.000Z",
-      "search_keywords": [
-        "pricing",
-        "rate limits",
-        "token costs",
-        "provider selection"
-      ],
-      "related": [
-        "/docs/providers/compare-providers.md",
-        "/docs/patterns/cost-controls.md"
-      ]
-    },
-    {
-      "path": "/docs/faq/vscode-and-extensions.md",
-      "title": "VS Code and Extensions: FAQ",
-      "description": "Answers to common questions about settings, MDX preview, spell-check, and frontmatter.",
-      "audience_levels": [
-        "beginner",
-        "intermediate"
-      ],
-      "personas": [
-        "all contributors"
-      ],
-      "categories": [
-        "faq"
-      ],
-      "tags": [],
-      "min_read_minutes": 4,
-      "last_reviewed": "2025-10-06T00:00:00.000Z",
-      "search_keywords": [
-        "vscode",
-        "mdx",
-        "markdown",
-        "frontmatter",
-        "spell checker"
-      ],
-      "related": [
-        "/docs/operations/vscode-setup-and-extensions.md"
-      ]
-    },
-    {
-      "path": "/docs/faq/wizard-vs-examples.md",
-      "title": "Wizard vs Hand‑Coded Examples",
-      "description": "When to use the Wizard for speed vs hand-coded examples for control.",
-      "audience_levels": [
-        "beginner",
-        "intermediate"
-      ],
-      "personas": [
-        "PM",
-        "developer"
-      ],
-      "categories": [
-        "faq"
-      ],
-      "tags": [],
-      "min_read_minutes": 3,
-      "last_reviewed": "2025-10-06T00:00:00.000Z",
-      "search_keywords": [
-        "wizard",
-        "examples",
-        "tradeoffs",
-        "speed vs control"
-      ],
-      "related": [
-        "/docs/wizard/overview.md",
-        "/docs/quickstarts/js-server-route.md"
-      ]
-    },
-    {
       "path": "/docs/concepts/genai-vs-agentic.md",
       "title": "Generative AI vs. Agentic Systems",
       "description": "What changes when you move from single-shot generation to multi-step, tool-using agents.",
@@ -198,6 +85,149 @@
       "last_reviewed": "2025-10-06T00:00:00.000Z",
       "search_keywords": [],
       "related": []
+    },
+    {
+      "path": "/docs/examples/a2a-coordination.md",
+      "title": "Example: A2A Coordination",
+      "description": "Show two agents collaborating (planner → executor or QA → fixer) with a short transcript and outcomes.",
+      "audience_levels": [
+        "intermediate",
+        "advanced"
+      ],
+      "personas": [
+        "developer",
+        "PM"
+      ],
+      "categories": [
+        "examples"
+      ],
+      "tags": [],
+      "min_read_minutes": 8,
+      "last_reviewed": "2025-10-06T00:00:00.000Z",
+      "search_keywords": [
+        "multi-agent",
+        "planner",
+        "executor",
+        "qa",
+        "fixer"
+      ],
+      "related": [
+        "/docs/patterns/a2a-agent-to-agent.md"
+      ]
+    },
+    {
+      "path": "/docs/examples/ai-customer-support-triage.md",
+      "title": "Example: AI Customer Support Triage",
+      "description": "Router agent triages incoming messages with escalation rules and summaries.",
+      "audience_levels": [
+        "intermediate"
+      ],
+      "personas": [
+        "PM",
+        "developer"
+      ],
+      "categories": [
+        "examples"
+      ],
+      "tags": [],
+      "min_read_minutes": 7,
+      "last_reviewed": "2025-10-06T00:00:00.000Z",
+      "search_keywords": [
+        "support",
+        "triage",
+        "router",
+        "escalation"
+      ],
+      "related": [
+        "/docs/patterns/agentic/router-multi-tool.md"
+      ]
+    },
+    {
+      "path": "/docs/examples/content-drafter.md",
+      "title": "Example: Content Drafter",
+      "description": "Straight‑through generation with tone/voice controls and a draft quality rubric.",
+      "audience_levels": [
+        "beginner",
+        "intermediate"
+      ],
+      "personas": [
+        "PM",
+        "developer"
+      ],
+      "categories": [
+        "examples"
+      ],
+      "tags": [],
+      "min_read_minutes": 6,
+      "last_reviewed": "2025-10-06T00:00:00.000Z",
+      "search_keywords": [
+        "content",
+        "draft",
+        "tone",
+        "voice",
+        "rubric"
+      ],
+      "related": [
+        "/docs/evaluations/rubric-prompts.md"
+      ]
+    },
+    {
+      "path": "/docs/examples/data-quality-qa.md",
+      "title": "Example: Data Quality QA",
+      "description": "Use tool calls to read-only SQL/APIs to verify data checks; measure defects caught and false positives.",
+      "audience_levels": [
+        "intermediate",
+        "advanced"
+      ],
+      "personas": [
+        "developer",
+        "data-analyst"
+      ],
+      "categories": [
+        "examples"
+      ],
+      "tags": [],
+      "min_read_minutes": 8,
+      "last_reviewed": "2025-10-06T00:00:00.000Z",
+      "search_keywords": [
+        "data quality",
+        "sql",
+        "qa",
+        "read-only",
+        "tools"
+      ],
+      "related": [
+        "/docs/patterns/tools/function-calling.md",
+        "/docs/evaluations/tool-use-evals.md"
+      ]
+    },
+    {
+      "path": "/docs/examples/meeting-summarizer.md",
+      "title": "Example: Meeting Summarizer",
+      "description": "Generate structured notes with action items and owners.",
+      "audience_levels": [
+        "beginner",
+        "intermediate"
+      ],
+      "personas": [
+        "PM",
+        "developer"
+      ],
+      "categories": [
+        "examples"
+      ],
+      "tags": [],
+      "min_read_minutes": 6,
+      "last_reviewed": "2025-10-06T00:00:00.000Z",
+      "search_keywords": [
+        "meeting",
+        "summary",
+        "actions",
+        "owners"
+      ],
+      "related": [
+        "/docs/patterns/workflows/batch-processing.md"
+      ]
     },
     {
       "path": "/docs/evaluations/data-platform-benchmarks.md",
@@ -411,6 +441,119 @@
       ]
     },
     {
+      "path": "/docs/faq/index.md",
+      "title": "FAQ",
+      "description": "Frequently asked questions about the docs and wizard.",
+      "audience_levels": [
+        "beginner",
+        "intermediate"
+      ],
+      "personas": [
+        "non-technical",
+        "PM",
+        "developer",
+        "admin"
+      ],
+      "categories": [
+        "faq"
+      ],
+      "tags": [
+        "questions",
+        "help"
+      ],
+      "min_read_minutes": 5,
+      "last_reviewed": "2025-10-06T00:00:00.000Z",
+      "search_keywords": [],
+      "related": []
+    },
+    {
+      "path": "/docs/faq/providers-and-costs.md",
+      "title": "Providers and Costs: Basics",
+      "description": "Understand cost drivers, rate limits, and when to switch providers.",
+      "audience_levels": [
+        "beginner",
+        "intermediate"
+      ],
+      "personas": [
+        "PM",
+        "developer",
+        "admin"
+      ],
+      "categories": [
+        "faq"
+      ],
+      "tags": [],
+      "min_read_minutes": 5,
+      "last_reviewed": "2025-10-06T00:00:00.000Z",
+      "search_keywords": [
+        "pricing",
+        "rate limits",
+        "token costs",
+        "provider selection"
+      ],
+      "related": [
+        "/docs/providers/compare-providers.md",
+        "/docs/patterns/cost-controls.md"
+      ]
+    },
+    {
+      "path": "/docs/faq/vscode-and-extensions.md",
+      "title": "VS Code and Extensions: FAQ",
+      "description": "Answers to common questions about settings, MDX preview, spell-check, and frontmatter.",
+      "audience_levels": [
+        "beginner",
+        "intermediate"
+      ],
+      "personas": [
+        "all contributors"
+      ],
+      "categories": [
+        "faq"
+      ],
+      "tags": [],
+      "min_read_minutes": 4,
+      "last_reviewed": "2025-10-06T00:00:00.000Z",
+      "search_keywords": [
+        "vscode",
+        "mdx",
+        "markdown",
+        "frontmatter",
+        "spell checker"
+      ],
+      "related": [
+        "/docs/operations/vscode-setup-and-extensions.md"
+      ]
+    },
+    {
+      "path": "/docs/faq/wizard-vs-examples.md",
+      "title": "Wizard vs Hand‑Coded Examples",
+      "description": "When to use the Wizard for speed vs hand-coded examples for control.",
+      "audience_levels": [
+        "beginner",
+        "intermediate"
+      ],
+      "personas": [
+        "PM",
+        "developer"
+      ],
+      "categories": [
+        "faq"
+      ],
+      "tags": [],
+      "min_read_minutes": 3,
+      "last_reviewed": "2025-10-06T00:00:00.000Z",
+      "search_keywords": [
+        "wizard",
+        "examples",
+        "tradeoffs",
+        "speed vs control"
+      ],
+      "related": [
+        "/docs/wizard/overview.md",
+        "/docs/quickstarts/js-server-route.md"
+      ]
+    },
+    {
       "path": "/docs/how-to/duplicate-a-session.md",
       "title": "How to duplicate a wizard session",
       "description": "Create a copy of a finished or in-progress session without overwriting the original.",
@@ -466,97 +609,6 @@
         "/docs/quickstarts/js-server-route.md",
         "/docs/quickstarts/python-fastapi.md",
         "/docs/wizard/overview.md"
-      ]
-    },
-    {
-      "path": "/docs/patterns/a2a-agent-to-agent.md",
-      "title": "Agent‑to‑Agent (A2A) Collaboration",
-      "description": "Patterns for agents to hand off tasks, negotiate, and escalate to humans.",
-      "audience_levels": [
-        "intermediate",
-        "advanced"
-      ],
-      "personas": [
-        "developer",
-        "PM"
-      ],
-      "categories": [
-        "patterns"
-      ],
-      "tags": [],
-      "min_read_minutes": 9,
-      "last_reviewed": "2025-10-06T00:00:00.000Z",
-      "search_keywords": [
-        "a2a",
-        "multi agent",
-        "handoff",
-        "negotiation",
-        "escalation"
-      ],
-      "related": [
-        "/docs/patterns/agentic/router-multi-tool.md",
-        "/docs/patterns/agentic/reflection-self-heal.md"
-      ]
-    },
-    {
-      "path": "/docs/patterns/cost-controls.md",
-      "title": "Cost Controls for AI Apps",
-      "description": "Apply max tokens, streaming, truncation, caching hints, and retries to manage spend.",
-      "audience_levels": [
-        "intermediate",
-        "advanced"
-      ],
-      "personas": [
-        "developer",
-        "PM",
-        "admin"
-      ],
-      "categories": [
-        "patterns"
-      ],
-      "tags": [],
-      "min_read_minutes": 8,
-      "last_reviewed": "2025-10-06T00:00:00.000Z",
-      "search_keywords": [
-        "cost",
-        "tokens",
-        "streaming",
-        "truncation",
-        "cache"
-      ],
-      "related": [
-        "/docs/evaluations/latency-cost-tradeoffs.md",
-        "/docs/patterns/workflows/batch-processing.md"
-      ]
-    },
-    {
-      "path": "/docs/patterns/observability-context.md",
-      "title": "Observability for AI Context",
-      "description": "Log the right metadata (not raw prompts) with correlation IDs and PII avoidance.",
-      "audience_levels": [
-        "intermediate"
-      ],
-      "personas": [
-        "developer",
-        "PM"
-      ],
-      "categories": [
-        "patterns",
-        "operations"
-      ],
-      "tags": [],
-      "min_read_minutes": 7,
-      "last_reviewed": "2025-10-06T00:00:00.000Z",
-      "search_keywords": [
-        "observability",
-        "metadata",
-        "pii",
-        "correlation id",
-        "logs"
-      ],
-      "related": [
-        "/docs/operations/observability.md",
-        "/docs/providers/security-best-practices.md"
       ]
     },
     {
@@ -1016,6 +1068,37 @@
       ]
     },
     {
+      "path": "/docs/operations/runbooks.md",
+      "title": "Runbooks: Page Me When…",
+      "description": "Operational runbooks for webhook failures, auth outages, and provider 5xx spikes.",
+      "audience_levels": [
+        "intermediate",
+        "advanced"
+      ],
+      "personas": [
+        "admin",
+        "developer"
+      ],
+      "categories": [
+        "operations"
+      ],
+      "tags": [],
+      "min_read_minutes": 8,
+      "last_reviewed": "2025-10-06T00:00:00.000Z",
+      "search_keywords": [
+        "runbook",
+        "outage",
+        "webhook",
+        "auth",
+        "provider"
+      ],
+      "related": [
+        "/docs/troubleshooting/revalidation-failures.md",
+        "/docs/troubleshooting/auth-errors.md",
+        "/docs/troubleshooting/provider-errors.md"
+      ]
+    },
+    {
       "path": "/docs/operations/vscode-setup-and-extensions.md",
       "title": "VS Code Setup and Extensions",
       "description": "Recommended VS Code settings and extensions for editing Markdown/MDX and frontmatter.",
@@ -1044,6 +1127,163 @@
       "related": [
         "/docs/faq/vscode-and-extensions.md",
         "/docs/reference/components.md"
+      ]
+    },
+    {
+      "path": "/docs/patterns/a2a-agent-to-agent.md",
+      "title": "Agent‑to‑Agent (A2A) Collaboration",
+      "description": "Patterns for agents to hand off tasks, negotiate, and escalate to humans.",
+      "audience_levels": [
+        "intermediate",
+        "advanced"
+      ],
+      "personas": [
+        "developer",
+        "PM"
+      ],
+      "categories": [
+        "patterns"
+      ],
+      "tags": [],
+      "min_read_minutes": 9,
+      "last_reviewed": "2025-10-06T00:00:00.000Z",
+      "search_keywords": [
+        "a2a",
+        "multi agent",
+        "handoff",
+        "negotiation",
+        "escalation"
+      ],
+      "related": [
+        "/docs/patterns/agentic/router-multi-tool.md",
+        "/docs/patterns/agentic/reflection-self-heal.md"
+      ]
+    },
+    {
+      "path": "/docs/patterns/cost-controls.md",
+      "title": "Cost Controls for AI Apps",
+      "description": "Apply max tokens, streaming, truncation, caching hints, and retries to manage spend.",
+      "audience_levels": [
+        "intermediate",
+        "advanced"
+      ],
+      "personas": [
+        "developer",
+        "PM",
+        "admin"
+      ],
+      "categories": [
+        "patterns"
+      ],
+      "tags": [],
+      "min_read_minutes": 8,
+      "last_reviewed": "2025-10-06T00:00:00.000Z",
+      "search_keywords": [
+        "cost",
+        "tokens",
+        "streaming",
+        "truncation",
+        "cache"
+      ],
+      "related": [
+        "/docs/evaluations/latency-cost-tradeoffs.md",
+        "/docs/patterns/workflows/batch-processing.md"
+      ]
+    },
+    {
+      "path": "/docs/patterns/observability-context.md",
+      "title": "Observability for AI Context",
+      "description": "Log the right metadata (not raw prompts) with correlation IDs and PII avoidance.",
+      "audience_levels": [
+        "intermediate"
+      ],
+      "personas": [
+        "developer",
+        "PM"
+      ],
+      "categories": [
+        "patterns",
+        "operations"
+      ],
+      "tags": [],
+      "min_read_minutes": 7,
+      "last_reviewed": "2025-10-06T00:00:00.000Z",
+      "search_keywords": [
+        "observability",
+        "metadata",
+        "pii",
+        "correlation id",
+        "logs"
+      ],
+      "related": [
+        "/docs/operations/observability.md",
+        "/docs/providers/security-best-practices.md"
+      ]
+    },
+    {
+      "path": "/docs/providers/compare-providers.md",
+      "title": "Compare Providers: Request Shapes and Tradeoffs",
+      "description": "A neutral comparison of common request/response patterns, limits, and typical costs.",
+      "audience_levels": [
+        "beginner",
+        "intermediate"
+      ],
+      "personas": [
+        "PM",
+        "developer",
+        "admin"
+      ],
+      "categories": [
+        "providers",
+        "concepts",
+        "reference"
+      ],
+      "tags": [],
+      "min_read_minutes": 8,
+      "last_reviewed": "2025-10-06T00:00:00.000Z",
+      "search_keywords": [
+        "compare providers",
+        "openai vs anthropic",
+        "azure openai",
+        "request response"
+      ],
+      "related": [
+        "/docs/providers/openai/auth-models-limits.md",
+        "/docs/providers/anthropic/overview.md",
+        "/docs/providers/azure-openai/setup.md"
+      ]
+    },
+    {
+      "path": "/docs/providers/security-best-practices.md",
+      "title": "Security Best Practices for AI Providers",
+      "description": "Handle keys, proxies, rotation, and logging safely across environments.",
+      "audience_levels": [
+        "intermediate",
+        "advanced"
+      ],
+      "personas": [
+        "developer",
+        "admin"
+      ],
+      "categories": [
+        "providers",
+        "operations",
+        "safety"
+      ],
+      "tags": [],
+      "min_read_minutes": 9,
+      "last_reviewed": "2025-10-06T00:00:00.000Z",
+      "search_keywords": [
+        "api key handling",
+        "secrets",
+        "key rotation",
+        "proxy",
+        "redaction"
+      ],
+      "related": [
+        "/docs/providers/openai/auth-models-limits.md",
+        "/docs/operations/env-and-healthcheck.md",
+        "/docs/troubleshooting/provider-errors.md"
       ]
     },
     {
@@ -1178,69 +1418,62 @@
       ]
     },
     {
-      "path": "/docs/providers/compare-providers.md",
-      "title": "Compare Providers: Request Shapes and Tradeoffs",
-      "description": "A neutral comparison of common request/response patterns, limits, and typical costs.",
+      "path": "/docs/reference/components.md",
+      "title": "Reference: MDX Components",
+      "description": "Available MDX components (Tabs, Callout, CodeBlock) and usage snippets.",
       "audience_levels": [
         "beginner",
         "intermediate"
       ],
       "personas": [
-        "PM",
         "developer",
-        "admin"
+        "PM"
       ],
       "categories": [
-        "providers",
-        "concepts",
         "reference"
       ],
       "tags": [],
-      "min_read_minutes": 8,
+      "min_read_minutes": 6,
       "last_reviewed": "2025-10-06T00:00:00.000Z",
       "search_keywords": [
-        "compare providers",
-        "openai vs anthropic",
-        "azure openai",
-        "request response"
+        "mdx",
+        "components",
+        "tabs",
+        "callout",
+        "codeblock"
       ],
       "related": [
-        "/docs/providers/openai/auth-models-limits.md",
-        "/docs/providers/anthropic/overview.md",
-        "/docs/providers/azure-openai/setup.md"
+        "/docs/operations/vscode-setup-and-extensions.md"
       ]
     },
     {
-      "path": "/docs/providers/security-best-practices.md",
-      "title": "Security Best Practices for AI Providers",
-      "description": "Handle keys, proxies, rotation, and logging safely across environments.",
+      "path": "/docs/reference/data-platform-integration-guides.md",
+      "title": "Reference: Data Platform Integration Guides",
+      "description": "Index of integration notes for Microsoft Fabric, Snowflake, Databricks, and Qlik Cloud.",
       "audience_levels": [
         "intermediate",
         "advanced"
       ],
       "personas": [
         "developer",
+        "data-analyst",
         "admin"
       ],
       "categories": [
-        "providers",
-        "operations",
-        "safety"
+        "reference"
       ],
       "tags": [],
-      "min_read_minutes": 9,
+      "min_read_minutes": 5,
       "last_reviewed": "2025-10-06T00:00:00.000Z",
       "search_keywords": [
-        "api key handling",
-        "secrets",
-        "key rotation",
-        "proxy",
-        "redaction"
+        "fabric",
+        "snowflake",
+        "databricks",
+        "qlik",
+        "integration"
       ],
       "related": [
-        "/docs/providers/openai/auth-models-limits.md",
-        "/docs/operations/env-and-healthcheck.md",
-        "/docs/troubleshooting/provider-errors.md"
+        "/docs/evaluations/data-platform-benchmarks.md"
       ]
     },
     {
@@ -1266,6 +1499,35 @@
       "last_reviewed": "2025-10-06T00:00:00.000Z",
       "search_keywords": [],
       "related": []
+    },
+    {
+      "path": "/docs/reference/provider-abstraction.md",
+      "title": "Reference: Provider Abstraction",
+      "description": "A thin layer to unify retries, timeouts, and fallbacks across AI providers.",
+      "audience_levels": [
+        "intermediate",
+        "advanced"
+      ],
+      "personas": [
+        "developer"
+      ],
+      "categories": [
+        "reference"
+      ],
+      "tags": [],
+      "min_read_minutes": 9,
+      "last_reviewed": "2025-10-06T00:00:00.000Z",
+      "search_keywords": [
+        "abstraction",
+        "provider",
+        "retries",
+        "timeouts",
+        "fallbacks"
+      ],
+      "related": [
+        "/docs/providers/compare-providers.md",
+        "/docs/troubleshooting/provider-errors.md"
+      ]
     },
     {
       "path": "/docs/reference/registry-schema.md",
@@ -1316,6 +1578,159 @@
       "last_reviewed": "2025-10-06T00:00:00.000Z",
       "search_keywords": [],
       "related": []
+    },
+    {
+      "path": "/docs/reference/session-record-schema.md",
+      "title": "Reference: Session Record Schema",
+      "description": "A minimal schema for recording AI sessions with audit fields.",
+      "audience_levels": [
+        "intermediate"
+      ],
+      "personas": [
+        "developer",
+        "admin"
+      ],
+      "categories": [
+        "reference"
+      ],
+      "tags": [],
+      "min_read_minutes": 8,
+      "last_reviewed": "2025-10-06T00:00:00.000Z",
+      "search_keywords": [
+        "session",
+        "schema",
+        "audit",
+        "tokens",
+        "latency"
+      ],
+      "related": [
+        "/docs/tutorials/prisma-and-postgres-for-sessions.md",
+        "/docs/providers/security-best-practices.md"
+      ]
+    },
+    {
+      "path": "/docs/safety/human-in-the-loop.md",
+      "title": "Human-in-the-Loop",
+      "description": "Introduce approval gates for sensitive actions and define reviewer workflows.",
+      "audience_levels": [
+        "intermediate",
+        "advanced"
+      ],
+      "personas": [
+        "developer",
+        "PM",
+        "admin"
+      ],
+      "categories": [
+        "safety",
+        "operations"
+      ],
+      "tags": [],
+      "min_read_minutes": 7,
+      "last_reviewed": "2025-10-06T00:00:00.000Z",
+      "search_keywords": [
+        "human in the loop",
+        "approval",
+        "review",
+        "gate"
+      ],
+      "related": [
+        "/docs/safety/overview.md",
+        "/docs/safety/output-filters.md"
+      ]
+    },
+    {
+      "path": "/docs/safety/output-filters.md",
+      "title": "Output Filters",
+      "description": "Add classifier/rule-based filters to block or redact unsafe outputs before they reach users.",
+      "audience_levels": [
+        "intermediate",
+        "advanced"
+      ],
+      "personas": [
+        "developer",
+        "admin"
+      ],
+      "categories": [
+        "safety",
+        "operations"
+      ],
+      "tags": [],
+      "min_read_minutes": 8,
+      "last_reviewed": "2025-10-06T00:00:00.000Z",
+      "search_keywords": [
+        "safety filter",
+        "classifier",
+        "rules",
+        "redaction"
+      ],
+      "related": [
+        "/docs/safety/overview.md",
+        "/docs/safety/prompt-safety.md",
+        "/docs/safety/human-in-the-loop.md"
+      ]
+    },
+    {
+      "path": "/docs/safety/overview.md",
+      "title": "Safety & Responsible AI: Overview",
+      "description": "Define what we block, what we log, when we escalate, and how we mitigate abuse cases.",
+      "audience_levels": [
+        "intermediate",
+        "advanced"
+      ],
+      "personas": [
+        "developer",
+        "PM",
+        "admin"
+      ],
+      "categories": [
+        "safety",
+        "concepts"
+      ],
+      "tags": [],
+      "min_read_minutes": 8,
+      "last_reviewed": "2025-10-06T00:00:00.000Z",
+      "search_keywords": [
+        "safety",
+        "responsible ai",
+        "policy",
+        "logging",
+        "escalation"
+      ],
+      "related": [
+        "/docs/safety/prompt-safety.md",
+        "/docs/safety/output-filters.md",
+        "/docs/safety/human-in-the-loop.md"
+      ]
+    },
+    {
+      "path": "/docs/safety/prompt-safety.md",
+      "title": "Prompt Safety",
+      "description": "Write prompts that minimize risk: scope clearly, avoid data leakage, and instruct models to refuse unsafe tasks.",
+      "audience_levels": [
+        "intermediate"
+      ],
+      "personas": [
+        "developer",
+        "PM"
+      ],
+      "categories": [
+        "safety",
+        "how-to"
+      ],
+      "tags": [],
+      "min_read_minutes": 7,
+      "last_reviewed": "2025-10-06T00:00:00.000Z",
+      "search_keywords": [
+        "prompt safety",
+        "guardrails",
+        "refusal",
+        "scope"
+      ],
+      "related": [
+        "/docs/safety/overview.md",
+        "/docs/safety/output-filters.md"
+      ]
     },
     {
       "path": "/docs/troubleshooting/auth-errors.md",
@@ -1465,127 +1880,210 @@
       ]
     },
     {
-      "path": "/docs/safety/human-in-the-loop.md",
-      "title": "Human-in-the-Loop",
-      "description": "Introduce approval gates for sensitive actions and define reviewer workflows.",
+      "path": "/docs/tutorials/agentic-helpdesk.md",
+      "title": "Tutorial: Agentic Helpdesk",
+      "description": "Build a helpdesk agent with tools (ticketing, search), plus a quick eval loop to verify outputs.",
       "audience_levels": [
         "intermediate",
         "advanced"
-      ],
-      "personas": [
-        "developer",
-        "PM",
-        "admin"
-      ],
-      "categories": [
-        "safety",
-        "operations"
-      ],
-      "tags": [],
-      "min_read_minutes": 7,
-      "last_reviewed": "2025-10-06T00:00:00.000Z",
-      "search_keywords": [
-        "human in the loop",
-        "approval",
-        "review",
-        "gate"
-      ],
-      "related": [
-        "/docs/safety/overview.md",
-        "/docs/safety/output-filters.md"
-      ]
-    },
-    {
-      "path": "/docs/safety/output-filters.md",
-      "title": "Output Filters",
-      "description": "Add classifier/rule-based filters to block or redact unsafe outputs before they reach users.",
-      "audience_levels": [
-        "intermediate",
-        "advanced"
-      ],
-      "personas": [
-        "developer",
-        "admin"
-      ],
-      "categories": [
-        "safety",
-        "operations"
-      ],
-      "tags": [],
-      "min_read_minutes": 8,
-      "last_reviewed": "2025-10-06T00:00:00.000Z",
-      "search_keywords": [
-        "safety filter",
-        "classifier",
-        "rules",
-        "redaction"
-      ],
-      "related": [
-        "/docs/safety/overview.md",
-        "/docs/safety/prompt-safety.md",
-        "/docs/safety/human-in-the-loop.md"
-      ]
-    },
-    {
-      "path": "/docs/safety/overview.md",
-      "title": "Safety & Responsible AI: Overview",
-      "description": "Define what we block, what we log, when we escalate, and how we mitigate abuse cases.",
-      "audience_levels": [
-        "intermediate",
-        "advanced"
-      ],
-      "personas": [
-        "developer",
-        "PM",
-        "admin"
-      ],
-      "categories": [
-        "safety",
-        "concepts"
-      ],
-      "tags": [],
-      "min_read_minutes": 8,
-      "last_reviewed": "2025-10-06T00:00:00.000Z",
-      "search_keywords": [
-        "safety",
-        "responsible ai",
-        "policy",
-        "logging",
-        "escalation"
-      ],
-      "related": [
-        "/docs/safety/prompt-safety.md",
-        "/docs/safety/output-filters.md",
-        "/docs/safety/human-in-the-loop.md"
-      ]
-    },
-    {
-      "path": "/docs/safety/prompt-safety.md",
-      "title": "Prompt Safety",
-      "description": "Write prompts that minimize risk: scope clearly, avoid data leakage, and instruct models to refuse unsafe tasks.",
-      "audience_levels": [
-        "intermediate"
       ],
       "personas": [
         "developer",
         "PM"
       ],
       "categories": [
-        "safety",
-        "how-to"
+        "tutorials"
       ],
       "tags": [],
-      "min_read_minutes": 7,
+      "min_read_minutes": 15,
       "last_reviewed": "2025-10-06T00:00:00.000Z",
       "search_keywords": [
-        "prompt safety",
-        "guardrails",
-        "refusal",
-        "scope"
+        "helpdesk",
+        "agent",
+        "tools",
+        "ticketing",
+        "evals"
       ],
       "related": [
-        "/docs/safety/overview.md",
-        "/docs/safety/output-filters.md"
+        "/docs/patterns/agentic/router-multi-tool.md",
+        "/docs/patterns/tools/function-calling.md",
+        "/docs/evaluations/tool-use-evals.md"
+      ]
+    },
+    {
+      "path": "/docs/tutorials/cost-guardrails.md",
+      "title": "Tutorial: Cost Guardrails",
+      "description": "Implement budgets and alerts across routes; add token caps, streaming, and summaries.",
+      "audience_levels": [
+        "intermediate",
+        "advanced"
+      ],
+      "personas": [
+        "developer",
+        "PM",
+        "admin"
+      ],
+      "categories": [
+        "tutorials"
+      ],
+      "tags": [],
+      "min_read_minutes": 12,
+      "last_reviewed": "2025-10-06T00:00:00.000Z",
+      "search_keywords": [
+        "budget",
+        "alerts",
+        "tokens",
+        "streaming",
+        "summaries"
+      ],
+      "related": [
+        "/docs/patterns/cost-controls.md",
+        "/docs/evaluations/latency-cost-tradeoffs.md"
+      ]
+    },
+    {
+      "path": "/docs/tutorials/mcp-in-vscode.md",
+      "title": "Tutorial: MCP in VS Code",
+      "description": "Use Model Context Protocol servers in VS Code to connect tools securely; common setup and pitfalls.",
+      "audience_levels": [
+        "intermediate",
+        "advanced"
+      ],
+      "personas": [
+        "developer"
+      ],
+      "categories": [
+        "tutorials"
+      ],
+      "tags": [],
+      "min_read_minutes": 12,
+      "last_reviewed": "2025-10-06T00:00:00.000Z",
+      "search_keywords": [
+        "mcp",
+        "model context protocol",
+        "vscode",
+        "tools"
+      ],
+      "related": [
+        "/docs/patterns/tools/function-calling.md"
+      ]
+    },
+    {
+      "path": "/docs/tutorials/observability-end-to-end.md",
+      "title": "Tutorial: Observability End-to-End",
+      "description": "Add logs, traces, and dashboards for AI routes with sampling and PII safeguards.",
+      "audience_levels": [
+        "intermediate",
+        "advanced"
+      ],
+      "personas": [
+        "developer",
+        "PM",
+        "admin"
+      ],
+      "categories": [
+        "tutorials",
+        "operations"
+      ],
+      "tags": [],
+      "min_read_minutes": 12,
+      "last_reviewed": "2025-10-06T00:00:00.000Z",
+      "search_keywords": [
+        "observability",
+        "tracing",
+        "dashboards",
+        "sampling",
+        "pii"
+      ],
+      "related": [
+        "/docs/patterns/observability-context.md",
+        "/docs/providers/security-best-practices.md"
+      ]
+    },
+    {
+      "path": "/docs/tutorials/prisma-and-postgres-for-sessions.md",
+      "title": "Tutorial: Prisma + Postgres for Sessions",
+      "description": "Model session storage with Prisma, run migrations, and support rollbacks.",
+      "audience_levels": [
+        "intermediate"
+      ],
+      "personas": [
+        "developer"
+      ],
+      "categories": [
+        "tutorials"
+      ],
+      "tags": [],
+      "min_read_minutes": 12,
+      "last_reviewed": "2025-10-06T00:00:00.000Z",
+      "search_keywords": [
+        "prisma",
+        "postgres",
+        "sessions",
+        "migrations",
+        "rollback"
+      ],
+      "related": [
+        "/docs/reference/session-record-schema.md"
+      ]
+    },
+    {
+      "path": "/docs/tutorials/production-hardening.md",
+      "title": "Tutorial: Production Hardening",
+      "description": "Implement retries, rate limits, backpressure, and circuit breakers for resilient AI services.",
+      "audience_levels": [
+        "intermediate",
+        "advanced"
+      ],
+      "personas": [
+        "developer",
+        "admin"
+      ],
+      "categories": [
+        "tutorials",
+        "operations"
+      ],
+      "tags": [],
+      "min_read_minutes": 13,
+      "last_reviewed": "2025-10-06T00:00:00.000Z",
+      "search_keywords": [
+        "retries",
+        "rate limits",
+        "backpressure",
+        "circuit breaker"
+      ],
+      "related": [
+        "/docs/troubleshooting/provider-errors.md",
+        "/docs/patterns/workflows/batch-processing.md"
+      ]
+    },
+    {
+      "path": "/docs/tutorials/rag-starter.md",
+      "title": "Tutorial: RAG Starter",
+      "description": "Create a minimal RAG system with dataset curation, chunking, retrieval, and an evaluation loop.",
+      "audience_levels": [
+        "intermediate"
+      ],
+      "personas": [
+        "developer",
+        "data-analyst"
+      ],
+      "categories": [
+        "tutorials"
+      ],
+      "tags": [],
+      "min_read_minutes": 14,
+      "last_reviewed": "2025-10-06T00:00:00.000Z",
+      "search_keywords": [
+        "rag",
+        "chunking",
+        "embeddings",
+        "retrieval",
+        "eval loop"
+      ],
+      "related": [
+        "/docs/patterns/rag/basics.md",
+        "/docs/evaluations/grounded-qa-evals.md"
       ]
     },
     {
@@ -1642,64 +2140,6 @@
       "search_keywords": [],
       "related": [
         "/docs/wizard/type-templates/internal-qa-copilot.mdx"
-      ]
-    },
-    {
-      "path": "/docs/patterns/rag/basics.md",
-      "title": "RAG Basics",
-      "description": "Minimal retrieval-augmented generation: chunking, indexing, and grounded citations.",
-      "audience_levels": [
-        "intermediate"
-      ],
-      "personas": [
-        "developer",
-        "data-analyst"
-      ],
-      "categories": [
-        "patterns"
-      ],
-      "tags": [],
-      "min_read_minutes": 9,
-      "last_reviewed": "2025-10-06T00:00:00.000Z",
-      "search_keywords": [
-        "rag",
-        "chunking",
-        "embeddings",
-        "citations",
-        "grounding"
-      ],
-      "related": [
-        "/docs/patterns/rag/faq-rag.md",
-        "/docs/evaluations/grounded-qa-evals.md"
-      ]
-    },
-    {
-      "path": "/docs/patterns/rag/faq-rag.md",
-      "title": "FAQ RAG Pattern",
-      "description": "Build a FAQ-style RAG with a simple eval hook to keep answers grounded.",
-      "audience_levels": [
-        "intermediate"
-      ],
-      "personas": [
-        "developer",
-        "PM"
-      ],
-      "categories": [
-        "patterns"
-      ],
-      "tags": [],
-      "min_read_minutes": 7,
-      "last_reviewed": "2025-10-06T00:00:00.000Z",
-      "search_keywords": [
-        "faq rag",
-        "grounded qa",
-        "eval hook",
-        "faithfulness"
-      ],
-      "related": [
-        "/docs/patterns/rag/basics.md",
-        "/docs/evaluations/grounded-qa-evals.md",
-        "/docs/evaluations/offline-batch-evals.md"
       ]
     },
     {
@@ -1789,6 +2229,64 @@
       ]
     },
     {
+      "path": "/docs/patterns/rag/basics.md",
+      "title": "RAG Basics",
+      "description": "Minimal retrieval-augmented generation: chunking, indexing, and grounded citations.",
+      "audience_levels": [
+        "intermediate"
+      ],
+      "personas": [
+        "developer",
+        "data-analyst"
+      ],
+      "categories": [
+        "patterns"
+      ],
+      "tags": [],
+      "min_read_minutes": 9,
+      "last_reviewed": "2025-10-06T00:00:00.000Z",
+      "search_keywords": [
+        "rag",
+        "chunking",
+        "embeddings",
+        "citations",
+        "grounding"
+      ],
+      "related": [
+        "/docs/patterns/rag/faq-rag.md",
+        "/docs/evaluations/grounded-qa-evals.md"
+      ]
+    },
+    {
+      "path": "/docs/patterns/rag/faq-rag.md",
+      "title": "FAQ RAG Pattern",
+      "description": "Build a FAQ-style RAG with a simple eval hook to keep answers grounded.",
+      "audience_levels": [
+        "intermediate"
+      ],
+      "personas": [
+        "developer",
+        "PM"
+      ],
+      "categories": [
+        "patterns"
+      ],
+      "tags": [],
+      "min_read_minutes": 7,
+      "last_reviewed": "2025-10-06T00:00:00.000Z",
+      "search_keywords": [
+        "faq rag",
+        "grounded qa",
+        "eval hook",
+        "faithfulness"
+      ],
+      "related": [
+        "/docs/patterns/rag/basics.md",
+        "/docs/evaluations/grounded-qa-evals.md",
+        "/docs/evaluations/offline-batch-evals.md"
+      ]
+    },
+    {
       "path": "/docs/patterns/tools/function-calling.md",
       "title": "Cross‑Provider Tool/Function Calling",
       "description": "Design schemas, ensure idempotency, and propagate errors consistently across providers.",
@@ -1846,6 +2344,37 @@
       "related": [
         "/docs/evaluations/offline-batch-evals.md",
         "/docs/patterns/cost-controls.md"
+      ]
+    },
+    {
+      "path": "/docs/providers/anthropic/overview.md",
+      "title": "Anthropic: Overview and Setup",
+      "description": "Configure Anthropic, auth headers, model notes, basic tool use, and common errors.",
+      "audience_levels": [
+        "intermediate"
+      ],
+      "personas": [
+        "developer",
+        "admin"
+      ],
+      "categories": [
+        "providers",
+        "how-to",
+        "reference"
+      ],
+      "tags": [],
+      "min_read_minutes": 7,
+      "last_reviewed": "2025-10-06T00:00:00.000Z",
+      "search_keywords": [
+        "anthropic",
+        "claude",
+        "auth header",
+        "tool use",
+        "safety"
+      ],
+      "related": [
+        "/docs/providers/compare-providers.md",
+        "/docs/troubleshooting/provider-errors.md"
       ]
     },
     {
@@ -1907,37 +2436,6 @@
       "related": [
         "/docs/providers/azure-openai/migrate-from-openai.md",
         "/docs/providers/compare-providers.md"
-      ]
-    },
-    {
-      "path": "/docs/providers/anthropic/overview.md",
-      "title": "Anthropic: Overview and Setup",
-      "description": "Configure Anthropic, auth headers, model notes, basic tool use, and common errors.",
-      "audience_levels": [
-        "intermediate"
-      ],
-      "personas": [
-        "developer",
-        "admin"
-      ],
-      "categories": [
-        "providers",
-        "how-to",
-        "reference"
-      ],
-      "tags": [],
-      "min_read_minutes": 7,
-      "last_reviewed": "2025-10-06T00:00:00.000Z",
-      "search_keywords": [
-        "anthropic",
-        "claude",
-        "auth header",
-        "tool use",
-        "safety"
-      ],
-      "related": [
-        "/docs/providers/compare-providers.md",
-        "/docs/troubleshooting/provider-errors.md"
       ]
     },
     {

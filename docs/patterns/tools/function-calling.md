@@ -66,3 +66,21 @@ Execution loop
 - Parse tool call, validate JSON, execute with timeout, and return result as JSON.
 - Abort on consecutive tool errors; ask for clarification if inputs are missing.
 
+End-to-end loop (sketch)
+
+```ts
+const completion = await client.chat.completions.create({ model, tools, messages });
+const call = completion.choices?.[0]?.message?.tool_calls?.[0];
+if (call) {
+  const args = safeParse(call.function.arguments, schema);
+  const result = await withTimeout(() => executeTool(call.function.name, args), 5000);
+  messages.push({ role: 'tool', name: call.function.name, content: JSON.stringify(result) });
+  const final = await client.chat.completions.create({ model, tools, messages });
+  return final;
+}
+```
+
+Security
+
+- Validate and sanitize inputs before tool execution; reject unknown tools.
+- Enforce per-tool timeouts and rate limits; log only metadata.

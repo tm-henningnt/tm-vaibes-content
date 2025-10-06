@@ -15,6 +15,11 @@ Overview
 - Build a server route that proxies requests to OpenAI with your server-held key.
 - Never put API keys in the browser or bundle.
 
+Before you begin
+
+- Create a minimal project (Next.js or Express). Ensure `OPENAI_API_KEY` is present only on the server.
+- Decide whether you want streaming first tokens (better UX) or a single JSON response (simpler to start).
+
 Option A: Next.js App Router (recommended)
 
 - File: `app/api/chat/route.ts`
@@ -53,6 +58,14 @@ export async function POST(req: Request) {
   }
   return NextResponse.json({ error: 'Upstream failed' }, { status: 502 });
 }
+```
+
+Streaming variant (Next.js)
+
+```ts
+// Sketch: respond as tokens arrive
+// Use the OpenAI SDK streaming APIs or fetch with ReadableStream.
+// Stream to the client using `new TransformStream()` in edge/runtime.
 ```
 
 Client call example
@@ -105,6 +118,13 @@ Notes
 - Do not ship `OPENAI_API_KEY` to the browser; keep it server-side.
 - Add logging without including prompts/outputs if they contain sensitive data; prefer metadata.
 - Handle 429 (rate limits) and provider transient 5xx with short backoff and caps.
+- Validate inputs from untrusted clients; consider per-IP or per-user quotas on your route.
+- If you expose this route publicly, add CORS rules and consider an allowlist.
+
+Test and verify
+
+- Use `curl` or REST clients to exercise error paths (missing body, large inputs, forced 500).
+- Add a small unit test for input validation and a smoke test for a successful call.
 
 References
 

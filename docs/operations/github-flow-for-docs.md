@@ -17,6 +17,14 @@ Workflow
 - CI builds `manifest.json`; fix frontmatter errors if CI fails.
 - Require 1–2 reviews; squash merge into `main`.
 
+PR template (suggested bullets)
+
+- What changed and why
+- Files added/updated
+- Screenshots (if visual)
+- Cross-links added
+- Checklist: frontmatter includes `title`; links resolve locally
+
 Release notes
 
 - Update `docs/release-notes.md` with a short summary and links to new/changed pages.
@@ -25,4 +33,4 @@ Tips
 
 - Keep commits small and copy-friendly for reviewers.
 - Cross-link related pages (2–4) before requesting review.
-
+- If CI fails on missing `title`, see `tools/schemas/frontmatter.schema.json` for fields.

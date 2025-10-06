@@ -14,6 +14,10 @@ Overview
 
 - Build a FastAPI route that safely calls OpenAI with a short timeout and basic retries.
 
+Who this is for
+
+- Python-first developers and data analysts who want a production-leaning minimal endpoint with sensible defaults.
+
 Install
 
 ```bash
@@ -68,6 +72,10 @@ async def chat(req: AskRequest):
 # Run: uvicorn main:app --reload --port 8000
 ```
 
+Streaming option
+
+- Prefer server-sent events (SSE) or chunked responses for better perceived speed. FastAPI supports async generators; ensure client cancels properly.
+
 Test
 
 ```bash
@@ -79,8 +87,8 @@ Notes
 - Keep your `OPENAI_API_KEY` in environment variables, not code.
 - Add request body validation and response schemas as needed.
 - For production, prefer structured logging and redact prompt/outputs if sensitive.
+- Use a process manager (e.g., uvicorn workers behind gunicorn) and set resource limits.
 
 References
 
 - FastAPI docs, OpenAI Python SDK
-

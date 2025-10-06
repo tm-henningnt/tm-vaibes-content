@@ -14,6 +14,10 @@ What you’ll build
 
 - A minimal, safe server endpoint that calls OpenAI and returns a helpful response to a simple prompt. No client-side keys.
 
+Who this is for
+
+- Complete beginners and PMs who want to see an end-to-end result without setup complexity. Developers can skim this and jump to the server route quickstarts next.
+
 Prerequisites
 
 - An OpenAI account and API key
@@ -100,6 +104,21 @@ HTTPServer(("", 8788), Handler).serve_forever()
 - Run: `python server.py`
 - Visit: `http://localhost:8788`
 
+Understand the response
+
+- The code returns JSON with a simple `text` field. In production apps, prefer returning structured JSON with metadata (e.g., `model`, `latencyMs`, `tokensIn/Out`) so you can reason about performance and cost later.
+
+Security callouts
+
+- Do not paste keys into code or ship them to browsers. Keeping keys only on the server is the most important habit to build early.
+- Avoid logging full prompts/outputs unless policy allows. Start by logging only metadata (status codes, request IDs, token counts).
+
+Troubleshooting
+
+- 401/403: check that `OPENAI_API_KEY` is set in the environment where the process runs.
+- 429: rate limit; wait and retry. Keep iterations minimal for demos.
+- Corporate proxies: if behind a proxy, configure your runtime (`HTTPS_PROXY`, `NODE_OPTIONS=--use-openssl-ca`, etc.) per IT policy.
+
 What’s next
 
 - Safer server routes and retries: see `/docs/quickstarts/js-server-route.md` and `/docs/quickstarts/python-fastapi.md`.
@@ -109,4 +128,3 @@ What’s next
 References
 
 - OpenAI API reference (Models, Chat Completions)
-
