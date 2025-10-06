@@ -66,3 +66,12 @@ Troubleshooting
 - Redirect URI mismatch: ensure callback URL matches in Entra and app config.
 - Missing roles: confirm app roles are defined and assigned; claims mapping differs by tenant setup.
 
+Beginner guidance
+
+- Ensure `NEXTAUTH_URL` points to your deployed base URL and the callback path matches the Entra redirect URI.
+- Keep `NEXTAUTH_SECRET` strong and unique per environment.
+
+Role mapping tips
+
+- Map `roles` onto both JWT and session so the client can render role‑based UI.
+- If your tenant uses custom claims, adjust callbacks to read the right property.

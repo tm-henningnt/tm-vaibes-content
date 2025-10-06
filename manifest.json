@@ -1,8 +1,8 @@
 {
   "$schema": "./tools/schemas/manifest.schema.json",
   "version": "2025.10.0",
-  "generated_at": "2025-10-06T21:03:37.205Z",
-  "hash": "88f160d6c4008419",
+  "generated_at": "2025-10-06T21:39:22.262Z",
+  "hash": "2b907964c7bca439",
   "docs": [
     {
       "path": "/docs/index.md",
@@ -85,119 +85,6 @@
       "last_reviewed": "2025-10-06T00:00:00.000Z",
       "search_keywords": [],
       "related": []
-    },
-    {
-      "path": "/docs/faq/index.md",
-      "title": "FAQ",
-      "description": "Frequently asked questions about the docs and wizard.",
-      "audience_levels": [
-        "beginner",
-        "intermediate"
-      ],
-      "personas": [
-        "non-technical",
-        "PM",
-        "developer",
-        "admin"
-      ],
-      "categories": [
-        "faq"
-      ],
-      "tags": [
-        "questions",
-        "help"
-      ],
-      "min_read_minutes": 5,
-      "last_reviewed": "2025-10-06T00:00:00.000Z",
-      "search_keywords": [],
-      "related": []
-    },
-    {
-      "path": "/docs/faq/providers-and-costs.md",
-      "title": "Providers and Costs: Basics",
-      "description": "Understand cost drivers, rate limits, and when to switch providers.",
-      "audience_levels": [
-        "beginner",
-        "intermediate"
-      ],
-      "personas": [
-        "PM",
-        "developer",
-        "admin"
-      ],
-      "categories": [
-        "faq"
-      ],
-      "tags": [],
-      "min_read_minutes": 5,
-      "last_reviewed": "2025-10-06T00:00:00.000Z",
-      "search_keywords": [
-        "pricing",
-        "rate limits",
-        "token costs",
-        "provider selection"
-      ],
-      "related": [
-        "/docs/providers/compare-providers.md",
-        "/docs/patterns/cost-controls.md"
-      ]
-    },
-    {
-      "path": "/docs/faq/vscode-and-extensions.md",
-      "title": "VS Code and Extensions: FAQ",
-      "description": "Answers to common questions about settings, MDX preview, spell-check, and frontmatter.",
-      "audience_levels": [
-        "beginner",
-        "intermediate"
-      ],
-      "personas": [
-        "all contributors"
-      ],
-      "categories": [
-        "faq"
-      ],
-      "tags": [],
-      "min_read_minutes": 4,
-      "last_reviewed": "2025-10-06T00:00:00.000Z",
-      "search_keywords": [
-        "vscode",
-        "mdx",
-        "markdown",
-        "frontmatter",
-        "spell checker"
-      ],
-      "related": [
-        "/docs/operations/vscode-setup-and-extensions.md"
-      ]
-    },
-    {
-      "path": "/docs/faq/wizard-vs-examples.md",
-      "title": "Wizard vs Hand‑Coded Examples",
-      "description": "When to use the Wizard for speed vs hand-coded examples for control.",
-      "audience_levels": [
-        "beginner",
-        "intermediate"
-      ],
-      "personas": [
-        "PM",
-        "developer"
-      ],
-      "categories": [
-        "faq"
-      ],
-      "tags": [],
-      "min_read_minutes": 3,
-      "last_reviewed": "2025-10-06T00:00:00.000Z",
-      "search_keywords": [
-        "wizard",
-        "examples",
-        "tradeoffs",
-        "speed vs control"
-      ],
-      "related": [
-        "/docs/wizard/overview.md",
-        "/docs/quickstarts/js-server-route.md"
-      ]
     },
     {
       "path": "/docs/evaluations/data-platform-benchmarks.md",
@@ -551,6 +438,119 @@
       ],
       "related": [
         "/docs/patterns/workflows/batch-processing.md"
+      ]
+    },
+    {
+      "path": "/docs/faq/index.md",
+      "title": "FAQ",
+      "description": "Frequently asked questions about the docs and wizard.",
+      "audience_levels": [
+        "beginner",
+        "intermediate"
+      ],
+      "personas": [
+        "non-technical",
+        "PM",
+        "developer",
+        "admin"
+      ],
+      "categories": [
+        "faq"
+      ],
+      "tags": [
+        "questions",
+        "help"
+      ],
+      "min_read_minutes": 5,
+      "last_reviewed": "2025-10-06T00:00:00.000Z",
+      "search_keywords": [],
+      "related": []
+    },
+    {
+      "path": "/docs/faq/providers-and-costs.md",
+      "title": "Providers and Costs: Basics",
+      "description": "Understand cost drivers, rate limits, and when to switch providers.",
+      "audience_levels": [
+        "beginner",
+        "intermediate"
+      ],
+      "personas": [
+        "PM",
+        "developer",
+        "admin"
+      ],
+      "categories": [
+        "faq"
+      ],
+      "tags": [],
+      "min_read_minutes": 5,
+      "last_reviewed": "2025-10-06T00:00:00.000Z",
+      "search_keywords": [
+        "pricing",
+        "rate limits",
+        "token costs",
+        "provider selection"
+      ],
+      "related": [
+        "/docs/providers/compare-providers.md",
+        "/docs/patterns/cost-controls.md"
+      ]
+    },
+    {
+      "path": "/docs/faq/vscode-and-extensions.md",
+      "title": "VS Code and Extensions: FAQ",
+      "description": "Answers to common questions about settings, MDX preview, spell-check, and frontmatter.",
+      "audience_levels": [
+        "beginner",
+        "intermediate"
+      ],
+      "personas": [
+        "all contributors"
+      ],
+      "categories": [
+        "faq"
+      ],
+      "tags": [],
+      "min_read_minutes": 4,
+      "last_reviewed": "2025-10-06T00:00:00.000Z",
+      "search_keywords": [
+        "vscode",
+        "mdx",
+        "markdown",
+        "frontmatter",
+        "spell checker"
+      ],
+      "related": [
+        "/docs/operations/vscode-setup-and-extensions.md"
+      ]
+    },
+    {
+      "path": "/docs/faq/wizard-vs-examples.md",
+      "title": "Wizard vs Hand‑Coded Examples",
+      "description": "When to use the Wizard for speed vs hand-coded examples for control.",
+      "audience_levels": [
+        "beginner",
+        "intermediate"
+      ],
+      "personas": [
+        "PM",
+        "developer"
+      ],
+      "categories": [
+        "faq"
+      ],
+      "tags": [],
+      "min_read_minutes": 3,
+      "last_reviewed": "2025-10-06T00:00:00.000Z",
+      "search_keywords": [
+        "wizard",
+        "examples",
+        "tradeoffs",
+        "speed vs control"
+      ],
+      "related": [
+        "/docs/wizard/overview.md",
+        "/docs/quickstarts/js-server-route.md"
       ]
     },
     {
@@ -2143,36 +2143,6 @@
       ]
     },
     {
-      "path": "/docs/patterns/tools/function-calling.md",
-      "title": "Cross‑Provider Tool/Function Calling",
-      "description": "Design schemas, ensure idempotency, and propagate errors consistently across providers.",
-      "audience_levels": [
-        "intermediate",
-        "advanced"
-      ],
-      "personas": [
-        "developer"
-      ],
-      "categories": [
-        "patterns"
-      ],
-      "tags": [],
-      "min_read_minutes": 10,
-      "last_reviewed": "2025-10-06T00:00:00.000Z",
-      "search_keywords": [
-        "function calling",
-        "tools",
-        "schema",
-        "errors",
-        "openai",
-        "anthropic"
-      ],
-      "related": [
-        "/docs/patterns/agentic/router-multi-tool.md",
-        "/docs/patterns/workflows/batch-processing.md"
-      ]
-    },
-    {
       "path": "/docs/patterns/agentic/planner-executor.md",
       "title": "Pattern: Planner–Executor",
       "description": "A classic agent loop where a planner decides next steps and an executor performs them with tools.",
@@ -2259,33 +2229,33 @@
       ]
     },
     {
-      "path": "/docs/patterns/workflows/batch-processing.md",
-      "title": "Batch Processing Workflows",
-      "description": "Run offline batches with retries, cost caps, and resumability.",
+      "path": "/docs/patterns/tools/function-calling.md",
+      "title": "Cross‑Provider Tool/Function Calling",
+      "description": "Design schemas, ensure idempotency, and propagate errors consistently across providers.",
       "audience_levels": [
         "intermediate",
         "advanced"
       ],
       "personas": [
-        "developer",
-        "PM"
+        "developer"
       ],
       "categories": [
         "patterns"
       ],
       "tags": [],
-      "min_read_minutes": 8,
+      "min_read_minutes": 10,
       "last_reviewed": "2025-10-06T00:00:00.000Z",
       "search_keywords": [
-        "batch",
-        "offline",
-        "retries",
-        "resume",
-        "cost cap"
+        "function calling",
+        "tools",
+        "schema",
+        "errors",
+        "openai",
+        "anthropic"
       ],
       "related": [
-        "/docs/evaluations/offline-batch-evals.md",
-        "/docs/patterns/cost-controls.md"
+        "/docs/patterns/agentic/router-multi-tool.md",
+        "/docs/patterns/workflows/batch-processing.md"
       ]
     },
     {
@@ -2344,6 +2314,36 @@
         "/docs/patterns/rag/basics.md",
         "/docs/evaluations/grounded-qa-evals.md",
         "/docs/evaluations/offline-batch-evals.md"
+      ]
+    },
+    {
+      "path": "/docs/patterns/workflows/batch-processing.md",
+      "title": "Batch Processing Workflows",
+      "description": "Run offline batches with retries, cost caps, and resumability.",
+      "audience_levels": [
+        "intermediate",
+        "advanced"
+      ],
+      "personas": [
+        "developer",
+        "PM"
+      ],
+      "categories": [
+        "patterns"
+      ],
+      "tags": [],
+      "min_read_minutes": 8,
+      "last_reviewed": "2025-10-06T00:00:00.000Z",
+      "search_keywords": [
+        "batch",
+        "offline",
+        "retries",
+        "resume",
+        "cost cap"
+      ],
+      "related": [
+        "/docs/evaluations/offline-batch-evals.md",
+        "/docs/patterns/cost-controls.md"
       ]
     },
     {

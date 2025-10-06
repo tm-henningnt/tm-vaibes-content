@@ -24,3 +24,20 @@ Reports
 
 - Produce a summary: total processed, successes, failures, retries, total tokens/cost estimate.
 
+Pseudo-code (Node)
+
+```ts
+for await (const item of queue) {
+  try {
+    await withCostBudget(costBudget, async () => process(item));
+    report.ok++;
+  } catch (e) {
+    if (isRetryable(e) && item.attempts < 3) { queue.requeue(item); report.retry++ } else { report.fail++ }
+  }
+  if (shouldCheckpoint()) await saveCheckpoint();
+}
+```
+
+Cost cap pattern
+
+- Maintain a running total of tokens/time; stop when exceeding thresholds and write a partial report.

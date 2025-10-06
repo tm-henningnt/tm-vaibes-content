@@ -21,3 +21,9 @@ Notes
 
 - Prefer read-only credentials for evals and demos; log only metadata.
 
+Connection tips
+
+- Fabric: use service principals with scoped Lakehouse permissions.
+- Snowflake: create least-privilege roles; warehouse sizing affects latency/cost.
+- Databricks: enforce Unity Catalog access controls; prefer cluster policies.
+- Qlik Cloud: manage connections via spaces; restrict app publish permissions.

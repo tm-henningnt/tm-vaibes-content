@@ -25,3 +25,11 @@ Notes
 
 - Show only metadata; avoid rendering secrets or full payloads.
 
+Beginner view
+
+- Green: no action needed. Stale: content may be outdated; consider forcing revalidation. Red: investigate webhook and server logs.
+
+FAQ
+
+- Why does it show stale? Webhooks may be delayed or recent pushes haven’t triggered revalidation; check delivery logs.
+- What if the hash changes but pages don’t? Cache invalidation may be lagging; force revalidation on impacted paths.

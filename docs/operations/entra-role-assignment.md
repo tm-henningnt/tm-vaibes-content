@@ -28,4 +28,11 @@ Troubleshooting
 
 - Missing `roles` claim → ensure roles are defined on the app and assigned to the user/group.
 - Changes not visible → tokens may be cached; sign out and sign in again.
+Beginner notes
 
+- Roles are defined on the app registration, not in your code. After defining, you still need to assign them to users/groups via Enterprise applications.
+
+FAQ
+
+- Can I assign roles to groups? Yes—assign to Entra groups, then manage membership there.
+- Where do roles appear in NextAuth? Typically in the ID token’s `roles` claim; map them in the JWT/session callbacks.

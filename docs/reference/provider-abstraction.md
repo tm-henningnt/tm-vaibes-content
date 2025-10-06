@@ -24,3 +24,17 @@ Implementation notes
 - Normalize error objects with `code`, `status`, `retryable`.
 - Capture tokens/latency for metrics.
 
+Error normalization (example)
+
+```ts
+function normalize(err: any) {
+  const status = err.status ?? err.response?.status ?? 500;
+  const code = err.code ?? err.response?.data?.error?.code ?? 'UNKNOWN';
+  const retryable = [429, 500, 502, 503, 504].includes(status);
+  return { status, code, retryable, message: String(err.message || code) };
+}
+```
+
+Fallbacks
+
+- If a call fails or times out, optionally retry on a smaller model; record fallback usage in metrics.

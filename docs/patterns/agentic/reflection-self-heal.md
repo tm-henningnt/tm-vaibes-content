@@ -24,7 +24,7 @@ Score 0–5 for: correctness, completeness, clarity, safety. Give short feedback
 
 Retry budget
 
-- Cap attempts (e.g., 2–3) to bound latency/cost.
+- Cap attempts (e.g., 2-3) to bound latency/cost.
 - Track improvement per iteration; abort if no score increase.
 
 Notes
@@ -32,3 +32,15 @@ Notes
 - Keep critiques short; avoid infinite loops.
 - Persist scores for later analysis in evaluations.
 
+Prompt (critique)
+
+```text
+Critique the answer against: correctness, completeness, clarity, safety.
+Score each 0–5 and propose concrete fixes. Be brief.
+```
+
+Prompt (repair)
+
+```text
+Revise the answer to address the critique. Keep it concise; do not add new claims without sources.
+```

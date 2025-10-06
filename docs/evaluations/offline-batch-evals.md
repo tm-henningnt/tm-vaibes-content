@@ -20,3 +20,26 @@ Storage
 
 - Keep raw metrics (scores, latencies, token counts) for trend lines.
 
+Folder structure (example)
+
+```
+/evals
+  /golden
+    faq.json
+  /runs
+    2025-10-06.json
+  report.md
+```
+
+Report template
+
+```md
+# Nightly Evals
+
+- Correctness: +0.3 (avg 4.1) • Failures: 7/200
+- Latency P95: 2.8s (+0.2s)
+- Token avg: 420 → 380
+
+Top regressions
+- faq-017 …
+```

@@ -30,4 +30,15 @@ Troubleshooting
 
 - Redirect URI mismatch → update in both Entra and your app config.
 - “Needs admin approval” → request tenant admin consent for the app.
+Beginner checklist
 
+- [ ] App registration created and correct tenant selected
+- [ ] Redirect URI added exactly as used by your app
+- [ ] Client secret created and stored securely
+- [ ] ID tokens enabled
+- [ ] Test user can sign in end-to-end
+
+FAQ
+
+- Can I use multiple redirect URIs? Yes—add separate URIs for local dev and production.
+- Why do users see “admin approval required”? Your app requests permissions gated by tenant policy; an admin must approve.

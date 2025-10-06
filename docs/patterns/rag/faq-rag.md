@@ -21,3 +21,13 @@ Eval hook
 - For each question, assert the answer includes at least one citation and no unsupported facts.
 - Log failures into a queue for manual review/improvements.
 
+Prompt sketch
+
+```text
+Answer only from the provided FAQ excerpts. Cite [1], [2], ... If unsure, reply "unknown".
+```
+
+Beginner pitfalls
+
+- Not chunking by Q/A can mix signals; keep chunks aligned to answers.
+- Too many long excerpts reduce reasoning space; prefer top 3–5 short spans.

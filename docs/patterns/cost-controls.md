@@ -22,3 +22,12 @@ Monitoring
 
 - Track tokens and latency by route; alert when thresholds exceeded.
 
+Beginner guide
+
+- Start with small models and low `max_tokens`.
+- Prefer single-turn prompts; split large requests into smaller steps when possible.
+
+Advanced
+
+- Cache embeddings and RAG retrieval results; reuse across sessions.
+- Use budget-aware planners that reduce model size or shorten prompts when low on budget.

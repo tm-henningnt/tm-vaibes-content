@@ -24,3 +24,12 @@ Fix
 
 - Update `actions/setup-node` version, cache key, or lockfile as needed; commit changes and re-run.
 
+Common failures
+
+- `ERR_MODULE_NOT_FOUND`: missing dependencies. Ensure `npm ci` step runs and lockfile is committed.
+- Node mismatch: SDKs may require minimum Node versions; align `setup-node` with local.
+- Frontmatter errors: our manifest build skips docs missing `title`; fix and rerun.
+
+Local reproduction
+
+- Run `npm ci && npm run build:manifest` locally to mirror CI. Compare Node versions (`node -v`).

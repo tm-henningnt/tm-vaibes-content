@@ -34,3 +34,7 @@ Notes
 
 - Avoid storing raw prompts/outputs unless policy allows; prefer hashes and metadata.
 
+PII and access
+
+- If prompts/outputs must be stored, encrypt at rest and restrict access; define retention windows.
+- Consider per-tenant data isolation if serving multiple orgs.

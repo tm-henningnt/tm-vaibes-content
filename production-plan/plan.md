@@ -43,8 +43,23 @@ Clarity expansion pass (multi-audience)
  - [x] /docs/safety/overview.md
  - [x] /docs/safety/output-filters.md
  - [x] /docs/patterns/agentic/router-multi-tool.md
- - [x] /docs/operations/deploy-vercel.md
- - [x] /docs/faq/providers-and-costs.md
+- [x] /docs/operations/deploy-vercel.md
+- [x] /docs/faq/providers-and-costs.md
+ - [x] /docs/operations/entra-sign-in-flow.md
+ - [x] /docs/operations/entra-role-assignment.md
+ - [x] /docs/operations/nextauth-azuread.md
+ - [x] /docs/operations/admin-dashboard.md
+ - [x] /docs/troubleshooting/github-actions-ci.md
+ - [x] /docs/patterns/workflows/batch-processing.md
+ - [x] /docs/patterns/observability-context.md
+ - [x] /docs/patterns/cost-controls.md
+ - [x] /docs/patterns/a2a-agent-to-agent.md
+ - [x] /docs/patterns/agentic/reflection-self-heal.md
+ - [x] /docs/patterns/rag/faq-rag.md
+ - [x] /docs/evaluations/offline-batch-evals.md
+ - [x] /docs/reference/provider-abstraction.md
+ - [x] /docs/reference/session-record-schema.md
+ - [x] /docs/reference/data-platform-integration-guides.md
 
 ## Main tools / platform focus (Not exclusive)
 

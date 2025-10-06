@@ -24,3 +24,11 @@ PII avoidance
 
 - Redact obvious PII fields; prefer hashed identifiers.
 
+Examples
+
+- Log: `{ request_id, route: '/api/chat', model: 'gpt-4o-mini', ms: 812, tokens_in: 120, tokens_out: 180, status: 200 }`
+- Trace: user request → router → tool:createTicket → provider call; sample 1–5% on high-traffic routes.
+
+Dashboards
+
+- P50/P95 latency, error rates by route, tokens per request, top tools/models by usage.
