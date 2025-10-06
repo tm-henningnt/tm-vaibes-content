@@ -1,8 +1,8 @@
 {
   "$schema": "./tools/schemas/manifest.schema.json",
   "version": "2025.10.0",
-  "generated_at": "2025-10-06T19:42:15.737Z",
-  "hash": "2aff37709842a0c9",
+  "generated_at": "2025-10-06T20:16:18.319Z",
+  "hash": "ac141a9b09e9e255",
   "docs": [
     {
       "path": "/docs/index.md",
@@ -55,32 +55,6 @@
         "changelog"
       ],
       "min_read_minutes": 3,
-      "last_reviewed": "2025-10-06T00:00:00.000Z",
-      "search_keywords": [],
-      "related": []
-    },
-    {
-      "path": "/docs/faq/index.md",
-      "title": "FAQ",
-      "description": "Frequently asked questions about the docs and wizard.",
-      "audience_levels": [
-        "beginner",
-        "intermediate"
-      ],
-      "personas": [
-        "non-technical",
-        "PM",
-        "developer",
-        "admin"
-      ],
-      "categories": [
-        "faq"
-      ],
-      "tags": [
-        "questions",
-        "help"
-      ],
-      "min_read_minutes": 5,
       "last_reviewed": "2025-10-06T00:00:00.000Z",
       "search_keywords": [],
       "related": []
@@ -171,162 +145,116 @@
       ]
     },
     {
-      "path": "/docs/operations/backups-retention.md",
-      "title": "Operations: Backups & Retention",
-      "description": "Soft-deletes, archival flags, and reporting policies for sessions.",
-      "audience_levels": [
-        "intermediate"
-      ],
-      "personas": [
-        "admin",
-        "developer"
-      ],
-      "categories": [
-        "operations"
-      ],
-      "tags": [
-        "retention",
-        "archival",
-        "soft-delete"
-      ],
-      "min_read_minutes": 6,
-      "last_reviewed": "2025-10-06T00:00:00.000Z",
-      "search_keywords": [],
-      "related": []
-    },
-    {
-      "path": "/docs/operations/content-sync.md",
-      "title": "Operations: Content Synchronization",
-      "description": "Branch/path selection, ETags and If-None-Match, and GitHub webhook revalidation.",
-      "audience_levels": [
-        "intermediate",
-        "advanced"
-      ],
-      "personas": [
-        "admin",
-        "developer"
-      ],
-      "categories": [
-        "operations"
-      ],
-      "tags": [
-        "sync",
-        "etag",
-        "webhook"
-      ],
-      "min_read_minutes": 9,
-      "last_reviewed": "2025-10-06T00:00:00.000Z",
-      "search_keywords": [],
-      "related": []
-    },
-    {
-      "path": "/docs/operations/entra-admin-guide.md",
-      "title": "Microsoft Entra Admin Guide",
-      "description": "Click-path setup for app registration, role assignment, and required environment variables.",
-      "audience_levels": [
-        "intermediate"
-      ],
-      "personas": [
-        "admin"
-      ],
-      "categories": [
-        "operations"
-      ],
-      "tags": [
-        "entra",
-        "aad",
-        "auth"
-      ],
-      "min_read_minutes": 15,
-      "last_reviewed": "2025-10-06T00:00:00.000Z",
-      "search_keywords": [],
-      "related": []
-    },
-    {
-      "path": "/docs/operations/env-and-healthcheck.md",
-      "title": "Environment Variables and Health Checks",
-      "description": "Map required environment variables and define expected health check outputs for non-prod and prod.",
+      "path": "/docs/faq/index.md",
+      "title": "FAQ",
+      "description": "Frequently asked questions about the docs and wizard.",
       "audience_levels": [
         "beginner",
         "intermediate"
       ],
       "personas": [
+        "non-technical",
+        "PM",
         "developer",
         "admin"
       ],
       "categories": [
-        "operations",
-        "reference"
+        "faq"
+      ],
+      "tags": [
+        "questions",
+        "help"
+      ],
+      "min_read_minutes": 5,
+      "last_reviewed": "2025-10-06T00:00:00.000Z",
+      "search_keywords": [],
+      "related": []
+    },
+    {
+      "path": "/docs/faq/providers-and-costs.md",
+      "title": "Providers and Costs: Basics",
+      "description": "Understand cost drivers, rate limits, and when to switch providers.",
+      "audience_levels": [
+        "beginner",
+        "intermediate"
+      ],
+      "personas": [
+        "PM",
+        "developer",
+        "admin"
+      ],
+      "categories": [
+        "faq"
       ],
       "tags": [],
-      "min_read_minutes": 6,
+      "min_read_minutes": 5,
       "last_reviewed": "2025-10-06T00:00:00.000Z",
       "search_keywords": [
-        "env vars",
-        "healthcheck",
-        "status endpoint",
-        "liveness",
-        "readiness"
+        "pricing",
+        "rate limits",
+        "token costs",
+        "provider selection"
       ],
       "related": [
-        "/docs/reference/env-vars.md",
-        "/docs/operations/admin-dashboard.md"
+        "/docs/providers/compare-providers.md",
+        "/docs/patterns/cost-controls.md"
       ]
     },
     {
-      "path": "/docs/operations/observability.md",
-      "title": "Operations: Observability",
-      "description": "Structured logs for AI calls (metadata only), auth events, revalidation, and migrations.",
-      "audience_levels": [
-        "intermediate",
-        "advanced"
-      ],
-      "personas": [
-        "admin",
-        "developer"
-      ],
-      "categories": [
-        "operations"
-      ],
-      "tags": [
-        "observability",
-        "logging",
-        "metrics"
-      ],
-      "min_read_minutes": 7,
-      "last_reviewed": "2025-10-06T00:00:00.000Z",
-      "search_keywords": [],
-      "related": []
-    },
-    {
-      "path": "/docs/operations/vscode-setup-and-extensions.md",
-      "title": "VS Code Setup and Extensions",
-      "description": "Recommended VS Code settings and extensions for editing Markdown/MDX and frontmatter.",
+      "path": "/docs/faq/vscode-and-extensions.md",
+      "title": "VS Code and Extensions: FAQ",
+      "description": "Answers to common questions about settings, MDX preview, spell-check, and frontmatter.",
       "audience_levels": [
         "beginner",
         "intermediate"
       ],
       "personas": [
-        "developer",
-        "PM"
+        "all contributors"
       ],
       "categories": [
-        "operations",
-        "how-to"
+        "faq"
       ],
       "tags": [],
-      "min_read_minutes": 6,
+      "min_read_minutes": 4,
       "last_reviewed": "2025-10-06T00:00:00.000Z",
       "search_keywords": [
         "vscode",
-        "markdown",
         "mdx",
+        "markdown",
         "frontmatter",
-        "spell check"
+        "spell checker"
       ],
       "related": [
-        "/docs/faq/vscode-and-extensions.md",
-        "/docs/reference/components.md"
+        "/docs/operations/vscode-setup-and-extensions.md"
+      ]
+    },
+    {
+      "path": "/docs/faq/wizard-vs-examples.md",
+      "title": "Wizard vs Hand‑Coded Examples",
+      "description": "When to use the Wizard for speed vs hand-coded examples for control.",
+      "audience_levels": [
+        "beginner",
+        "intermediate"
+      ],
+      "personas": [
+        "PM",
+        "developer"
+      ],
+      "categories": [
+        "faq"
+      ],
+      "tags": [],
+      "min_read_minutes": 3,
+      "last_reviewed": "2025-10-06T00:00:00.000Z",
+      "search_keywords": [
+        "wizard",
+        "examples",
+        "tradeoffs",
+        "speed vs control"
+      ],
+      "related": [
+        "/docs/wizard/overview.md",
+        "/docs/quickstarts/js-server-route.md"
       ]
     },
     {
@@ -396,23 +324,52 @@
       ]
     },
     {
-      "path": "/docs/reference/env-vars.md",
-      "title": "Reference: Environment Variables (.env.example)",
-      "description": "Environment-specific values for identity, providers, data, and revalidation.",
+      "path": "/docs/operations/admin-dashboard.md",
+      "title": "Admin Dashboard: Sync Health",
+      "description": "Define green/stale thresholds and how to force content revalidation.",
+      "audience_levels": [
+        "beginner",
+        "intermediate"
+      ],
+      "personas": [
+        "admin"
+      ],
+      "categories": [
+        "operations",
+        "reference"
+      ],
+      "tags": [],
+      "min_read_minutes": 4,
+      "last_reviewed": "2025-10-06T00:00:00.000Z",
+      "search_keywords": [
+        "dashboard",
+        "health",
+        "manifest",
+        "revalidation"
+      ],
+      "related": [
+        "/docs/operations/content-sync-deep-dive.md",
+        "/docs/troubleshooting/revalidation-failures.md"
+      ]
+    },
+    {
+      "path": "/docs/operations/backups-retention.md",
+      "title": "Operations: Backups & Retention",
+      "description": "Soft-deletes, archival flags, and reporting policies for sessions.",
       "audience_levels": [
         "intermediate"
       ],
       "personas": [
-        "developer",
-        "admin"
+        "admin",
+        "developer"
       ],
       "categories": [
-        "reference"
+        "operations"
       ],
       "tags": [
-        "env",
-        "secrets",
-        "config"
+        "retention",
+        "archival",
+        "soft-delete"
       ],
       "min_read_minutes": 6,
       "last_reviewed": "2025-10-06T00:00:00.000Z",
@@ -420,9 +377,9 @@
       "related": []
     },
     {
-      "path": "/docs/reference/registry-schema.md",
-      "title": "Reference: Project Type Registry Schema",
-      "description": "Fields and validation rules for the wizard's project type registry.",
+      "path": "/docs/operations/content-sync-deep-dive.md",
+      "title": "Content Sync Deep Dive (ISR, Revalidation, ETags)",
+      "description": "How our site pulls new docs using ISR, on-demand revalidation, and HTTP validators.",
       "audience_levels": [
         "intermediate",
         "advanced"
@@ -432,42 +389,276 @@
         "admin"
       ],
       "categories": [
+        "operations",
         "reference"
       ],
-      "tags": [
-        "schema",
-        "registry",
-        "wizard"
+      "tags": [],
+      "min_read_minutes": 9,
+      "last_reviewed": "2025-10-06T00:00:00.000Z",
+      "search_keywords": [
+        "ISR",
+        "revalidate",
+        "ETag",
+        "If-None-Match",
+        "webhooks"
       ],
-      "min_read_minutes": 10,
+      "related": [
+        "/docs/operations/env-and-healthcheck.md",
+        "/docs/operations/admin-dashboard.md",
+        "/docs/troubleshooting/revalidation-failures.md"
+      ]
+    },
+    {
+      "path": "/docs/operations/content-sync.md",
+      "title": "Operations: Content Synchronization",
+      "description": "Branch/path selection, ETags and If-None-Match, and GitHub webhook revalidation.",
+      "audience_levels": [
+        "intermediate",
+        "advanced"
+      ],
+      "personas": [
+        "admin",
+        "developer"
+      ],
+      "categories": [
+        "operations"
+      ],
+      "tags": [
+        "sync",
+        "etag",
+        "webhook"
+      ],
+      "min_read_minutes": 9,
       "last_reviewed": "2025-10-06T00:00:00.000Z",
       "search_keywords": [],
       "related": []
     },
     {
-      "path": "/docs/reference/revalidation-api.md",
-      "title": "Reference: Revalidation API",
-      "description": "Token-secured endpoint to refresh cached docs and manifest after GitHub updates.",
+      "path": "/docs/operations/entra-admin-guide.md",
+      "title": "Microsoft Entra Admin Guide",
+      "description": "Click-path setup for app registration, role assignment, and required environment variables.",
       "audience_levels": [
-        "intermediate",
-        "advanced"
+        "intermediate"
+      ],
+      "personas": [
+        "admin"
+      ],
+      "categories": [
+        "operations"
+      ],
+      "tags": [
+        "entra",
+        "aad",
+        "auth"
+      ],
+      "min_read_minutes": 15,
+      "last_reviewed": "2025-10-06T00:00:00.000Z",
+      "search_keywords": [],
+      "related": []
+    },
+    {
+      "path": "/docs/operations/entra-role-assignment.md",
+      "title": "Microsoft Entra Role Assignment",
+      "description": "Assign application roles like User and Admin, and verify they flow to your app.",
+      "audience_levels": [
+        "intermediate"
+      ],
+      "personas": [
+        "admin"
+      ],
+      "categories": [
+        "operations",
+        "how-to"
+      ],
+      "tags": [],
+      "min_read_minutes": 5,
+      "last_reviewed": "2025-10-06T00:00:00.000Z",
+      "search_keywords": [
+        "entra roles",
+        "app roles",
+        "azure ad",
+        "claims"
+      ],
+      "related": [
+        "/docs/operations/entra-sign-in-flow.md",
+        "/docs/operations/nextauth-azuread.md"
+      ]
+    },
+    {
+      "path": "/docs/operations/entra-sign-in-flow.md",
+      "title": "Microsoft Entra Sign-In Flow",
+      "description": "Click-path guide to enable sign-in with Microsoft Entra (Azure AD) including consent and role display.",
+      "audience_levels": [
+        "beginner",
+        "intermediate"
+      ],
+      "personas": [
+        "admin",
+        "PM"
+      ],
+      "categories": [
+        "operations",
+        "how-to"
+      ],
+      "tags": [],
+      "min_read_minutes": 6,
+      "last_reviewed": "2025-10-06T00:00:00.000Z",
+      "search_keywords": [
+        "entra",
+        "azure ad",
+        "sign-in",
+        "consent",
+        "login"
+      ],
+      "related": [
+        "/docs/operations/entra-role-assignment.md",
+        "/docs/operations/nextauth-azuread.md"
+      ]
+    },
+    {
+      "path": "/docs/operations/env-and-healthcheck.md",
+      "title": "Environment Variables and Health Checks",
+      "description": "Map required environment variables and define expected health check outputs for non-prod and prod.",
+      "audience_levels": [
+        "beginner",
+        "intermediate"
       ],
       "personas": [
         "developer",
         "admin"
       ],
       "categories": [
+        "operations",
         "reference"
       ],
-      "tags": [
-        "revalidation",
-        "webhook",
-        "cache"
+      "tags": [],
+      "min_read_minutes": 6,
+      "last_reviewed": "2025-10-06T00:00:00.000Z",
+      "search_keywords": [
+        "env vars",
+        "healthcheck",
+        "status endpoint",
+        "liveness",
+        "readiness"
       ],
+      "related": [
+        "/docs/reference/env-vars.md",
+        "/docs/operations/admin-dashboard.md"
+      ]
+    },
+    {
+      "path": "/docs/operations/github-flow-for-docs.md",
+      "title": "GitHub Flow for Docs",
+      "description": "Branching, PR reviews, CI manifest build, merge, and release notes for this repo.",
+      "audience_levels": [
+        "beginner",
+        "intermediate"
+      ],
+      "personas": [
+        "all contributors"
+      ],
+      "categories": [
+        "operations",
+        "how-to"
+      ],
+      "tags": [],
+      "min_read_minutes": 5,
+      "last_reviewed": "2025-10-06T00:00:00.000Z",
+      "search_keywords": [
+        "github flow",
+        "pull request",
+        "protected branches",
+        "ci"
+      ],
+      "related": [
+        "/docs/operations/vscode-setup-and-extensions.md"
+      ]
+    },
+    {
+      "path": "/docs/operations/nextauth-azuread.md",
+      "title": "NextAuth + Azure AD Setup",
+      "description": "Wire up NextAuth with the Azure AD provider, configure callbacks, and map role claims.",
+      "audience_levels": [
+        "intermediate"
+      ],
+      "personas": [
+        "developer"
+      ],
+      "categories": [
+        "operations",
+        "how-to",
+        "reference"
+      ],
+      "tags": [],
       "min_read_minutes": 8,
+      "last_reviewed": "2025-10-06T00:00:00.000Z",
+      "search_keywords": [
+        "nextauth",
+        "azure ad",
+        "entra",
+        "roles",
+        "middleware"
+      ],
+      "related": [
+        "/docs/operations/entra-sign-in-flow.md",
+        "/docs/operations/entra-role-assignment.md"
+      ]
+    },
+    {
+      "path": "/docs/operations/observability.md",
+      "title": "Operations: Observability",
+      "description": "Structured logs for AI calls (metadata only), auth events, revalidation, and migrations.",
+      "audience_levels": [
+        "intermediate",
+        "advanced"
+      ],
+      "personas": [
+        "admin",
+        "developer"
+      ],
+      "categories": [
+        "operations"
+      ],
+      "tags": [
+        "observability",
+        "logging",
+        "metrics"
+      ],
+      "min_read_minutes": 7,
       "last_reviewed": "2025-10-06T00:00:00.000Z",
       "search_keywords": [],
       "related": []
+    },
+    {
+      "path": "/docs/operations/vscode-setup-and-extensions.md",
+      "title": "VS Code Setup and Extensions",
+      "description": "Recommended VS Code settings and extensions for editing Markdown/MDX and frontmatter.",
+      "audience_levels": [
+        "beginner",
+        "intermediate"
+      ],
+      "personas": [
+        "developer",
+        "PM"
+      ],
+      "categories": [
+        "operations",
+        "how-to"
+      ],
+      "tags": [],
+      "min_read_minutes": 6,
+      "last_reviewed": "2025-10-06T00:00:00.000Z",
+      "search_keywords": [
+        "vscode",
+        "markdown",
+        "mdx",
+        "frontmatter",
+        "spell check"
+      ],
+      "related": [
+        "/docs/faq/vscode-and-extensions.md",
+        "/docs/reference/components.md"
+      ]
     },
     {
       "path": "/docs/quickstarts/first-idea.md",
@@ -601,6 +792,227 @@
       ]
     },
     {
+      "path": "/docs/reference/env-vars.md",
+      "title": "Reference: Environment Variables (.env.example)",
+      "description": "Environment-specific values for identity, providers, data, and revalidation.",
+      "audience_levels": [
+        "intermediate"
+      ],
+      "personas": [
+        "developer",
+        "admin"
+      ],
+      "categories": [
+        "reference"
+      ],
+      "tags": [
+        "env",
+        "secrets",
+        "config"
+      ],
+      "min_read_minutes": 6,
+      "last_reviewed": "2025-10-06T00:00:00.000Z",
+      "search_keywords": [],
+      "related": []
+    },
+    {
+      "path": "/docs/reference/registry-schema.md",
+      "title": "Reference: Project Type Registry Schema",
+      "description": "Fields and validation rules for the wizard's project type registry.",
+      "audience_levels": [
+        "intermediate",
+        "advanced"
+      ],
+      "personas": [
+        "developer",
+        "admin"
+      ],
+      "categories": [
+        "reference"
+      ],
+      "tags": [
+        "schema",
+        "registry",
+        "wizard"
+      ],
+      "min_read_minutes": 10,
+      "last_reviewed": "2025-10-06T00:00:00.000Z",
+      "search_keywords": [],
+      "related": []
+    },
+    {
+      "path": "/docs/reference/revalidation-api.md",
+      "title": "Reference: Revalidation API",
+      "description": "Token-secured endpoint to refresh cached docs and manifest after GitHub updates.",
+      "audience_levels": [
+        "intermediate",
+        "advanced"
+      ],
+      "personas": [
+        "developer",
+        "admin"
+      ],
+      "categories": [
+        "reference"
+      ],
+      "tags": [
+        "revalidation",
+        "webhook",
+        "cache"
+      ],
+      "min_read_minutes": 8,
+      "last_reviewed": "2025-10-06T00:00:00.000Z",
+      "search_keywords": [],
+      "related": []
+    },
+    {
+      "path": "/docs/troubleshooting/auth-errors.md",
+      "title": "Troubleshooting Auth Errors (Entra/NextAuth)",
+      "description": "Decode redirect URI, consent, and audience errors when using Azure AD with NextAuth.",
+      "audience_levels": [
+        "beginner",
+        "intermediate"
+      ],
+      "personas": [
+        "developer",
+        "admin"
+      ],
+      "categories": [
+        "troubleshooting",
+        "how-to"
+      ],
+      "tags": [],
+      "min_read_minutes": 6,
+      "last_reviewed": "2025-10-06T00:00:00.000Z",
+      "search_keywords": [
+        "redirect uri",
+        "consent",
+        "audience",
+        "azure ad",
+        "entra",
+        "nextauth"
+      ],
+      "related": [
+        "/docs/operations/entra-sign-in-flow.md",
+        "/docs/operations/nextauth-azuread.md"
+      ]
+    },
+    {
+      "path": "/docs/troubleshooting/common-errors.md",
+      "title": "Troubleshooting: Common Errors",
+      "description": "Quick fixes for frequent pitfalls with providers, auth, and sync.",
+      "audience_levels": [
+        "beginner",
+        "intermediate"
+      ],
+      "personas": [
+        "developer",
+        "admin",
+        "PM"
+      ],
+      "categories": [
+        "troubleshooting"
+      ],
+      "tags": [
+        "errors",
+        "auth",
+        "providers",
+        "sync"
+      ],
+      "min_read_minutes": 6,
+      "last_reviewed": "2025-10-06T00:00:00.000Z",
+      "search_keywords": [],
+      "related": []
+    },
+    {
+      "path": "/docs/troubleshooting/github-actions-ci.md",
+      "title": "Troubleshooting GitHub Actions (Manifest Build)",
+      "description": "Fix failing manifest builds due to Node version mismatches, missing deps, or frontmatter errors.",
+      "audience_levels": [
+        "beginner",
+        "intermediate"
+      ],
+      "personas": [
+        "developer"
+      ],
+      "categories": [
+        "troubleshooting"
+      ],
+      "tags": [],
+      "min_read_minutes": 5,
+      "last_reviewed": "2025-10-06T00:00:00.000Z",
+      "search_keywords": [
+        "github actions",
+        "ci",
+        "node version",
+        "dependencies",
+        "frontmatter"
+      ],
+      "related": [
+        "/docs/operations/github-flow-for-docs.md"
+      ]
+    },
+    {
+      "path": "/docs/troubleshooting/provider-errors.md",
+      "title": "Troubleshooting Provider Errors",
+      "description": "Decode 401/403/429/5xx responses and add robust retries and timeouts.",
+      "audience_levels": [
+        "beginner",
+        "intermediate"
+      ],
+      "personas": [
+        "developer"
+      ],
+      "categories": [
+        "troubleshooting",
+        "how-to"
+      ],
+      "tags": [],
+      "min_read_minutes": 7,
+      "last_reviewed": "2025-10-06T00:00:00.000Z",
+      "search_keywords": [
+        "http 429",
+        "rate limit",
+        "openai error",
+        "retry",
+        "timeout"
+      ],
+      "related": [
+        "/docs/providers/openai/auth-models-limits.md",
+        "/docs/providers/security-best-practices.md"
+      ]
+    },
+    {
+      "path": "/docs/troubleshooting/revalidation-failures.md",
+      "title": "Troubleshooting Revalidation Failures",
+      "description": "Inspect GitHub webhook deliveries, secrets, and handler logic when on-demand revalidation fails.",
+      "audience_levels": [
+        "intermediate"
+      ],
+      "personas": [
+        "developer",
+        "admin"
+      ],
+      "categories": [
+        "troubleshooting",
+        "how-to"
+      ],
+      "tags": [],
+      "min_read_minutes": 6,
+      "last_reviewed": "2025-10-06T00:00:00.000Z",
+      "search_keywords": [
+        "webhook",
+        "revalidate",
+        "github delivery",
+        "secret",
+        "nextjs"
+      ],
+      "related": [
+        "/docs/operations/content-sync-deep-dive.md",
+        "/docs/operations/admin-dashboard.md"
+      ]
+    },
+    {
       "path": "/docs/wizard/overview.md",
       "title": "Project Initiator Wizard: Overview",
       "description": "Walkthrough of the Wizard flow (Vision & Audience → Solution Shape → Launch Readiness → Review & Outputs) and how it stores sessions.",
@@ -657,61 +1069,29 @@
       ]
     },
     {
-      "path": "/docs/troubleshooting/common-errors.md",
-      "title": "Troubleshooting: Common Errors",
-      "description": "Quick fixes for frequent pitfalls with providers, auth, and sync.",
+      "path": "/docs/patterns/agentic/planner-executor.md",
+      "title": "Pattern: Planner–Executor",
+      "description": "A classic agent loop where a planner decides next steps and an executor performs them with tools.",
       "audience_levels": [
-        "beginner",
-        "intermediate"
+        "intermediate",
+        "advanced"
       ],
       "personas": [
         "developer",
-        "admin",
-        "PM"
+        "data-analyst"
       ],
       "categories": [
-        "troubleshooting"
+        "patterns"
       ],
       "tags": [
-        "errors",
-        "auth",
-        "providers",
-        "sync"
+        "agent",
+        "planner",
+        "tools"
       ],
-      "min_read_minutes": 6,
+      "min_read_minutes": 12,
       "last_reviewed": "2025-10-06T00:00:00.000Z",
       "search_keywords": [],
       "related": []
-    },
-    {
-      "path": "/docs/troubleshooting/provider-errors.md",
-      "title": "Troubleshooting Provider Errors",
-      "description": "Decode 401/403/429/5xx responses and add robust retries and timeouts.",
-      "audience_levels": [
-        "beginner",
-        "intermediate"
-      ],
-      "personas": [
-        "developer"
-      ],
-      "categories": [
-        "troubleshooting",
-        "how-to"
-      ],
-      "tags": [],
-      "min_read_minutes": 7,
-      "last_reviewed": "2025-10-06T00:00:00.000Z",
-      "search_keywords": [
-        "http 429",
-        "rate limit",
-        "openai error",
-        "retry",
-        "timeout"
-      ],
-      "related": [
-        "/docs/providers/openai/auth-models-limits.md",
-        "/docs/providers/security-best-practices.md"
-      ]
     },
     {
       "path": "/docs/providers/anthropic/overview.md",
@@ -745,26 +1125,91 @@
       ]
     },
     {
-      "path": "/docs/patterns/agentic/planner-executor.md",
-      "title": "Pattern: Planner–Executor",
-      "description": "A classic agent loop where a planner decides next steps and an executor performs them with tools.",
+      "path": "/docs/providers/openai/auth-models-limits.md",
+      "title": "OpenAI: Auth, Models, and Limits",
+      "description": "Authenticate safely, map environment variables, and choose a sensible model for your use case.",
       "audience_levels": [
-        "intermediate",
-        "advanced"
+        "beginner",
+        "intermediate"
       ],
       "personas": [
         "developer",
-        "data-analyst"
+        "admin"
       ],
       "categories": [
-        "patterns"
+        "providers",
+        "how-to",
+        "reference"
+      ],
+      "tags": [],
+      "min_read_minutes": 8,
+      "last_reviewed": "2025-10-06T00:00:00.000Z",
+      "search_keywords": [
+        "openai auth",
+        "model selection",
+        "rate limits",
+        "server-side keys"
+      ],
+      "related": [
+        "/docs/providers/security-best-practices.md",
+        "/docs/quickstarts/js-server-route.md",
+        "/docs/quickstarts/python-fastapi.md"
+      ]
+    },
+    {
+      "path": "/docs/providers/openai/chatgpt-productivity.md",
+      "title": "ChatGPT for Productivity: Safe and Effective Use",
+      "description": "Practical prompts, usage patterns, and safety tips to get reliable value from ChatGPT.",
+      "audience_levels": [
+        "beginner",
+        "intermediate"
+      ],
+      "personas": [
+        "non-technical",
+        "PM",
+        "developer"
+      ],
+      "categories": [
+        "providers",
+        "how-to"
+      ],
+      "tags": [],
+      "min_read_minutes": 7,
+      "last_reviewed": "2025-10-06T00:00:00.000Z",
+      "search_keywords": [
+        "chatgpt",
+        "prompting",
+        "productivity",
+        "guardrails",
+        "templates"
+      ],
+      "related": [
+        "/docs/how-to/pick-your-path.md",
+        "/docs/providers/openai/auth-models-limits.md",
+        "/docs/troubleshooting/provider-errors.md"
+      ]
+    },
+    {
+      "path": "/docs/providers/openai/overview.md",
+      "title": "Provider: OpenAI",
+      "description": "How to configure OpenAI as a provider in the app's server-side abstraction layer.",
+      "audience_levels": [
+        "beginner",
+        "intermediate"
+      ],
+      "personas": [
+        "developer",
+        "admin"
+      ],
+      "categories": [
+        "providers"
       ],
       "tags": [
-        "agent",
-        "planner",
-        "tools"
+        "openai",
+        "provider",
+        "config"
       ],
-      "min_read_minutes": 12,
+      "min_read_minutes": 7,
       "last_reviewed": "2025-10-06T00:00:00.000Z",
       "search_keywords": [],
       "related": []
@@ -829,63 +1274,6 @@
         "/docs/providers/azure-openai/migrate-from-openai.md",
         "/docs/providers/compare-providers.md"
       ]
-    },
-    {
-      "path": "/docs/providers/openai/auth-models-limits.md",
-      "title": "OpenAI: Auth, Models, and Limits",
-      "description": "Authenticate safely, map environment variables, and choose a sensible model for your use case.",
-      "audience_levels": [
-        "beginner",
-        "intermediate"
-      ],
-      "personas": [
-        "developer",
-        "admin"
-      ],
-      "categories": [
-        "providers",
-        "how-to",
-        "reference"
-      ],
-      "tags": [],
-      "min_read_minutes": 8,
-      "last_reviewed": "2025-10-06T00:00:00.000Z",
-      "search_keywords": [
-        "openai auth",
-        "model selection",
-        "rate limits",
-        "server-side keys"
-      ],
-      "related": [
-        "/docs/providers/security-best-practices.md",
-        "/docs/quickstarts/js-server-route.md",
-        "/docs/quickstarts/python-fastapi.md"
-      ]
-    },
-    {
-      "path": "/docs/providers/openai/overview.md",
-      "title": "Provider: OpenAI",
-      "description": "How to configure OpenAI as a provider in the app's server-side abstraction layer.",
-      "audience_levels": [
-        "beginner",
-        "intermediate"
-      ],
-      "personas": [
-        "developer",
-        "admin"
-      ],
-      "categories": [
-        "providers"
-      ],
-      "tags": [
-        "openai",
-        "provider",
-        "config"
-      ],
-      "min_read_minutes": 7,
-      "last_reviewed": "2025-10-06T00:00:00.000Z",
-      "search_keywords": [],
-      "related": []
     },
     {
       "path": "/docs/wizard/type-templates/internal-qa-copilot.mdx",

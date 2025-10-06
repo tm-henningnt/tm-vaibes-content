@@ -118,7 +118,7 @@ search_keywords: ["term one", "term two", "term three"]
     **Success:** server proxy patterns; least privilege; rotation cadence.
     **Pointers:** OpenAI guidance; optional Azure Key Vault link.
 
-11. **/docs/providers/openai/chatgpt-productivity.md**
+11. [x] **/docs/providers/openai/chatgpt-productivity.md**
     **Purpose:** safe & effective use of ChatGPT for ideation, code review, and doc drafting (no keys required).
     **Audience:** non‑technical, PM, developer.
     **Success:** task recipes (prompt templates), privacy caveats, when to switch to API‑based flows.
@@ -126,25 +126,25 @@ search_keywords: ["term one", "term two", "term three"]
 
 ### 3) Operations (8)
 
-11. **/docs/operations/entra-sign-in-flow.md**
+11. [x] **/docs/operations/entra-sign-in-flow.md**
     **Purpose:** click‑path sign‑in with screenshots.
     **Audience:** admin, PM.
     **Success:** sign‑in, consent, role display; no JSON editing.
     **Pointers:** Entra app registration quickstart; NextAuth Azure AD provider.
 
-12. **/docs/operations/entra-role-assignment.md**
+12. [x] **/docs/operations/entra-role-assignment.md**
     **Purpose:** assign `User`/`Admin` roles.
     **Audience:** admin.
     **Success:** portal steps + verification in app.
     **Pointers:** Entra app roles docs.
 
-13. **/docs/operations/nextauth-azuread.md**
+13. [x] **/docs/operations/nextauth-azuread.md**
     **Purpose:** wire NextAuth provider + middleware.
     **Audience:** developer.
     **Success:** provider config; callback URL; role claims mapping.
     **Pointers:** NextAuth Azure AD provider docs.
 
-14. **/docs/operations/content-sync-deep-dive.md**
+14. [x] **/docs/operations/content-sync-deep-dive.md**
     **Purpose:** ISR + on‑demand revalidation + ETags.
     **Audience:** developer, admin.
     **Success:** app‑router example; webhook payload; `If-None-Match` usage.
@@ -155,7 +155,7 @@ search_keywords: ["term one", "term two", "term three"]
     **Audience:** developer, admin.
     **Success:** table of vars; expected non‑prod error messages.
 
-16. **/docs/operations/admin-dashboard.md**
+16. [x] **/docs/operations/admin-dashboard.md**
     **Purpose:** sync health (manifest hash + fetch timestamp).
     **Audience:** admin.
     **Success:** define green/stale; how to force revalidation.
@@ -166,7 +166,7 @@ search_keywords: ["term one", "term two", "term three"]
     **Success:** install steps, settings JSON snippet, recommended extensions (Markdown, YAML, frontmatter, spell‑check), how to preview MDX.
     **Pointers:** VS Code docs; Markdown/MDX extensions (link official marketplace pages).
 
-18. **/docs/operations/github-flow-for-docs.md**
+18. [x] **/docs/operations/github-flow-for-docs.md**
     **Purpose:** PR workflow for this repo (branching, reviews, CI, release notes).
     **Audience:** all contributors.
     **Success:** step‑by‑step from fork/branch → PR → manifest CI → merge → live.
@@ -174,7 +174,7 @@ search_keywords: ["term one", "term two", "term three"]
 
 ### 4) Troubleshooting & FAQ (7)
 
-17. **/docs/troubleshooting/auth-errors.md**
+17. [x] **/docs/troubleshooting/auth-errors.md**
     **Purpose:** decode Entra/NextAuth errors (redirect URI, consent, audience).
     **Pointers:** NextAuth Azure AD; Entra quickstart.
 
@@ -182,23 +182,23 @@ search_keywords: ["term one", "term two", "term three"]
     **Purpose:** handle 401/429/5xx; retry/backoff; structured logs (metadata only).
     **Pointers:** OpenAI error reference.
 
-19. **/docs/troubleshooting/revalidation-failures.md**
+19. [x] **/docs/troubleshooting/revalidation-failures.md**
     **Purpose:** inspect GitHub webhook delivery; redelivery; secrets.
     **Pointers:** GitHub webhooks overview + creating webhooks.
 
-20. **/docs/faq/wizard-vs-examples.md**
+20. [x] **/docs/faq/wizard-vs-examples.md**
     **Purpose:** when to use Wizard vs hand‑coded examples; link to separate app docs.
 
-21. **/docs/faq/providers-and-costs.md**
+21. [x] **/docs/faq/providers-and-costs.md**
     **Purpose:** cost basics; rate limits; when to switch providers.
     **Pointers:** OpenAI, Anthropic, Azure OpenAI docs.
 
-22. **/docs/faq/vscode-and-extensions.md**
+22. [x] **/docs/faq/vscode-and-extensions.md**
     **Purpose:** common questions about VS Code settings, MDX preview, spell‑check, and markdown linting.
     **Audience:** all contributors.
     **Pointers:** VS Code docs; recommended extensions pages.
 
-23. **/docs/troubleshooting/github-actions-ci.md**
+23. [x] **/docs/troubleshooting/github-actions-ci.md**
     **Purpose:** fix failing manifest builds in CI, Node version mismatches, missing deps.
     **Audience:** developer.
     **Pointers:** GitHub Actions docs; Node setup‑node action.
