@@ -271,35 +271,35 @@ search_keywords: ["term one", "term two", "term three"]
 
 ### 7) Safety & Responsible AI (4)
 
-36. **/docs/safety/overview.md**
+36. [x] **/docs/safety/overview.md**
     **Purpose:** what you block, log, escalate; abuse cases.
 
-37. **/docs/safety/prompt-safety.md** *(expand seed with examples)*
+37. [x] **/docs/safety/prompt-safety.md** *(expand seed with examples)*
 
-38. **/docs/safety/output-filters.md** *(expand seed with classifier/rules examples)*
+38. [x] **/docs/safety/output-filters.md** *(expand seed with classifier/rules examples)*
 
-39. **/docs/safety/human-in-the-loop.md** *(expand seed with approval gates)*
+39. [x] **/docs/safety/human-in-the-loop.md** *(expand seed with approval gates)*
 
 ### 8) Accessibility & Performance (5)
 
-40. **/docs/operations/accessibility.md**
+40. [x] **/docs/operations/accessibility.md**
     **Purpose:** WCAG 2.2 & ARIA practices.
     **Success:** keyboard focus order; landmarks; contrast checklist.
     **Pointers:** WCAG 2.2 quick ref; WAI‑ARIA APG.
 
-41. **/docs/operations/aria-recipes.md**
+41. [x] **/docs/operations/aria-recipes.md**
     **Purpose:** ARIA patterns for Tabs/Dialogs/Toasts.
     **Pointers:** WAI‑ARIA Authoring Practices.
 
-42. **/docs/operations/performance-principles.md**
+42. [x] **/docs/operations/performance-principles.md**
     **Purpose:** keep docs list <~2s; caching/streaming.
     **Pointers:** ISR docs; ETag `If‑None‑Match` conditioning.
 
-43. **/docs/operations/caching-http-basics.md**
+43. [x] **/docs/operations/caching-http-basics.md**
     **Purpose:** strong vs weak validators; ETag vs Last‑Modified; `Cache-Control`.
     **Pointers:** MDN HTTP caching primers.
 
-44. **/docs/operations/deploy-vercel.md**
+44. [x] **/docs/operations/deploy-vercel.md**
     **Purpose:** deploy static docs site (or app) to Vercel with ISR enabled; env var tips.
     **Audience:** developer, admin.
     **Success:** project import, build settings, environment setup, custom domains.

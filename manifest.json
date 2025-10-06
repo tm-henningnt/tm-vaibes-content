@@ -1,8 +1,8 @@
 {
   "$schema": "./tools/schemas/manifest.schema.json",
   "version": "2025.10.0",
-  "generated_at": "2025-10-06T20:37:08.467Z",
-  "hash": "dd07c28716ab5628",
+  "generated_at": "2025-10-06T20:40:19.294Z",
+  "hash": "c7e463093838af59",
   "docs": [
     {
       "path": "/docs/index.md",
@@ -58,6 +58,119 @@
       "last_reviewed": "2025-10-06T00:00:00.000Z",
       "search_keywords": [],
       "related": []
+    },
+    {
+      "path": "/docs/faq/index.md",
+      "title": "FAQ",
+      "description": "Frequently asked questions about the docs and wizard.",
+      "audience_levels": [
+        "beginner",
+        "intermediate"
+      ],
+      "personas": [
+        "non-technical",
+        "PM",
+        "developer",
+        "admin"
+      ],
+      "categories": [
+        "faq"
+      ],
+      "tags": [
+        "questions",
+        "help"
+      ],
+      "min_read_minutes": 5,
+      "last_reviewed": "2025-10-06T00:00:00.000Z",
+      "search_keywords": [],
+      "related": []
+    },
+    {
+      "path": "/docs/faq/providers-and-costs.md",
+      "title": "Providers and Costs: Basics",
+      "description": "Understand cost drivers, rate limits, and when to switch providers.",
+      "audience_levels": [
+        "beginner",
+        "intermediate"
+      ],
+      "personas": [
+        "PM",
+        "developer",
+        "admin"
+      ],
+      "categories": [
+        "faq"
+      ],
+      "tags": [],
+      "min_read_minutes": 5,
+      "last_reviewed": "2025-10-06T00:00:00.000Z",
+      "search_keywords": [
+        "pricing",
+        "rate limits",
+        "token costs",
+        "provider selection"
+      ],
+      "related": [
+        "/docs/providers/compare-providers.md",
+        "/docs/patterns/cost-controls.md"
+      ]
+    },
+    {
+      "path": "/docs/faq/vscode-and-extensions.md",
+      "title": "VS Code and Extensions: FAQ",
+      "description": "Answers to common questions about settings, MDX preview, spell-check, and frontmatter.",
+      "audience_levels": [
+        "beginner",
+        "intermediate"
+      ],
+      "personas": [
+        "all contributors"
+      ],
+      "categories": [
+        "faq"
+      ],
+      "tags": [],
+      "min_read_minutes": 4,
+      "last_reviewed": "2025-10-06T00:00:00.000Z",
+      "search_keywords": [
+        "vscode",
+        "mdx",
+        "markdown",
+        "frontmatter",
+        "spell checker"
+      ],
+      "related": [
+        "/docs/operations/vscode-setup-and-extensions.md"
+      ]
+    },
+    {
+      "path": "/docs/faq/wizard-vs-examples.md",
+      "title": "Wizard vs Hand‑Coded Examples",
+      "description": "When to use the Wizard for speed vs hand-coded examples for control.",
+      "audience_levels": [
+        "beginner",
+        "intermediate"
+      ],
+      "personas": [
+        "PM",
+        "developer"
+      ],
+      "categories": [
+        "faq"
+      ],
+      "tags": [],
+      "min_read_minutes": 3,
+      "last_reviewed": "2025-10-06T00:00:00.000Z",
+      "search_keywords": [
+        "wizard",
+        "examples",
+        "tradeoffs",
+        "speed vs control"
+      ],
+      "related": [
+        "/docs/wizard/overview.md",
+        "/docs/quickstarts/js-server-route.md"
+      ]
     },
     {
       "path": "/docs/concepts/genai-vs-agentic.md",
@@ -298,119 +411,6 @@
       ]
     },
     {
-      "path": "/docs/faq/index.md",
-      "title": "FAQ",
-      "description": "Frequently asked questions about the docs and wizard.",
-      "audience_levels": [
-        "beginner",
-        "intermediate"
-      ],
-      "personas": [
-        "non-technical",
-        "PM",
-        "developer",
-        "admin"
-      ],
-      "categories": [
-        "faq"
-      ],
-      "tags": [
-        "questions",
-        "help"
-      ],
-      "min_read_minutes": 5,
-      "last_reviewed": "2025-10-06T00:00:00.000Z",
-      "search_keywords": [],
-      "related": []
-    },
-    {
-      "path": "/docs/faq/providers-and-costs.md",
-      "title": "Providers and Costs: Basics",
-      "description": "Understand cost drivers, rate limits, and when to switch providers.",
-      "audience_levels": [
-        "beginner",
-        "intermediate"
-      ],
-      "personas": [
-        "PM",
-        "developer",
-        "admin"
-      ],
-      "categories": [
-        "faq"
-      ],
-      "tags": [],
-      "min_read_minutes": 5,
-      "last_reviewed": "2025-10-06T00:00:00.000Z",
-      "search_keywords": [
-        "pricing",
-        "rate limits",
-        "token costs",
-        "provider selection"
-      ],
-      "related": [
-        "/docs/providers/compare-providers.md",
-        "/docs/patterns/cost-controls.md"
-      ]
-    },
-    {
-      "path": "/docs/faq/vscode-and-extensions.md",
-      "title": "VS Code and Extensions: FAQ",
-      "description": "Answers to common questions about settings, MDX preview, spell-check, and frontmatter.",
-      "audience_levels": [
-        "beginner",
-        "intermediate"
-      ],
-      "personas": [
-        "all contributors"
-      ],
-      "categories": [
-        "faq"
-      ],
-      "tags": [],
-      "min_read_minutes": 4,
-      "last_reviewed": "2025-10-06T00:00:00.000Z",
-      "search_keywords": [
-        "vscode",
-        "mdx",
-        "markdown",
-        "frontmatter",
-        "spell checker"
-      ],
-      "related": [
-        "/docs/operations/vscode-setup-and-extensions.md"
-      ]
-    },
-    {
-      "path": "/docs/faq/wizard-vs-examples.md",
-      "title": "Wizard vs Hand‑Coded Examples",
-      "description": "When to use the Wizard for speed vs hand-coded examples for control.",
-      "audience_levels": [
-        "beginner",
-        "intermediate"
-      ],
-      "personas": [
-        "PM",
-        "developer"
-      ],
-      "categories": [
-        "faq"
-      ],
-      "tags": [],
-      "min_read_minutes": 3,
-      "last_reviewed": "2025-10-06T00:00:00.000Z",
-      "search_keywords": [
-        "wizard",
-        "examples",
-        "tradeoffs",
-        "speed vs control"
-      ],
-      "related": [
-        "/docs/wizard/overview.md",
-        "/docs/quickstarts/js-server-route.md"
-      ]
-    },
-    {
       "path": "/docs/how-to/duplicate-a-session.md",
       "title": "How to duplicate a wizard session",
       "description": "Create a copy of a finished or in-progress session without overwriting the original.",
@@ -469,69 +469,125 @@
       ]
     },
     {
-      "path": "/docs/providers/compare-providers.md",
-      "title": "Compare Providers: Request Shapes and Tradeoffs",
-      "description": "A neutral comparison of common request/response patterns, limits, and typical costs.",
-      "audience_levels": [
-        "beginner",
-        "intermediate"
-      ],
-      "personas": [
-        "PM",
-        "developer",
-        "admin"
-      ],
-      "categories": [
-        "providers",
-        "concepts",
-        "reference"
-      ],
-      "tags": [],
-      "min_read_minutes": 8,
-      "last_reviewed": "2025-10-06T00:00:00.000Z",
-      "search_keywords": [
-        "compare providers",
-        "openai vs anthropic",
-        "azure openai",
-        "request response"
-      ],
-      "related": [
-        "/docs/providers/openai/auth-models-limits.md",
-        "/docs/providers/anthropic/overview.md",
-        "/docs/providers/azure-openai/setup.md"
-      ]
-    },
-    {
-      "path": "/docs/providers/security-best-practices.md",
-      "title": "Security Best Practices for AI Providers",
-      "description": "Handle keys, proxies, rotation, and logging safely across environments.",
+      "path": "/docs/patterns/a2a-agent-to-agent.md",
+      "title": "Agent‑to‑Agent (A2A) Collaboration",
+      "description": "Patterns for agents to hand off tasks, negotiate, and escalate to humans.",
       "audience_levels": [
         "intermediate",
         "advanced"
       ],
       "personas": [
         "developer",
-        "admin"
+        "PM"
       ],
       "categories": [
-        "providers",
-        "operations",
-        "safety"
+        "patterns"
       ],
       "tags": [],
       "min_read_minutes": 9,
       "last_reviewed": "2025-10-06T00:00:00.000Z",
       "search_keywords": [
-        "api key handling",
-        "secrets",
-        "key rotation",
-        "proxy",
-        "redaction"
+        "a2a",
+        "multi agent",
+        "handoff",
+        "negotiation",
+        "escalation"
       ],
       "related": [
-        "/docs/providers/openai/auth-models-limits.md",
-        "/docs/operations/env-and-healthcheck.md",
-        "/docs/troubleshooting/provider-errors.md"
+        "/docs/patterns/agentic/router-multi-tool.md",
+        "/docs/patterns/agentic/reflection-self-heal.md"
+      ]
+    },
+    {
+      "path": "/docs/patterns/cost-controls.md",
+      "title": "Cost Controls for AI Apps",
+      "description": "Apply max tokens, streaming, truncation, caching hints, and retries to manage spend.",
+      "audience_levels": [
+        "intermediate",
+        "advanced"
+      ],
+      "personas": [
+        "developer",
+        "PM",
+        "admin"
+      ],
+      "categories": [
+        "patterns"
+      ],
+      "tags": [],
+      "min_read_minutes": 8,
+      "last_reviewed": "2025-10-06T00:00:00.000Z",
+      "search_keywords": [
+        "cost",
+        "tokens",
+        "streaming",
+        "truncation",
+        "cache"
+      ],
+      "related": [
+        "/docs/evaluations/latency-cost-tradeoffs.md",
+        "/docs/patterns/workflows/batch-processing.md"
+      ]
+    },
+    {
+      "path": "/docs/patterns/observability-context.md",
+      "title": "Observability for AI Context",
+      "description": "Log the right metadata (not raw prompts) with correlation IDs and PII avoidance.",
+      "audience_levels": [
+        "intermediate"
+      ],
+      "personas": [
+        "developer",
+        "PM"
+      ],
+      "categories": [
+        "patterns",
+        "operations"
+      ],
+      "tags": [],
+      "min_read_minutes": 7,
+      "last_reviewed": "2025-10-06T00:00:00.000Z",
+      "search_keywords": [
+        "observability",
+        "metadata",
+        "pii",
+        "correlation id",
+        "logs"
+      ],
+      "related": [
+        "/docs/operations/observability.md",
+        "/docs/providers/security-best-practices.md"
+      ]
+    },
+    {
+      "path": "/docs/operations/accessibility.md",
+      "title": "Accessibility: Principles",
+      "description": "Apply WCAG 2.2 and ARIA basics: keyboard order, landmarks, and contrast.",
+      "audience_levels": [
+        "beginner",
+        "intermediate"
+      ],
+      "personas": [
+        "developer",
+        "PM"
+      ],
+      "categories": [
+        "operations",
+        "how-to"
+      ],
+      "tags": [],
+      "min_read_minutes": 6,
+      "last_reviewed": "2025-10-06T00:00:00.000Z",
+      "search_keywords": [
+        "accessibility",
+        "wcag",
+        "aria",
+        "contrast",
+        "keyboard"
+      ],
+      "related": [
+        "/docs/operations/aria-recipes.md",
+        "/docs/operations/performance-principles.md"
       ]
     },
     {
@@ -564,6 +620,34 @@
       ]
     },
     {
+      "path": "/docs/operations/aria-recipes.md",
+      "title": "ARIA Recipes: Tabs, Dialogs, Toasts",
+      "description": "Practical ARIA patterns for common UI elements with focus management.",
+      "audience_levels": [
+        "intermediate"
+      ],
+      "personas": [
+        "developer"
+      ],
+      "categories": [
+        "operations",
+        "how-to"
+      ],
+      "tags": [],
+      "min_read_minutes": 8,
+      "last_reviewed": "2025-10-06T00:00:00.000Z",
+      "search_keywords": [
+        "aria",
+        "tabs",
+        "dialog",
+        "toast",
+        "focus management"
+      ],
+      "related": [
+        "/docs/operations/accessibility.md"
+      ]
+    },
+    {
       "path": "/docs/operations/backups-retention.md",
       "title": "Operations: Backups & Retention",
       "description": "Soft-deletes, archival flags, and reporting policies for sessions.",
@@ -586,6 +670,36 @@
       "last_reviewed": "2025-10-06T00:00:00.000Z",
       "search_keywords": [],
       "related": []
+    },
+    {
+      "path": "/docs/operations/caching-http-basics.md",
+      "title": "HTTP Caching Basics",
+      "description": "Understand strong/weak validators, ETag vs Last-Modified, and Cache-Control.",
+      "audience_levels": [
+        "beginner",
+        "intermediate"
+      ],
+      "personas": [
+        "developer",
+        "PM"
+      ],
+      "categories": [
+        "operations",
+        "concepts"
+      ],
+      "tags": [],
+      "min_read_minutes": 7,
+      "last_reviewed": "2025-10-06T00:00:00.000Z",
+      "search_keywords": [
+        "etag",
+        "last-modified",
+        "cache-control",
+        "conditional request"
+      ],
+      "related": [
+        "/docs/operations/performance-principles.md",
+        "/docs/operations/content-sync-deep-dive.md"
+      ]
     },
     {
       "path": "/docs/operations/content-sync-deep-dive.md",
@@ -643,6 +757,36 @@
       "last_reviewed": "2025-10-06T00:00:00.000Z",
       "search_keywords": [],
       "related": []
+    },
+    {
+      "path": "/docs/operations/deploy-vercel.md",
+      "title": "Deploy to Vercel (ISR Enabled)",
+      "description": "Deploy the docs/app to Vercel with ISR and environment variables configured.",
+      "audience_levels": [
+        "beginner",
+        "intermediate"
+      ],
+      "personas": [
+        "developer",
+        "admin"
+      ],
+      "categories": [
+        "operations",
+        "how-to"
+      ],
+      "tags": [],
+      "min_read_minutes": 7,
+      "last_reviewed": "2025-10-06T00:00:00.000Z",
+      "search_keywords": [
+        "vercel",
+        "deploy",
+        "isr",
+        "environment variables"
+      ],
+      "related": [
+        "/docs/operations/content-sync-deep-dive.md",
+        "/docs/operations/performance-principles.md"
+      ]
     },
     {
       "path": "/docs/operations/entra-admin-guide.md",
@@ -841,6 +985,37 @@
       "related": []
     },
     {
+      "path": "/docs/operations/performance-principles.md",
+      "title": "Performance Principles",
+      "description": "Keep pages responsive with caching, streaming, and smart fetch strategies.",
+      "audience_levels": [
+        "beginner",
+        "intermediate"
+      ],
+      "personas": [
+        "developer",
+        "PM"
+      ],
+      "categories": [
+        "operations",
+        "concepts"
+      ],
+      "tags": [],
+      "min_read_minutes": 6,
+      "last_reviewed": "2025-10-06T00:00:00.000Z",
+      "search_keywords": [
+        "performance",
+        "streaming",
+        "caching",
+        "etag",
+        "isr"
+      ],
+      "related": [
+        "/docs/operations/caching-http-basics.md",
+        "/docs/operations/deploy-vercel.md"
+      ]
+    },
+    {
       "path": "/docs/operations/vscode-setup-and-extensions.md",
       "title": "VS Code Setup and Extensions",
       "description": "Recommended VS Code settings and extensions for editing Markdown/MDX and frontmatter.",
@@ -869,97 +1044,6 @@
       "related": [
         "/docs/faq/vscode-and-extensions.md",
         "/docs/reference/components.md"
-      ]
-    },
-    {
-      "path": "/docs/patterns/a2a-agent-to-agent.md",
-      "title": "Agent‑to‑Agent (A2A) Collaboration",
-      "description": "Patterns for agents to hand off tasks, negotiate, and escalate to humans.",
-      "audience_levels": [
-        "intermediate",
-        "advanced"
-      ],
-      "personas": [
-        "developer",
-        "PM"
-      ],
-      "categories": [
-        "patterns"
-      ],
-      "tags": [],
-      "min_read_minutes": 9,
-      "last_reviewed": "2025-10-06T00:00:00.000Z",
-      "search_keywords": [
-        "a2a",
-        "multi agent",
-        "handoff",
-        "negotiation",
-        "escalation"
-      ],
-      "related": [
-        "/docs/patterns/agentic/router-multi-tool.md",
-        "/docs/patterns/agentic/reflection-self-heal.md"
-      ]
-    },
-    {
-      "path": "/docs/patterns/cost-controls.md",
-      "title": "Cost Controls for AI Apps",
-      "description": "Apply max tokens, streaming, truncation, caching hints, and retries to manage spend.",
-      "audience_levels": [
-        "intermediate",
-        "advanced"
-      ],
-      "personas": [
-        "developer",
-        "PM",
-        "admin"
-      ],
-      "categories": [
-        "patterns"
-      ],
-      "tags": [],
-      "min_read_minutes": 8,
-      "last_reviewed": "2025-10-06T00:00:00.000Z",
-      "search_keywords": [
-        "cost",
-        "tokens",
-        "streaming",
-        "truncation",
-        "cache"
-      ],
-      "related": [
-        "/docs/evaluations/latency-cost-tradeoffs.md",
-        "/docs/patterns/workflows/batch-processing.md"
-      ]
-    },
-    {
-      "path": "/docs/patterns/observability-context.md",
-      "title": "Observability for AI Context",
-      "description": "Log the right metadata (not raw prompts) with correlation IDs and PII avoidance.",
-      "audience_levels": [
-        "intermediate"
-      ],
-      "personas": [
-        "developer",
-        "PM"
-      ],
-      "categories": [
-        "patterns",
-        "operations"
-      ],
-      "tags": [],
-      "min_read_minutes": 7,
-      "last_reviewed": "2025-10-06T00:00:00.000Z",
-      "search_keywords": [
-        "observability",
-        "metadata",
-        "pii",
-        "correlation id",
-        "logs"
-      ],
-      "related": [
-        "/docs/operations/observability.md",
-        "/docs/providers/security-best-practices.md"
       ]
     },
     {
@@ -1091,6 +1175,72 @@
         "/docs/quickstarts/python-fastapi.md",
         "/docs/wizard/overview.md",
         "/docs/how-to/pick-your-path.md"
+      ]
+    },
+    {
+      "path": "/docs/providers/compare-providers.md",
+      "title": "Compare Providers: Request Shapes and Tradeoffs",
+      "description": "A neutral comparison of common request/response patterns, limits, and typical costs.",
+      "audience_levels": [
+        "beginner",
+        "intermediate"
+      ],
+      "personas": [
+        "PM",
+        "developer",
+        "admin"
+      ],
+      "categories": [
+        "providers",
+        "concepts",
+        "reference"
+      ],
+      "tags": [],
+      "min_read_minutes": 8,
+      "last_reviewed": "2025-10-06T00:00:00.000Z",
+      "search_keywords": [
+        "compare providers",
+        "openai vs anthropic",
+        "azure openai",
+        "request response"
+      ],
+      "related": [
+        "/docs/providers/openai/auth-models-limits.md",
+        "/docs/providers/anthropic/overview.md",
+        "/docs/providers/azure-openai/setup.md"
+      ]
+    },
+    {
+      "path": "/docs/providers/security-best-practices.md",
+      "title": "Security Best Practices for AI Providers",
+      "description": "Handle keys, proxies, rotation, and logging safely across environments.",
+      "audience_levels": [
+        "intermediate",
+        "advanced"
+      ],
+      "personas": [
+        "developer",
+        "admin"
+      ],
+      "categories": [
+        "providers",
+        "operations",
+        "safety"
+      ],
+      "tags": [],
+      "min_read_minutes": 9,
+      "last_reviewed": "2025-10-06T00:00:00.000Z",
+      "search_keywords": [
+        "api key handling",
+        "secrets",
+        "key rotation",
+        "proxy",
+        "redaction"
+      ],
+      "related": [
+        "/docs/providers/openai/auth-models-limits.md",
+        "/docs/operations/env-and-healthcheck.md",
+        "/docs/troubleshooting/provider-errors.md"
       ]
     },
     {
@@ -1315,6 +1465,130 @@
       ]
     },
     {
+      "path": "/docs/safety/human-in-the-loop.md",
+      "title": "Human-in-the-Loop",
+      "description": "Introduce approval gates for sensitive actions and define reviewer workflows.",
+      "audience_levels": [
+        "intermediate",
+        "advanced"
+      ],
+      "personas": [
+        "developer",
+        "PM",
+        "admin"
+      ],
+      "categories": [
+        "safety",
+        "operations"
+      ],
+      "tags": [],
+      "min_read_minutes": 7,
+      "last_reviewed": "2025-10-06T00:00:00.000Z",
+      "search_keywords": [
+        "human in the loop",
+        "approval",
+        "review",
+        "gate"
+      ],
+      "related": [
+        "/docs/safety/overview.md",
+        "/docs/safety/output-filters.md"
+      ]
+    },
+    {
+      "path": "/docs/safety/output-filters.md",
+      "title": "Output Filters",
+      "description": "Add classifier/rule-based filters to block or redact unsafe outputs before they reach users.",
+      "audience_levels": [
+        "intermediate",
+        "advanced"
+      ],
+      "personas": [
+        "developer",
+        "admin"
+      ],
+      "categories": [
+        "safety",
+        "operations"
+      ],
+      "tags": [],
+      "min_read_minutes": 8,
+      "last_reviewed": "2025-10-06T00:00:00.000Z",
+      "search_keywords": [
+        "safety filter",
+        "classifier",
+        "rules",
+        "redaction"
+      ],
+      "related": [
+        "/docs/safety/overview.md",
+        "/docs/safety/prompt-safety.md",
+        "/docs/safety/human-in-the-loop.md"
+      ]
+    },
+    {
+      "path": "/docs/safety/overview.md",
+      "title": "Safety & Responsible AI: Overview",
+      "description": "Define what we block, what we log, when we escalate, and how we mitigate abuse cases.",
+      "audience_levels": [
+        "intermediate",
+        "advanced"
+      ],
+      "personas": [
+        "developer",
+        "PM",
+        "admin"
+      ],
+      "categories": [
+        "safety",
+        "concepts"
+      ],
+      "tags": [],
+      "min_read_minutes": 8,
+      "last_reviewed": "2025-10-06T00:00:00.000Z",
+      "search_keywords": [
+        "safety",
+        "responsible ai",
+        "policy",
+        "logging",
+        "escalation"
+      ],
+      "related": [
+        "/docs/safety/prompt-safety.md",
+        "/docs/safety/output-filters.md",
+        "/docs/safety/human-in-the-loop.md"
+      ]
+    },
+    {
+      "path": "/docs/safety/prompt-safety.md",
+      "title": "Prompt Safety",
+      "description": "Write prompts that minimize risk: scope clearly, avoid data leakage, and instruct models to refuse unsafe tasks.",
+      "audience_levels": [
+        "intermediate"
+      ],
+      "personas": [
+        "developer",
+        "PM"
+      ],
+      "categories": [
+        "safety",
+        "how-to"
+      ],
+      "tags": [],
+      "min_read_minutes": 7,
+      "last_reviewed": "2025-10-06T00:00:00.000Z",
+      "search_keywords": [
+        "prompt safety",
+        "guardrails",
+        "refusal",
+        "scope"
+      ],
+      "related": [
+        "/docs/safety/overview.md",
+        "/docs/safety/output-filters.md"
+      ]
+    },
+    {
       "path": "/docs/wizard/overview.md",
       "title": "Project Initiator Wizard: Overview",
       "description": "Walkthrough of the Wizard flow (Vision & Audience → Solution Shape → Launch Readiness → Review & Outputs) and how it stores sessions.",
@@ -1371,185 +1645,61 @@
       ]
     },
     {
-      "path": "/docs/providers/anthropic/overview.md",
-      "title": "Anthropic: Overview and Setup",
-      "description": "Configure Anthropic, auth headers, model notes, basic tool use, and common errors.",
+      "path": "/docs/patterns/rag/basics.md",
+      "title": "RAG Basics",
+      "description": "Minimal retrieval-augmented generation: chunking, indexing, and grounded citations.",
       "audience_levels": [
         "intermediate"
       ],
       "personas": [
         "developer",
-        "admin"
+        "data-analyst"
       ],
       "categories": [
-        "providers",
-        "how-to",
-        "reference"
+        "patterns"
       ],
       "tags": [],
-      "min_read_minutes": 7,
+      "min_read_minutes": 9,
       "last_reviewed": "2025-10-06T00:00:00.000Z",
       "search_keywords": [
-        "anthropic",
-        "claude",
-        "auth header",
-        "tool use",
-        "safety"
+        "rag",
+        "chunking",
+        "embeddings",
+        "citations",
+        "grounding"
       ],
       "related": [
-        "/docs/providers/compare-providers.md",
-        "/docs/troubleshooting/provider-errors.md"
+        "/docs/patterns/rag/faq-rag.md",
+        "/docs/evaluations/grounded-qa-evals.md"
       ]
     },
     {
-      "path": "/docs/providers/openai/auth-models-limits.md",
-      "title": "OpenAI: Auth, Models, and Limits",
-      "description": "Authenticate safely, map environment variables, and choose a sensible model for your use case.",
+      "path": "/docs/patterns/rag/faq-rag.md",
+      "title": "FAQ RAG Pattern",
+      "description": "Build a FAQ-style RAG with a simple eval hook to keep answers grounded.",
       "audience_levels": [
-        "beginner",
         "intermediate"
       ],
       "personas": [
         "developer",
-        "admin"
+        "PM"
       ],
       "categories": [
-        "providers",
-        "how-to",
-        "reference"
-      ],
-      "tags": [],
-      "min_read_minutes": 8,
-      "last_reviewed": "2025-10-06T00:00:00.000Z",
-      "search_keywords": [
-        "openai auth",
-        "model selection",
-        "rate limits",
-        "server-side keys"
-      ],
-      "related": [
-        "/docs/providers/security-best-practices.md",
-        "/docs/quickstarts/js-server-route.md",
-        "/docs/quickstarts/python-fastapi.md"
-      ]
-    },
-    {
-      "path": "/docs/providers/openai/chatgpt-productivity.md",
-      "title": "ChatGPT for Productivity: Safe and Effective Use",
-      "description": "Practical prompts, usage patterns, and safety tips to get reliable value from ChatGPT.",
-      "audience_levels": [
-        "beginner",
-        "intermediate"
-      ],
-      "personas": [
-        "non-technical",
-        "PM",
-        "developer"
-      ],
-      "categories": [
-        "providers",
-        "how-to"
+        "patterns"
       ],
       "tags": [],
       "min_read_minutes": 7,
       "last_reviewed": "2025-10-06T00:00:00.000Z",
       "search_keywords": [
-        "chatgpt",
-        "prompting",
-        "productivity",
-        "guardrails",
-        "templates"
+        "faq rag",
+        "grounded qa",
+        "eval hook",
+        "faithfulness"
       ],
       "related": [
-        "/docs/how-to/pick-your-path.md",
-        "/docs/providers/openai/auth-models-limits.md",
-        "/docs/troubleshooting/provider-errors.md"
-      ]
-    },
-    {
-      "path": "/docs/providers/openai/overview.md",
-      "title": "Provider: OpenAI",
-      "description": "How to configure OpenAI as a provider in the app's server-side abstraction layer.",
-      "audience_levels": [
-        "beginner",
-        "intermediate"
-      ],
-      "personas": [
-        "developer",
-        "admin"
-      ],
-      "categories": [
-        "providers"
-      ],
-      "tags": [
-        "openai",
-        "provider",
-        "config"
-      ],
-      "min_read_minutes": 7,
-      "last_reviewed": "2025-10-06T00:00:00.000Z",
-      "search_keywords": [],
-      "related": []
-    },
-    {
-      "path": "/docs/providers/azure-openai/migrate-from-openai.md",
-      "title": "Migrate from OpenAI to Azure OpenAI",
-      "description": "Map base URL, api-version, and deployment names; avoid common pitfalls.",
-      "audience_levels": [
-        "intermediate"
-      ],
-      "personas": [
-        "developer"
-      ],
-      "categories": [
-        "providers",
-        "how-to",
-        "troubleshooting"
-      ],
-      "tags": [],
-      "min_read_minutes": 7,
-      "last_reviewed": "2025-10-06T00:00:00.000Z",
-      "search_keywords": [
-        "azure openai migrate",
-        "deployment vs model",
-        "api-version",
-        "base url"
-      ],
-      "related": [
-        "/docs/providers/azure-openai/setup.md",
-        "/docs/troubleshooting/provider-errors.md"
-      ]
-    },
-    {
-      "path": "/docs/providers/azure-openai/setup.md",
-      "title": "Azure OpenAI: Setup and First Call",
-      "description": "Create an Azure OpenAI resource and deployment, then call it from Node and Python.",
-      "audience_levels": [
-        "beginner",
-        "intermediate"
-      ],
-      "personas": [
-        "admin",
-        "developer"
-      ],
-      "categories": [
-        "providers",
-        "how-to"
-      ],
-      "tags": [],
-      "min_read_minutes": 10,
-      "last_reviewed": "2025-10-06T00:00:00.000Z",
-      "search_keywords": [
-        "azure openai",
-        "deployment",
-        "api-version",
-        "endpoint",
-        "node",
-        "python"
-      ],
-      "related": [
-        "/docs/providers/azure-openai/migrate-from-openai.md",
-        "/docs/providers/compare-providers.md"
+        "/docs/patterns/rag/basics.md",
+        "/docs/evaluations/grounded-qa-evals.md",
+        "/docs/evaluations/offline-batch-evals.md"
       ]
     },
     {
@@ -1699,62 +1849,186 @@
       ]
     },
     {
-      "path": "/docs/patterns/rag/basics.md",
-      "title": "RAG Basics",
-      "description": "Minimal retrieval-augmented generation: chunking, indexing, and grounded citations.",
+      "path": "/docs/providers/azure-openai/migrate-from-openai.md",
+      "title": "Migrate from OpenAI to Azure OpenAI",
+      "description": "Map base URL, api-version, and deployment names; avoid common pitfalls.",
       "audience_levels": [
         "intermediate"
       ],
       "personas": [
-        "developer",
-        "data-analyst"
+        "developer"
       ],
       "categories": [
-        "patterns"
-      ],
-      "tags": [],
-      "min_read_minutes": 9,
-      "last_reviewed": "2025-10-06T00:00:00.000Z",
-      "search_keywords": [
-        "rag",
-        "chunking",
-        "embeddings",
-        "citations",
-        "grounding"
-      ],
-      "related": [
-        "/docs/patterns/rag/faq-rag.md",
-        "/docs/evaluations/grounded-qa-evals.md"
-      ]
-    },
-    {
-      "path": "/docs/patterns/rag/faq-rag.md",
-      "title": "FAQ RAG Pattern",
-      "description": "Build a FAQ-style RAG with a simple eval hook to keep answers grounded.",
-      "audience_levels": [
-        "intermediate"
-      ],
-      "personas": [
-        "developer",
-        "PM"
-      ],
-      "categories": [
-        "patterns"
+        "providers",
+        "how-to",
+        "troubleshooting"
       ],
       "tags": [],
       "min_read_minutes": 7,
       "last_reviewed": "2025-10-06T00:00:00.000Z",
       "search_keywords": [
-        "faq rag",
-        "grounded qa",
-        "eval hook",
-        "faithfulness"
+        "azure openai migrate",
+        "deployment vs model",
+        "api-version",
+        "base url"
       ],
       "related": [
-        "/docs/patterns/rag/basics.md",
-        "/docs/evaluations/grounded-qa-evals.md",
-        "/docs/evaluations/offline-batch-evals.md"
+        "/docs/providers/azure-openai/setup.md",
+        "/docs/troubleshooting/provider-errors.md"
       ]
+    },
+    {
+      "path": "/docs/providers/azure-openai/setup.md",
+      "title": "Azure OpenAI: Setup and First Call",
+      "description": "Create an Azure OpenAI resource and deployment, then call it from Node and Python.",
+      "audience_levels": [
+        "beginner",
+        "intermediate"
+      ],
+      "personas": [
+        "admin",
+        "developer"
+      ],
+      "categories": [
+        "providers",
+        "how-to"
+      ],
+      "tags": [],
+      "min_read_minutes": 10,
+      "last_reviewed": "2025-10-06T00:00:00.000Z",
+      "search_keywords": [
+        "azure openai",
+        "deployment",
+        "api-version",
+        "endpoint",
+        "node",
+        "python"
+      ],
+      "related": [
+        "/docs/providers/azure-openai/migrate-from-openai.md",
+        "/docs/providers/compare-providers.md"
+      ]
+    },
+    {
+      "path": "/docs/providers/anthropic/overview.md",
+      "title": "Anthropic: Overview and Setup",
+      "description": "Configure Anthropic, auth headers, model notes, basic tool use, and common errors.",
+      "audience_levels": [
+        "intermediate"
+      ],
+      "personas": [
+        "developer",
+        "admin"
+      ],
+      "categories": [
+        "providers",
+        "how-to",
+        "reference"
+      ],
+      "tags": [],
+      "min_read_minutes": 7,
+      "last_reviewed": "2025-10-06T00:00:00.000Z",
+      "search_keywords": [
+        "anthropic",
+        "claude",
+        "auth header",
+        "tool use",
+        "safety"
+      ],
+      "related": [
+        "/docs/providers/compare-providers.md",
+        "/docs/troubleshooting/provider-errors.md"
+      ]
+    },
+    {
+      "path": "/docs/providers/openai/auth-models-limits.md",
+      "title": "OpenAI: Auth, Models, and Limits",
+      "description": "Authenticate safely, map environment variables, and choose a sensible model for your use case.",
+      "audience_levels": [
+        "beginner",
+        "intermediate"
+      ],
+      "personas": [
+        "developer",
+        "admin"
+      ],
+      "categories": [
+        "providers",
+        "how-to",
+        "reference"
+      ],
+      "tags": [],
+      "min_read_minutes": 8,
+      "last_reviewed": "2025-10-06T00:00:00.000Z",
+      "search_keywords": [
+        "openai auth",
+        "model selection",
+        "rate limits",
+        "server-side keys"
+      ],
+      "related": [
+        "/docs/providers/security-best-practices.md",
+        "/docs/quickstarts/js-server-route.md",
+        "/docs/quickstarts/python-fastapi.md"
+      ]
+    },
+    {
+      "path": "/docs/providers/openai/chatgpt-productivity.md",
+      "title": "ChatGPT for Productivity: Safe and Effective Use",
+      "description": "Practical prompts, usage patterns, and safety tips to get reliable value from ChatGPT.",
+      "audience_levels": [
+        "beginner",
+        "intermediate"
+      ],
+      "personas": [
+        "non-technical",
+        "PM",
+        "developer"
+      ],
+      "categories": [
+        "providers",
+        "how-to"
+      ],
+      "tags": [],
+      "min_read_minutes": 7,
+      "last_reviewed": "2025-10-06T00:00:00.000Z",
+      "search_keywords": [
+        "chatgpt",
+        "prompting",
+        "productivity",
+        "guardrails",
+        "templates"
+      ],
+      "related": [
+        "/docs/how-to/pick-your-path.md",
+        "/docs/providers/openai/auth-models-limits.md",
+        "/docs/troubleshooting/provider-errors.md"
+      ]
+    },
+    {
+      "path": "/docs/providers/openai/overview.md",
+      "title": "Provider: OpenAI",
+      "description": "How to configure OpenAI as a provider in the app's server-side abstraction layer.",
+      "audience_levels": [
+        "beginner",
+        "intermediate"
+      ],
+      "personas": [
+        "developer",
+        "admin"
+      ],
+      "categories": [
+        "providers"
+      ],
+      "tags": [
+        "openai",
+        "provider",
+        "config"
+      ],
+      "min_read_minutes": 7,
+      "last_reviewed": "2025-10-06T00:00:00.000Z",
+      "search_keywords": [],
+      "related": []
     },
     {
       "path": "/docs/wizard/type-templates/internal-qa-copilot.mdx",
