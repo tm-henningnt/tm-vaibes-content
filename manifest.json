@@ -1,8 +1,8 @@
 {
   "$schema": "./tools/schemas/manifest.schema.json",
   "version": "2025.10.0",
-  "generated_at": "2025-10-06T20:16:18.319Z",
-  "hash": "ac141a9b09e9e255",
+  "generated_at": "2025-10-06T20:37:08.467Z",
+  "hash": "dd07c28716ab5628",
   "docs": [
     {
       "path": "/docs/index.md",
@@ -87,61 +87,214 @@
       "related": []
     },
     {
-      "path": "/docs/how-to/duplicate-a-session.md",
-      "title": "How to duplicate a wizard session",
-      "description": "Create a copy of a finished or in-progress session without overwriting the original.",
+      "path": "/docs/evaluations/data-platform-benchmarks.md",
+      "title": "Data Platform Benchmarks",
+      "description": "Measure end‑to‑end latency and cost when AI calls touch Fabric, Snowflake, Databricks, or Qlik Cloud.",
       "audience_levels": [
-        "beginner",
-        "intermediate"
+        "advanced"
       ],
       "personas": [
+        "developer",
         "PM",
-        "developer"
+        "admin"
       ],
       "categories": [
-        "how-to"
+        "evaluations"
       ],
-      "tags": [
-        "wizard",
-        "sessions",
-        "duplicate"
-      ],
-      "min_read_minutes": 5,
+      "tags": [],
+      "min_read_minutes": 10,
       "last_reviewed": "2025-10-06T00:00:00.000Z",
-      "search_keywords": [],
-      "related": []
+      "search_keywords": [
+        "benchmark",
+        "fabric",
+        "snowflake",
+        "databricks",
+        "qlik",
+        "latency"
+      ],
+      "related": [
+        "/docs/patterns/workflows/batch-processing.md",
+        "/docs/patterns/cost-controls.md"
+      ]
     },
     {
-      "path": "/docs/how-to/pick-your-path.md",
-      "title": "Pick Your Path",
-      "description": "A simple chooser to get beginners, PMs, and developers to value in 3 clicks.",
+      "path": "/docs/evaluations/grounded-qa-evals.md",
+      "title": "Grounded QA Evaluations",
+      "description": "Measure faithfulness and citation accuracy for RAG answers.",
       "audience_levels": [
-        "beginner",
-        "intermediate"
+        "intermediate",
+        "advanced"
       ],
       "personas": [
-        "non-technical",
-        "PM",
         "developer",
-        "data-analyst"
+        "PM"
       ],
       "categories": [
+        "evaluations"
+      ],
+      "tags": [],
+      "min_read_minutes": 8,
+      "last_reviewed": "2025-10-06T00:00:00.000Z",
+      "search_keywords": [
+        "faithfulness",
+        "citations",
+        "rag eval",
+        "grounded qa"
+      ],
+      "related": [
+        "/docs/patterns/rag/basics.md",
+        "/docs/patterns/rag/faq-rag.md"
+      ]
+    },
+    {
+      "path": "/docs/evaluations/latency-cost-tradeoffs.md",
+      "title": "Latency–Cost Tradeoffs",
+      "description": "Balance perceived speed with spend: model selection, streaming, caching, and truncation.",
+      "audience_levels": [
+        "intermediate",
+        "advanced"
+      ],
+      "personas": [
+        "developer",
+        "PM",
+        "admin"
+      ],
+      "categories": [
+        "evaluations",
+        "patterns"
+      ],
+      "tags": [],
+      "min_read_minutes": 8,
+      "last_reviewed": "2025-10-06T00:00:00.000Z",
+      "search_keywords": [
+        "latency",
+        "cost",
+        "streaming",
+        "model size",
+        "cache"
+      ],
+      "related": [
+        "/docs/patterns/cost-controls.md",
+        "/docs/quickstarts/js-server-route.md"
+      ]
+    },
+    {
+      "path": "/docs/evaluations/offline-batch-evals.md",
+      "title": "Offline Batch Evaluations",
+      "description": "Run nightly evals with diff reports; store metrics to detect regressions.",
+      "audience_levels": [
+        "intermediate",
+        "advanced"
+      ],
+      "personas": [
+        "developer",
+        "PM"
+      ],
+      "categories": [
+        "evaluations",
         "how-to"
       ],
       "tags": [],
-      "min_read_minutes": 3,
+      "min_read_minutes": 8,
       "last_reviewed": "2025-10-06T00:00:00.000Z",
       "search_keywords": [
-        "getting started",
-        "beginner",
-        "choose path",
-        "quickstart"
+        "batch evals",
+        "regressions",
+        "diff report",
+        "metrics"
       ],
       "related": [
-        "/docs/quickstarts/try-genai-in-10-min.md",
-        "/docs/quickstarts/js-server-route.md",
-        "/docs/quickstarts/python-fastapi.md",
-        "/docs/wizard/overview.md"
+        "/docs/patterns/workflows/batch-processing.md",
+        "/docs/evaluations/rubric-prompts.md"
+      ]
+    },
+    {
+      "path": "/docs/evaluations/overview.md",
+      "title": "Evaluations: Overview",
+      "description": "Define goals, golden sets, and a taxonomy for measuring correctness, helpfulness, safety, latency, and cost.",
+      "audience_levels": [
+        "intermediate"
+      ],
+      "personas": [
+        "developer",
+        "PM",
+        "admin"
+      ],
+      "categories": [
+        "evaluations",
+        "concepts"
+      ],
+      "tags": [],
+      "min_read_minutes": 7,
+      "last_reviewed": "2025-10-06T00:00:00.000Z",
+      "search_keywords": [
+        "evals",
+        "golden set",
+        "taxonomy",
+        "metrics"
+      ],
+      "related": [
+        "/docs/evaluations/offline-batch-evals.md",
+        "/docs/evaluations/rubric-prompts.md"
+      ]
+    },
+    {
+      "path": "/docs/evaluations/rubric-prompts.md",
+      "title": "Rubric Prompts",
+      "description": "Design rubrics for correctness, helpfulness, tone, and safety; improve inter‑rater agreement.",
+      "audience_levels": [
+        "intermediate"
+      ],
+      "personas": [
+        "developer",
+        "PM"
+      ],
+      "categories": [
+        "evaluations",
+        "how-to"
+      ],
+      "tags": [],
+      "min_read_minutes": 7,
+      "last_reviewed": "2025-10-06T00:00:00.000Z",
+      "search_keywords": [
+        "rubric",
+        "prompt",
+        "scoring",
+        "agreement"
+      ],
+      "related": [
+        "/docs/patterns/agentic/reflection-self-heal.md",
+        "/docs/evaluations/overview.md"
+      ]
+    },
+    {
+      "path": "/docs/evaluations/tool-use-evals.md",
+      "title": "Tool Use Evaluations",
+      "description": "Measure success rate per tool, categorize timeouts/errors, and find flaky behaviors.",
+      "audience_levels": [
+        "intermediate",
+        "advanced"
+      ],
+      "personas": [
+        "developer",
+        "PM"
+      ],
+      "categories": [
+        "evaluations"
+      ],
+      "tags": [],
+      "min_read_minutes": 7,
+      "last_reviewed": "2025-10-06T00:00:00.000Z",
+      "search_keywords": [
+        "tools",
+        "function calling",
+        "evals",
+        "timeouts",
+        "errors"
+      ],
+      "related": [
+        "/docs/patterns/tools/function-calling.md",
+        "/docs/patterns/agentic/router-multi-tool.md"
       ]
     },
     {
@@ -255,6 +408,64 @@
       "related": [
         "/docs/wizard/overview.md",
         "/docs/quickstarts/js-server-route.md"
+      ]
+    },
+    {
+      "path": "/docs/how-to/duplicate-a-session.md",
+      "title": "How to duplicate a wizard session",
+      "description": "Create a copy of a finished or in-progress session without overwriting the original.",
+      "audience_levels": [
+        "beginner",
+        "intermediate"
+      ],
+      "personas": [
+        "PM",
+        "developer"
+      ],
+      "categories": [
+        "how-to"
+      ],
+      "tags": [
+        "wizard",
+        "sessions",
+        "duplicate"
+      ],
+      "min_read_minutes": 5,
+      "last_reviewed": "2025-10-06T00:00:00.000Z",
+      "search_keywords": [],
+      "related": []
+    },
+    {
+      "path": "/docs/how-to/pick-your-path.md",
+      "title": "Pick Your Path",
+      "description": "A simple chooser to get beginners, PMs, and developers to value in 3 clicks.",
+      "audience_levels": [
+        "beginner",
+        "intermediate"
+      ],
+      "personas": [
+        "non-technical",
+        "PM",
+        "developer",
+        "data-analyst"
+      ],
+      "categories": [
+        "how-to"
+      ],
+      "tags": [],
+      "min_read_minutes": 3,
+      "last_reviewed": "2025-10-06T00:00:00.000Z",
+      "search_keywords": [
+        "getting started",
+        "beginner",
+        "choose path",
+        "quickstart"
+      ],
+      "related": [
+        "/docs/quickstarts/try-genai-in-10-min.md",
+        "/docs/quickstarts/js-server-route.md",
+        "/docs/quickstarts/python-fastapi.md",
+        "/docs/wizard/overview.md"
       ]
     },
     {
@@ -658,6 +869,97 @@
       "related": [
         "/docs/faq/vscode-and-extensions.md",
         "/docs/reference/components.md"
+      ]
+    },
+    {
+      "path": "/docs/patterns/a2a-agent-to-agent.md",
+      "title": "Agent‑to‑Agent (A2A) Collaboration",
+      "description": "Patterns for agents to hand off tasks, negotiate, and escalate to humans.",
+      "audience_levels": [
+        "intermediate",
+        "advanced"
+      ],
+      "personas": [
+        "developer",
+        "PM"
+      ],
+      "categories": [
+        "patterns"
+      ],
+      "tags": [],
+      "min_read_minutes": 9,
+      "last_reviewed": "2025-10-06T00:00:00.000Z",
+      "search_keywords": [
+        "a2a",
+        "multi agent",
+        "handoff",
+        "negotiation",
+        "escalation"
+      ],
+      "related": [
+        "/docs/patterns/agentic/router-multi-tool.md",
+        "/docs/patterns/agentic/reflection-self-heal.md"
+      ]
+    },
+    {
+      "path": "/docs/patterns/cost-controls.md",
+      "title": "Cost Controls for AI Apps",
+      "description": "Apply max tokens, streaming, truncation, caching hints, and retries to manage spend.",
+      "audience_levels": [
+        "intermediate",
+        "advanced"
+      ],
+      "personas": [
+        "developer",
+        "PM",
+        "admin"
+      ],
+      "categories": [
+        "patterns"
+      ],
+      "tags": [],
+      "min_read_minutes": 8,
+      "last_reviewed": "2025-10-06T00:00:00.000Z",
+      "search_keywords": [
+        "cost",
+        "tokens",
+        "streaming",
+        "truncation",
+        "cache"
+      ],
+      "related": [
+        "/docs/evaluations/latency-cost-tradeoffs.md",
+        "/docs/patterns/workflows/batch-processing.md"
+      ]
+    },
+    {
+      "path": "/docs/patterns/observability-context.md",
+      "title": "Observability for AI Context",
+      "description": "Log the right metadata (not raw prompts) with correlation IDs and PII avoidance.",
+      "audience_levels": [
+        "intermediate"
+      ],
+      "personas": [
+        "developer",
+        "PM"
+      ],
+      "categories": [
+        "patterns",
+        "operations"
+      ],
+      "tags": [],
+      "min_read_minutes": 7,
+      "last_reviewed": "2025-10-06T00:00:00.000Z",
+      "search_keywords": [
+        "observability",
+        "metadata",
+        "pii",
+        "correlation id",
+        "logs"
+      ],
+      "related": [
+        "/docs/operations/observability.md",
+        "/docs/providers/security-best-practices.md"
       ]
     },
     {
@@ -1069,31 +1371,6 @@
       ]
     },
     {
-      "path": "/docs/patterns/agentic/planner-executor.md",
-      "title": "Pattern: Planner–Executor",
-      "description": "A classic agent loop where a planner decides next steps and an executor performs them with tools.",
-      "audience_levels": [
-        "intermediate",
-        "advanced"
-      ],
-      "personas": [
-        "developer",
-        "data-analyst"
-      ],
-      "categories": [
-        "patterns"
-      ],
-      "tags": [
-        "agent",
-        "planner",
-        "tools"
-      ],
-      "min_read_minutes": 12,
-      "last_reviewed": "2025-10-06T00:00:00.000Z",
-      "search_keywords": [],
-      "related": []
-    },
-    {
       "path": "/docs/providers/anthropic/overview.md",
       "title": "Anthropic: Overview and Setup",
       "description": "Configure Anthropic, auth headers, model notes, basic tool use, and common errors.",
@@ -1273,6 +1550,210 @@
       "related": [
         "/docs/providers/azure-openai/migrate-from-openai.md",
         "/docs/providers/compare-providers.md"
+      ]
+    },
+    {
+      "path": "/docs/patterns/agentic/planner-executor.md",
+      "title": "Pattern: Planner–Executor",
+      "description": "A classic agent loop where a planner decides next steps and an executor performs them with tools.",
+      "audience_levels": [
+        "intermediate",
+        "advanced"
+      ],
+      "personas": [
+        "developer",
+        "data-analyst"
+      ],
+      "categories": [
+        "patterns"
+      ],
+      "tags": [
+        "agent",
+        "planner",
+        "tools"
+      ],
+      "min_read_minutes": 12,
+      "last_reviewed": "2025-10-06T00:00:00.000Z",
+      "search_keywords": [],
+      "related": []
+    },
+    {
+      "path": "/docs/patterns/agentic/reflection-self-heal.md",
+      "title": "Reflection Loop: Self‑Healing Outputs",
+      "description": "Use rubric prompts to critique model outputs, retry within a budget, and converge on quality.",
+      "audience_levels": [
+        "intermediate",
+        "advanced"
+      ],
+      "personas": [
+        "developer",
+        "PM"
+      ],
+      "categories": [
+        "patterns"
+      ],
+      "tags": [],
+      "min_read_minutes": 8,
+      "last_reviewed": "2025-10-06T00:00:00.000Z",
+      "search_keywords": [
+        "reflection",
+        "self critique",
+        "retry budget",
+        "rubric",
+        "quality"
+      ],
+      "related": [
+        "/docs/evaluations/rubric-prompts.md",
+        "/docs/patterns/cost-controls.md"
+      ]
+    },
+    {
+      "path": "/docs/patterns/agentic/router-multi-tool.md",
+      "title": "Router Agent: Multi‑Tool Selection",
+      "description": "Design a router that selects among tools based on user intent, with guardrails and timeouts.",
+      "audience_levels": [
+        "intermediate",
+        "advanced"
+      ],
+      "personas": [
+        "developer",
+        "PM"
+      ],
+      "categories": [
+        "patterns"
+      ],
+      "tags": [],
+      "min_read_minutes": 9,
+      "last_reviewed": "2025-10-06T00:00:00.000Z",
+      "search_keywords": [
+        "router agent",
+        "tool selection",
+        "multi tool",
+        "guardrails",
+        "timeouts"
+      ],
+      "related": [
+        "/docs/patterns/tools/function-calling.md",
+        "/docs/patterns/a2a-agent-to-agent.md",
+        "/docs/patterns/observability-context.md"
+      ]
+    },
+    {
+      "path": "/docs/patterns/tools/function-calling.md",
+      "title": "Cross‑Provider Tool/Function Calling",
+      "description": "Design schemas, ensure idempotency, and propagate errors consistently across providers.",
+      "audience_levels": [
+        "intermediate",
+        "advanced"
+      ],
+      "personas": [
+        "developer"
+      ],
+      "categories": [
+        "patterns"
+      ],
+      "tags": [],
+      "min_read_minutes": 10,
+      "last_reviewed": "2025-10-06T00:00:00.000Z",
+      "search_keywords": [
+        "function calling",
+        "tools",
+        "schema",
+        "errors",
+        "openai",
+        "anthropic"
+      ],
+      "related": [
+        "/docs/patterns/agentic/router-multi-tool.md",
+        "/docs/patterns/workflows/batch-processing.md"
+      ]
+    },
+    {
+      "path": "/docs/patterns/workflows/batch-processing.md",
+      "title": "Batch Processing Workflows",
+      "description": "Run offline batches with retries, cost caps, and resumability.",
+      "audience_levels": [
+        "intermediate",
+        "advanced"
+      ],
+      "personas": [
+        "developer",
+        "PM"
+      ],
+      "categories": [
+        "patterns"
+      ],
+      "tags": [],
+      "min_read_minutes": 8,
+      "last_reviewed": "2025-10-06T00:00:00.000Z",
+      "search_keywords": [
+        "batch",
+        "offline",
+        "retries",
+        "resume",
+        "cost cap"
+      ],
+      "related": [
+        "/docs/evaluations/offline-batch-evals.md",
+        "/docs/patterns/cost-controls.md"
+      ]
+    },
+    {
+      "path": "/docs/patterns/rag/basics.md",
+      "title": "RAG Basics",
+      "description": "Minimal retrieval-augmented generation: chunking, indexing, and grounded citations.",
+      "audience_levels": [
+        "intermediate"
+      ],
+      "personas": [
+        "developer",
+        "data-analyst"
+      ],
+      "categories": [
+        "patterns"
+      ],
+      "tags": [],
+      "min_read_minutes": 9,
+      "last_reviewed": "2025-10-06T00:00:00.000Z",
+      "search_keywords": [
+        "rag",
+        "chunking",
+        "embeddings",
+        "citations",
+        "grounding"
+      ],
+      "related": [
+        "/docs/patterns/rag/faq-rag.md",
+        "/docs/evaluations/grounded-qa-evals.md"
+      ]
+    },
+    {
+      "path": "/docs/patterns/rag/faq-rag.md",
+      "title": "FAQ RAG Pattern",
+      "description": "Build a FAQ-style RAG with a simple eval hook to keep answers grounded.",
+      "audience_levels": [
+        "intermediate"
+      ],
+      "personas": [
+        "developer",
+        "PM"
+      ],
+      "categories": [
+        "patterns"
+      ],
+      "tags": [],
+      "min_read_minutes": 7,
+      "last_reviewed": "2025-10-06T00:00:00.000Z",
+      "search_keywords": [
+        "faq rag",
+        "grounded qa",
+        "eval hook",
+        "faithfulness"
+      ],
+      "related": [
+        "/docs/patterns/rag/basics.md",
+        "/docs/evaluations/grounded-qa-evals.md",
+        "/docs/evaluations/offline-batch-evals.md"
       ]
     },
     {

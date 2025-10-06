@@ -209,63 +209,63 @@ search_keywords: ["term one", "term two", "term three"]
 
 ### 5) Patterns (9)
 
-22. **/docs/patterns/agentic/router-multi-tool.md**
+22. [x] **/docs/patterns/agentic/router-multi-tool.md**
     **Purpose:** router agent selects tools.
     **Success:** tool registry; guardrails; timeout strategy.
     **Pointers:** Tool/function calling patterns.
 
-23. **/docs/patterns/agentic/reflection-self-heal.md**
+23. [x] **/docs/patterns/agentic/reflection-self-heal.md**
     **Purpose:** reflection loop improves outputs.
     **Success:** rubric prompt + retry budget.
 
-24. **/docs/patterns/rag/basics.md**
+24. [x] **/docs/patterns/rag/basics.md**
     **Purpose:** minimal RAG.
     **Success:** chunking, indexing, citations.
     **Pointers:** Embeddings & responses guidance.
 
-25. **/docs/patterns/rag/faq-rag.md** *(expand seed with eval hook)*
+25. [x] **/docs/patterns/rag/faq-rag.md** *(expand seed with eval hook)*
 
-26. **/docs/patterns/tools/function-calling.md**
+26. [x] **/docs/patterns/tools/function-calling.md**
     **Purpose:** cross‑provider tool/function calling.
     **Success:** schema design; idempotent tools; error propagation.
     **Pointers:** OpenAI tools; Anthropic tools.
 
-27. **/docs/patterns/workflows/batch-processing.md** *(expand seed with retries & cost caps)*
+27. [x] **/docs/patterns/workflows/batch-processing.md** *(expand seed with retries & cost caps)*
 
-28. **/docs/patterns/observability-context.md**
+28. [x] **/docs/patterns/observability-context.md**
     **Purpose:** what to log (metadata only); correlation IDs; PII avoidance.
     **Pointers:** OpenTelemetry concepts (if adopted later).
 
-29. **/docs/patterns/cost-controls.md**
+29. [x] **/docs/patterns/cost-controls.md**
     **Purpose:** max tokens; streaming; truncation; caching hints; retries.
     **Pointers:** API parameters & streaming guidance.
 
-30. **/docs/patterns/a2a-agent-to-agent.md**
+30. [x] **/docs/patterns/a2a-agent-to-agent.md**
     **Purpose:** patterns for agent‑to‑agent collaboration (A2A): task handoff, negotiation, tool sharing.
     **Audience:** developer, PM.
     **Success:** sequence diagrams; message contracts; failure modes; escalation to human.
 
 ### 6) Evaluations (7)
 
-30. **/docs/evaluations/overview.md**
+30. [x] **/docs/evaluations/overview.md**
     **Purpose:** goals, golden sets, human review.
     **Success:** taxonomy (correctness, helpfulness, safety, latency/cost).
 
-31. **/docs/evaluations/offline-batch-evals.md**
+31. [x] **/docs/evaluations/offline-batch-evals.md**
     **Purpose:** nightly evals; diff reports.
 
-32. **/docs/evaluations/rubric-prompts.md**
+32. [x] **/docs/evaluations/rubric-prompts.md**
     **Purpose:** design rubric prompts; inter‑rater agreement.
 
-33. **/docs/evaluations/grounded-qa-evals.md**
+33. [x] **/docs/evaluations/grounded-qa-evals.md**
     **Purpose:** RAG faithfulness & citation accuracy.
 
-34. **/docs/evaluations/latency-cost-tradeoffs.md** *(expand seed)*
+34. [x] **/docs/evaluations/latency-cost-tradeoffs.md** *(expand seed)*
 
-35. **/docs/evaluations/tool-use-evals.md**
+35. [x] **/docs/evaluations/tool-use-evals.md**
     **Purpose:** success rate per tool; timeout/error taxonomy.
 
-36. **/docs/evaluations/data-platform-benchmarks.md**
+36. [x] **/docs/evaluations/data-platform-benchmarks.md**
     **Purpose:** measure end‑to‑end latency & cost when calls touch Fabric/Snowflake/Databricks (where applicable).
     **Success:** reproducible harness; dataset notes; report template.
 
