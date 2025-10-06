@@ -42,13 +42,29 @@ Tool use basics
 - Keep tools idempotent; include timeouts and descriptive errors.
 - Return structured, predictable JSON for the model to consume.
 
+Required parameters
+
+- `max_tokens` is required for message completions; choose a conservative default (e.g., 200–300) and raise only as needed.
+- `anthropic-version` header must be set to a supported version.
+
+Streaming (sketch)
+
+```ts
+// Use fetch + ReadableStream or SDK streaming helpers to incrementally read tokens.
+// Render partial text in UI; allow user to cancel to reduce spend.
+```
+
 Common errors
 
 - 401: invalid or missing key.
 - 429: rate limits—apply short, capped retries.
 - 5xx: transient—retry with jitter; alert if persistent.
 
+Safety levers
+
+- Use clear system instructions that state allowed domains and refusal rules.
+- Post‑process with output filters when correctness/safety matters.
+
 References
 
 - Anthropic official docs (API, models, tool use)
-

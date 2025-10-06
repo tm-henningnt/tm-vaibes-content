@@ -72,6 +72,32 @@ Tokens in practice
 
 Common pitfalls
 
+Parameters primer
+
+- temperature: 0.0–1.0. Lower = more deterministic. Start at 0.2–0.4 for consistent outputs; raise for brainstorming.
+- top_p: nucleus sampling. Use either temperature or top_p, not both; default is fine for most tasks.
+- presence_penalty: encourages new topics; frequency_penalty: penalizes repetition. Keep at 0 unless you see loops/repetition.
+- max_tokens: upper bound on output length. Smaller values reduce cost and latency; raise only when you need longer answers.
+
+Streaming vs one-shot
+
+- Streaming improves perceived speed and lets users interrupt. Prefer streaming in UI routes and one-shot for back-end jobs.
+- In streaming, render partial text and handle user cancellation to save cost.
+
+Quickstart checklist
+
+- [ ] Keep your key server-side only
+- [ ] Start with a small model for most tasks; escalate selectively
+- [ ] Set `max_tokens` and watch latency/tokens
+- [ ] Add short retries with jitter (429/5xx)
+- [ ] Stream in UI contexts; one-shot in batch jobs
+
+FAQ
+
+- Which model should I start with? For general chat and small tools, start with a cost‑effective 4o‑mini tier. If results lack depth, try a larger 4o variant.
+- How do I reduce cost? Trim prompts, summarize conversation history, set `max_tokens`, stream early tokens, and cache repeated prompts.
+- Are responses deterministic? Lower temperature improves determinism, but outputs can still vary. For strict determinism, pair prompts with automated checks.
+
 - Missing API key or wrong environment: confirm server-only keys.
 - Over-long prompts: trim boilerplate, move instructions to system role, and cache static context.
 - Ignoring rate limits: add backoff and per-user quotas on your server routes.

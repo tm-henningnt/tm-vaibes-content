@@ -73,7 +73,18 @@ Notes
 - Always include `api-version`; check Azure docs for the latest supported version.
 - Region selection impacts availability and latency.
 
+Portal click‑path (high level)
+
+- Azure Portal → Create Resource → AI + Machine Learning → Azure OpenAI → pick Subscription/Resource Group/Region.
+- After creation: Go to your Azure OpenAI resource → Deployments → Create new deployment (choose base model, name your deployment).
+- Keys & endpoint: Overview → Keys and Endpoint (copy endpoint and key).
+
+Troubleshooting
+
+- 404/400 on calls: the `model` parameter should be your deployment name, not the base model ID.
+- 401/403: wrong key or region; keys are resource‑specific.
+- 429: capacity or rate caps; retry with jitter and consider alternate regions.
+
 References
 
 - Microsoft Learn: Create Azure OpenAI resource and deployments
-

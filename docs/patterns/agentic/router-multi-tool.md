@@ -50,3 +50,13 @@ Failure modes
 - No clear match → ask a clarifying question.
 - Tool error → return user-friendly failure and optionally suggest alternatives.
 
+End-to-end flow (sketch)
+
+1) Classify intent and choose a tool name + args (JSON only; no execution).
+2) Validate args against schema and user/role allow‑lists.
+3) Execute tool with timeout and retries; return structured JSON.
+4) Provide a user‑friendly answer summarizing the outcome (include references when applicable).
+
+Role‑based allow‑lists
+
+- Map user roles to permitted tools (e.g., `User` may call `searchDocs`, only `Admin` can call `createTicket`). Deny by default.

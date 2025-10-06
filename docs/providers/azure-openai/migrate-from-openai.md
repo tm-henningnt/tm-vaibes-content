@@ -54,7 +54,17 @@ Common pitfalls
 - 401: wrong key or region—keys are resource-specific.
 - 429: capacity—apply retries and consider regional alternatives.
 
+Headers and query
+
+- Preserve your message structure, but attach `api-version` as a query parameter for every request.
+- Base URL combines endpoint + `/openai/deployments/<deployment>`; path patterns may differ across SDKs.
+
+Migration test plan
+
+- Run a small golden set on OpenAI, record tokens/latency.
+- Switch to Azure with deployment name; compare outputs and metrics.
+- Adjust `max_tokens` and temperature to hit the same quality/latency budgets.
+
 References
 
 - Azure OpenAI docs (api-version, deployments, regions)
-

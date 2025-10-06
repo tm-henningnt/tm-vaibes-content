@@ -22,3 +22,11 @@ Fixes
 - 404: route path wrong → confirm deploy includes the API route.
 - 5xx: handler threw → add try/catch and structured error logs.
 
+GitHub UI steps
+
+- Repo → Settings → Webhooks → Select your webhook → Recent Deliveries → open a failing delivery and view Request/Response.
+- Click “Redeliver” after fixing your app to verify the route succeeds.
+
+Local verification
+
+- `curl` your deployed revalidation route with the correct secret header and a minimal payload; expect `{ ok: true }`.

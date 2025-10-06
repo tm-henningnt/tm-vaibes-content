@@ -31,3 +31,12 @@ Escalation
 - Criteria: repeated filter hits, unusually high failure rates, or policy triggers.
 - Route to an on-call/human reviewer with minimal context and reproduction steps.
 
+Abuse scenarios (examples)
+
+- Prompt injection: instructions in content attempt to override system rules. Mitigation: strong system prompts + content sanitization.
+- Data exfiltration requests: attempts to retrieve secrets or PII. Mitigation: scope prompts; block patterns; redact.
+- Tool misuse: model tries to call destructive tools. Mitigation: least‑privilege tools, allow‑lists, human gates for irreversible actions.
+
+Data retention
+
+- Default to storing only metadata. If you must keep prompts/outputs, define purpose, retention period, and access controls explicitly.

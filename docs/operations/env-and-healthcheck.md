@@ -38,3 +38,18 @@ Operations
 - Document what “green” vs “stale” means in dashboards (e.g., content manifest age, last fetch time).
 - Emit minimal metadata needed for on-call to triage without leaking secrets.
 
+.env.example (sketch)
+
+- `OPENAI_API_KEY=`
+- `AZURE_OPENAI_ENDPOINT=`
+- `AZURE_OPENAI_API_KEY=`
+- `AZURE_OPENAI_API_VERSION=2024-06-01`
+- `AZURE_OPENAI_DEPLOYMENT=`
+- `ANTHROPIC_API_KEY=`
+- `REVALIDATE_SECRET=` (for on-demand revalidation)
+
+Health endpoints (patterns)
+
+- Liveness (`/healthz`): process is up.
+- Readiness (`/readyz`): secrets present, outbound network reachable, optional provider ping (time‑boxed).
+- Status (`/statusz`): high‑level app status for dashboards (manifest age, webhook recent success).

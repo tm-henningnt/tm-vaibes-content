@@ -23,3 +23,10 @@ When to switch
 
 - Data residency/compliance needs; tool use capabilities; latency regions; cost ceilings.
 
+Cost hygiene checklist
+
+- [ ] Use smaller models where possible
+- [ ] Set `max_tokens` and prefer concise outputs
+- [ ] Stream and allow user cancel
+- [ ] Summarize long histories; cache repeated prompts
+- [ ] Monitor tokens per route and alert on spikes

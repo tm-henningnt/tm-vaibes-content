@@ -22,3 +22,12 @@ Checks
 - Ensure ID tokens are enabled in Entra app settings.
 - If using roles, app roles must be defined and assigned.
 
+Common messages (and fixes)
+
+- “AADSTS50011: The redirect URI ... does not match” → Copy the exact callback from your app into Entra and vice versa.
+- “Needs admin approval” screen for all users → Request admin consent or adjust required permissions.
+- “aud claim mismatch” → Ensure your client ID and tenant ID match the registered app.
+
+Local test
+
+- Use a test tenant user to sign in; watch Network tab for the callback URL; verify it matches the Entra configuration.

@@ -36,3 +36,13 @@ Tips
 - Use MDX components where needed (Tabs, Callout); see `/docs/reference/components.md`.
 - Preview Markdown/MDX to catch layout issues before PR.
 
+Install steps (quick)
+
+- Press Ctrl/Cmd+Shift+X → search and install the listed extensions.
+- Open Settings (JSON) and paste the snippet; adjust to taste.
+
+Editing tips
+
+- Use multi-cursor editing (Alt+Click) to update repeated frontmatter.
+- Toggle word wrap (Alt+Z) for long lines.
+- Run “Format Document” and spell-check before committing.

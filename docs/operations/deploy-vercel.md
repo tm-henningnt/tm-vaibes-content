@@ -25,3 +25,10 @@ Domains
 
 - Add custom domains; verify SSL; configure redirects if moving from another host.
 
+Verify ISR works
+
+- Make a content change → push to main → wait for webhook/on‑demand revalidation → check that the page updates without a full redeploy.
+
+Environment scoping
+
+- Keep separate env vars for Preview vs Production; avoid reusing production keys in non‑prod.

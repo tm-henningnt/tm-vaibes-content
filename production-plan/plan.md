@@ -33,6 +33,18 @@ Clarity expansion pass (multi-audience)
 - [x] /docs/patterns/rag/basics.md
 - [x] /docs/patterns/tools/function-calling.md
 - [x] /docs/operations/github-flow-for-docs.md
+ - [x] /docs/providers/anthropic/overview.md
+ - [x] /docs/providers/azure-openai/setup.md
+ - [x] /docs/providers/azure-openai/migrate-from-openai.md
+ - [x] /docs/operations/env-and-healthcheck.md
+ - [x] /docs/operations/vscode-setup-and-extensions.md
+ - [x] /docs/troubleshooting/auth-errors.md
+ - [x] /docs/troubleshooting/revalidation-failures.md
+ - [x] /docs/safety/overview.md
+ - [x] /docs/safety/output-filters.md
+ - [x] /docs/patterns/agentic/router-multi-tool.md
+ - [x] /docs/operations/deploy-vercel.md
+ - [x] /docs/faq/providers-and-costs.md
 
 ## Main tools / platform focus (Not exclusive)
 

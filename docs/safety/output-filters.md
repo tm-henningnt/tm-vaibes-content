@@ -25,3 +25,19 @@ Classifier integration
 - Route ambiguous outputs to a classifier; threshold → allow, redact, or escalate.
 - Log the decision and category for auditing.
 
+Pipeline (pseudo)
+
+```ts
+function filter(output) {
+  if (ruleBlock(output)) return { action: 'block' };
+  const score = classifierScore(output); // 0..1
+  if (score > 0.9) return { action: 'block' };
+  if (score > 0.7) return { action: 'redact', text: redact(output) };
+  return { action: 'allow', text: output };
+}
+```
+
+User messaging
+
+- On block: provide a short reason and safe alternatives.
+- On redact: indicate redactions occurred and how to proceed.
