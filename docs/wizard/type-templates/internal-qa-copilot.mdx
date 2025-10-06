@@ -1,0 +1,53 @@
+---
+title: "Type: Internal Q&A Copilot"
+description: "Answer internal policy and IT questions using an agent with retrieval."
+audience_levels: ["beginner", "intermediate"]
+personas: ["PM", "developer"]
+categories: ["wizard"]
+tags: ["copilot", "rag", "agent"]
+min_read_minutes: 12
+last_reviewed: 2025-10-06
+related: ["/docs/patterns/rag/faq-rag.md"]
+search_keywords: []
+show_toc: true
+---
+
+# Type: Internal Q&A Copilot
+
+<Tabs>
+  <Tab title="Summary">
+    - **Value proposition**: Reduce ticket load, instant answers.  
+    - **Best for**: Knowledge-base heavy orgs.  
+    - **Expected runtime**: 30–60 sec per query.
+  </Tab>
+  <Tab title="Inputs schema">
+  
+```json
+{
+  "fields": [
+    {"key":"audience","label":"Target users","placeholder":"Employees, Contractors","ai_hint":"Summarize who asks questions most"},
+    {"key":"sources","label":"Content sources","placeholder":"SharePoint, Confluence URLs","ai_hint":"List 3–5 repos"},
+    {"key":"privacy","label":"Privacy constraints","placeholder":"No PII storage","ai_hint":"Call out PII/PHI if applicable"}
+  ]
+}
+```
+  </Tab>
+  <Tab title="Sample outputs">
+
+**Project brief**  
+- ...
+
+**Success metrics**  
+- Deflection rate, response accuracy, time-to-answer
+
+**Backlog (3–5 tasks)**  
+1. Stand up retrieval index  
+2. Implement tool-use for search  
+3. Add eval harness  
+
+**Recap prompt**
+```
+You are my assistant helping with an Internal Q&A copilot…
+```
+  </Tab>
+</Tabs>

@@ -1,0 +1,14 @@
+{
+  "name": "ai-docs-repo",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build:manifest": "node tools/build-manifest.mjs",
+    "lint:frontmatter": "node tools/build-manifest.mjs --check"
+  },
+  "dependencies": {
+    "fast-glob": "^3.3.2",
+    "gray-matter": "^4.0.3"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "$schema": "./tools/schemas/manifest.schema.json",
+  "version": "2025.10.0",
+  "generated_at": "2025-10-06T00:00:00.000Z",
+  "hash": "",
+  "docs": []
+}

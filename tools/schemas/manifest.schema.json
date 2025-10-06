@@ -1,0 +1,24 @@
+{
+  "$id": "manifest.schema.json",
+  "type": "object",
+  "required": [
+    "version",
+    "generated_at",
+    "hash",
+    "docs"
+  ],
+  "properties": {
+    "version": {
+      "type": "string"
+    },
+    "generated_at": {
+      "type": "string"
+    },
+    "hash": {
+      "type": "string"
+    },
+    "docs": {
+      "type": "array"
+    }
+  }
+}
