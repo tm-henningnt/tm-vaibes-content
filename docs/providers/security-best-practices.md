@@ -6,7 +6,7 @@ personas: ["developer", "admin"]
 categories: ["providers", "operations", "safety"]
 min_read_minutes: 9
 last_reviewed: 2025-10-06
-related: ["/docs/providers/openai/auth-models-limits.md", "/docs/operations/env-and-healthcheck.md", "/docs/troubleshooting/provider-errors.md"]
+related: ["/docs/providers/openai/auth-models-limits.md", "/docs/safety/prompt-safety.md", "/docs/evaluations/latency-cost-tradeoffs.md"]
 search_keywords: ["api key handling", "secrets", "key rotation", "proxy", "redaction"]
 ---
 

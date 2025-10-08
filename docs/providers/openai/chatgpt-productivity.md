@@ -6,7 +6,7 @@ personas: ["non-technical", "PM", "developer"]
 categories: ["providers", "how-to"]
 min_read_minutes: 7
 last_reviewed: 2025-10-06
-related: ["/docs/how-to/pick-your-path.md", "/docs/providers/openai/auth-models-limits.md", "/docs/troubleshooting/provider-errors.md"]
+related: ["/docs/providers/openai/auth-models-limits.md", "/docs/concepts/genai-vs-agentic.md", "/docs/safety/prompt-safety.md"]
 search_keywords: ["chatgpt", "prompting", "productivity", "guardrails", "templates"]
 ---
 

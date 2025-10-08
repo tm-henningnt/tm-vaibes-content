@@ -1,13 +1,13 @@
 ---
 title: "Getting started: Your first AI idea"
-description: "A 10-minute guided path from idea to a concrete project brief with success metrics and a starter backlog."
+description: "A 10-minute guided worksheet to turn an idea into a concrete project brief with success metrics and next steps."
 audience_levels: ["beginner", "intermediate"]
 personas: ["non-technical", "PM", "developer"]
 categories: ["quickstarts"]
-tags: ["gen-ai", "ideation", "kickstarter", "wizard"]
+tags: ["gen-ai", "ideation", "planning"]
 min_read_minutes: 10
-last_reviewed: 2025-10-06
-related: ["/docs/wizard/overview.md", "/docs/patterns/agentic/planner-executor.md"]
+last_reviewed: 2025-10-08
+related: ["/docs/concepts/genai-vs-agentic.md", "/docs/patterns/agentic/planner-executor.md"]
 search_keywords: ["project brief", "success metrics", "backlog", "prompt recap"]
 show_toc: true
 ---
@@ -17,10 +17,11 @@ show_toc: true
 
 ## Steps
 1. Write a one-sentence value proposition.
-2. Define primary audience and a key scenario.
-3. Draft 3 success metrics.
-4. Open the Wizard and select a suitable **Project Type**.
-5. Generate the **recap prompt** and save your outputs.
+2. Define the primary audience and one high-value scenario.
+3. List the data and tools your solution will need (sources, integrations, existing systems).
+4. Draft three measurable success metrics (quality, speed, cost, or satisfaction).
+5. Summarize the solution shape in five bullet points, including risks and open questions.
 
 ## What’s next
-- Explore **Wizard Types** or try a **tutorial** to go deeper.
+- Move into build mode with `/docs/quickstarts/try-genai-in-10-min.md`.
+- Study agent planning patterns in `/docs/patterns/agentic/planner-executor.md`.

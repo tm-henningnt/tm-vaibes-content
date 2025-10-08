@@ -6,7 +6,7 @@ personas: ["developer", "admin"]
 categories: ["providers", "how-to", "reference"]
 min_read_minutes: 7
 last_reviewed: 2025-10-06
-related: ["/docs/providers/compare-providers.md", "/docs/troubleshooting/provider-errors.md"]
+related: ["/docs/providers/compare-providers.md", "/docs/providers/security-best-practices.md"]
 search_keywords: ["anthropic", "claude", "auth header", "tool use", "safety"]
 ---
 

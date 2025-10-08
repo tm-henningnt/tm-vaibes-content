@@ -6,7 +6,7 @@ personas: ["developer"]
 categories: ["providers", "how-to", "troubleshooting"]
 min_read_minutes: 7
 last_reviewed: 2025-10-06
-related: ["/docs/providers/azure-openai/setup.md", "/docs/troubleshooting/provider-errors.md"]
+related: ["/docs/providers/azure-openai/setup.md", "/docs/providers/security-best-practices.md"]
 search_keywords: ["azure openai migrate", "deployment vs model", "api-version", "base url"]
 ---
 

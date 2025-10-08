@@ -1,8 +1,8 @@
 # Copilot Instructions
 
 ## Project snapshot
-- This repo is the public documentation source for the AI Docs & Project Initiator Wizard; the app fetches markdown pages and the generated `manifest.json` over raw GitHub.
-- Content lives under `docs/` with topic-focused subfolders (concepts, evaluations, how-to, patterns, providers, wizard, etc.) that align with the navigation surfaced by the wizard UI.
+- This repo hosts public AI education content (concepts, quickstarts, evaluations, safety, patterns) surfaced by the learning hub; the app fetches markdown pages and the generated `manifest.json` over raw GitHub.
+- Content lives under `docs/` with focused subfolders (concepts, evaluations, examples, quickstarts, patterns, providers, safety, tutorials). Non-educational site-management docs have been removed.
 - The manifest at repo root is committed and consumed downstream; rebuilding it must stay deterministic to avoid noisy diffs.
 
 ## Authoring patterns
@@ -12,7 +12,6 @@
 - Use `primary_category` in frontmatter when you need to override the first category for manifest routing.
 - `last_reviewed` stays in `YYYY-MM-DD`; the build converts it to `lastUpdated` (ISO string) in the manifest.
 - Cross-link docs via `/docs/...` paths in `related` so the downstream site can hydrate navigation.
-- Update `docs/release-notes.md` whenever a change materially affects readers.
 
 ## Manifest workflow
 - `tools/build-manifest.mjs` globs `docs/**/*.{md,mdx}`, parses frontmatter with `gray-matter`, and skips any file without a `title`.
@@ -35,4 +34,4 @@
 - Ensure headings start with a single `#` (top-level title is provided by frontmatter) and use sentence-case section titles.
 - Include `show_toc: true` in frontmatter for long-form guides that need in-page navigation, matching existing conventions.
 - Validate links and code fences locally; remember the site reads these files directly via raw URLs without additional processing.
-- Before opening a PR, run the manifest build, review the diff for unintended deletions, and reference the affected pages in your description.
+- Before opening a PR, run the manifest build, review the diff for unintended deletions, and note affected pages in your PR description.

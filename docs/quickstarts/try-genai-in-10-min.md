@@ -6,7 +6,7 @@ personas: ["non-technical", "PM", "developer"]
 categories: ["quickstarts", "how-to"]
 min_read_minutes: 8
 last_reviewed: 2025-10-06
-related: ["/docs/quickstarts/js-server-route.md", "/docs/quickstarts/python-fastapi.md", "/docs/wizard/overview.md", "/docs/how-to/pick-your-path.md"]
+related: ["/docs/quickstarts/js-server-route.md", "/docs/quickstarts/python-fastapi.md", "/docs/concepts/genai-vs-agentic.md", "/docs/quickstarts/first-idea.md"]
 search_keywords: ["openai quickstart", "first ai app", "server-side api key", "node", "python"]
 ---
 
@@ -122,7 +122,8 @@ Troubleshooting
 What’s next
 
 - Safer server routes and retries: see `/docs/quickstarts/js-server-route.md` and `/docs/quickstarts/python-fastapi.md`.
-- Pick your learning path: `/docs/how-to/pick-your-path.md`.
+- Next, pick an implementation path: `/docs/quickstarts/js-server-route.md` (Node) or `/docs/quickstarts/python-fastapi.md` (Python).
+- Revisit ideation fundamentals: `/docs/quickstarts/first-idea.md`.
 - Understand limits and models: `/docs/providers/openai/auth-models-limits.md`.
 
 References

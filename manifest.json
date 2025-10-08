@@ -1,15 +1,15 @@
 {
   "$schema": "./tools/schemas/manifest.schema.json",
   "version": "2025.10.1",
-  "generated_at": "2025-10-08T20:37:45.690Z",
-  "hash": "a2b2a8ec043c9f3c",
+  "generated_at": "2025-10-08T21:13:21.575Z",
+  "hash": "0bf10405cb5a7185",
   "docs": [
     {
       "path": "/docs/index.md",
       "slug": "index",
       "category": "landing",
-      "title": "Welcome to the AI Docs & Kickstarter Wizard",
-      "description": "Choose your path by audience and experience level, then dive into quickstarts, concepts, and the project initiator wizard.",
+      "title": "Welcome to the AI Learning Hub",
+      "description": "Choose your path by audience and experience level, then dive into quickstarts, concepts, evaluations, and patterns.",
       "audience_levels": [
         "beginner",
         "intermediate",
@@ -35,39 +35,8 @@
       "related": [],
       "sourcePath": "docs/index.md",
       "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/index.md",
-      "min_read_minutes": 10,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/release-notes.md",
-      "slug": "release-notes",
-      "category": "release-notes",
-      "title": "Release Notes",
-      "description": "Human-friendly changelog for doc updates that change outcomes for readers.",
-      "audience_levels": [
-        "beginner",
-        "intermediate",
-        "advanced"
-      ],
-      "personas": [
-        "non-technical",
-        "PM",
-        "developer",
-        "admin"
-      ],
-      "categories": [
-        "release-notes"
-      ],
-      "tags": [
-        "changelog"
-      ],
-      "relatedProjectTypes": [],
-      "search_keywords": [],
-      "related": [],
-      "sourcePath": "docs/release-notes.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/release-notes.md",
-      "min_read_minutes": 3,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
+      "min_read_minutes": 8,
+      "lastUpdated": "2025-10-08T00:00:00.000Z"
     },
     {
       "path": "/docs/concepts/genai-vs-agentic.md",
@@ -348,139 +317,6 @@
       "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
     {
-      "path": "/docs/faq/index.md",
-      "slug": "faq/index",
-      "category": "faq",
-      "title": "FAQ",
-      "description": "Frequently asked questions about the docs and wizard.",
-      "audience_levels": [
-        "beginner",
-        "intermediate"
-      ],
-      "personas": [
-        "non-technical",
-        "PM",
-        "developer",
-        "admin"
-      ],
-      "categories": [
-        "faq"
-      ],
-      "tags": [
-        "questions",
-        "help"
-      ],
-      "relatedProjectTypes": [],
-      "search_keywords": [],
-      "related": [],
-      "sourcePath": "docs/faq/index.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/faq/index.md",
-      "min_read_minutes": 5,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/faq/providers-and-costs.md",
-      "slug": "faq/providers-and-costs",
-      "category": "faq",
-      "title": "Providers and Costs: Basics",
-      "description": "Understand cost drivers, rate limits, and when to switch providers.",
-      "audience_levels": [
-        "beginner",
-        "intermediate"
-      ],
-      "personas": [
-        "PM",
-        "developer",
-        "admin"
-      ],
-      "categories": [
-        "faq"
-      ],
-      "tags": [],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "pricing",
-        "rate limits",
-        "token costs",
-        "provider selection"
-      ],
-      "related": [
-        "/docs/providers/compare-providers.md",
-        "/docs/patterns/cost-controls.md"
-      ],
-      "sourcePath": "docs/faq/providers-and-costs.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/faq/providers-and-costs.md",
-      "min_read_minutes": 5,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/faq/vscode-and-extensions.md",
-      "slug": "faq/vscode-and-extensions",
-      "category": "faq",
-      "title": "VS Code and Extensions: FAQ",
-      "description": "Answers to common questions about settings, MDX preview, spell-check, and frontmatter.",
-      "audience_levels": [
-        "beginner",
-        "intermediate"
-      ],
-      "personas": [
-        "all contributors"
-      ],
-      "categories": [
-        "faq"
-      ],
-      "tags": [],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "vscode",
-        "mdx",
-        "markdown",
-        "frontmatter",
-        "spell checker"
-      ],
-      "related": [
-        "/docs/operations/vscode-setup-and-extensions.md"
-      ],
-      "sourcePath": "docs/faq/vscode-and-extensions.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/faq/vscode-and-extensions.md",
-      "min_read_minutes": 4,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/faq/wizard-vs-examples.md",
-      "slug": "faq/wizard-vs-examples",
-      "category": "faq",
-      "title": "Wizard vs Hand‑Coded Examples",
-      "description": "When to use the Wizard for speed vs hand-coded examples for control.",
-      "audience_levels": [
-        "beginner",
-        "intermediate"
-      ],
-      "personas": [
-        "PM",
-        "developer"
-      ],
-      "categories": [
-        "faq"
-      ],
-      "tags": [],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "wizard",
-        "examples",
-        "tradeoffs",
-        "speed vs control"
-      ],
-      "related": [
-        "/docs/wizard/overview.md",
-        "/docs/quickstarts/js-server-route.md"
-      ],
-      "sourcePath": "docs/faq/wizard-vs-examples.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/faq/wizard-vs-examples.md",
-      "min_read_minutes": 3,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
-    },
-    {
       "path": "/docs/examples/a2a-coordination.md",
       "slug": "examples/a2a-coordination",
       "category": "examples",
@@ -649,682 +485,6 @@
       "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
     {
-      "path": "/docs/how-to/duplicate-a-session.md",
-      "slug": "how-to/duplicate-a-session",
-      "category": "how-to",
-      "title": "How to duplicate a wizard session",
-      "description": "Create a copy of a finished or in-progress session without overwriting the original.",
-      "audience_levels": [
-        "beginner",
-        "intermediate"
-      ],
-      "personas": [
-        "PM",
-        "developer"
-      ],
-      "categories": [
-        "how-to"
-      ],
-      "tags": [
-        "wizard",
-        "sessions",
-        "duplicate"
-      ],
-      "relatedProjectTypes": [],
-      "search_keywords": [],
-      "related": [],
-      "sourcePath": "docs/how-to/duplicate-a-session.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/how-to/duplicate-a-session.md",
-      "min_read_minutes": 5,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/how-to/pick-your-path.md",
-      "slug": "how-to/pick-your-path",
-      "category": "how-to",
-      "title": "Pick Your Path",
-      "description": "A simple chooser to get beginners, PMs, and developers to value in 3 clicks.",
-      "audience_levels": [
-        "beginner",
-        "intermediate"
-      ],
-      "personas": [
-        "non-technical",
-        "PM",
-        "developer",
-        "data-analyst"
-      ],
-      "categories": [
-        "how-to"
-      ],
-      "tags": [],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "getting started",
-        "beginner",
-        "choose path",
-        "quickstart"
-      ],
-      "related": [
-        "/docs/quickstarts/try-genai-in-10-min.md",
-        "/docs/quickstarts/js-server-route.md",
-        "/docs/quickstarts/python-fastapi.md",
-        "/docs/wizard/overview.md"
-      ],
-      "sourcePath": "docs/how-to/pick-your-path.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/how-to/pick-your-path.md",
-      "min_read_minutes": 3,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/operations/accessibility.md",
-      "slug": "operations/accessibility",
-      "category": "operations",
-      "title": "Accessibility: Principles",
-      "description": "Apply WCAG 2.2 and ARIA basics: keyboard order, landmarks, and contrast.",
-      "audience_levels": [
-        "beginner",
-        "intermediate"
-      ],
-      "personas": [
-        "developer",
-        "PM"
-      ],
-      "categories": [
-        "operations",
-        "how-to"
-      ],
-      "tags": [],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "accessibility",
-        "wcag",
-        "aria",
-        "contrast",
-        "keyboard"
-      ],
-      "related": [
-        "/docs/operations/aria-recipes.md",
-        "/docs/operations/performance-principles.md"
-      ],
-      "sourcePath": "docs/operations/accessibility.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/operations/accessibility.md",
-      "min_read_minutes": 6,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/operations/admin-dashboard.md",
-      "slug": "operations/admin-dashboard",
-      "category": "operations",
-      "title": "Admin Dashboard: Sync Health",
-      "description": "Define green/stale thresholds and how to force content revalidation.",
-      "audience_levels": [
-        "beginner",
-        "intermediate"
-      ],
-      "personas": [
-        "admin"
-      ],
-      "categories": [
-        "operations",
-        "reference"
-      ],
-      "tags": [],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "dashboard",
-        "health",
-        "manifest",
-        "revalidation"
-      ],
-      "related": [
-        "/docs/operations/content-sync-deep-dive.md",
-        "/docs/troubleshooting/revalidation-failures.md"
-      ],
-      "sourcePath": "docs/operations/admin-dashboard.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/operations/admin-dashboard.md",
-      "min_read_minutes": 4,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/operations/aria-recipes.md",
-      "slug": "operations/aria-recipes",
-      "category": "operations",
-      "title": "ARIA Recipes: Tabs, Dialogs, Toasts",
-      "description": "Practical ARIA patterns for common UI elements with focus management.",
-      "audience_levels": [
-        "intermediate"
-      ],
-      "personas": [
-        "developer"
-      ],
-      "categories": [
-        "operations",
-        "how-to"
-      ],
-      "tags": [],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "aria",
-        "tabs",
-        "dialog",
-        "toast",
-        "focus management"
-      ],
-      "related": [
-        "/docs/operations/accessibility.md"
-      ],
-      "sourcePath": "docs/operations/aria-recipes.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/operations/aria-recipes.md",
-      "min_read_minutes": 8,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/operations/backups-retention.md",
-      "slug": "operations/backups-retention",
-      "category": "operations",
-      "title": "Operations: Backups & Retention",
-      "description": "Soft-deletes, archival flags, and reporting policies for sessions.",
-      "audience_levels": [
-        "intermediate"
-      ],
-      "personas": [
-        "admin",
-        "developer"
-      ],
-      "categories": [
-        "operations"
-      ],
-      "tags": [
-        "retention",
-        "archival",
-        "soft-delete"
-      ],
-      "relatedProjectTypes": [],
-      "search_keywords": [],
-      "related": [],
-      "sourcePath": "docs/operations/backups-retention.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/operations/backups-retention.md",
-      "min_read_minutes": 6,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/operations/caching-http-basics.md",
-      "slug": "operations/caching-http-basics",
-      "category": "operations",
-      "title": "HTTP Caching Basics",
-      "description": "Understand strong/weak validators, ETag vs Last-Modified, and Cache-Control.",
-      "audience_levels": [
-        "beginner",
-        "intermediate"
-      ],
-      "personas": [
-        "developer",
-        "PM"
-      ],
-      "categories": [
-        "operations",
-        "concepts"
-      ],
-      "tags": [],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "etag",
-        "last-modified",
-        "cache-control",
-        "conditional request"
-      ],
-      "related": [
-        "/docs/operations/performance-principles.md",
-        "/docs/operations/content-sync-deep-dive.md"
-      ],
-      "sourcePath": "docs/operations/caching-http-basics.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/operations/caching-http-basics.md",
-      "min_read_minutes": 7,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/operations/content-sync-deep-dive.md",
-      "slug": "operations/content-sync-deep-dive",
-      "category": "operations",
-      "title": "Content Sync Deep Dive (ISR, Revalidation, ETags)",
-      "description": "How our site pulls new docs using ISR, on-demand revalidation, and HTTP validators.",
-      "audience_levels": [
-        "intermediate",
-        "advanced"
-      ],
-      "personas": [
-        "developer",
-        "admin"
-      ],
-      "categories": [
-        "operations",
-        "reference"
-      ],
-      "tags": [],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "ISR",
-        "revalidate",
-        "ETag",
-        "If-None-Match",
-        "webhooks"
-      ],
-      "related": [
-        "/docs/operations/env-and-healthcheck.md",
-        "/docs/operations/admin-dashboard.md",
-        "/docs/troubleshooting/revalidation-failures.md"
-      ],
-      "sourcePath": "docs/operations/content-sync-deep-dive.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/operations/content-sync-deep-dive.md",
-      "min_read_minutes": 9,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/operations/content-sync.md",
-      "slug": "operations/content-sync",
-      "category": "operations",
-      "title": "Operations: Content Synchronization",
-      "description": "Branch/path selection, ETags and If-None-Match, and GitHub webhook revalidation.",
-      "audience_levels": [
-        "intermediate",
-        "advanced"
-      ],
-      "personas": [
-        "admin",
-        "developer"
-      ],
-      "categories": [
-        "operations"
-      ],
-      "tags": [
-        "sync",
-        "etag",
-        "webhook"
-      ],
-      "relatedProjectTypes": [],
-      "search_keywords": [],
-      "related": [],
-      "sourcePath": "docs/operations/content-sync.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/operations/content-sync.md",
-      "min_read_minutes": 9,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/operations/deploy-vercel.md",
-      "slug": "operations/deploy-vercel",
-      "category": "operations",
-      "title": "Deploy to Vercel (ISR Enabled)",
-      "description": "Deploy the docs/app to Vercel with ISR and environment variables configured.",
-      "audience_levels": [
-        "beginner",
-        "intermediate"
-      ],
-      "personas": [
-        "developer",
-        "admin"
-      ],
-      "categories": [
-        "operations",
-        "how-to"
-      ],
-      "tags": [],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "vercel",
-        "deploy",
-        "isr",
-        "environment variables"
-      ],
-      "related": [
-        "/docs/operations/content-sync-deep-dive.md",
-        "/docs/operations/performance-principles.md"
-      ],
-      "sourcePath": "docs/operations/deploy-vercel.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/operations/deploy-vercel.md",
-      "min_read_minutes": 7,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/operations/entra-admin-guide.md",
-      "slug": "operations/entra-admin-guide",
-      "category": "operations",
-      "title": "Microsoft Entra Admin Guide",
-      "description": "Click-path setup for app registration, role assignment, and required environment variables.",
-      "audience_levels": [
-        "intermediate"
-      ],
-      "personas": [
-        "admin"
-      ],
-      "categories": [
-        "operations"
-      ],
-      "tags": [
-        "entra",
-        "aad",
-        "auth"
-      ],
-      "relatedProjectTypes": [],
-      "search_keywords": [],
-      "related": [],
-      "sourcePath": "docs/operations/entra-admin-guide.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/operations/entra-admin-guide.md",
-      "min_read_minutes": 15,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/operations/entra-role-assignment.md",
-      "slug": "operations/entra-role-assignment",
-      "category": "operations",
-      "title": "Microsoft Entra Role Assignment",
-      "description": "Assign application roles like User and Admin, and verify they flow to your app.",
-      "audience_levels": [
-        "intermediate"
-      ],
-      "personas": [
-        "admin"
-      ],
-      "categories": [
-        "operations",
-        "how-to"
-      ],
-      "tags": [],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "entra roles",
-        "app roles",
-        "azure ad",
-        "claims"
-      ],
-      "related": [
-        "/docs/operations/entra-sign-in-flow.md",
-        "/docs/operations/nextauth-azuread.md"
-      ],
-      "sourcePath": "docs/operations/entra-role-assignment.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/operations/entra-role-assignment.md",
-      "min_read_minutes": 5,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/operations/entra-sign-in-flow.md",
-      "slug": "operations/entra-sign-in-flow",
-      "category": "operations",
-      "title": "Microsoft Entra Sign-In Flow",
-      "description": "Click-path guide to enable sign-in with Microsoft Entra (Azure AD) including consent and role display.",
-      "audience_levels": [
-        "beginner",
-        "intermediate"
-      ],
-      "personas": [
-        "admin",
-        "PM"
-      ],
-      "categories": [
-        "operations",
-        "how-to"
-      ],
-      "tags": [],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "entra",
-        "azure ad",
-        "sign-in",
-        "consent",
-        "login"
-      ],
-      "related": [
-        "/docs/operations/entra-role-assignment.md",
-        "/docs/operations/nextauth-azuread.md"
-      ],
-      "sourcePath": "docs/operations/entra-sign-in-flow.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/operations/entra-sign-in-flow.md",
-      "min_read_minutes": 6,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/operations/env-and-healthcheck.md",
-      "slug": "operations/env-and-healthcheck",
-      "category": "operations",
-      "title": "Environment Variables and Health Checks",
-      "description": "Map required environment variables and define expected health check outputs for non-prod and prod.",
-      "audience_levels": [
-        "beginner",
-        "intermediate"
-      ],
-      "personas": [
-        "developer",
-        "admin"
-      ],
-      "categories": [
-        "operations",
-        "reference"
-      ],
-      "tags": [],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "env vars",
-        "healthcheck",
-        "status endpoint",
-        "liveness",
-        "readiness"
-      ],
-      "related": [
-        "/docs/reference/env-vars.md",
-        "/docs/operations/admin-dashboard.md"
-      ],
-      "sourcePath": "docs/operations/env-and-healthcheck.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/operations/env-and-healthcheck.md",
-      "min_read_minutes": 6,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/operations/github-flow-for-docs.md",
-      "slug": "operations/github-flow-for-docs",
-      "category": "operations",
-      "title": "GitHub Flow for Docs",
-      "description": "Branching, PR reviews, CI manifest build, merge, and release notes for this repo.",
-      "audience_levels": [
-        "beginner",
-        "intermediate"
-      ],
-      "personas": [
-        "all contributors"
-      ],
-      "categories": [
-        "operations",
-        "how-to"
-      ],
-      "tags": [],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "github flow",
-        "pull request",
-        "protected branches",
-        "ci"
-      ],
-      "related": [
-        "/docs/operations/vscode-setup-and-extensions.md"
-      ],
-      "sourcePath": "docs/operations/github-flow-for-docs.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/operations/github-flow-for-docs.md",
-      "min_read_minutes": 5,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/operations/nextauth-azuread.md",
-      "slug": "operations/nextauth-azuread",
-      "category": "operations",
-      "title": "NextAuth + Azure AD Setup",
-      "description": "Wire up NextAuth with the Azure AD provider, configure callbacks, and map role claims.",
-      "audience_levels": [
-        "intermediate"
-      ],
-      "personas": [
-        "developer"
-      ],
-      "categories": [
-        "operations",
-        "how-to",
-        "reference"
-      ],
-      "tags": [],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "nextauth",
-        "azure ad",
-        "entra",
-        "roles",
-        "middleware"
-      ],
-      "related": [
-        "/docs/operations/entra-sign-in-flow.md",
-        "/docs/operations/entra-role-assignment.md"
-      ],
-      "sourcePath": "docs/operations/nextauth-azuread.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/operations/nextauth-azuread.md",
-      "min_read_minutes": 8,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/operations/observability.md",
-      "slug": "operations/observability",
-      "category": "operations",
-      "title": "Operations: Observability",
-      "description": "Structured logs for AI calls (metadata only), auth events, revalidation, and migrations.",
-      "audience_levels": [
-        "intermediate",
-        "advanced"
-      ],
-      "personas": [
-        "admin",
-        "developer"
-      ],
-      "categories": [
-        "operations"
-      ],
-      "tags": [
-        "observability",
-        "logging",
-        "metrics"
-      ],
-      "relatedProjectTypes": [],
-      "search_keywords": [],
-      "related": [],
-      "sourcePath": "docs/operations/observability.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/operations/observability.md",
-      "min_read_minutes": 7,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/operations/performance-principles.md",
-      "slug": "operations/performance-principles",
-      "category": "operations",
-      "title": "Performance Principles",
-      "description": "Keep pages responsive with caching, streaming, and smart fetch strategies.",
-      "audience_levels": [
-        "beginner",
-        "intermediate"
-      ],
-      "personas": [
-        "developer",
-        "PM"
-      ],
-      "categories": [
-        "operations",
-        "concepts"
-      ],
-      "tags": [],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "performance",
-        "streaming",
-        "caching",
-        "etag",
-        "isr"
-      ],
-      "related": [
-        "/docs/operations/caching-http-basics.md",
-        "/docs/operations/deploy-vercel.md"
-      ],
-      "sourcePath": "docs/operations/performance-principles.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/operations/performance-principles.md",
-      "min_read_minutes": 6,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/operations/runbooks.md",
-      "slug": "operations/runbooks",
-      "category": "operations",
-      "title": "Runbooks: Page Me When…",
-      "description": "Operational runbooks for webhook failures, auth outages, and provider 5xx spikes.",
-      "audience_levels": [
-        "intermediate",
-        "advanced"
-      ],
-      "personas": [
-        "admin",
-        "developer"
-      ],
-      "categories": [
-        "operations"
-      ],
-      "tags": [],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "runbook",
-        "outage",
-        "webhook",
-        "auth",
-        "provider"
-      ],
-      "related": [
-        "/docs/troubleshooting/revalidation-failures.md",
-        "/docs/troubleshooting/auth-errors.md",
-        "/docs/troubleshooting/provider-errors.md"
-      ],
-      "sourcePath": "docs/operations/runbooks.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/operations/runbooks.md",
-      "min_read_minutes": 8,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/operations/vscode-setup-and-extensions.md",
-      "slug": "operations/vscode-setup-and-extensions",
-      "category": "operations",
-      "title": "VS Code Setup and Extensions",
-      "description": "Recommended VS Code settings and extensions for editing Markdown/MDX and frontmatter.",
-      "audience_levels": [
-        "beginner",
-        "intermediate"
-      ],
-      "personas": [
-        "developer",
-        "PM"
-      ],
-      "categories": [
-        "operations",
-        "how-to"
-      ],
-      "tags": [],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "vscode",
-        "markdown",
-        "mdx",
-        "frontmatter",
-        "spell check"
-      ],
-      "related": [
-        "/docs/faq/vscode-and-extensions.md",
-        "/docs/reference/components.md"
-      ],
-      "sourcePath": "docs/operations/vscode-setup-and-extensions.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/operations/vscode-setup-and-extensions.md",
-      "min_read_minutes": 6,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
-    },
-    {
       "path": "/docs/patterns/a2a-agent-to-agent.md",
       "slug": "patterns/a2a-agent-to-agent",
       "category": "patterns",
@@ -1431,87 +591,11 @@
       "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
     {
-      "path": "/docs/providers/compare-providers.md",
-      "slug": "providers/compare-providers",
-      "category": "providers",
-      "title": "Compare Providers: Request Shapes and Tradeoffs",
-      "description": "A neutral comparison of common request/response patterns, limits, and typical costs.",
-      "audience_levels": [
-        "beginner",
-        "intermediate"
-      ],
-      "personas": [
-        "PM",
-        "developer",
-        "admin"
-      ],
-      "categories": [
-        "providers",
-        "concepts",
-        "reference"
-      ],
-      "tags": [],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "compare providers",
-        "openai vs anthropic",
-        "azure openai",
-        "request response"
-      ],
-      "related": [
-        "/docs/providers/openai/auth-models-limits.md",
-        "/docs/providers/anthropic/overview.md",
-        "/docs/providers/azure-openai/setup.md"
-      ],
-      "sourcePath": "docs/providers/compare-providers.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/providers/compare-providers.md",
-      "min_read_minutes": 8,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/providers/security-best-practices.md",
-      "slug": "providers/security-best-practices",
-      "category": "providers",
-      "title": "Security Best Practices for AI Providers",
-      "description": "Handle keys, proxies, rotation, and logging safely across environments.",
-      "audience_levels": [
-        "intermediate",
-        "advanced"
-      ],
-      "personas": [
-        "developer",
-        "admin"
-      ],
-      "categories": [
-        "providers",
-        "operations",
-        "safety"
-      ],
-      "tags": [],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "api key handling",
-        "secrets",
-        "key rotation",
-        "proxy",
-        "redaction"
-      ],
-      "related": [
-        "/docs/providers/openai/auth-models-limits.md",
-        "/docs/operations/env-and-healthcheck.md",
-        "/docs/troubleshooting/provider-errors.md"
-      ],
-      "sourcePath": "docs/providers/security-best-practices.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/providers/security-best-practices.md",
-      "min_read_minutes": 9,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
-    },
-    {
       "path": "/docs/quickstarts/first-idea.md",
       "slug": "quickstarts/first-idea",
       "category": "quickstarts",
       "title": "Getting started: Your first AI idea",
-      "description": "A 10-minute guided path from idea to a concrete project brief with success metrics and a starter backlog.",
+      "description": "A 10-minute guided worksheet to turn an idea into a concrete project brief with success metrics and next steps.",
       "audience_levels": [
         "beginner",
         "intermediate"
@@ -1527,8 +611,7 @@
       "tags": [
         "gen-ai",
         "ideation",
-        "kickstarter",
-        "wizard"
+        "planning"
       ],
       "relatedProjectTypes": [],
       "search_keywords": [
@@ -1538,13 +621,13 @@
         "prompt recap"
       ],
       "related": [
-        "/docs/wizard/overview.md",
+        "/docs/concepts/genai-vs-agentic.md",
         "/docs/patterns/agentic/planner-executor.md"
       ],
       "sourcePath": "docs/quickstarts/first-idea.md",
       "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/quickstarts/first-idea.md",
       "min_read_minutes": 10,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
+      "lastUpdated": "2025-10-08T00:00:00.000Z"
     },
     {
       "path": "/docs/quickstarts/js-server-route.md",
@@ -1612,7 +695,7 @@
       "related": [
         "/docs/quickstarts/try-genai-in-10-min.md",
         "/docs/providers/openai/auth-models-limits.md",
-        "/docs/troubleshooting/provider-errors.md"
+        "/docs/providers/security-best-practices.md"
       ],
       "sourcePath": "docs/quickstarts/python-fastapi.md",
       "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/quickstarts/python-fastapi.md",
@@ -1649,554 +732,12 @@
       "related": [
         "/docs/quickstarts/js-server-route.md",
         "/docs/quickstarts/python-fastapi.md",
-        "/docs/wizard/overview.md",
-        "/docs/how-to/pick-your-path.md"
+        "/docs/concepts/genai-vs-agentic.md",
+        "/docs/quickstarts/first-idea.md"
       ],
       "sourcePath": "docs/quickstarts/try-genai-in-10-min.md",
       "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/quickstarts/try-genai-in-10-min.md",
       "min_read_minutes": 8,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/reference/components.md",
-      "slug": "reference/components",
-      "category": "reference",
-      "title": "Reference: MDX Components",
-      "description": "Available MDX components (Tabs, Callout, CodeBlock) and usage snippets.",
-      "audience_levels": [
-        "beginner",
-        "intermediate"
-      ],
-      "personas": [
-        "developer",
-        "PM"
-      ],
-      "categories": [
-        "reference"
-      ],
-      "tags": [],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "mdx",
-        "components",
-        "tabs",
-        "callout",
-        "codeblock"
-      ],
-      "related": [
-        "/docs/operations/vscode-setup-and-extensions.md"
-      ],
-      "sourcePath": "docs/reference/components.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/reference/components.md",
-      "min_read_minutes": 6,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/reference/data-platform-integration-guides.md",
-      "slug": "reference/data-platform-integration-guides",
-      "category": "reference",
-      "title": "Reference: Data Platform Integration Guides",
-      "description": "Index of integration notes for Microsoft Fabric, Snowflake, Databricks, and Qlik Cloud.",
-      "audience_levels": [
-        "intermediate",
-        "advanced"
-      ],
-      "personas": [
-        "developer",
-        "data-analyst",
-        "admin"
-      ],
-      "categories": [
-        "reference"
-      ],
-      "tags": [],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "fabric",
-        "snowflake",
-        "databricks",
-        "qlik",
-        "integration"
-      ],
-      "related": [
-        "/docs/evaluations/data-platform-benchmarks.md"
-      ],
-      "sourcePath": "docs/reference/data-platform-integration-guides.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/reference/data-platform-integration-guides.md",
-      "min_read_minutes": 5,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/reference/env-vars.md",
-      "slug": "reference/env-vars",
-      "category": "reference",
-      "title": "Reference: Environment Variables (.env.example)",
-      "description": "Environment-specific values for identity, providers, data, and revalidation.",
-      "audience_levels": [
-        "intermediate"
-      ],
-      "personas": [
-        "developer",
-        "admin"
-      ],
-      "categories": [
-        "reference"
-      ],
-      "tags": [
-        "env",
-        "secrets",
-        "config"
-      ],
-      "relatedProjectTypes": [],
-      "search_keywords": [],
-      "related": [],
-      "sourcePath": "docs/reference/env-vars.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/reference/env-vars.md",
-      "min_read_minutes": 6,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/reference/provider-abstraction.md",
-      "slug": "reference/provider-abstraction",
-      "category": "reference",
-      "title": "Reference: Provider Abstraction",
-      "description": "A thin layer to unify retries, timeouts, and fallbacks across AI providers.",
-      "audience_levels": [
-        "intermediate",
-        "advanced"
-      ],
-      "personas": [
-        "developer"
-      ],
-      "categories": [
-        "reference"
-      ],
-      "tags": [],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "abstraction",
-        "provider",
-        "retries",
-        "timeouts",
-        "fallbacks"
-      ],
-      "related": [
-        "/docs/providers/compare-providers.md",
-        "/docs/troubleshooting/provider-errors.md"
-      ],
-      "sourcePath": "docs/reference/provider-abstraction.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/reference/provider-abstraction.md",
-      "min_read_minutes": 9,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/reference/registry-schema.md",
-      "slug": "reference/registry-schema",
-      "category": "reference",
-      "title": "Reference: Project Type Registry Schema",
-      "description": "Fields and validation rules for the wizard's project type registry.",
-      "audience_levels": [
-        "intermediate",
-        "advanced"
-      ],
-      "personas": [
-        "developer",
-        "admin"
-      ],
-      "categories": [
-        "reference"
-      ],
-      "tags": [
-        "schema",
-        "registry",
-        "wizard"
-      ],
-      "relatedProjectTypes": [],
-      "search_keywords": [],
-      "related": [],
-      "sourcePath": "docs/reference/registry-schema.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/reference/registry-schema.md",
-      "min_read_minutes": 10,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/reference/revalidation-api.md",
-      "slug": "reference/revalidation-api",
-      "category": "reference",
-      "title": "Reference: Revalidation API",
-      "description": "Token-secured endpoint to refresh cached docs and manifest after GitHub updates.",
-      "audience_levels": [
-        "intermediate",
-        "advanced"
-      ],
-      "personas": [
-        "developer",
-        "admin"
-      ],
-      "categories": [
-        "reference"
-      ],
-      "tags": [
-        "revalidation",
-        "webhook",
-        "cache"
-      ],
-      "relatedProjectTypes": [],
-      "search_keywords": [],
-      "related": [],
-      "sourcePath": "docs/reference/revalidation-api.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/reference/revalidation-api.md",
-      "min_read_minutes": 8,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/reference/session-record-schema.md",
-      "slug": "reference/session-record-schema",
-      "category": "reference",
-      "title": "Reference: Session Record Schema",
-      "description": "A minimal schema for recording AI sessions with audit fields.",
-      "audience_levels": [
-        "intermediate"
-      ],
-      "personas": [
-        "developer",
-        "admin"
-      ],
-      "categories": [
-        "reference"
-      ],
-      "tags": [],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "session",
-        "schema",
-        "audit",
-        "tokens",
-        "latency"
-      ],
-      "related": [
-        "/docs/tutorials/prisma-and-postgres-for-sessions.md",
-        "/docs/providers/security-best-practices.md"
-      ],
-      "sourcePath": "docs/reference/session-record-schema.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/reference/session-record-schema.md",
-      "min_read_minutes": 8,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/safety/human-in-the-loop.md",
-      "slug": "safety/human-in-the-loop",
-      "category": "safety",
-      "title": "Human-in-the-Loop",
-      "description": "Introduce approval gates for sensitive actions and define reviewer workflows.",
-      "audience_levels": [
-        "intermediate",
-        "advanced"
-      ],
-      "personas": [
-        "developer",
-        "PM",
-        "admin"
-      ],
-      "categories": [
-        "safety",
-        "operations"
-      ],
-      "tags": [],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "human in the loop",
-        "approval",
-        "review",
-        "gate"
-      ],
-      "related": [
-        "/docs/safety/overview.md",
-        "/docs/safety/output-filters.md"
-      ],
-      "sourcePath": "docs/safety/human-in-the-loop.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/safety/human-in-the-loop.md",
-      "min_read_minutes": 7,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/safety/output-filters.md",
-      "slug": "safety/output-filters",
-      "category": "safety",
-      "title": "Output Filters",
-      "description": "Add classifier/rule-based filters to block or redact unsafe outputs before they reach users.",
-      "audience_levels": [
-        "intermediate",
-        "advanced"
-      ],
-      "personas": [
-        "developer",
-        "admin"
-      ],
-      "categories": [
-        "safety",
-        "operations"
-      ],
-      "tags": [],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "safety filter",
-        "classifier",
-        "rules",
-        "redaction"
-      ],
-      "related": [
-        "/docs/safety/overview.md",
-        "/docs/safety/prompt-safety.md",
-        "/docs/safety/human-in-the-loop.md"
-      ],
-      "sourcePath": "docs/safety/output-filters.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/safety/output-filters.md",
-      "min_read_minutes": 8,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/safety/overview.md",
-      "slug": "safety/overview",
-      "category": "safety",
-      "title": "Safety & Responsible AI: Overview",
-      "description": "Define what we block, what we log, when we escalate, and how we mitigate abuse cases.",
-      "audience_levels": [
-        "intermediate",
-        "advanced"
-      ],
-      "personas": [
-        "developer",
-        "PM",
-        "admin"
-      ],
-      "categories": [
-        "safety",
-        "concepts"
-      ],
-      "tags": [],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "safety",
-        "responsible ai",
-        "policy",
-        "logging",
-        "escalation"
-      ],
-      "related": [
-        "/docs/safety/prompt-safety.md",
-        "/docs/safety/output-filters.md",
-        "/docs/safety/human-in-the-loop.md"
-      ],
-      "sourcePath": "docs/safety/overview.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/safety/overview.md",
-      "min_read_minutes": 8,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/safety/prompt-safety.md",
-      "slug": "safety/prompt-safety",
-      "category": "safety",
-      "title": "Prompt Safety",
-      "description": "Write prompts that minimize risk: scope clearly, avoid data leakage, and instruct models to refuse unsafe tasks.",
-      "audience_levels": [
-        "intermediate"
-      ],
-      "personas": [
-        "developer",
-        "PM"
-      ],
-      "categories": [
-        "safety",
-        "how-to"
-      ],
-      "tags": [],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "prompt safety",
-        "guardrails",
-        "refusal",
-        "scope"
-      ],
-      "related": [
-        "/docs/safety/overview.md",
-        "/docs/safety/output-filters.md"
-      ],
-      "sourcePath": "docs/safety/prompt-safety.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/safety/prompt-safety.md",
-      "min_read_minutes": 7,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/troubleshooting/auth-errors.md",
-      "slug": "troubleshooting/auth-errors",
-      "category": "troubleshooting",
-      "title": "Troubleshooting Auth Errors (Entra/NextAuth)",
-      "description": "Decode redirect URI, consent, and audience errors when using Azure AD with NextAuth.",
-      "audience_levels": [
-        "beginner",
-        "intermediate"
-      ],
-      "personas": [
-        "developer",
-        "admin"
-      ],
-      "categories": [
-        "troubleshooting",
-        "how-to"
-      ],
-      "tags": [],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "redirect uri",
-        "consent",
-        "audience",
-        "azure ad",
-        "entra",
-        "nextauth"
-      ],
-      "related": [
-        "/docs/operations/entra-sign-in-flow.md",
-        "/docs/operations/nextauth-azuread.md"
-      ],
-      "sourcePath": "docs/troubleshooting/auth-errors.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/troubleshooting/auth-errors.md",
-      "min_read_minutes": 6,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/troubleshooting/common-errors.md",
-      "slug": "troubleshooting/common-errors",
-      "category": "troubleshooting",
-      "title": "Troubleshooting: Common Errors",
-      "description": "Quick fixes for frequent pitfalls with providers, auth, and sync.",
-      "audience_levels": [
-        "beginner",
-        "intermediate"
-      ],
-      "personas": [
-        "developer",
-        "admin",
-        "PM"
-      ],
-      "categories": [
-        "troubleshooting"
-      ],
-      "tags": [
-        "errors",
-        "auth",
-        "providers",
-        "sync"
-      ],
-      "relatedProjectTypes": [],
-      "search_keywords": [],
-      "related": [],
-      "sourcePath": "docs/troubleshooting/common-errors.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/troubleshooting/common-errors.md",
-      "min_read_minutes": 6,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/troubleshooting/github-actions-ci.md",
-      "slug": "troubleshooting/github-actions-ci",
-      "category": "troubleshooting",
-      "title": "Troubleshooting GitHub Actions (Manifest Build)",
-      "description": "Fix failing manifest builds due to Node version mismatches, missing deps, or frontmatter errors.",
-      "audience_levels": [
-        "beginner",
-        "intermediate"
-      ],
-      "personas": [
-        "developer"
-      ],
-      "categories": [
-        "troubleshooting"
-      ],
-      "tags": [],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "github actions",
-        "ci",
-        "node version",
-        "dependencies",
-        "frontmatter"
-      ],
-      "related": [
-        "/docs/operations/github-flow-for-docs.md"
-      ],
-      "sourcePath": "docs/troubleshooting/github-actions-ci.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/troubleshooting/github-actions-ci.md",
-      "min_read_minutes": 5,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/troubleshooting/provider-errors.md",
-      "slug": "troubleshooting/provider-errors",
-      "category": "troubleshooting",
-      "title": "Troubleshooting Provider Errors",
-      "description": "Decode 401/403/429/5xx responses and add robust retries and timeouts.",
-      "audience_levels": [
-        "beginner",
-        "intermediate"
-      ],
-      "personas": [
-        "developer"
-      ],
-      "categories": [
-        "troubleshooting",
-        "how-to"
-      ],
-      "tags": [],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "http 429",
-        "rate limit",
-        "openai error",
-        "retry",
-        "timeout"
-      ],
-      "related": [
-        "/docs/providers/openai/auth-models-limits.md",
-        "/docs/providers/security-best-practices.md"
-      ],
-      "sourcePath": "docs/troubleshooting/provider-errors.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/troubleshooting/provider-errors.md",
-      "min_read_minutes": 7,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/troubleshooting/revalidation-failures.md",
-      "slug": "troubleshooting/revalidation-failures",
-      "category": "troubleshooting",
-      "title": "Troubleshooting Revalidation Failures",
-      "description": "Inspect GitHub webhook deliveries, secrets, and handler logic when on-demand revalidation fails.",
-      "audience_levels": [
-        "intermediate"
-      ],
-      "personas": [
-        "developer",
-        "admin"
-      ],
-      "categories": [
-        "troubleshooting",
-        "how-to"
-      ],
-      "tags": [],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "webhook",
-        "revalidate",
-        "github delivery",
-        "secret",
-        "nextjs"
-      ],
-      "related": [
-        "/docs/operations/content-sync-deep-dive.md",
-        "/docs/operations/admin-dashboard.md"
-      ],
-      "sourcePath": "docs/troubleshooting/revalidation-failures.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/troubleshooting/revalidation-failures.md",
-      "min_read_minutes": 6,
       "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
     {
@@ -2399,7 +940,7 @@
         "circuit breaker"
       ],
       "related": [
-        "/docs/troubleshooting/provider-errors.md",
+        "/docs/providers/security-best-practices.md",
         "/docs/patterns/workflows/batch-processing.md"
       ],
       "sourcePath": "docs/tutorials/production-hardening.md",
@@ -2442,111 +983,121 @@
       "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
     {
-      "path": "/docs/wizard/overview.md",
-      "slug": "wizard/overview",
-      "category": "wizard",
-      "title": "Project Initiator Wizard: Overview",
-      "description": "Walkthrough of the Wizard flow (Vision & Audience → Solution Shape → Launch Readiness → Review & Outputs) and how it stores sessions.",
+      "path": "/docs/safety/human-in-the-loop.md",
+      "slug": "safety/human-in-the-loop",
+      "category": "safety",
+      "title": "Human-in-the-Loop",
+      "description": "Introduce approval gates for sensitive actions and define reviewer workflows.",
       "audience_levels": [
-        "beginner",
-        "intermediate"
-      ],
-      "personas": [
-        "non-technical",
-        "PM",
-        "developer"
-      ],
-      "categories": [
-        "wizard"
-      ],
-      "tags": [
-        "wizard",
-        "sessions",
-        "kickstarter"
-      ],
-      "relatedProjectTypes": [],
-      "search_keywords": [],
-      "related": [
-        "/docs/wizard/types.md"
-      ],
-      "sourcePath": "docs/wizard/overview.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/wizard/overview.md",
-      "min_read_minutes": 12,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/wizard/types.md",
-      "slug": "wizard/types",
-      "category": "wizard",
-      "title": "Wizard Project Types",
-      "description": "Compare available project types, their inputs, personas, and outputs so you can choose confidently.",
-      "audience_levels": [
-        "beginner",
-        "intermediate"
-      ],
-      "personas": [
-        "non-technical",
-        "PM",
-        "developer"
-      ],
-      "categories": [
-        "wizard"
-      ],
-      "tags": [
-        "types",
-        "registry",
-        "templates"
-      ],
-      "relatedProjectTypes": [],
-      "search_keywords": [],
-      "related": [
-        "/docs/wizard/type-templates/internal-qa-copilot.mdx"
-      ],
-      "sourcePath": "docs/wizard/types.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/wizard/types.md",
-      "min_read_minutes": 10,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/patterns/rag/basics.md",
-      "slug": "patterns/rag/basics",
-      "category": "patterns",
-      "title": "RAG Basics",
-      "description": "Minimal retrieval-augmented generation: chunking, indexing, and grounded citations.",
-      "audience_levels": [
-        "intermediate"
+        "intermediate",
+        "advanced"
       ],
       "personas": [
         "developer",
-        "data-analyst"
+        "PM",
+        "admin"
       ],
       "categories": [
-        "patterns"
+        "safety",
+        "operations"
       ],
       "tags": [],
       "relatedProjectTypes": [],
       "search_keywords": [
-        "rag",
-        "chunking",
-        "embeddings",
-        "citations",
-        "grounding"
+        "human in the loop",
+        "approval",
+        "review",
+        "gate"
       ],
       "related": [
-        "/docs/patterns/rag/faq-rag.md",
-        "/docs/evaluations/grounded-qa-evals.md"
+        "/docs/safety/overview.md",
+        "/docs/safety/output-filters.md"
       ],
-      "sourcePath": "docs/patterns/rag/basics.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/patterns/rag/basics.md",
-      "min_read_minutes": 9,
+      "sourcePath": "docs/safety/human-in-the-loop.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/safety/human-in-the-loop.md",
+      "min_read_minutes": 7,
       "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
     {
-      "path": "/docs/patterns/rag/faq-rag.md",
-      "slug": "patterns/rag/faq-rag",
-      "category": "patterns",
-      "title": "FAQ RAG Pattern",
-      "description": "Build a FAQ-style RAG with a simple eval hook to keep answers grounded.",
+      "path": "/docs/safety/output-filters.md",
+      "slug": "safety/output-filters",
+      "category": "safety",
+      "title": "Output Filters",
+      "description": "Add classifier/rule-based filters to block or redact unsafe outputs before they reach users.",
+      "audience_levels": [
+        "intermediate",
+        "advanced"
+      ],
+      "personas": [
+        "developer",
+        "admin"
+      ],
+      "categories": [
+        "safety",
+        "operations"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "safety filter",
+        "classifier",
+        "rules",
+        "redaction"
+      ],
+      "related": [
+        "/docs/safety/overview.md",
+        "/docs/safety/prompt-safety.md",
+        "/docs/safety/human-in-the-loop.md"
+      ],
+      "sourcePath": "docs/safety/output-filters.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/safety/output-filters.md",
+      "min_read_minutes": 8,
+      "lastUpdated": "2025-10-06T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/safety/overview.md",
+      "slug": "safety/overview",
+      "category": "safety",
+      "title": "Safety & Responsible AI: Overview",
+      "description": "Define what we block, what we log, when we escalate, and how we mitigate abuse cases.",
+      "audience_levels": [
+        "intermediate",
+        "advanced"
+      ],
+      "personas": [
+        "developer",
+        "PM",
+        "admin"
+      ],
+      "categories": [
+        "safety",
+        "concepts"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "safety",
+        "responsible ai",
+        "policy",
+        "logging",
+        "escalation"
+      ],
+      "related": [
+        "/docs/safety/prompt-safety.md",
+        "/docs/safety/output-filters.md",
+        "/docs/safety/human-in-the-loop.md"
+      ],
+      "sourcePath": "docs/safety/overview.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/safety/overview.md",
+      "min_read_minutes": 8,
+      "lastUpdated": "2025-10-06T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/safety/prompt-safety.md",
+      "slug": "safety/prompt-safety",
+      "category": "safety",
+      "title": "Prompt Safety",
+      "description": "Write prompts that minimize risk: scope clearly, avoid data leakage, and instruct models to refuse unsafe tasks.",
       "audience_levels": [
         "intermediate"
       ],
@@ -2555,24 +1106,100 @@
         "PM"
       ],
       "categories": [
-        "patterns"
+        "safety",
+        "how-to"
       ],
       "tags": [],
       "relatedProjectTypes": [],
       "search_keywords": [
-        "faq rag",
-        "grounded qa",
-        "eval hook",
-        "faithfulness"
+        "prompt safety",
+        "guardrails",
+        "refusal",
+        "scope"
       ],
       "related": [
-        "/docs/patterns/rag/basics.md",
-        "/docs/evaluations/grounded-qa-evals.md",
-        "/docs/evaluations/offline-batch-evals.md"
+        "/docs/safety/overview.md",
+        "/docs/safety/output-filters.md"
       ],
-      "sourcePath": "docs/patterns/rag/faq-rag.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/patterns/rag/faq-rag.md",
+      "sourcePath": "docs/safety/prompt-safety.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/safety/prompt-safety.md",
       "min_read_minutes": 7,
+      "lastUpdated": "2025-10-06T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/providers/compare-providers.md",
+      "slug": "providers/compare-providers",
+      "category": "providers",
+      "title": "Compare Providers: Request Shapes and Tradeoffs",
+      "description": "A neutral comparison of common request/response patterns, limits, and typical costs.",
+      "audience_levels": [
+        "beginner",
+        "intermediate"
+      ],
+      "personas": [
+        "PM",
+        "developer",
+        "admin"
+      ],
+      "categories": [
+        "providers",
+        "concepts",
+        "reference"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "compare providers",
+        "openai vs anthropic",
+        "azure openai",
+        "request response"
+      ],
+      "related": [
+        "/docs/providers/openai/auth-models-limits.md",
+        "/docs/providers/anthropic/overview.md",
+        "/docs/providers/azure-openai/setup.md"
+      ],
+      "sourcePath": "docs/providers/compare-providers.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/providers/compare-providers.md",
+      "min_read_minutes": 8,
+      "lastUpdated": "2025-10-06T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/providers/security-best-practices.md",
+      "slug": "providers/security-best-practices",
+      "category": "providers",
+      "title": "Security Best Practices for AI Providers",
+      "description": "Handle keys, proxies, rotation, and logging safely across environments.",
+      "audience_levels": [
+        "intermediate",
+        "advanced"
+      ],
+      "personas": [
+        "developer",
+        "admin"
+      ],
+      "categories": [
+        "providers",
+        "operations",
+        "safety"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "api key handling",
+        "secrets",
+        "key rotation",
+        "proxy",
+        "redaction"
+      ],
+      "related": [
+        "/docs/providers/openai/auth-models-limits.md",
+        "/docs/safety/prompt-safety.md",
+        "/docs/evaluations/latency-cost-tradeoffs.md"
+      ],
+      "sourcePath": "docs/providers/security-best-practices.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/providers/security-best-practices.md",
+      "min_read_minutes": 9,
       "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
     {
@@ -2677,41 +1304,6 @@
       "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
     {
-      "path": "/docs/patterns/tools/function-calling.md",
-      "slug": "patterns/tools/function-calling",
-      "category": "patterns",
-      "title": "Cross‑Provider Tool/Function Calling",
-      "description": "Design schemas, ensure idempotency, and propagate errors consistently across providers.",
-      "audience_levels": [
-        "intermediate",
-        "advanced"
-      ],
-      "personas": [
-        "developer"
-      ],
-      "categories": [
-        "patterns"
-      ],
-      "tags": [],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "function calling",
-        "tools",
-        "schema",
-        "errors",
-        "openai",
-        "anthropic"
-      ],
-      "related": [
-        "/docs/patterns/agentic/router-multi-tool.md",
-        "/docs/patterns/workflows/batch-processing.md"
-      ],
-      "sourcePath": "docs/patterns/tools/function-calling.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/patterns/tools/function-calling.md",
-      "min_read_minutes": 10,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
-    },
-    {
       "path": "/docs/patterns/workflows/batch-processing.md",
       "slug": "patterns/workflows/batch-processing",
       "category": "patterns",
@@ -2747,6 +1339,109 @@
       "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
     {
+      "path": "/docs/patterns/rag/basics.md",
+      "slug": "patterns/rag/basics",
+      "category": "patterns",
+      "title": "RAG Basics",
+      "description": "Minimal retrieval-augmented generation: chunking, indexing, and grounded citations.",
+      "audience_levels": [
+        "intermediate"
+      ],
+      "personas": [
+        "developer",
+        "data-analyst"
+      ],
+      "categories": [
+        "patterns"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "rag",
+        "chunking",
+        "embeddings",
+        "citations",
+        "grounding"
+      ],
+      "related": [
+        "/docs/patterns/rag/faq-rag.md",
+        "/docs/evaluations/grounded-qa-evals.md"
+      ],
+      "sourcePath": "docs/patterns/rag/basics.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/patterns/rag/basics.md",
+      "min_read_minutes": 9,
+      "lastUpdated": "2025-10-06T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/patterns/rag/faq-rag.md",
+      "slug": "patterns/rag/faq-rag",
+      "category": "patterns",
+      "title": "FAQ RAG Pattern",
+      "description": "Build a FAQ-style RAG with a simple eval hook to keep answers grounded.",
+      "audience_levels": [
+        "intermediate"
+      ],
+      "personas": [
+        "developer",
+        "PM"
+      ],
+      "categories": [
+        "patterns"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "faq rag",
+        "grounded qa",
+        "eval hook",
+        "faithfulness"
+      ],
+      "related": [
+        "/docs/patterns/rag/basics.md",
+        "/docs/evaluations/grounded-qa-evals.md",
+        "/docs/evaluations/offline-batch-evals.md"
+      ],
+      "sourcePath": "docs/patterns/rag/faq-rag.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/patterns/rag/faq-rag.md",
+      "min_read_minutes": 7,
+      "lastUpdated": "2025-10-06T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/patterns/tools/function-calling.md",
+      "slug": "patterns/tools/function-calling",
+      "category": "patterns",
+      "title": "Cross‑Provider Tool/Function Calling",
+      "description": "Design schemas, ensure idempotency, and propagate errors consistently across providers.",
+      "audience_levels": [
+        "intermediate",
+        "advanced"
+      ],
+      "personas": [
+        "developer"
+      ],
+      "categories": [
+        "patterns"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "function calling",
+        "tools",
+        "schema",
+        "errors",
+        "openai",
+        "anthropic"
+      ],
+      "related": [
+        "/docs/patterns/agentic/router-multi-tool.md",
+        "/docs/patterns/workflows/batch-processing.md"
+      ],
+      "sourcePath": "docs/patterns/tools/function-calling.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/patterns/tools/function-calling.md",
+      "min_read_minutes": 10,
+      "lastUpdated": "2025-10-06T00:00:00.000Z"
+    },
+    {
       "path": "/docs/providers/anthropic/overview.md",
       "slug": "providers/anthropic/overview",
       "category": "providers",
@@ -2775,82 +1470,11 @@
       ],
       "related": [
         "/docs/providers/compare-providers.md",
-        "/docs/troubleshooting/provider-errors.md"
+        "/docs/providers/security-best-practices.md"
       ],
       "sourcePath": "docs/providers/anthropic/overview.md",
       "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/providers/anthropic/overview.md",
       "min_read_minutes": 7,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/providers/azure-openai/migrate-from-openai.md",
-      "slug": "providers/azure-openai/migrate-from-openai",
-      "category": "providers",
-      "title": "Migrate from OpenAI to Azure OpenAI",
-      "description": "Map base URL, api-version, and deployment names; avoid common pitfalls.",
-      "audience_levels": [
-        "intermediate"
-      ],
-      "personas": [
-        "developer"
-      ],
-      "categories": [
-        "providers",
-        "how-to",
-        "troubleshooting"
-      ],
-      "tags": [],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "azure openai migrate",
-        "deployment vs model",
-        "api-version",
-        "base url"
-      ],
-      "related": [
-        "/docs/providers/azure-openai/setup.md",
-        "/docs/troubleshooting/provider-errors.md"
-      ],
-      "sourcePath": "docs/providers/azure-openai/migrate-from-openai.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/providers/azure-openai/migrate-from-openai.md",
-      "min_read_minutes": 7,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/providers/azure-openai/setup.md",
-      "slug": "providers/azure-openai/setup",
-      "category": "providers",
-      "title": "Azure OpenAI: Setup and First Call",
-      "description": "Create an Azure OpenAI resource and deployment, then call it from Node and Python.",
-      "audience_levels": [
-        "beginner",
-        "intermediate"
-      ],
-      "personas": [
-        "admin",
-        "developer"
-      ],
-      "categories": [
-        "providers",
-        "how-to"
-      ],
-      "tags": [],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "azure openai",
-        "deployment",
-        "api-version",
-        "endpoint",
-        "node",
-        "python"
-      ],
-      "related": [
-        "/docs/providers/azure-openai/migrate-from-openai.md",
-        "/docs/providers/compare-providers.md"
-      ],
-      "sourcePath": "docs/providers/azure-openai/setup.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/providers/azure-openai/setup.md",
-      "min_read_minutes": 10,
       "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
     {
@@ -2919,9 +1543,9 @@
         "templates"
       ],
       "related": [
-        "/docs/how-to/pick-your-path.md",
         "/docs/providers/openai/auth-models-limits.md",
-        "/docs/troubleshooting/provider-errors.md"
+        "/docs/concepts/genai-vs-agentic.md",
+        "/docs/safety/prompt-safety.md"
       ],
       "sourcePath": "docs/providers/openai/chatgpt-productivity.md",
       "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/providers/openai/chatgpt-productivity.md",
@@ -2959,35 +1583,74 @@
       "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
     {
-      "path": "/docs/wizard/type-templates/internal-qa-copilot.mdx",
-      "slug": "wizard/type-templates/internal-qa-copilot",
-      "category": "wizard",
-      "title": "Type: Internal Q&A Copilot",
-      "description": "Answer internal policy and IT questions using an agent with retrieval.",
+      "path": "/docs/providers/azure-openai/migrate-from-openai.md",
+      "slug": "providers/azure-openai/migrate-from-openai",
+      "category": "providers",
+      "title": "Migrate from OpenAI to Azure OpenAI",
+      "description": "Map base URL, api-version, and deployment names; avoid common pitfalls.",
+      "audience_levels": [
+        "intermediate"
+      ],
+      "personas": [
+        "developer"
+      ],
+      "categories": [
+        "providers",
+        "how-to",
+        "troubleshooting"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "azure openai migrate",
+        "deployment vs model",
+        "api-version",
+        "base url"
+      ],
+      "related": [
+        "/docs/providers/azure-openai/setup.md",
+        "/docs/providers/security-best-practices.md"
+      ],
+      "sourcePath": "docs/providers/azure-openai/migrate-from-openai.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/providers/azure-openai/migrate-from-openai.md",
+      "min_read_minutes": 7,
+      "lastUpdated": "2025-10-06T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/providers/azure-openai/setup.md",
+      "slug": "providers/azure-openai/setup",
+      "category": "providers",
+      "title": "Azure OpenAI: Setup and First Call",
+      "description": "Create an Azure OpenAI resource and deployment, then call it from Node and Python.",
       "audience_levels": [
         "beginner",
         "intermediate"
       ],
       "personas": [
-        "PM",
+        "admin",
         "developer"
       ],
       "categories": [
-        "wizard"
+        "providers",
+        "how-to"
       ],
-      "tags": [
-        "copilot",
-        "rag",
-        "agent"
-      ],
+      "tags": [],
       "relatedProjectTypes": [],
-      "search_keywords": [],
-      "related": [
-        "/docs/patterns/rag/faq-rag.md"
+      "search_keywords": [
+        "azure openai",
+        "deployment",
+        "api-version",
+        "endpoint",
+        "node",
+        "python"
       ],
-      "sourcePath": "docs/wizard/type-templates/internal-qa-copilot.mdx",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/wizard/type-templates/internal-qa-copilot.mdx",
-      "min_read_minutes": 12,
+      "related": [
+        "/docs/providers/azure-openai/migrate-from-openai.md",
+        "/docs/providers/compare-providers.md"
+      ],
+      "sourcePath": "docs/providers/azure-openai/setup.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/providers/azure-openai/setup.md",
+      "min_read_minutes": 10,
       "lastUpdated": "2025-10-06T00:00:00.000Z"
     }
   ]

@@ -6,7 +6,7 @@ personas: ["developer", "data-analyst"]
 categories: ["quickstarts", "how-to"]
 min_read_minutes: 10
 last_reviewed: 2025-10-06
-related: ["/docs/quickstarts/try-genai-in-10-min.md", "/docs/providers/openai/auth-models-limits.md", "/docs/troubleshooting/provider-errors.md"]
+related: ["/docs/quickstarts/try-genai-in-10-min.md", "/docs/providers/openai/auth-models-limits.md", "/docs/providers/security-best-practices.md"]
 search_keywords: ["fastapi", "python openai", "retries", "timeout", "uvicorn"]
 ---
 

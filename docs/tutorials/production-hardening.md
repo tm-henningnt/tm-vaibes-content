@@ -6,7 +6,7 @@ personas: ["developer", "admin"]
 categories: ["tutorials", "operations"]
 min_read_minutes: 13
 last_reviewed: 2025-10-06
-related: ["/docs/troubleshooting/provider-errors.md", "/docs/patterns/workflows/batch-processing.md"]
+related: ["/docs/providers/security-best-practices.md", "/docs/patterns/workflows/batch-processing.md"]
 search_keywords: ["retries", "rate limits", "backpressure", "circuit breaker"]
 ---
 

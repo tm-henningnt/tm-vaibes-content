@@ -63,7 +63,7 @@ Limits and practical guardrails
 
 - Add `max_tokens` and keep prompts compact to control latency and cost.
 - Stream when building UIs to improve perceived performance.
-- Handle 401/403/429/5xx with short retries and backoff. See `/docs/troubleshooting/provider-errors.md`.
+- Handle 401/403/429/5xx with short retries and backoff. Review `/docs/providers/security-best-practices.md` for escalation patterns.
 
 Tokens in practice
 
