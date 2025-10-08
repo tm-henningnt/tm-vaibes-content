@@ -44,18 +44,18 @@ Keep arrays deduped; include at least one category; use `primary_category` if yo
 
 ## Wave 1 — Foundations & Onboarding (17 tasks)
 
-1. [ ] /docs/concepts/what-is-genai.md
+1. [qa ready] /docs/concepts/what-is-genai.md
    - Purpose: Define Generative AI, capabilities/limits, and mental models.
    - Audience: beginner → advanced.
    - Success: readers can articulate strengths/limits and when to avoid LLMs.
    - Pointers: OpenAI “How it works”, Anthropic “Constitutional AI”.
 
-2. [ ] /docs/concepts/genai-vs-agentic.md (expand)
+2. [qa ready] /docs/concepts/genai-vs-agentic.md (expand)
    - Purpose: Single‑shot vs multi‑step agentic systems; when agents help.
    - Audience: all.
    - Success: clear comparison table; decision checklist.
 
-3. [ ] /docs/concepts/prompting-styles.md
+3. [qa ready] /docs/concepts/prompting-styles.md
    - Purpose: Instruction, few‑shot, chain‑of‑thought, self‑ask, critique/repair.
    - Audience: all.
    - Success: side‑by‑side examples with pros/cons and failure modes.
