@@ -27,7 +27,9 @@
           "intermediate",
           "advanced"
         ]
-      }
+      },
+      "minItems": 1,
+      "uniqueItems": true
     },
     "personas": {
       "type": "array",
@@ -39,20 +41,24 @@
           "data-analyst",
           "admin"
         ]
-      }
+      },
+      "minItems": 1,
+      "uniqueItems": true
     },
     "categories": {
       "type": "array",
       "items": {
         "type": "string"
       },
-      "minItems": 1
+      "minItems": 1,
+      "uniqueItems": true
     },
     "tags": {
       "type": "array",
       "items": {
         "type": "string"
-      }
+      },
+      "uniqueItems": true
     },
     "min_read_minutes": {
       "type": "number"
@@ -65,19 +71,26 @@
       "type": "array",
       "items": {
         "type": "string"
-      }
+      },
+      "uniqueItems": true
     },
     "search_keywords": {
       "type": "array",
       "items": {
         "type": "string"
-      }
+      },
+      "uniqueItems": true
     },
     "related_project_types": {
       "type": "array",
       "items": {
         "type": "string"
-      }
+      },
+      "uniqueItems": true
+    },
+    "primary_category": {
+      "type": "string",
+      "minLength": 1
     },
     "show_toc": {
       "type": "boolean"

@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "build:manifest": "node tools/build-manifest.mjs",
-    "lint:frontmatter": "node tools/build-manifest.mjs --check"
+    "lint:frontmatter": "node tools/build-manifest.mjs --check",
+    "check:frontmatter": "node tools/check-frontmatter.mjs"
   },
   "dependencies": {
     "fast-glob": "^3.3.2",

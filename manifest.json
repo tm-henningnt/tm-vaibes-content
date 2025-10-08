@@ -1,13 +1,13 @@
 {
   "$schema": "./tools/schemas/manifest.schema.json",
   "version": "2025.10.0",
-  "generated_at": "2025-10-08T09:31:09.542Z",
-  "hash": "d55333a1ad6208a4",
+  "generated_at": "2025-10-08T12:05:52.540Z",
+  "hash": "d1fc5767dfa1af79",
   "docs": [
     {
       "path": "/docs/index.md",
       "slug": "index",
-      "category": "index",
+      "category": "landing",
       "title": "Welcome to the AI Docs & Kickstarter Wizard",
       "description": "Choose your path by audience and experience level, then dive into quickstarts, concepts, and the project initiator wizard.",
       "audience_levels": [
@@ -62,6 +62,319 @@
       "relatedProjectTypes": [],
       "search_keywords": [],
       "related": [],
+      "min_read_minutes": 3,
+      "lastUpdated": "2025-10-06T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/examples/a2a-coordination.md",
+      "slug": "examples/a2a-coordination",
+      "category": "examples",
+      "title": "Example: A2A Coordination",
+      "description": "Show two agents collaborating (planner → executor or QA → fixer) with a short transcript and outcomes.",
+      "audience_levels": [
+        "intermediate",
+        "advanced"
+      ],
+      "personas": [
+        "developer",
+        "PM"
+      ],
+      "categories": [
+        "examples"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "multi-agent",
+        "planner",
+        "executor",
+        "qa",
+        "fixer"
+      ],
+      "related": [
+        "/docs/patterns/a2a-agent-to-agent.md"
+      ],
+      "min_read_minutes": 8,
+      "lastUpdated": "2025-10-06T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/examples/ai-customer-support-triage.md",
+      "slug": "examples/ai-customer-support-triage",
+      "category": "examples",
+      "title": "Example: AI Customer Support Triage",
+      "description": "Router agent triages incoming messages with escalation rules and summaries.",
+      "audience_levels": [
+        "intermediate"
+      ],
+      "personas": [
+        "PM",
+        "developer"
+      ],
+      "categories": [
+        "examples"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "support",
+        "triage",
+        "router",
+        "escalation"
+      ],
+      "related": [
+        "/docs/patterns/agentic/router-multi-tool.md"
+      ],
+      "min_read_minutes": 7,
+      "lastUpdated": "2025-10-06T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/examples/content-drafter.md",
+      "slug": "examples/content-drafter",
+      "category": "examples",
+      "title": "Example: Content Drafter",
+      "description": "Straight‑through generation with tone/voice controls and a draft quality rubric.",
+      "audience_levels": [
+        "beginner",
+        "intermediate"
+      ],
+      "personas": [
+        "PM",
+        "developer"
+      ],
+      "categories": [
+        "examples"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "content",
+        "draft",
+        "tone",
+        "voice",
+        "rubric"
+      ],
+      "related": [
+        "/docs/evaluations/rubric-prompts.md"
+      ],
+      "min_read_minutes": 6,
+      "lastUpdated": "2025-10-06T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/examples/data-quality-qa.md",
+      "slug": "examples/data-quality-qa",
+      "category": "examples",
+      "title": "Example: Data Quality QA",
+      "description": "Use tool calls to read-only SQL/APIs to verify data checks; measure defects caught and false positives.",
+      "audience_levels": [
+        "intermediate",
+        "advanced"
+      ],
+      "personas": [
+        "developer",
+        "data-analyst"
+      ],
+      "categories": [
+        "examples"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "data quality",
+        "sql",
+        "qa",
+        "read-only",
+        "tools"
+      ],
+      "related": [
+        "/docs/patterns/tools/function-calling.md",
+        "/docs/evaluations/tool-use-evals.md"
+      ],
+      "min_read_minutes": 8,
+      "lastUpdated": "2025-10-06T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/examples/meeting-summarizer.md",
+      "slug": "examples/meeting-summarizer",
+      "category": "examples",
+      "title": "Example: Meeting Summarizer",
+      "description": "Generate structured notes with action items and owners.",
+      "audience_levels": [
+        "beginner",
+        "intermediate"
+      ],
+      "personas": [
+        "PM",
+        "developer"
+      ],
+      "categories": [
+        "examples"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "meeting",
+        "summary",
+        "actions",
+        "owners"
+      ],
+      "related": [
+        "/docs/patterns/workflows/batch-processing.md"
+      ],
+      "min_read_minutes": 6,
+      "lastUpdated": "2025-10-06T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/concepts/genai-vs-agentic.md",
+      "slug": "concepts/genai-vs-agentic",
+      "category": "concepts",
+      "title": "Generative AI vs. Agentic Systems",
+      "description": "What changes when you move from single-shot generation to multi-step, tool-using agents.",
+      "audience_levels": [
+        "beginner",
+        "intermediate"
+      ],
+      "personas": [
+        "non-technical",
+        "PM",
+        "developer",
+        "data-analyst"
+      ],
+      "categories": [
+        "concepts"
+      ],
+      "tags": [
+        "gen-ai",
+        "agents",
+        "concepts"
+      ],
+      "relatedProjectTypes": [],
+      "search_keywords": [],
+      "related": [],
+      "min_read_minutes": 8,
+      "lastUpdated": "2025-10-06T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/faq/index.md",
+      "slug": "faq/index",
+      "category": "faq",
+      "title": "FAQ",
+      "description": "Frequently asked questions about the docs and wizard.",
+      "audience_levels": [
+        "beginner",
+        "intermediate"
+      ],
+      "personas": [
+        "non-technical",
+        "PM",
+        "developer",
+        "admin"
+      ],
+      "categories": [
+        "faq"
+      ],
+      "tags": [
+        "questions",
+        "help"
+      ],
+      "relatedProjectTypes": [],
+      "search_keywords": [],
+      "related": [],
+      "min_read_minutes": 5,
+      "lastUpdated": "2025-10-06T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/faq/providers-and-costs.md",
+      "slug": "faq/providers-and-costs",
+      "category": "faq",
+      "title": "Providers and Costs: Basics",
+      "description": "Understand cost drivers, rate limits, and when to switch providers.",
+      "audience_levels": [
+        "beginner",
+        "intermediate"
+      ],
+      "personas": [
+        "PM",
+        "developer",
+        "admin"
+      ],
+      "categories": [
+        "faq"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "pricing",
+        "rate limits",
+        "token costs",
+        "provider selection"
+      ],
+      "related": [
+        "/docs/providers/compare-providers.md",
+        "/docs/patterns/cost-controls.md"
+      ],
+      "min_read_minutes": 5,
+      "lastUpdated": "2025-10-06T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/faq/vscode-and-extensions.md",
+      "slug": "faq/vscode-and-extensions",
+      "category": "faq",
+      "title": "VS Code and Extensions: FAQ",
+      "description": "Answers to common questions about settings, MDX preview, spell-check, and frontmatter.",
+      "audience_levels": [
+        "beginner",
+        "intermediate"
+      ],
+      "personas": [
+        "all contributors"
+      ],
+      "categories": [
+        "faq"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "vscode",
+        "mdx",
+        "markdown",
+        "frontmatter",
+        "spell checker"
+      ],
+      "related": [
+        "/docs/operations/vscode-setup-and-extensions.md"
+      ],
+      "min_read_minutes": 4,
+      "lastUpdated": "2025-10-06T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/faq/wizard-vs-examples.md",
+      "slug": "faq/wizard-vs-examples",
+      "category": "faq",
+      "title": "Wizard vs Hand‑Coded Examples",
+      "description": "When to use the Wizard for speed vs hand-coded examples for control.",
+      "audience_levels": [
+        "beginner",
+        "intermediate"
+      ],
+      "personas": [
+        "PM",
+        "developer"
+      ],
+      "categories": [
+        "faq"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "wizard",
+        "examples",
+        "tradeoffs",
+        "speed vs control"
+      ],
+      "related": [
+        "/docs/wizard/overview.md",
+        "/docs/quickstarts/js-server-route.md"
+      ],
       "min_read_minutes": 3,
       "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
@@ -295,194 +608,6 @@
         "/docs/patterns/agentic/router-multi-tool.md"
       ],
       "min_read_minutes": 7,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/concepts/genai-vs-agentic.md",
-      "slug": "concepts/genai-vs-agentic",
-      "category": "concepts",
-      "title": "Generative AI vs. Agentic Systems",
-      "description": "What changes when you move from single-shot generation to multi-step, tool-using agents.",
-      "audience_levels": [
-        "beginner",
-        "intermediate"
-      ],
-      "personas": [
-        "non-technical",
-        "PM",
-        "developer",
-        "data-analyst"
-      ],
-      "categories": [
-        "concepts"
-      ],
-      "tags": [
-        "gen-ai",
-        "agents",
-        "concepts"
-      ],
-      "relatedProjectTypes": [],
-      "search_keywords": [],
-      "related": [],
-      "min_read_minutes": 8,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/examples/a2a-coordination.md",
-      "slug": "examples/a2a-coordination",
-      "category": "examples",
-      "title": "Example: A2A Coordination",
-      "description": "Show two agents collaborating (planner → executor or QA → fixer) with a short transcript and outcomes.",
-      "audience_levels": [
-        "intermediate",
-        "advanced"
-      ],
-      "personas": [
-        "developer",
-        "PM"
-      ],
-      "categories": [
-        "examples"
-      ],
-      "tags": [],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "multi-agent",
-        "planner",
-        "executor",
-        "qa",
-        "fixer"
-      ],
-      "related": [
-        "/docs/patterns/a2a-agent-to-agent.md"
-      ],
-      "min_read_minutes": 8,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/examples/ai-customer-support-triage.md",
-      "slug": "examples/ai-customer-support-triage",
-      "category": "examples",
-      "title": "Example: AI Customer Support Triage",
-      "description": "Router agent triages incoming messages with escalation rules and summaries.",
-      "audience_levels": [
-        "intermediate"
-      ],
-      "personas": [
-        "PM",
-        "developer"
-      ],
-      "categories": [
-        "examples"
-      ],
-      "tags": [],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "support",
-        "triage",
-        "router",
-        "escalation"
-      ],
-      "related": [
-        "/docs/patterns/agentic/router-multi-tool.md"
-      ],
-      "min_read_minutes": 7,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/examples/content-drafter.md",
-      "slug": "examples/content-drafter",
-      "category": "examples",
-      "title": "Example: Content Drafter",
-      "description": "Straight‑through generation with tone/voice controls and a draft quality rubric.",
-      "audience_levels": [
-        "beginner",
-        "intermediate"
-      ],
-      "personas": [
-        "PM",
-        "developer"
-      ],
-      "categories": [
-        "examples"
-      ],
-      "tags": [],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "content",
-        "draft",
-        "tone",
-        "voice",
-        "rubric"
-      ],
-      "related": [
-        "/docs/evaluations/rubric-prompts.md"
-      ],
-      "min_read_minutes": 6,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/examples/data-quality-qa.md",
-      "slug": "examples/data-quality-qa",
-      "category": "examples",
-      "title": "Example: Data Quality QA",
-      "description": "Use tool calls to read-only SQL/APIs to verify data checks; measure defects caught and false positives.",
-      "audience_levels": [
-        "intermediate",
-        "advanced"
-      ],
-      "personas": [
-        "developer",
-        "data-analyst"
-      ],
-      "categories": [
-        "examples"
-      ],
-      "tags": [],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "data quality",
-        "sql",
-        "qa",
-        "read-only",
-        "tools"
-      ],
-      "related": [
-        "/docs/patterns/tools/function-calling.md",
-        "/docs/evaluations/tool-use-evals.md"
-      ],
-      "min_read_minutes": 8,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/examples/meeting-summarizer.md",
-      "slug": "examples/meeting-summarizer",
-      "category": "examples",
-      "title": "Example: Meeting Summarizer",
-      "description": "Generate structured notes with action items and owners.",
-      "audience_levels": [
-        "beginner",
-        "intermediate"
-      ],
-      "personas": [
-        "PM",
-        "developer"
-      ],
-      "categories": [
-        "examples"
-      ],
-      "tags": [],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "meeting",
-        "summary",
-        "actions",
-        "owners"
-      ],
-      "related": [
-        "/docs/patterns/workflows/batch-processing.md"
-      ],
-      "min_read_minutes": 6,
       "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
     {
@@ -1122,131 +1247,6 @@
       "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
     {
-      "path": "/docs/faq/index.md",
-      "slug": "faq/index",
-      "category": "faq",
-      "title": "FAQ",
-      "description": "Frequently asked questions about the docs and wizard.",
-      "audience_levels": [
-        "beginner",
-        "intermediate"
-      ],
-      "personas": [
-        "non-technical",
-        "PM",
-        "developer",
-        "admin"
-      ],
-      "categories": [
-        "faq"
-      ],
-      "tags": [
-        "questions",
-        "help"
-      ],
-      "relatedProjectTypes": [],
-      "search_keywords": [],
-      "related": [],
-      "min_read_minutes": 5,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/faq/providers-and-costs.md",
-      "slug": "faq/providers-and-costs",
-      "category": "faq",
-      "title": "Providers and Costs: Basics",
-      "description": "Understand cost drivers, rate limits, and when to switch providers.",
-      "audience_levels": [
-        "beginner",
-        "intermediate"
-      ],
-      "personas": [
-        "PM",
-        "developer",
-        "admin"
-      ],
-      "categories": [
-        "faq"
-      ],
-      "tags": [],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "pricing",
-        "rate limits",
-        "token costs",
-        "provider selection"
-      ],
-      "related": [
-        "/docs/providers/compare-providers.md",
-        "/docs/patterns/cost-controls.md"
-      ],
-      "min_read_minutes": 5,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/faq/vscode-and-extensions.md",
-      "slug": "faq/vscode-and-extensions",
-      "category": "faq",
-      "title": "VS Code and Extensions: FAQ",
-      "description": "Answers to common questions about settings, MDX preview, spell-check, and frontmatter.",
-      "audience_levels": [
-        "beginner",
-        "intermediate"
-      ],
-      "personas": [
-        "all contributors"
-      ],
-      "categories": [
-        "faq"
-      ],
-      "tags": [],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "vscode",
-        "mdx",
-        "markdown",
-        "frontmatter",
-        "spell checker"
-      ],
-      "related": [
-        "/docs/operations/vscode-setup-and-extensions.md"
-      ],
-      "min_read_minutes": 4,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/faq/wizard-vs-examples.md",
-      "slug": "faq/wizard-vs-examples",
-      "category": "faq",
-      "title": "Wizard vs Hand‑Coded Examples",
-      "description": "When to use the Wizard for speed vs hand-coded examples for control.",
-      "audience_levels": [
-        "beginner",
-        "intermediate"
-      ],
-      "personas": [
-        "PM",
-        "developer"
-      ],
-      "categories": [
-        "faq"
-      ],
-      "tags": [],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "wizard",
-        "examples",
-        "tradeoffs",
-        "speed vs control"
-      ],
-      "related": [
-        "/docs/wizard/overview.md",
-        "/docs/quickstarts/js-server-route.md"
-      ],
-      "min_read_minutes": 3,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
-    },
-    {
       "path": "/docs/patterns/a2a-agent-to-agent.md",
       "slug": "patterns/a2a-agent-to-agent",
       "category": "patterns",
@@ -1416,6 +1416,149 @@
         "/docs/troubleshooting/provider-errors.md"
       ],
       "min_read_minutes": 9,
+      "lastUpdated": "2025-10-06T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/quickstarts/first-idea.md",
+      "slug": "quickstarts/first-idea",
+      "category": "quickstarts",
+      "title": "Getting started: Your first AI idea",
+      "description": "A 10-minute guided path from idea to a concrete project brief with success metrics and a starter backlog.",
+      "audience_levels": [
+        "beginner",
+        "intermediate"
+      ],
+      "personas": [
+        "non-technical",
+        "PM",
+        "developer"
+      ],
+      "categories": [
+        "quickstarts"
+      ],
+      "tags": [
+        "gen-ai",
+        "ideation",
+        "kickstarter",
+        "wizard"
+      ],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "project brief",
+        "success metrics",
+        "backlog",
+        "prompt recap"
+      ],
+      "related": [
+        "/docs/wizard/overview.md",
+        "/docs/patterns/agentic/planner-executor.md"
+      ],
+      "min_read_minutes": 10,
+      "lastUpdated": "2025-10-06T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/quickstarts/js-server-route.md",
+      "slug": "quickstarts/js-server-route",
+      "category": "quickstarts",
+      "title": "JS/TS Server Route: Safe Provider Calls",
+      "description": "Implement a minimal server-only route that calls OpenAI safely with retries and no client-side keys.",
+      "audience_levels": [
+        "beginner",
+        "intermediate"
+      ],
+      "personas": [
+        "developer"
+      ],
+      "categories": [
+        "quickstarts",
+        "how-to"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "next.js api route",
+        "express server",
+        "openai node",
+        "no client key",
+        "rate limits"
+      ],
+      "related": [
+        "/docs/quickstarts/try-genai-in-10-min.md",
+        "/docs/providers/security-best-practices.md",
+        "/docs/providers/openai/auth-models-limits.md"
+      ],
+      "min_read_minutes": 10,
+      "lastUpdated": "2025-10-06T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/quickstarts/python-fastapi.md",
+      "slug": "quickstarts/python-fastapi",
+      "category": "quickstarts",
+      "title": "Python FastAPI Endpoint for AI",
+      "description": "Minimal FastAPI endpoint calling OpenAI with timeouts and basic retries.",
+      "audience_levels": [
+        "beginner",
+        "intermediate"
+      ],
+      "personas": [
+        "developer",
+        "data-analyst"
+      ],
+      "categories": [
+        "quickstarts",
+        "how-to"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "fastapi",
+        "python openai",
+        "retries",
+        "timeout",
+        "uvicorn"
+      ],
+      "related": [
+        "/docs/quickstarts/try-genai-in-10-min.md",
+        "/docs/providers/openai/auth-models-limits.md",
+        "/docs/troubleshooting/provider-errors.md"
+      ],
+      "min_read_minutes": 10,
+      "lastUpdated": "2025-10-06T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/quickstarts/try-genai-in-10-min.md",
+      "slug": "quickstarts/try-genai-in-10-min",
+      "category": "quickstarts",
+      "title": "Try GenAI in 10 Minutes",
+      "description": "Zero-to-first result using OpenAI from a safe server endpoint in Node or Python.",
+      "audience_levels": [
+        "beginner"
+      ],
+      "personas": [
+        "non-technical",
+        "PM",
+        "developer"
+      ],
+      "categories": [
+        "quickstarts",
+        "how-to"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "openai quickstart",
+        "first ai app",
+        "server-side api key",
+        "node",
+        "python"
+      ],
+      "related": [
+        "/docs/quickstarts/js-server-route.md",
+        "/docs/quickstarts/python-fastapi.md",
+        "/docs/wizard/overview.md",
+        "/docs/how-to/pick-your-path.md"
+      ],
+      "min_read_minutes": 8,
       "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
     {
@@ -1626,149 +1769,6 @@
       "related": [
         "/docs/tutorials/prisma-and-postgres-for-sessions.md",
         "/docs/providers/security-best-practices.md"
-      ],
-      "min_read_minutes": 8,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/quickstarts/first-idea.md",
-      "slug": "quickstarts/first-idea",
-      "category": "quickstarts",
-      "title": "Getting started: Your first AI idea",
-      "description": "A 10-minute guided path from idea to a concrete project brief with success metrics and a starter backlog.",
-      "audience_levels": [
-        "beginner",
-        "intermediate"
-      ],
-      "personas": [
-        "non-technical",
-        "PM",
-        "developer"
-      ],
-      "categories": [
-        "quickstarts"
-      ],
-      "tags": [
-        "gen-ai",
-        "ideation",
-        "kickstarter",
-        "wizard"
-      ],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "project brief",
-        "success metrics",
-        "backlog",
-        "prompt recap"
-      ],
-      "related": [
-        "/docs/wizard/overview.md",
-        "/docs/patterns/agentic/planner-executor.md"
-      ],
-      "min_read_minutes": 10,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/quickstarts/js-server-route.md",
-      "slug": "quickstarts/js-server-route",
-      "category": "quickstarts",
-      "title": "JS/TS Server Route: Safe Provider Calls",
-      "description": "Implement a minimal server-only route that calls OpenAI safely with retries and no client-side keys.",
-      "audience_levels": [
-        "beginner",
-        "intermediate"
-      ],
-      "personas": [
-        "developer"
-      ],
-      "categories": [
-        "quickstarts",
-        "how-to"
-      ],
-      "tags": [],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "next.js api route",
-        "express server",
-        "openai node",
-        "no client key",
-        "rate limits"
-      ],
-      "related": [
-        "/docs/quickstarts/try-genai-in-10-min.md",
-        "/docs/providers/security-best-practices.md",
-        "/docs/providers/openai/auth-models-limits.md"
-      ],
-      "min_read_minutes": 10,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/quickstarts/python-fastapi.md",
-      "slug": "quickstarts/python-fastapi",
-      "category": "quickstarts",
-      "title": "Python FastAPI Endpoint for AI",
-      "description": "Minimal FastAPI endpoint calling OpenAI with timeouts and basic retries.",
-      "audience_levels": [
-        "beginner",
-        "intermediate"
-      ],
-      "personas": [
-        "developer",
-        "data-analyst"
-      ],
-      "categories": [
-        "quickstarts",
-        "how-to"
-      ],
-      "tags": [],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "fastapi",
-        "python openai",
-        "retries",
-        "timeout",
-        "uvicorn"
-      ],
-      "related": [
-        "/docs/quickstarts/try-genai-in-10-min.md",
-        "/docs/providers/openai/auth-models-limits.md",
-        "/docs/troubleshooting/provider-errors.md"
-      ],
-      "min_read_minutes": 10,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/quickstarts/try-genai-in-10-min.md",
-      "slug": "quickstarts/try-genai-in-10-min",
-      "category": "quickstarts",
-      "title": "Try GenAI in 10 Minutes",
-      "description": "Zero-to-first result using OpenAI from a safe server endpoint in Node or Python.",
-      "audience_levels": [
-        "beginner"
-      ],
-      "personas": [
-        "non-technical",
-        "PM",
-        "developer"
-      ],
-      "categories": [
-        "quickstarts",
-        "how-to"
-      ],
-      "tags": [],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "openai quickstart",
-        "first ai app",
-        "server-side api key",
-        "node",
-        "python"
-      ],
-      "related": [
-        "/docs/quickstarts/js-server-route.md",
-        "/docs/quickstarts/python-fastapi.md",
-        "/docs/wizard/overview.md",
-        "/docs/how-to/pick-your-path.md"
       ],
       "min_read_minutes": 8,
       "lastUpdated": "2025-10-06T00:00:00.000Z"
@@ -2362,103 +2362,6 @@
       "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
     {
-      "path": "/docs/patterns/rag/basics.md",
-      "slug": "patterns/rag/basics",
-      "category": "patterns",
-      "title": "RAG Basics",
-      "description": "Minimal retrieval-augmented generation: chunking, indexing, and grounded citations.",
-      "audience_levels": [
-        "intermediate"
-      ],
-      "personas": [
-        "developer",
-        "data-analyst"
-      ],
-      "categories": [
-        "patterns"
-      ],
-      "tags": [],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "rag",
-        "chunking",
-        "embeddings",
-        "citations",
-        "grounding"
-      ],
-      "related": [
-        "/docs/patterns/rag/faq-rag.md",
-        "/docs/evaluations/grounded-qa-evals.md"
-      ],
-      "min_read_minutes": 9,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/patterns/rag/faq-rag.md",
-      "slug": "patterns/rag/faq-rag",
-      "category": "patterns",
-      "title": "FAQ RAG Pattern",
-      "description": "Build a FAQ-style RAG with a simple eval hook to keep answers grounded.",
-      "audience_levels": [
-        "intermediate"
-      ],
-      "personas": [
-        "developer",
-        "PM"
-      ],
-      "categories": [
-        "patterns"
-      ],
-      "tags": [],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "faq rag",
-        "grounded qa",
-        "eval hook",
-        "faithfulness"
-      ],
-      "related": [
-        "/docs/patterns/rag/basics.md",
-        "/docs/evaluations/grounded-qa-evals.md",
-        "/docs/evaluations/offline-batch-evals.md"
-      ],
-      "min_read_minutes": 7,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/patterns/tools/function-calling.md",
-      "slug": "patterns/tools/function-calling",
-      "category": "patterns",
-      "title": "Cross‑Provider Tool/Function Calling",
-      "description": "Design schemas, ensure idempotency, and propagate errors consistently across providers.",
-      "audience_levels": [
-        "intermediate",
-        "advanced"
-      ],
-      "personas": [
-        "developer"
-      ],
-      "categories": [
-        "patterns"
-      ],
-      "tags": [],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "function calling",
-        "tools",
-        "schema",
-        "errors",
-        "openai",
-        "anthropic"
-      ],
-      "related": [
-        "/docs/patterns/agentic/router-multi-tool.md",
-        "/docs/patterns/workflows/batch-processing.md"
-      ],
-      "min_read_minutes": 10,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
-    },
-    {
       "path": "/docs/patterns/agentic/planner-executor.md",
       "slug": "patterns/agentic/planner-executor",
       "category": "patterns",
@@ -2551,6 +2454,103 @@
         "/docs/patterns/observability-context.md"
       ],
       "min_read_minutes": 9,
+      "lastUpdated": "2025-10-06T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/patterns/tools/function-calling.md",
+      "slug": "patterns/tools/function-calling",
+      "category": "patterns",
+      "title": "Cross‑Provider Tool/Function Calling",
+      "description": "Design schemas, ensure idempotency, and propagate errors consistently across providers.",
+      "audience_levels": [
+        "intermediate",
+        "advanced"
+      ],
+      "personas": [
+        "developer"
+      ],
+      "categories": [
+        "patterns"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "function calling",
+        "tools",
+        "schema",
+        "errors",
+        "openai",
+        "anthropic"
+      ],
+      "related": [
+        "/docs/patterns/agentic/router-multi-tool.md",
+        "/docs/patterns/workflows/batch-processing.md"
+      ],
+      "min_read_minutes": 10,
+      "lastUpdated": "2025-10-06T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/patterns/rag/basics.md",
+      "slug": "patterns/rag/basics",
+      "category": "patterns",
+      "title": "RAG Basics",
+      "description": "Minimal retrieval-augmented generation: chunking, indexing, and grounded citations.",
+      "audience_levels": [
+        "intermediate"
+      ],
+      "personas": [
+        "developer",
+        "data-analyst"
+      ],
+      "categories": [
+        "patterns"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "rag",
+        "chunking",
+        "embeddings",
+        "citations",
+        "grounding"
+      ],
+      "related": [
+        "/docs/patterns/rag/faq-rag.md",
+        "/docs/evaluations/grounded-qa-evals.md"
+      ],
+      "min_read_minutes": 9,
+      "lastUpdated": "2025-10-06T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/patterns/rag/faq-rag.md",
+      "slug": "patterns/rag/faq-rag",
+      "category": "patterns",
+      "title": "FAQ RAG Pattern",
+      "description": "Build a FAQ-style RAG with a simple eval hook to keep answers grounded.",
+      "audience_levels": [
+        "intermediate"
+      ],
+      "personas": [
+        "developer",
+        "PM"
+      ],
+      "categories": [
+        "patterns"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "faq rag",
+        "grounded qa",
+        "eval hook",
+        "faithfulness"
+      ],
+      "related": [
+        "/docs/patterns/rag/basics.md",
+        "/docs/evaluations/grounded-qa-evals.md",
+        "/docs/evaluations/offline-batch-evals.md"
+      ],
+      "min_read_minutes": 7,
       "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
     {
@@ -2688,6 +2688,36 @@
       "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
     {
+      "path": "/docs/wizard/type-templates/internal-qa-copilot.mdx",
+      "slug": "wizard/type-templates/internal-qa-copilot",
+      "category": "wizard",
+      "title": "Type: Internal Q&A Copilot",
+      "description": "Answer internal policy and IT questions using an agent with retrieval.",
+      "audience_levels": [
+        "beginner",
+        "intermediate"
+      ],
+      "personas": [
+        "PM",
+        "developer"
+      ],
+      "categories": [
+        "wizard"
+      ],
+      "tags": [
+        "copilot",
+        "rag",
+        "agent"
+      ],
+      "relatedProjectTypes": [],
+      "search_keywords": [],
+      "related": [
+        "/docs/patterns/rag/faq-rag.md"
+      ],
+      "min_read_minutes": 12,
+      "lastUpdated": "2025-10-06T00:00:00.000Z"
+    },
+    {
       "path": "/docs/providers/openai/auth-models-limits.md",
       "slug": "providers/openai/auth-models-limits",
       "category": "providers",
@@ -2784,36 +2814,6 @@
       "search_keywords": [],
       "related": [],
       "min_read_minutes": 7,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/wizard/type-templates/internal-qa-copilot.mdx",
-      "slug": "wizard/type-templates/internal-qa-copilot",
-      "category": "wizard",
-      "title": "Type: Internal Q&A Copilot",
-      "description": "Answer internal policy and IT questions using an agent with retrieval.",
-      "audience_levels": [
-        "beginner",
-        "intermediate"
-      ],
-      "personas": [
-        "PM",
-        "developer"
-      ],
-      "categories": [
-        "wizard"
-      ],
-      "tags": [
-        "copilot",
-        "rag",
-        "agent"
-      ],
-      "relatedProjectTypes": [],
-      "search_keywords": [],
-      "related": [
-        "/docs/patterns/rag/faq-rag.md"
-      ],
-      "min_read_minutes": 12,
       "lastUpdated": "2025-10-06T00:00:00.000Z"
     }
   ]

@@ -3,6 +3,17 @@ import matter from 'gray-matter';
 import { readFileSync, writeFileSync } from 'fs';
 import { createHash } from 'crypto';
 
+const toKebabCase = (value) => {
+  if (!value) return '';
+  return value
+    .toString()
+    .trim()
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '')
+    || 'uncategorized';
+};
+
 const files = await fg(['docs/**/*.{md,mdx}'], { dot: false });
 const docs = [];
 for (const path of files) {
@@ -16,17 +27,23 @@ for (const path of files) {
   const normalizedPath = path.replace(/\\/g, '/');
   const relativePath = normalizedPath.replace(/^docs\//, '');
   const slug = relativePath.replace(/\.(md|mdx)$/i, '');
-  const category = slug.split('/')[0] || 'uncategorized';
+
+  const categories = Array.isArray(data.categories)
+    ? data.categories.filter(Boolean)
+    : [];
+  const fallbackCategory = slug.split('/')[0] || 'uncategorized';
+  const primaryCategory = data.primary_category || categories[0] || fallbackCategory;
+  const normalizedCategory = toKebabCase(primaryCategory);
 
   const docEntry = {
     path: '/' + normalizedPath,
     slug,
-    category,
+    category: normalizedCategory,
     title: data.title,
     description: data.description,
     audience_levels: data.audience_levels || [],
     personas: data.personas || [],
-    categories: data.categories || [],
+    categories,
     tags: data.tags || [],
     relatedProjectTypes: data.related_project_types || [],
     search_keywords: data.search_keywords || [],

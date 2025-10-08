@@ -6,7 +6,7 @@ on:
     branches: [ main ]
 
 jobs:
-  build:
+  validate:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -14,4 +14,9 @@ jobs:
         with:
           node-version: '20'
       - run: npm ci
-      - run: npm run build:manifest
+      - name: Lint frontmatter (manifest --check)
+        run: npm run lint:frontmatter
+      - name: Custom frontmatter validation
+        run: npm run check:frontmatter
+      - name: Build manifest
+        run: npm run build:manifest
