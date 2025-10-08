@@ -54,6 +54,17 @@
         "personas": {
           "type": "array",
           "items": { "type": "string", "minLength": 1 }
+        },
+        "sourcePath": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^[A-Za-z0-9._\\/\-]+$",
+          "description": "Path to the source markdown relative to the repo root (no leading slash)."
+        },
+        "sourceUrl": {
+          "type": "string",
+          "format": "uri",
+          "description": "Fully-qualified raw URL (e.g., GitHub raw) pointing at the markdown source."
         }
       },
       "additionalProperties": true

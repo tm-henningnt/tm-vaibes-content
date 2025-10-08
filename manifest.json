@@ -1,8 +1,8 @@
 {
   "$schema": "./tools/schemas/manifest.schema.json",
-  "version": "2025.10.0",
-  "generated_at": "2025-10-08T12:05:52.540Z",
-  "hash": "d1fc5767dfa1af79",
+  "version": "2025.10.1",
+  "generated_at": "2025-10-08T20:37:45.690Z",
+  "hash": "a2b2a8ec043c9f3c",
   "docs": [
     {
       "path": "/docs/index.md",
@@ -33,6 +33,8 @@
       "relatedProjectTypes": [],
       "search_keywords": [],
       "related": [],
+      "sourcePath": "docs/index.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/index.md",
       "min_read_minutes": 10,
       "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
@@ -62,165 +64,9 @@
       "relatedProjectTypes": [],
       "search_keywords": [],
       "related": [],
+      "sourcePath": "docs/release-notes.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/release-notes.md",
       "min_read_minutes": 3,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/examples/a2a-coordination.md",
-      "slug": "examples/a2a-coordination",
-      "category": "examples",
-      "title": "Example: A2A Coordination",
-      "description": "Show two agents collaborating (planner → executor or QA → fixer) with a short transcript and outcomes.",
-      "audience_levels": [
-        "intermediate",
-        "advanced"
-      ],
-      "personas": [
-        "developer",
-        "PM"
-      ],
-      "categories": [
-        "examples"
-      ],
-      "tags": [],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "multi-agent",
-        "planner",
-        "executor",
-        "qa",
-        "fixer"
-      ],
-      "related": [
-        "/docs/patterns/a2a-agent-to-agent.md"
-      ],
-      "min_read_minutes": 8,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/examples/ai-customer-support-triage.md",
-      "slug": "examples/ai-customer-support-triage",
-      "category": "examples",
-      "title": "Example: AI Customer Support Triage",
-      "description": "Router agent triages incoming messages with escalation rules and summaries.",
-      "audience_levels": [
-        "intermediate"
-      ],
-      "personas": [
-        "PM",
-        "developer"
-      ],
-      "categories": [
-        "examples"
-      ],
-      "tags": [],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "support",
-        "triage",
-        "router",
-        "escalation"
-      ],
-      "related": [
-        "/docs/patterns/agentic/router-multi-tool.md"
-      ],
-      "min_read_minutes": 7,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/examples/content-drafter.md",
-      "slug": "examples/content-drafter",
-      "category": "examples",
-      "title": "Example: Content Drafter",
-      "description": "Straight‑through generation with tone/voice controls and a draft quality rubric.",
-      "audience_levels": [
-        "beginner",
-        "intermediate"
-      ],
-      "personas": [
-        "PM",
-        "developer"
-      ],
-      "categories": [
-        "examples"
-      ],
-      "tags": [],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "content",
-        "draft",
-        "tone",
-        "voice",
-        "rubric"
-      ],
-      "related": [
-        "/docs/evaluations/rubric-prompts.md"
-      ],
-      "min_read_minutes": 6,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/examples/data-quality-qa.md",
-      "slug": "examples/data-quality-qa",
-      "category": "examples",
-      "title": "Example: Data Quality QA",
-      "description": "Use tool calls to read-only SQL/APIs to verify data checks; measure defects caught and false positives.",
-      "audience_levels": [
-        "intermediate",
-        "advanced"
-      ],
-      "personas": [
-        "developer",
-        "data-analyst"
-      ],
-      "categories": [
-        "examples"
-      ],
-      "tags": [],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "data quality",
-        "sql",
-        "qa",
-        "read-only",
-        "tools"
-      ],
-      "related": [
-        "/docs/patterns/tools/function-calling.md",
-        "/docs/evaluations/tool-use-evals.md"
-      ],
-      "min_read_minutes": 8,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/examples/meeting-summarizer.md",
-      "slug": "examples/meeting-summarizer",
-      "category": "examples",
-      "title": "Example: Meeting Summarizer",
-      "description": "Generate structured notes with action items and owners.",
-      "audience_levels": [
-        "beginner",
-        "intermediate"
-      ],
-      "personas": [
-        "PM",
-        "developer"
-      ],
-      "categories": [
-        "examples"
-      ],
-      "tags": [],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "meeting",
-        "summary",
-        "actions",
-        "owners"
-      ],
-      "related": [
-        "/docs/patterns/workflows/batch-processing.md"
-      ],
-      "min_read_minutes": 6,
       "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
     {
@@ -250,132 +96,9 @@
       "relatedProjectTypes": [],
       "search_keywords": [],
       "related": [],
+      "sourcePath": "docs/concepts/genai-vs-agentic.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/concepts/genai-vs-agentic.md",
       "min_read_minutes": 8,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/faq/index.md",
-      "slug": "faq/index",
-      "category": "faq",
-      "title": "FAQ",
-      "description": "Frequently asked questions about the docs and wizard.",
-      "audience_levels": [
-        "beginner",
-        "intermediate"
-      ],
-      "personas": [
-        "non-technical",
-        "PM",
-        "developer",
-        "admin"
-      ],
-      "categories": [
-        "faq"
-      ],
-      "tags": [
-        "questions",
-        "help"
-      ],
-      "relatedProjectTypes": [],
-      "search_keywords": [],
-      "related": [],
-      "min_read_minutes": 5,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/faq/providers-and-costs.md",
-      "slug": "faq/providers-and-costs",
-      "category": "faq",
-      "title": "Providers and Costs: Basics",
-      "description": "Understand cost drivers, rate limits, and when to switch providers.",
-      "audience_levels": [
-        "beginner",
-        "intermediate"
-      ],
-      "personas": [
-        "PM",
-        "developer",
-        "admin"
-      ],
-      "categories": [
-        "faq"
-      ],
-      "tags": [],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "pricing",
-        "rate limits",
-        "token costs",
-        "provider selection"
-      ],
-      "related": [
-        "/docs/providers/compare-providers.md",
-        "/docs/patterns/cost-controls.md"
-      ],
-      "min_read_minutes": 5,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/faq/vscode-and-extensions.md",
-      "slug": "faq/vscode-and-extensions",
-      "category": "faq",
-      "title": "VS Code and Extensions: FAQ",
-      "description": "Answers to common questions about settings, MDX preview, spell-check, and frontmatter.",
-      "audience_levels": [
-        "beginner",
-        "intermediate"
-      ],
-      "personas": [
-        "all contributors"
-      ],
-      "categories": [
-        "faq"
-      ],
-      "tags": [],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "vscode",
-        "mdx",
-        "markdown",
-        "frontmatter",
-        "spell checker"
-      ],
-      "related": [
-        "/docs/operations/vscode-setup-and-extensions.md"
-      ],
-      "min_read_minutes": 4,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/faq/wizard-vs-examples.md",
-      "slug": "faq/wizard-vs-examples",
-      "category": "faq",
-      "title": "Wizard vs Hand‑Coded Examples",
-      "description": "When to use the Wizard for speed vs hand-coded examples for control.",
-      "audience_levels": [
-        "beginner",
-        "intermediate"
-      ],
-      "personas": [
-        "PM",
-        "developer"
-      ],
-      "categories": [
-        "faq"
-      ],
-      "tags": [],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "wizard",
-        "examples",
-        "tradeoffs",
-        "speed vs control"
-      ],
-      "related": [
-        "/docs/wizard/overview.md",
-        "/docs/quickstarts/js-server-route.md"
-      ],
-      "min_read_minutes": 3,
       "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
     {
@@ -409,6 +132,8 @@
         "/docs/patterns/workflows/batch-processing.md",
         "/docs/patterns/cost-controls.md"
       ],
+      "sourcePath": "docs/evaluations/data-platform-benchmarks.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/evaluations/data-platform-benchmarks.md",
       "min_read_minutes": 10,
       "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
@@ -441,6 +166,8 @@
         "/docs/patterns/rag/basics.md",
         "/docs/patterns/rag/faq-rag.md"
       ],
+      "sourcePath": "docs/evaluations/grounded-qa-evals.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/evaluations/grounded-qa-evals.md",
       "min_read_minutes": 8,
       "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
@@ -476,6 +203,8 @@
         "/docs/patterns/cost-controls.md",
         "/docs/quickstarts/js-server-route.md"
       ],
+      "sourcePath": "docs/evaluations/latency-cost-tradeoffs.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/evaluations/latency-cost-tradeoffs.md",
       "min_read_minutes": 8,
       "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
@@ -509,6 +238,8 @@
         "/docs/patterns/workflows/batch-processing.md",
         "/docs/evaluations/rubric-prompts.md"
       ],
+      "sourcePath": "docs/evaluations/offline-batch-evals.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/evaluations/offline-batch-evals.md",
       "min_read_minutes": 8,
       "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
@@ -542,6 +273,8 @@
         "/docs/evaluations/offline-batch-evals.md",
         "/docs/evaluations/rubric-prompts.md"
       ],
+      "sourcePath": "docs/evaluations/overview.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/evaluations/overview.md",
       "min_read_minutes": 7,
       "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
@@ -574,6 +307,8 @@
         "/docs/patterns/agentic/reflection-self-heal.md",
         "/docs/evaluations/overview.md"
       ],
+      "sourcePath": "docs/evaluations/rubric-prompts.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/evaluations/rubric-prompts.md",
       "min_read_minutes": 7,
       "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
@@ -607,7 +342,310 @@
         "/docs/patterns/tools/function-calling.md",
         "/docs/patterns/agentic/router-multi-tool.md"
       ],
+      "sourcePath": "docs/evaluations/tool-use-evals.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/evaluations/tool-use-evals.md",
       "min_read_minutes": 7,
+      "lastUpdated": "2025-10-06T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/faq/index.md",
+      "slug": "faq/index",
+      "category": "faq",
+      "title": "FAQ",
+      "description": "Frequently asked questions about the docs and wizard.",
+      "audience_levels": [
+        "beginner",
+        "intermediate"
+      ],
+      "personas": [
+        "non-technical",
+        "PM",
+        "developer",
+        "admin"
+      ],
+      "categories": [
+        "faq"
+      ],
+      "tags": [
+        "questions",
+        "help"
+      ],
+      "relatedProjectTypes": [],
+      "search_keywords": [],
+      "related": [],
+      "sourcePath": "docs/faq/index.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/faq/index.md",
+      "min_read_minutes": 5,
+      "lastUpdated": "2025-10-06T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/faq/providers-and-costs.md",
+      "slug": "faq/providers-and-costs",
+      "category": "faq",
+      "title": "Providers and Costs: Basics",
+      "description": "Understand cost drivers, rate limits, and when to switch providers.",
+      "audience_levels": [
+        "beginner",
+        "intermediate"
+      ],
+      "personas": [
+        "PM",
+        "developer",
+        "admin"
+      ],
+      "categories": [
+        "faq"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "pricing",
+        "rate limits",
+        "token costs",
+        "provider selection"
+      ],
+      "related": [
+        "/docs/providers/compare-providers.md",
+        "/docs/patterns/cost-controls.md"
+      ],
+      "sourcePath": "docs/faq/providers-and-costs.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/faq/providers-and-costs.md",
+      "min_read_minutes": 5,
+      "lastUpdated": "2025-10-06T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/faq/vscode-and-extensions.md",
+      "slug": "faq/vscode-and-extensions",
+      "category": "faq",
+      "title": "VS Code and Extensions: FAQ",
+      "description": "Answers to common questions about settings, MDX preview, spell-check, and frontmatter.",
+      "audience_levels": [
+        "beginner",
+        "intermediate"
+      ],
+      "personas": [
+        "all contributors"
+      ],
+      "categories": [
+        "faq"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "vscode",
+        "mdx",
+        "markdown",
+        "frontmatter",
+        "spell checker"
+      ],
+      "related": [
+        "/docs/operations/vscode-setup-and-extensions.md"
+      ],
+      "sourcePath": "docs/faq/vscode-and-extensions.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/faq/vscode-and-extensions.md",
+      "min_read_minutes": 4,
+      "lastUpdated": "2025-10-06T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/faq/wizard-vs-examples.md",
+      "slug": "faq/wizard-vs-examples",
+      "category": "faq",
+      "title": "Wizard vs Hand‑Coded Examples",
+      "description": "When to use the Wizard for speed vs hand-coded examples for control.",
+      "audience_levels": [
+        "beginner",
+        "intermediate"
+      ],
+      "personas": [
+        "PM",
+        "developer"
+      ],
+      "categories": [
+        "faq"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "wizard",
+        "examples",
+        "tradeoffs",
+        "speed vs control"
+      ],
+      "related": [
+        "/docs/wizard/overview.md",
+        "/docs/quickstarts/js-server-route.md"
+      ],
+      "sourcePath": "docs/faq/wizard-vs-examples.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/faq/wizard-vs-examples.md",
+      "min_read_minutes": 3,
+      "lastUpdated": "2025-10-06T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/examples/a2a-coordination.md",
+      "slug": "examples/a2a-coordination",
+      "category": "examples",
+      "title": "Example: A2A Coordination",
+      "description": "Show two agents collaborating (planner → executor or QA → fixer) with a short transcript and outcomes.",
+      "audience_levels": [
+        "intermediate",
+        "advanced"
+      ],
+      "personas": [
+        "developer",
+        "PM"
+      ],
+      "categories": [
+        "examples"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "multi-agent",
+        "planner",
+        "executor",
+        "qa",
+        "fixer"
+      ],
+      "related": [
+        "/docs/patterns/a2a-agent-to-agent.md"
+      ],
+      "sourcePath": "docs/examples/a2a-coordination.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/examples/a2a-coordination.md",
+      "min_read_minutes": 8,
+      "lastUpdated": "2025-10-06T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/examples/ai-customer-support-triage.md",
+      "slug": "examples/ai-customer-support-triage",
+      "category": "examples",
+      "title": "Example: AI Customer Support Triage",
+      "description": "Router agent triages incoming messages with escalation rules and summaries.",
+      "audience_levels": [
+        "intermediate"
+      ],
+      "personas": [
+        "PM",
+        "developer"
+      ],
+      "categories": [
+        "examples"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "support",
+        "triage",
+        "router",
+        "escalation"
+      ],
+      "related": [
+        "/docs/patterns/agentic/router-multi-tool.md"
+      ],
+      "sourcePath": "docs/examples/ai-customer-support-triage.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/examples/ai-customer-support-triage.md",
+      "min_read_minutes": 7,
+      "lastUpdated": "2025-10-06T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/examples/content-drafter.md",
+      "slug": "examples/content-drafter",
+      "category": "examples",
+      "title": "Example: Content Drafter",
+      "description": "Straight‑through generation with tone/voice controls and a draft quality rubric.",
+      "audience_levels": [
+        "beginner",
+        "intermediate"
+      ],
+      "personas": [
+        "PM",
+        "developer"
+      ],
+      "categories": [
+        "examples"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "content",
+        "draft",
+        "tone",
+        "voice",
+        "rubric"
+      ],
+      "related": [
+        "/docs/evaluations/rubric-prompts.md"
+      ],
+      "sourcePath": "docs/examples/content-drafter.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/examples/content-drafter.md",
+      "min_read_minutes": 6,
+      "lastUpdated": "2025-10-06T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/examples/data-quality-qa.md",
+      "slug": "examples/data-quality-qa",
+      "category": "examples",
+      "title": "Example: Data Quality QA",
+      "description": "Use tool calls to read-only SQL/APIs to verify data checks; measure defects caught and false positives.",
+      "audience_levels": [
+        "intermediate",
+        "advanced"
+      ],
+      "personas": [
+        "developer",
+        "data-analyst"
+      ],
+      "categories": [
+        "examples"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "data quality",
+        "sql",
+        "qa",
+        "read-only",
+        "tools"
+      ],
+      "related": [
+        "/docs/patterns/tools/function-calling.md",
+        "/docs/evaluations/tool-use-evals.md"
+      ],
+      "sourcePath": "docs/examples/data-quality-qa.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/examples/data-quality-qa.md",
+      "min_read_minutes": 8,
+      "lastUpdated": "2025-10-06T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/examples/meeting-summarizer.md",
+      "slug": "examples/meeting-summarizer",
+      "category": "examples",
+      "title": "Example: Meeting Summarizer",
+      "description": "Generate structured notes with action items and owners.",
+      "audience_levels": [
+        "beginner",
+        "intermediate"
+      ],
+      "personas": [
+        "PM",
+        "developer"
+      ],
+      "categories": [
+        "examples"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "meeting",
+        "summary",
+        "actions",
+        "owners"
+      ],
+      "related": [
+        "/docs/patterns/workflows/batch-processing.md"
+      ],
+      "sourcePath": "docs/examples/meeting-summarizer.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/examples/meeting-summarizer.md",
+      "min_read_minutes": 6,
       "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
     {
@@ -635,6 +673,8 @@
       "relatedProjectTypes": [],
       "search_keywords": [],
       "related": [],
+      "sourcePath": "docs/how-to/duplicate-a-session.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/how-to/duplicate-a-session.md",
       "min_read_minutes": 5,
       "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
@@ -671,6 +711,8 @@
         "/docs/quickstarts/python-fastapi.md",
         "/docs/wizard/overview.md"
       ],
+      "sourcePath": "docs/how-to/pick-your-path.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/how-to/pick-your-path.md",
       "min_read_minutes": 3,
       "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
@@ -705,6 +747,8 @@
         "/docs/operations/aria-recipes.md",
         "/docs/operations/performance-principles.md"
       ],
+      "sourcePath": "docs/operations/accessibility.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/operations/accessibility.md",
       "min_read_minutes": 6,
       "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
@@ -737,6 +781,8 @@
         "/docs/operations/content-sync-deep-dive.md",
         "/docs/troubleshooting/revalidation-failures.md"
       ],
+      "sourcePath": "docs/operations/admin-dashboard.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/operations/admin-dashboard.md",
       "min_read_minutes": 4,
       "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
@@ -768,6 +814,8 @@
       "related": [
         "/docs/operations/accessibility.md"
       ],
+      "sourcePath": "docs/operations/aria-recipes.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/operations/aria-recipes.md",
       "min_read_minutes": 8,
       "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
@@ -795,6 +843,8 @@
       "relatedProjectTypes": [],
       "search_keywords": [],
       "related": [],
+      "sourcePath": "docs/operations/backups-retention.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/operations/backups-retention.md",
       "min_read_minutes": 6,
       "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
@@ -828,6 +878,8 @@
         "/docs/operations/performance-principles.md",
         "/docs/operations/content-sync-deep-dive.md"
       ],
+      "sourcePath": "docs/operations/caching-http-basics.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/operations/caching-http-basics.md",
       "min_read_minutes": 7,
       "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
@@ -863,6 +915,8 @@
         "/docs/operations/admin-dashboard.md",
         "/docs/troubleshooting/revalidation-failures.md"
       ],
+      "sourcePath": "docs/operations/content-sync-deep-dive.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/operations/content-sync-deep-dive.md",
       "min_read_minutes": 9,
       "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
@@ -891,6 +945,8 @@
       "relatedProjectTypes": [],
       "search_keywords": [],
       "related": [],
+      "sourcePath": "docs/operations/content-sync.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/operations/content-sync.md",
       "min_read_minutes": 9,
       "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
@@ -924,6 +980,8 @@
         "/docs/operations/content-sync-deep-dive.md",
         "/docs/operations/performance-principles.md"
       ],
+      "sourcePath": "docs/operations/deploy-vercel.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/operations/deploy-vercel.md",
       "min_read_minutes": 7,
       "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
@@ -950,6 +1008,8 @@
       "relatedProjectTypes": [],
       "search_keywords": [],
       "related": [],
+      "sourcePath": "docs/operations/entra-admin-guide.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/operations/entra-admin-guide.md",
       "min_read_minutes": 15,
       "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
@@ -981,6 +1041,8 @@
         "/docs/operations/entra-sign-in-flow.md",
         "/docs/operations/nextauth-azuread.md"
       ],
+      "sourcePath": "docs/operations/entra-role-assignment.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/operations/entra-role-assignment.md",
       "min_read_minutes": 5,
       "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
@@ -1015,6 +1077,8 @@
         "/docs/operations/entra-role-assignment.md",
         "/docs/operations/nextauth-azuread.md"
       ],
+      "sourcePath": "docs/operations/entra-sign-in-flow.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/operations/entra-sign-in-flow.md",
       "min_read_minutes": 6,
       "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
@@ -1049,6 +1113,8 @@
         "/docs/reference/env-vars.md",
         "/docs/operations/admin-dashboard.md"
       ],
+      "sourcePath": "docs/operations/env-and-healthcheck.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/operations/env-and-healthcheck.md",
       "min_read_minutes": 6,
       "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
@@ -1080,6 +1146,8 @@
       "related": [
         "/docs/operations/vscode-setup-and-extensions.md"
       ],
+      "sourcePath": "docs/operations/github-flow-for-docs.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/operations/github-flow-for-docs.md",
       "min_read_minutes": 5,
       "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
@@ -1113,6 +1181,8 @@
         "/docs/operations/entra-sign-in-flow.md",
         "/docs/operations/entra-role-assignment.md"
       ],
+      "sourcePath": "docs/operations/nextauth-azuread.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/operations/nextauth-azuread.md",
       "min_read_minutes": 8,
       "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
@@ -1141,6 +1211,8 @@
       "relatedProjectTypes": [],
       "search_keywords": [],
       "related": [],
+      "sourcePath": "docs/operations/observability.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/operations/observability.md",
       "min_read_minutes": 7,
       "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
@@ -1175,6 +1247,8 @@
         "/docs/operations/caching-http-basics.md",
         "/docs/operations/deploy-vercel.md"
       ],
+      "sourcePath": "docs/operations/performance-principles.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/operations/performance-principles.md",
       "min_read_minutes": 6,
       "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
@@ -1209,6 +1283,8 @@
         "/docs/troubleshooting/auth-errors.md",
         "/docs/troubleshooting/provider-errors.md"
       ],
+      "sourcePath": "docs/operations/runbooks.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/operations/runbooks.md",
       "min_read_minutes": 8,
       "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
@@ -1243,6 +1319,8 @@
         "/docs/faq/vscode-and-extensions.md",
         "/docs/reference/components.md"
       ],
+      "sourcePath": "docs/operations/vscode-setup-and-extensions.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/operations/vscode-setup-and-extensions.md",
       "min_read_minutes": 6,
       "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
@@ -1276,6 +1354,8 @@
         "/docs/patterns/agentic/router-multi-tool.md",
         "/docs/patterns/agentic/reflection-self-heal.md"
       ],
+      "sourcePath": "docs/patterns/a2a-agent-to-agent.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/patterns/a2a-agent-to-agent.md",
       "min_read_minutes": 9,
       "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
@@ -1310,6 +1390,8 @@
         "/docs/evaluations/latency-cost-tradeoffs.md",
         "/docs/patterns/workflows/batch-processing.md"
       ],
+      "sourcePath": "docs/patterns/cost-controls.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/patterns/cost-controls.md",
       "min_read_minutes": 8,
       "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
@@ -1343,6 +1425,8 @@
         "/docs/operations/observability.md",
         "/docs/providers/security-best-practices.md"
       ],
+      "sourcePath": "docs/patterns/observability-context.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/patterns/observability-context.md",
       "min_read_minutes": 7,
       "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
@@ -1379,6 +1463,8 @@
         "/docs/providers/anthropic/overview.md",
         "/docs/providers/azure-openai/setup.md"
       ],
+      "sourcePath": "docs/providers/compare-providers.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/providers/compare-providers.md",
       "min_read_minutes": 8,
       "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
@@ -1415,6 +1501,8 @@
         "/docs/operations/env-and-healthcheck.md",
         "/docs/troubleshooting/provider-errors.md"
       ],
+      "sourcePath": "docs/providers/security-best-practices.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/providers/security-best-practices.md",
       "min_read_minutes": 9,
       "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
@@ -1453,6 +1541,8 @@
         "/docs/wizard/overview.md",
         "/docs/patterns/agentic/planner-executor.md"
       ],
+      "sourcePath": "docs/quickstarts/first-idea.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/quickstarts/first-idea.md",
       "min_read_minutes": 10,
       "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
@@ -1487,6 +1577,8 @@
         "/docs/providers/security-best-practices.md",
         "/docs/providers/openai/auth-models-limits.md"
       ],
+      "sourcePath": "docs/quickstarts/js-server-route.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/quickstarts/js-server-route.md",
       "min_read_minutes": 10,
       "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
@@ -1522,6 +1614,8 @@
         "/docs/providers/openai/auth-models-limits.md",
         "/docs/troubleshooting/provider-errors.md"
       ],
+      "sourcePath": "docs/quickstarts/python-fastapi.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/quickstarts/python-fastapi.md",
       "min_read_minutes": 10,
       "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
@@ -1558,6 +1652,8 @@
         "/docs/wizard/overview.md",
         "/docs/how-to/pick-your-path.md"
       ],
+      "sourcePath": "docs/quickstarts/try-genai-in-10-min.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/quickstarts/try-genai-in-10-min.md",
       "min_read_minutes": 8,
       "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
@@ -1590,6 +1686,8 @@
       "related": [
         "/docs/operations/vscode-setup-and-extensions.md"
       ],
+      "sourcePath": "docs/reference/components.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/reference/components.md",
       "min_read_minutes": 6,
       "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
@@ -1623,6 +1721,8 @@
       "related": [
         "/docs/evaluations/data-platform-benchmarks.md"
       ],
+      "sourcePath": "docs/reference/data-platform-integration-guides.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/reference/data-platform-integration-guides.md",
       "min_read_minutes": 5,
       "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
@@ -1650,6 +1750,8 @@
       "relatedProjectTypes": [],
       "search_keywords": [],
       "related": [],
+      "sourcePath": "docs/reference/env-vars.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/reference/env-vars.md",
       "min_read_minutes": 6,
       "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
@@ -1682,6 +1784,8 @@
         "/docs/providers/compare-providers.md",
         "/docs/troubleshooting/provider-errors.md"
       ],
+      "sourcePath": "docs/reference/provider-abstraction.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/reference/provider-abstraction.md",
       "min_read_minutes": 9,
       "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
@@ -1710,6 +1814,8 @@
       "relatedProjectTypes": [],
       "search_keywords": [],
       "related": [],
+      "sourcePath": "docs/reference/registry-schema.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/reference/registry-schema.md",
       "min_read_minutes": 10,
       "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
@@ -1738,6 +1844,8 @@
       "relatedProjectTypes": [],
       "search_keywords": [],
       "related": [],
+      "sourcePath": "docs/reference/revalidation-api.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/reference/revalidation-api.md",
       "min_read_minutes": 8,
       "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
@@ -1770,6 +1878,8 @@
         "/docs/tutorials/prisma-and-postgres-for-sessions.md",
         "/docs/providers/security-best-practices.md"
       ],
+      "sourcePath": "docs/reference/session-record-schema.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/reference/session-record-schema.md",
       "min_read_minutes": 8,
       "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
@@ -1804,6 +1914,8 @@
         "/docs/safety/overview.md",
         "/docs/safety/output-filters.md"
       ],
+      "sourcePath": "docs/safety/human-in-the-loop.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/safety/human-in-the-loop.md",
       "min_read_minutes": 7,
       "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
@@ -1838,6 +1950,8 @@
         "/docs/safety/prompt-safety.md",
         "/docs/safety/human-in-the-loop.md"
       ],
+      "sourcePath": "docs/safety/output-filters.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/safety/output-filters.md",
       "min_read_minutes": 8,
       "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
@@ -1874,6 +1988,8 @@
         "/docs/safety/output-filters.md",
         "/docs/safety/human-in-the-loop.md"
       ],
+      "sourcePath": "docs/safety/overview.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/safety/overview.md",
       "min_read_minutes": 8,
       "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
@@ -1906,6 +2022,8 @@
         "/docs/safety/overview.md",
         "/docs/safety/output-filters.md"
       ],
+      "sourcePath": "docs/safety/prompt-safety.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/safety/prompt-safety.md",
       "min_read_minutes": 7,
       "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
@@ -1941,6 +2059,8 @@
         "/docs/operations/entra-sign-in-flow.md",
         "/docs/operations/nextauth-azuread.md"
       ],
+      "sourcePath": "docs/troubleshooting/auth-errors.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/troubleshooting/auth-errors.md",
       "min_read_minutes": 6,
       "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
@@ -1971,6 +2091,8 @@
       "relatedProjectTypes": [],
       "search_keywords": [],
       "related": [],
+      "sourcePath": "docs/troubleshooting/common-errors.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/troubleshooting/common-errors.md",
       "min_read_minutes": 6,
       "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
@@ -2002,6 +2124,8 @@
       "related": [
         "/docs/operations/github-flow-for-docs.md"
       ],
+      "sourcePath": "docs/troubleshooting/github-actions-ci.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/troubleshooting/github-actions-ci.md",
       "min_read_minutes": 5,
       "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
@@ -2035,6 +2159,8 @@
         "/docs/providers/openai/auth-models-limits.md",
         "/docs/providers/security-best-practices.md"
       ],
+      "sourcePath": "docs/troubleshooting/provider-errors.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/troubleshooting/provider-errors.md",
       "min_read_minutes": 7,
       "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
@@ -2068,6 +2194,8 @@
         "/docs/operations/content-sync-deep-dive.md",
         "/docs/operations/admin-dashboard.md"
       ],
+      "sourcePath": "docs/troubleshooting/revalidation-failures.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/troubleshooting/revalidation-failures.md",
       "min_read_minutes": 6,
       "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
@@ -2102,6 +2230,8 @@
         "/docs/patterns/tools/function-calling.md",
         "/docs/evaluations/tool-use-evals.md"
       ],
+      "sourcePath": "docs/tutorials/agentic-helpdesk.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/tutorials/agentic-helpdesk.md",
       "min_read_minutes": 15,
       "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
@@ -2136,6 +2266,8 @@
         "/docs/patterns/cost-controls.md",
         "/docs/evaluations/latency-cost-tradeoffs.md"
       ],
+      "sourcePath": "docs/tutorials/cost-guardrails.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/tutorials/cost-guardrails.md",
       "min_read_minutes": 12,
       "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
@@ -2166,6 +2298,8 @@
       "related": [
         "/docs/patterns/tools/function-calling.md"
       ],
+      "sourcePath": "docs/tutorials/mcp-in-vscode.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/tutorials/mcp-in-vscode.md",
       "min_read_minutes": 12,
       "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
@@ -2201,6 +2335,8 @@
         "/docs/patterns/observability-context.md",
         "/docs/providers/security-best-practices.md"
       ],
+      "sourcePath": "docs/tutorials/observability-end-to-end.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/tutorials/observability-end-to-end.md",
       "min_read_minutes": 12,
       "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
@@ -2231,6 +2367,8 @@
       "related": [
         "/docs/reference/session-record-schema.md"
       ],
+      "sourcePath": "docs/tutorials/prisma-and-postgres-for-sessions.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/tutorials/prisma-and-postgres-for-sessions.md",
       "min_read_minutes": 12,
       "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
@@ -2264,6 +2402,8 @@
         "/docs/troubleshooting/provider-errors.md",
         "/docs/patterns/workflows/batch-processing.md"
       ],
+      "sourcePath": "docs/tutorials/production-hardening.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/tutorials/production-hardening.md",
       "min_read_minutes": 13,
       "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
@@ -2296,6 +2436,8 @@
         "/docs/patterns/rag/basics.md",
         "/docs/evaluations/grounded-qa-evals.md"
       ],
+      "sourcePath": "docs/tutorials/rag-starter.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/tutorials/rag-starter.md",
       "min_read_minutes": 14,
       "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
@@ -2327,6 +2469,8 @@
       "related": [
         "/docs/wizard/types.md"
       ],
+      "sourcePath": "docs/wizard/overview.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/wizard/overview.md",
       "min_read_minutes": 12,
       "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
@@ -2358,7 +2502,77 @@
       "related": [
         "/docs/wizard/type-templates/internal-qa-copilot.mdx"
       ],
+      "sourcePath": "docs/wizard/types.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/wizard/types.md",
       "min_read_minutes": 10,
+      "lastUpdated": "2025-10-06T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/patterns/rag/basics.md",
+      "slug": "patterns/rag/basics",
+      "category": "patterns",
+      "title": "RAG Basics",
+      "description": "Minimal retrieval-augmented generation: chunking, indexing, and grounded citations.",
+      "audience_levels": [
+        "intermediate"
+      ],
+      "personas": [
+        "developer",
+        "data-analyst"
+      ],
+      "categories": [
+        "patterns"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "rag",
+        "chunking",
+        "embeddings",
+        "citations",
+        "grounding"
+      ],
+      "related": [
+        "/docs/patterns/rag/faq-rag.md",
+        "/docs/evaluations/grounded-qa-evals.md"
+      ],
+      "sourcePath": "docs/patterns/rag/basics.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/patterns/rag/basics.md",
+      "min_read_minutes": 9,
+      "lastUpdated": "2025-10-06T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/patterns/rag/faq-rag.md",
+      "slug": "patterns/rag/faq-rag",
+      "category": "patterns",
+      "title": "FAQ RAG Pattern",
+      "description": "Build a FAQ-style RAG with a simple eval hook to keep answers grounded.",
+      "audience_levels": [
+        "intermediate"
+      ],
+      "personas": [
+        "developer",
+        "PM"
+      ],
+      "categories": [
+        "patterns"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "faq rag",
+        "grounded qa",
+        "eval hook",
+        "faithfulness"
+      ],
+      "related": [
+        "/docs/patterns/rag/basics.md",
+        "/docs/evaluations/grounded-qa-evals.md",
+        "/docs/evaluations/offline-batch-evals.md"
+      ],
+      "sourcePath": "docs/patterns/rag/faq-rag.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/patterns/rag/faq-rag.md",
+      "min_read_minutes": 7,
       "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
     {
@@ -2386,6 +2600,8 @@
       "relatedProjectTypes": [],
       "search_keywords": [],
       "related": [],
+      "sourcePath": "docs/patterns/agentic/planner-executor.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/patterns/agentic/planner-executor.md",
       "min_read_minutes": 12,
       "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
@@ -2419,6 +2635,8 @@
         "/docs/evaluations/rubric-prompts.md",
         "/docs/patterns/cost-controls.md"
       ],
+      "sourcePath": "docs/patterns/agentic/reflection-self-heal.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/patterns/agentic/reflection-self-heal.md",
       "min_read_minutes": 8,
       "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
@@ -2453,6 +2671,8 @@
         "/docs/patterns/a2a-agent-to-agent.md",
         "/docs/patterns/observability-context.md"
       ],
+      "sourcePath": "docs/patterns/agentic/router-multi-tool.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/patterns/agentic/router-multi-tool.md",
       "min_read_minutes": 9,
       "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
@@ -2486,71 +2706,9 @@
         "/docs/patterns/agentic/router-multi-tool.md",
         "/docs/patterns/workflows/batch-processing.md"
       ],
+      "sourcePath": "docs/patterns/tools/function-calling.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/patterns/tools/function-calling.md",
       "min_read_minutes": 10,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/patterns/rag/basics.md",
-      "slug": "patterns/rag/basics",
-      "category": "patterns",
-      "title": "RAG Basics",
-      "description": "Minimal retrieval-augmented generation: chunking, indexing, and grounded citations.",
-      "audience_levels": [
-        "intermediate"
-      ],
-      "personas": [
-        "developer",
-        "data-analyst"
-      ],
-      "categories": [
-        "patterns"
-      ],
-      "tags": [],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "rag",
-        "chunking",
-        "embeddings",
-        "citations",
-        "grounding"
-      ],
-      "related": [
-        "/docs/patterns/rag/faq-rag.md",
-        "/docs/evaluations/grounded-qa-evals.md"
-      ],
-      "min_read_minutes": 9,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/patterns/rag/faq-rag.md",
-      "slug": "patterns/rag/faq-rag",
-      "category": "patterns",
-      "title": "FAQ RAG Pattern",
-      "description": "Build a FAQ-style RAG with a simple eval hook to keep answers grounded.",
-      "audience_levels": [
-        "intermediate"
-      ],
-      "personas": [
-        "developer",
-        "PM"
-      ],
-      "categories": [
-        "patterns"
-      ],
-      "tags": [],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "faq rag",
-        "grounded qa",
-        "eval hook",
-        "faithfulness"
-      ],
-      "related": [
-        "/docs/patterns/rag/basics.md",
-        "/docs/evaluations/grounded-qa-evals.md",
-        "/docs/evaluations/offline-batch-evals.md"
-      ],
-      "min_read_minutes": 7,
       "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
     {
@@ -2583,6 +2741,8 @@
         "/docs/evaluations/offline-batch-evals.md",
         "/docs/patterns/cost-controls.md"
       ],
+      "sourcePath": "docs/patterns/workflows/batch-processing.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/patterns/workflows/batch-processing.md",
       "min_read_minutes": 8,
       "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
@@ -2617,6 +2777,8 @@
         "/docs/providers/compare-providers.md",
         "/docs/troubleshooting/provider-errors.md"
       ],
+      "sourcePath": "docs/providers/anthropic/overview.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/providers/anthropic/overview.md",
       "min_read_minutes": 7,
       "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
@@ -2649,6 +2811,8 @@
         "/docs/providers/azure-openai/setup.md",
         "/docs/troubleshooting/provider-errors.md"
       ],
+      "sourcePath": "docs/providers/azure-openai/migrate-from-openai.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/providers/azure-openai/migrate-from-openai.md",
       "min_read_minutes": 7,
       "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
@@ -2684,37 +2848,9 @@
         "/docs/providers/azure-openai/migrate-from-openai.md",
         "/docs/providers/compare-providers.md"
       ],
+      "sourcePath": "docs/providers/azure-openai/setup.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/providers/azure-openai/setup.md",
       "min_read_minutes": 10,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/wizard/type-templates/internal-qa-copilot.mdx",
-      "slug": "wizard/type-templates/internal-qa-copilot",
-      "category": "wizard",
-      "title": "Type: Internal Q&A Copilot",
-      "description": "Answer internal policy and IT questions using an agent with retrieval.",
-      "audience_levels": [
-        "beginner",
-        "intermediate"
-      ],
-      "personas": [
-        "PM",
-        "developer"
-      ],
-      "categories": [
-        "wizard"
-      ],
-      "tags": [
-        "copilot",
-        "rag",
-        "agent"
-      ],
-      "relatedProjectTypes": [],
-      "search_keywords": [],
-      "related": [
-        "/docs/patterns/rag/faq-rag.md"
-      ],
-      "min_read_minutes": 12,
       "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
     {
@@ -2749,6 +2885,8 @@
         "/docs/quickstarts/js-server-route.md",
         "/docs/quickstarts/python-fastapi.md"
       ],
+      "sourcePath": "docs/providers/openai/auth-models-limits.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/providers/openai/auth-models-limits.md",
       "min_read_minutes": 8,
       "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
@@ -2785,6 +2923,8 @@
         "/docs/providers/openai/auth-models-limits.md",
         "/docs/troubleshooting/provider-errors.md"
       ],
+      "sourcePath": "docs/providers/openai/chatgpt-productivity.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/providers/openai/chatgpt-productivity.md",
       "min_read_minutes": 7,
       "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
@@ -2813,7 +2953,41 @@
       "relatedProjectTypes": [],
       "search_keywords": [],
       "related": [],
+      "sourcePath": "docs/providers/openai/overview.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/providers/openai/overview.md",
       "min_read_minutes": 7,
+      "lastUpdated": "2025-10-06T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/wizard/type-templates/internal-qa-copilot.mdx",
+      "slug": "wizard/type-templates/internal-qa-copilot",
+      "category": "wizard",
+      "title": "Type: Internal Q&A Copilot",
+      "description": "Answer internal policy and IT questions using an agent with retrieval.",
+      "audience_levels": [
+        "beginner",
+        "intermediate"
+      ],
+      "personas": [
+        "PM",
+        "developer"
+      ],
+      "categories": [
+        "wizard"
+      ],
+      "tags": [
+        "copilot",
+        "rag",
+        "agent"
+      ],
+      "relatedProjectTypes": [],
+      "search_keywords": [],
+      "related": [
+        "/docs/patterns/rag/faq-rag.md"
+      ],
+      "sourcePath": "docs/wizard/type-templates/internal-qa-copilot.mdx",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/wizard/type-templates/internal-qa-copilot.mdx",
+      "min_read_minutes": 12,
       "lastUpdated": "2025-10-06T00:00:00.000Z"
     }
   ]

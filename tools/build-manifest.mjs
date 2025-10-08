@@ -2,6 +2,10 @@ import fg from 'fast-glob';
 import matter from 'gray-matter';
 import { readFileSync, writeFileSync } from 'fs';
 import { createHash } from 'crypto';
+import { env } from 'process';
+
+const RAW_BASE_URL = env.DOCS_REPO_RAW_BASE_URL || 'https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/';
+const MANIFEST_OUTPUT_PATH = env.DOCS_REPO_MANIFEST_PATH || 'manifest.json';
 
 const toKebabCase = (value) => {
   if (!value) return '';
@@ -47,7 +51,9 @@ for (const path of files) {
     tags: data.tags || [],
     relatedProjectTypes: data.related_project_types || [],
     search_keywords: data.search_keywords || [],
-    related: data.related || []
+    related: data.related || [],
+    sourcePath: normalizedPath,
+    sourceUrl: RAW_BASE_URL.replace(/\/$/, '') + '/' + normalizedPath
   };
 
   if (data.min_read_minutes !== undefined) {
@@ -79,7 +85,7 @@ for (const path of files) {
 
 const json = {
   "$schema": "./tools/schemas/manifest.schema.json",
-  version: "2025.10.0",
+  version: "2025.10.1",
   generated_at: new Date().toISOString(),
   hash: "",
   docs
@@ -91,5 +97,5 @@ const hash = createHash('sha256')
   .slice(0, 16);
 
 json.hash = hash;
-writeFileSync('manifest.json', JSON.stringify(json, null, 2));
-console.log(`Manifest built with hash: ${hash} and ${docs.length} docs.`);
+writeFileSync(MANIFEST_OUTPUT_PATH, JSON.stringify(json, null, 2));
+console.log(`Manifest built with hash: ${hash} and ${docs.length} docs (output: ${MANIFEST_OUTPUT_PATH}).`);

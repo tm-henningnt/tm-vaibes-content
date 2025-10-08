@@ -16,8 +16,8 @@
 
 ## Manifest workflow
 - `tools/build-manifest.mjs` globs `docs/**/*.{md,mdx}`, parses frontmatter with `gray-matter`, and skips any file without a `title`.
-- The builder derives `slug` from the doc path (no `/docs/` or extension) and kebab-cases the frontmatter `primary_category` (or first `categories` entry) for the manifest `category`.
-- Each entry includes consumer-required fields (`path`, `slug`, `category`, `title`, `description`, `lastUpdated`) plus persona metadata and a deterministic `hash` derived from the doc list.
+- The builder derives `slug` from the doc path (no `/docs/` or extension), kebab-cases the frontmatter `primary_category` (or first `categories` entry) for the manifest `category`, and emits `sourcePath`/`sourceUrl` for every doc.
+- Each entry includes consumer-required fields (`path`, `slug`, `category`, `title`, `description`, `lastUpdated`, `sourcePath`, `sourceUrl`) plus persona metadata and a deterministic `hash` derived from the doc list.
 - Schema files under `tools/schemas/` must remain in sync with the builder; if you adjust manifest fields, update both the script and `manifest.schema.json`.
 - When adding new metadata in frontmatter, extend the builder so it flows to the manifest (e.g., `related_project_types`).
 
@@ -27,6 +27,7 @@
 - `npm run lint:frontmatter` runs the builder in `--check` mode, suitable for CI and pre-PR validation.
 - `npm run check:frontmatter` executes `tools/check-frontmatter.mjs` to catch duplicate or missing array metadata before PRs.
 - CI mirrors this sequence (`lint:frontmatter`, `check:frontmatter`, `build:manifest`) on every pull request, so keep them green locally before pushing.
+- Provide `.env` overrides when testing forks: `DOCS_REPO_RAW_BASE_URL` controls manifest `sourceUrl` prefixes; `DOCS_REPO_MANIFEST_PATH` changes the output location (see `.env.example`).
 - Keep `manifest.json` committed when its hash changes, otherwise consumers will not pick up new docs.
 
 ## Writing checklist

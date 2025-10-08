@@ -18,6 +18,8 @@ show_toc: true
 - Added uniqueness + min item constraints for array metadata and support for optional `primary_category` overrides.
 - Added `npm run check:frontmatter` helper to surface duplicate or missing array metadata across docs.
 - GitHub Actions workflow now runs frontmatter lint + checks on every PR before rebuilding the manifest.
+- Manifest schema v2025.10.1 adds `sourcePath`/`sourceUrl`, and the builder now emits both for every doc entry.
+- Manifest generation supports `.env` overrides for `DOCS_REPO_RAW_BASE_URL` and `DOCS_REPO_MANIFEST_PATH` (see `.env.example`).
 
 ## 2025-10-06
 - Initial scaffold with 12 core pages, schemas, and manifest builder.
