@@ -1,8 +1,8 @@
 {
   "$schema": "./tools/schemas/manifest.schema.json",
   "version": "2025.10.1",
-  "generated_at": "2025-10-08T23:19:47.288Z",
-  "hash": "84faf4f6e90cc821",
+  "generated_at": "2025-10-08T23:26:17.606Z",
+  "hash": "74bb620fa97edde0",
   "docs": [
     {
       "path": "/docs/index.md",
@@ -37,327 +37,6 @@
       "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/index.md",
       "min_read_minutes": 8,
       "lastUpdated": "2025-10-08T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/concepts/ethics-responsible-ai.md",
-      "slug": "concepts/ethics-responsible-ai",
-      "category": "concepts",
-      "title": "Responsible AI essentials",
-      "description": "Practical guardrails for bias, transparency, and human oversight in applied AI teams.",
-      "audience_levels": [
-        "beginner",
-        "intermediate",
-        "advanced"
-      ],
-      "personas": [
-        "PM",
-        "developer",
-        "data-analyst",
-        "admin"
-      ],
-      "categories": [
-        "concepts",
-        "safety"
-      ],
-      "tags": [],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "responsible ai",
-        "bias",
-        "oversight",
-        "transparency",
-        "governance"
-      ],
-      "related": [
-        "/docs/concepts/safety-basics.md",
-        "/docs/concepts/structured-outputs.md",
-        "/docs/evaluations/rubric-prompts.md"
-      ],
-      "sourcePath": "docs/concepts/ethics-responsible-ai.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/concepts/ethics-responsible-ai.md",
-      "min_read_minutes": 13,
-      "lastUpdated": "2025-02-14T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/concepts/genai-vs-agentic.md",
-      "slug": "concepts/genai-vs-agentic",
-      "category": "concepts",
-      "title": "Generative AI vs. Agentic Systems",
-      "description": "Compare single-shot prompting with multi-step, tool-using agents so you can decide which approach fits your problem.",
-      "audience_levels": [
-        "beginner",
-        "intermediate",
-        "advanced"
-      ],
-      "personas": [
-        "non-technical",
-        "PM",
-        "developer",
-        "data-analyst"
-      ],
-      "categories": [
-        "concepts"
-      ],
-      "tags": [
-        "agents",
-        "prompting",
-        "workflows",
-        "planning"
-      ],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "agentic ai",
-        "single shot prompting",
-        "tool use",
-        "workflow design",
-        "agent vs automation"
-      ],
-      "related": [
-        "/docs/concepts/what-is-genai.md",
-        "/docs/patterns/agentic/planner-executor.md",
-        "/docs/patterns/agentic/router-multi-tool.md",
-        "/docs/patterns/observability-context.md"
-      ],
-      "sourcePath": "docs/concepts/genai-vs-agentic.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/concepts/genai-vs-agentic.md",
-      "min_read_minutes": 14,
-      "lastUpdated": "2025-02-14T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/concepts/glossary.md",
-      "slug": "concepts/glossary",
-      "category": "concepts",
-      "title": "AI glossary",
-      "description": "Concise definitions for common AI terms used throughout the hub.",
-      "audience_levels": [
-        "beginner"
-      ],
-      "personas": [
-        "non-technical",
-        "PM",
-        "developer",
-        "data-analyst"
-      ],
-      "categories": [
-        "concepts"
-      ],
-      "tags": [],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "glossary",
-        "definitions",
-        "ai terms",
-        "genai"
-      ],
-      "related": [
-        "/docs/concepts/what-is-genai.md",
-        "/docs/concepts/prompting-styles.md",
-        "/docs/concepts/structured-outputs.md"
-      ],
-      "sourcePath": "docs/concepts/glossary.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/concepts/glossary.md",
-      "min_read_minutes": 9,
-      "lastUpdated": "2025-03-15T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/concepts/prompting-styles.md",
-      "slug": "concepts/prompting-styles",
-      "category": "concepts",
-      "title": "Prompting styles and when to use them",
-      "description": "Instruction, few-shot, chain-of-thought, critique-and-repair, and planning prompts with tradeoffs and runnable examples.",
-      "audience_levels": [
-        "beginner",
-        "intermediate",
-        "advanced"
-      ],
-      "personas": [
-        "PM",
-        "developer",
-        "data-analyst"
-      ],
-      "categories": [
-        "concepts"
-      ],
-      "tags": [
-        "prompting",
-        "examples",
-        "chain-of-thought",
-        "critique",
-        "planning"
-      ],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "prompting styles",
-        "few shot",
-        "chain of thought",
-        "critique repair",
-        "prompt engineering"
-      ],
-      "related": [
-        "/docs/concepts/what-is-genai.md",
-        "/docs/concepts/genai-vs-agentic.md",
-        "/docs/patterns/agentic/reflection-self-heal.md",
-        "/docs/patterns/tools/function-calling.md"
-      ],
-      "sourcePath": "docs/concepts/prompting-styles.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/concepts/prompting-styles.md",
-      "min_read_minutes": 15,
-      "lastUpdated": "2025-02-14T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/concepts/safety-basics.md",
-      "slug": "concepts/safety-basics",
-      "category": "concepts",
-      "title": "Safety basics for AI projects",
-      "description": "Identify common risks (jailbreaks, leakage, toxicity) and apply a lightweight checklist to new AI prototypes.",
-      "audience_levels": [
-        "beginner",
-        "intermediate"
-      ],
-      "personas": [
-        "PM",
-        "developer",
-        "non-technical"
-      ],
-      "categories": [
-        "concepts"
-      ],
-      "tags": [],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "ai safety",
-        "jailbreak prevention",
-        "data leakage",
-        "toxicity filters",
-        "human review"
-      ],
-      "related": [
-        "/docs/safety/overview.md",
-        "/docs/safety/prompt-safety.md",
-        "/docs/concepts/what-is-genai.md"
-      ],
-      "sourcePath": "docs/concepts/safety-basics.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/concepts/safety-basics.md",
-      "min_read_minutes": 9,
-      "lastUpdated": "2025-05-05T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/concepts/structured-outputs.md",
-      "slug": "concepts/structured-outputs",
-      "category": "concepts",
-      "title": "Structured outputs in practice",
-      "description": "Design JSON schemas, validate responses, and choose providers that support constrained generation.",
-      "audience_levels": [
-        "intermediate"
-      ],
-      "personas": [
-        "developer",
-        "data-analyst"
-      ],
-      "categories": [
-        "concepts"
-      ],
-      "tags": [],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "structured output",
-        "json schema",
-        "validation",
-        "constrained generation",
-        "tool calling"
-      ],
-      "related": [
-        "/docs/concepts/prompting-styles.md",
-        "/docs/patterns/tools/function-calling.md",
-        "/docs/examples/data-quality-qa.md"
-      ],
-      "sourcePath": "docs/concepts/structured-outputs.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/concepts/structured-outputs.md",
-      "min_read_minutes": 12,
-      "lastUpdated": "2025-02-14T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/concepts/token-costs-latency.md",
-      "slug": "concepts/token-costs-latency",
-      "category": "concepts",
-      "title": "Tokens, context windows, and latency",
-      "description": "Understand how tokens, context windows, and streaming influence cost and response times.",
-      "audience_levels": [
-        "beginner",
-        "intermediate"
-      ],
-      "personas": [
-        "non-technical",
-        "PM",
-        "developer"
-      ],
-      "categories": [
-        "concepts"
-      ],
-      "tags": [],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "tokens",
-        "context window",
-        "latency",
-        "streaming",
-        "pricing"
-      ],
-      "related": [
-        "/docs/concepts/what-is-genai.md",
-        "/docs/patterns/cost-controls.md",
-        "/docs/concepts/structured-outputs.md"
-      ],
-      "sourcePath": "docs/concepts/token-costs-latency.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/concepts/token-costs-latency.md",
-      "min_read_minutes": 11,
-      "lastUpdated": "2025-03-15T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/concepts/what-is-genai.md",
-      "slug": "concepts/what-is-genai",
-      "category": "concepts",
-      "title": "What is Generative AI?",
-      "description": "Understand what generative AI can do, its limits, and how to decide when it is the right tool for the job.",
-      "audience_levels": [
-        "beginner",
-        "intermediate",
-        "advanced"
-      ],
-      "personas": [
-        "non-technical",
-        "PM",
-        "developer",
-        "data-analyst",
-        "admin"
-      ],
-      "categories": [
-        "concepts"
-      ],
-      "tags": [
-        "generative-ai",
-        "llm",
-        "capabilities",
-        "limitations"
-      ],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "generative ai definition",
-        "llm capabilities",
-        "genai limitations",
-        "mental models",
-        "use cases"
-      ],
-      "related": [
-        "/docs/concepts/genai-vs-agentic.md",
-        "/docs/concepts/prompting-styles.md",
-        "/docs/concepts/token-costs-latency.md",
-        "/docs/concepts/safety-basics.md"
-      ],
-      "sourcePath": "docs/concepts/what-is-genai.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/concepts/what-is-genai.md",
-      "min_read_minutes": 12,
-      "lastUpdated": "2025-02-14T00:00:00.000Z"
     },
     {
       "path": "/docs/evaluations/data-platform-benchmarks.md",
@@ -604,6 +283,439 @@
       "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/evaluations/tool-use-evals.md",
       "min_read_minutes": 7,
       "lastUpdated": "2025-10-06T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/concepts/agents-vs-automation.md",
+      "slug": "concepts/agents-vs-automation",
+      "category": "concepts",
+      "title": "Agents vs. classic automation",
+      "description": "Decide when to reach for multi-step AI agents and when deterministic automation is faster, cheaper, and safer.",
+      "audience_levels": [
+        "beginner",
+        "intermediate"
+      ],
+      "personas": [
+        "PM",
+        "developer"
+      ],
+      "categories": [
+        "concepts"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "ai agents vs automation",
+        "deterministic workflows",
+        "rpa vs llm agents",
+        "cost latency tradeoffs",
+        "human in the loop"
+      ],
+      "related": [
+        "/docs/concepts/genai-vs-agentic.md",
+        "/docs/concepts/token-costs-latency.md",
+        "/docs/concepts/structured-outputs.md",
+        "/docs/concepts/spec-vs-vibe-coding.md"
+      ],
+      "sourcePath": "docs/concepts/agents-vs-automation.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/concepts/agents-vs-automation.md",
+      "min_read_minutes": 11,
+      "lastUpdated": "2025-02-14T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/concepts/ai-landscape-ml-expert-rpa.md",
+      "slug": "concepts/ai-landscape-ml-expert-rpa",
+      "category": "concepts",
+      "title": "Placing GenAI among ML, expert systems, and RPA",
+      "description": "Compare classical automation approaches so you can select the right blend of rules, models, and agents for each business problem.",
+      "audience_levels": [
+        "beginner",
+        "intermediate"
+      ],
+      "personas": [
+        "PM",
+        "developer",
+        "data-analyst"
+      ],
+      "categories": [
+        "concepts"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "genai vs ml",
+        "expert systems comparison",
+        "rpa vs ai",
+        "automation landscape",
+        "ai tooling selection"
+      ],
+      "related": [
+        "/docs/concepts/agents-vs-automation.md",
+        "/docs/concepts/what-is-genai.md",
+        "/docs/concepts/genai-vs-agentic.md",
+        "/docs/concepts/structured-outputs.md"
+      ],
+      "sourcePath": "docs/concepts/ai-landscape-ml-expert-rpa.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/concepts/ai-landscape-ml-expert-rpa.md",
+      "min_read_minutes": 12,
+      "lastUpdated": "2025-02-14T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/concepts/ethics-responsible-ai.md",
+      "slug": "concepts/ethics-responsible-ai",
+      "category": "concepts",
+      "title": "Responsible AI essentials",
+      "description": "Practical guardrails for bias, transparency, and human oversight in applied AI teams.",
+      "audience_levels": [
+        "beginner",
+        "intermediate",
+        "advanced"
+      ],
+      "personas": [
+        "PM",
+        "developer",
+        "data-analyst",
+        "admin"
+      ],
+      "categories": [
+        "concepts",
+        "safety"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "responsible ai",
+        "bias",
+        "oversight",
+        "transparency",
+        "governance"
+      ],
+      "related": [
+        "/docs/concepts/safety-basics.md",
+        "/docs/concepts/structured-outputs.md",
+        "/docs/evaluations/rubric-prompts.md"
+      ],
+      "sourcePath": "docs/concepts/ethics-responsible-ai.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/concepts/ethics-responsible-ai.md",
+      "min_read_minutes": 13,
+      "lastUpdated": "2025-02-14T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/concepts/genai-vs-agentic.md",
+      "slug": "concepts/genai-vs-agentic",
+      "category": "concepts",
+      "title": "Generative AI vs. Agentic Systems",
+      "description": "Compare single-shot prompting with multi-step, tool-using agents so you can decide which approach fits your problem.",
+      "audience_levels": [
+        "beginner",
+        "intermediate",
+        "advanced"
+      ],
+      "personas": [
+        "non-technical",
+        "PM",
+        "developer",
+        "data-analyst"
+      ],
+      "categories": [
+        "concepts"
+      ],
+      "tags": [
+        "agents",
+        "prompting",
+        "workflows",
+        "planning"
+      ],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "agentic ai",
+        "single shot prompting",
+        "tool use",
+        "workflow design",
+        "agent vs automation"
+      ],
+      "related": [
+        "/docs/concepts/what-is-genai.md",
+        "/docs/patterns/agentic/planner-executor.md",
+        "/docs/patterns/agentic/router-multi-tool.md",
+        "/docs/patterns/observability-context.md"
+      ],
+      "sourcePath": "docs/concepts/genai-vs-agentic.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/concepts/genai-vs-agentic.md",
+      "min_read_minutes": 14,
+      "lastUpdated": "2025-02-14T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/concepts/glossary.md",
+      "slug": "concepts/glossary",
+      "category": "concepts",
+      "title": "AI glossary",
+      "description": "Concise definitions for common AI terms used throughout the hub.",
+      "audience_levels": [
+        "beginner"
+      ],
+      "personas": [
+        "non-technical",
+        "PM",
+        "developer",
+        "data-analyst"
+      ],
+      "categories": [
+        "concepts"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "glossary",
+        "definitions",
+        "ai terms",
+        "genai"
+      ],
+      "related": [
+        "/docs/concepts/what-is-genai.md",
+        "/docs/concepts/prompting-styles.md",
+        "/docs/concepts/structured-outputs.md"
+      ],
+      "sourcePath": "docs/concepts/glossary.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/concepts/glossary.md",
+      "min_read_minutes": 9,
+      "lastUpdated": "2025-03-15T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/concepts/prompting-styles.md",
+      "slug": "concepts/prompting-styles",
+      "category": "concepts",
+      "title": "Prompting styles and when to use them",
+      "description": "Instruction, few-shot, chain-of-thought, critique-and-repair, and planning prompts with tradeoffs and runnable examples.",
+      "audience_levels": [
+        "beginner",
+        "intermediate",
+        "advanced"
+      ],
+      "personas": [
+        "PM",
+        "developer",
+        "data-analyst"
+      ],
+      "categories": [
+        "concepts"
+      ],
+      "tags": [
+        "prompting",
+        "examples",
+        "chain-of-thought",
+        "critique",
+        "planning"
+      ],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "prompting styles",
+        "few shot",
+        "chain of thought",
+        "critique repair",
+        "prompt engineering"
+      ],
+      "related": [
+        "/docs/concepts/what-is-genai.md",
+        "/docs/concepts/genai-vs-agentic.md",
+        "/docs/patterns/agentic/reflection-self-heal.md",
+        "/docs/patterns/tools/function-calling.md"
+      ],
+      "sourcePath": "docs/concepts/prompting-styles.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/concepts/prompting-styles.md",
+      "min_read_minutes": 15,
+      "lastUpdated": "2025-02-14T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/concepts/safety-basics.md",
+      "slug": "concepts/safety-basics",
+      "category": "concepts",
+      "title": "Safety basics for AI projects",
+      "description": "Identify common risks (jailbreaks, leakage, toxicity) and apply a lightweight checklist to new AI prototypes.",
+      "audience_levels": [
+        "beginner",
+        "intermediate"
+      ],
+      "personas": [
+        "PM",
+        "developer",
+        "non-technical"
+      ],
+      "categories": [
+        "concepts"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "ai safety",
+        "jailbreak prevention",
+        "data leakage",
+        "toxicity filters",
+        "human review"
+      ],
+      "related": [
+        "/docs/safety/overview.md",
+        "/docs/safety/prompt-safety.md",
+        "/docs/concepts/what-is-genai.md"
+      ],
+      "sourcePath": "docs/concepts/safety-basics.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/concepts/safety-basics.md",
+      "min_read_minutes": 9,
+      "lastUpdated": "2025-05-05T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/concepts/spec-vs-vibe-coding.md",
+      "slug": "concepts/spec-vs-vibe-coding",
+      "category": "concepts",
+      "title": "Spec-first vs. vibe-based coding with LLMs",
+      "description": "Learn how lightweight specs, evals, and guardrails keep AI-assisted development on track compared with improvisational prompting.",
+      "audience_levels": [
+        "intermediate",
+        "advanced"
+      ],
+      "personas": [
+        "developer",
+        "PM"
+      ],
+      "categories": [
+        "concepts"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "spec driven development",
+        "prompt engineering",
+        "llm guardrails",
+        "vibe coding",
+        "ai code review"
+      ],
+      "related": [
+        "/docs/concepts/agents-vs-automation.md",
+        "/docs/concepts/genai-vs-agentic.md",
+        "/docs/quickstarts/js-server-route.md",
+        "/docs/quickstarts/python-fastapi.md"
+      ],
+      "sourcePath": "docs/concepts/spec-vs-vibe-coding.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/concepts/spec-vs-vibe-coding.md",
+      "min_read_minutes": 13,
+      "lastUpdated": "2025-02-14T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/concepts/structured-outputs.md",
+      "slug": "concepts/structured-outputs",
+      "category": "concepts",
+      "title": "Structured outputs in practice",
+      "description": "Design JSON schemas, validate responses, and choose providers that support constrained generation.",
+      "audience_levels": [
+        "intermediate"
+      ],
+      "personas": [
+        "developer",
+        "data-analyst"
+      ],
+      "categories": [
+        "concepts"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "structured output",
+        "json schema",
+        "validation",
+        "constrained generation",
+        "tool calling"
+      ],
+      "related": [
+        "/docs/concepts/prompting-styles.md",
+        "/docs/patterns/tools/function-calling.md",
+        "/docs/examples/data-quality-qa.md"
+      ],
+      "sourcePath": "docs/concepts/structured-outputs.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/concepts/structured-outputs.md",
+      "min_read_minutes": 12,
+      "lastUpdated": "2025-02-14T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/concepts/token-costs-latency.md",
+      "slug": "concepts/token-costs-latency",
+      "category": "concepts",
+      "title": "Tokens, context windows, and latency",
+      "description": "Understand how tokens, context windows, and streaming influence cost and response times.",
+      "audience_levels": [
+        "beginner",
+        "intermediate"
+      ],
+      "personas": [
+        "non-technical",
+        "PM",
+        "developer"
+      ],
+      "categories": [
+        "concepts"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "tokens",
+        "context window",
+        "latency",
+        "streaming",
+        "pricing"
+      ],
+      "related": [
+        "/docs/concepts/what-is-genai.md",
+        "/docs/patterns/cost-controls.md",
+        "/docs/concepts/structured-outputs.md"
+      ],
+      "sourcePath": "docs/concepts/token-costs-latency.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/concepts/token-costs-latency.md",
+      "min_read_minutes": 11,
+      "lastUpdated": "2025-03-15T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/concepts/what-is-genai.md",
+      "slug": "concepts/what-is-genai",
+      "category": "concepts",
+      "title": "What is Generative AI?",
+      "description": "Understand what generative AI can do, its limits, and how to decide when it is the right tool for the job.",
+      "audience_levels": [
+        "beginner",
+        "intermediate",
+        "advanced"
+      ],
+      "personas": [
+        "non-technical",
+        "PM",
+        "developer",
+        "data-analyst",
+        "admin"
+      ],
+      "categories": [
+        "concepts"
+      ],
+      "tags": [
+        "generative-ai",
+        "llm",
+        "capabilities",
+        "limitations"
+      ],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "generative ai definition",
+        "llm capabilities",
+        "genai limitations",
+        "mental models",
+        "use cases"
+      ],
+      "related": [
+        "/docs/concepts/genai-vs-agentic.md",
+        "/docs/concepts/prompting-styles.md",
+        "/docs/concepts/token-costs-latency.md",
+        "/docs/concepts/safety-basics.md"
+      ],
+      "sourcePath": "docs/concepts/what-is-genai.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/concepts/what-is-genai.md",
+      "min_read_minutes": 12,
+      "lastUpdated": "2025-02-14T00:00:00.000Z"
     },
     {
       "path": "/docs/examples/a2a-coordination.md",

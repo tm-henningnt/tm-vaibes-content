@@ -115,17 +115,17 @@ Keep arrays deduped; include at least one category; use `primary_category` if yo
     - Audience: all.
     - Success: practical “do/don’t” list + links to deeper safety pages.
 
-15. [ ] /docs/concepts/agents-vs-automation.md
+15. [qa ready] /docs/concepts/agents-vs-automation.md
     - Purpose: When classic automation beats agents; cost/latency boundaries.
     - Audience: PM, developer.
     - Success: decision tree and examples.
 
-16. [ ] /docs/concepts/ai-landscape-ml-expert-rpa.md
+16. [qa ready] /docs/concepts/ai-landscape-ml-expert-rpa.md
     - Purpose: Place GenAI among ML, expert systems, and RPA; strengths/limits.
     - Audience: beginner → intermediate.
     - Success: readers can contrast approaches and pick the right tool.
 
-17. [ ] /docs/concepts/spec-vs-vibe-coding.md
+17. [qa ready] /docs/concepts/spec-vs-vibe-coding.md
     - Purpose: Compare “vibe coding” with spec-driven development; introduce spec‑kit‑style artifacts.
     - Audience: developer, PM.
     - Success: readers adopt lightweight specs before coding with LLMs.
