@@ -75,17 +75,17 @@ Keep arrays deduped; include at least one category; use `primary_category` if yo
    - Audience: beginner; non‑technical, PM, developer.
    - Success: runnable snippet + explanation of each parameter.
 
-7. [ ] /docs/quickstarts/js-server-route.md (expand)
+7. [qa ready] /docs/quickstarts/js-server-route.md (expand)
    - Purpose: Safe server route with retries/timeouts and streaming.
    - Audience: beginner → intermediate developers.
    - Success: working POST route; no client‑side keys; error handling template.
 
-8. [ ] /docs/quickstarts/python-fastapi.md (expand)
+8. [qa ready] /docs/quickstarts/python-fastapi.md (expand)
    - Purpose: Minimal FastAPI endpoint for chat/tools; typed responses.
    - Audience: developer, data‑analyst.
    - Success: endpoint returns structured JSON with metadata.
 
-9. [ ] /docs/concepts/safety-basics.md
+9. [qa ready] /docs/concepts/safety-basics.md
    - Purpose: Intro to safety risks (jailbreaks, data leakage, toxicity).
    - Audience: all.
    - Success: simple “safety checklist” for early prototypes.

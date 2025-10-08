@@ -1,132 +1,222 @@
 ---
 title: "JS/TS Server Route: Safe Provider Calls"
-description: "Implement a minimal server-only route that calls OpenAI safely with retries and no client-side keys."
+description: "Implement a server-only route that calls OpenAI (or any LLM API) with retries, streaming, and guardrails."
 audience_levels: ["beginner", "intermediate"]
 personas: ["developer"]
-categories: ["quickstarts", "how-to"]
-min_read_minutes: 10
-last_reviewed: 2025-10-06
-related: ["/docs/quickstarts/try-genai-in-10-min.md", "/docs/providers/security-best-practices.md", "/docs/providers/openai/auth-models-limits.md"]
-search_keywords: ["next.js api route", "express server", "openai node", "no client key", "rate limits"]
+categories: ["quickstarts"]
+min_read_minutes: 12
+last_reviewed: 2025-05-05
+related: ["/docs/quickstarts/try-genai-in-10-min.md", "/docs/concepts/token-costs-latency.md", "/docs/concepts/safety-basics.md"]
+search_keywords: ["next.js api route", "express server", "openai node", "llm streaming", "api key security"]
+show_toc: true
 ---
 
-Overview
+Server-only routes keep provider API keys out of the browser, centralize retries, and ensure every call is logged and governed. This guide shows how to stand up a resilient JavaScript/TypeScript endpoint that proxies user prompts to OpenAI (or any modern chat completion API).
+You will build both a Next.js App Router handler and an Express route, add streaming support, and ship production-ready safeguards.
 
-- Build a server route that proxies requests to OpenAI with your server-held key.
-- Never put API keys in the browser or bundle.
+**You’ll learn**
 
-Before you begin
+- Why server routes are required for key management, quotas, and auditing.
+- How to implement a typed POST handler with retries, timeouts, and structured responses.
+- How to stream tokens to the client without exposing secrets.
+- Which hardening steps (validation, logging, rate limiting) to apply before launch.
+- How to test success and failure paths using automated checks.
 
-- Create a minimal project (Next.js or Express). Ensure `OPENAI_API_KEY` is present only on the server.
-- Decide whether you want streaming first tokens (better UX) or a single JSON response (simpler to start).
+## Architecture at a glance
 
-Option A: Next.js App Router (recommended)
+The diagram below shows the recommended flow: clients send lightweight requests to your server route, which enriches them with secrets and calls the provider. Responses (streamed or buffered) flow back through your route so you can log metadata and enforce quotas.
 
-- File: `app/api/chat/route.ts`
+```mermaid
+sequenceDiagram
+    participant Client
+    participant Route as Server route (Next.js/Express)
+    participant Provider as LLM provider API
+    Client->>Route: POST /api/chat { userMessage }
+    Route->>Route: Validate + rate limit + redact PII
+    Route->>Provider: Chat completion request (with API key)
+    Provider-->>Route: Streamed tokens / JSON
+    Route-->>Client: SSE stream or JSON body
+    Route->>Route: Log metadata + metrics
+```
+
+## Choose your runtime and environment variables
+
+1. Store provider keys (for example, `OPENAI_API_KEY`) in server-only environment files (`.env.local` for Next.js, `.env` for Express). Never inject them into client bundles.
+2. Decide whether you will run the route in a Node.js runtime or on the Next.js Edge runtime. Edge offers lower latency, but long-running tool calls and SDKs that rely on Node APIs may require the Node runtime.
+3. Add configuration for per-request timeouts (for example, 30 seconds) and backoff policies for 429/5xx responses.
+
+## Next.js App Router implementation (recommended)
+
+Create `app/api/chat/route.ts` and enable the Node runtime when you depend on the official OpenAI SDK.
 
 ```ts
-import OpenAI from 'openai';
-import { NextResponse } from 'next/server';
+import { NextResponse } from "next/server";
+import OpenAI from "openai";
 
 const client = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
+
+export const runtime = "nodejs"; // or "edge" when using fetch + streaming
+
+export async function POST(req: Request) {
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), 30_000);
+
+  try {
+    const body = await req.json();
+    const userMessage = typeof body?.userMessage === "string" ? body.userMessage.trim() : "";
+    if (!userMessage) {
+      return NextResponse.json({ error: "userMessage must be a non-empty string" }, { status: 400 });
+    }
+
+    let attempt = 0;
+    let lastError: unknown;
+    while (attempt++ < 3) {
+      try {
+        const completion = await client.chat.completions.create({
+          model: "gpt-4o-mini",
+          messages: [
+            { role: "system", content: "You are a concise and friendly assistant." },
+            { role: "user", content: userMessage }
+          ],
+          max_tokens: 300,
+          timeout: 25_000
+        }, { signal: controller.signal });
+
+        const text = completion.choices?.[0]?.message?.content ?? "";
+        return NextResponse.json({ text, usage: completion.usage }, { status: 200 });
+      } catch (error) {
+        lastError = error;
+        // Retry on transient issues only
+        if (error instanceof OpenAI.APIError && ![429, 500, 502, 503].includes(error.status ?? 0)) {
+          throw error;
+        }
+        await new Promise((resolve) => setTimeout(resolve, 300 * attempt));
+      }
+    }
+
+    return NextResponse.json({ error: "Upstream provider unavailable" }, { status: 502 });
+  } catch (error) {
+    const status = error instanceof DOMException && error.name === "AbortError" ? 504 : 500;
+    return NextResponse.json({ error: status === 504 ? "Request timed out" : "Unexpected server error" }, { status });
+  } finally {
+    clearTimeout(timeout);
+  }
+}
+```
+
+### Stream tokens from the App Router
+
+When you need fast first-token latency, switch to the Edge runtime and use the streaming helpers exposed by the OpenAI SDK. This example streams Server-Sent Events (SSE) to the client while still keeping the API key on the server.
+
+```ts
+import { StreamingTextResponse, experimental_StreamData } from "ai"; // nextjs-ai package
+import OpenAI from "openai";
+
+export const runtime = "edge";
 
 export async function POST(req: Request) {
   const { userMessage } = await req.json();
-  if (!userMessage || typeof userMessage !== 'string') {
-    return NextResponse.json({ error: 'Missing userMessage' }, { status: 400 });
+  if (typeof userMessage !== "string" || !userMessage.trim()) {
+    return new Response(JSON.stringify({ error: "Invalid userMessage" }), {
+      status: 400,
+      headers: { "Content-Type": "application/json" }
+    });
   }
 
-  // Simple retry loop with capped attempts
-  let attempt = 0, lastErr: unknown;
-  while (attempt++ < 3) {
-    try {
-      const completion = await client.chat.completions.create({
-        model: 'gpt-4o-mini',
-        messages: [
-          { role: 'system', content: 'You are a concise and friendly assistant.' },
-          { role: 'user', content: userMessage }
-        ],
-        max_tokens: 300
-      });
-      const text = completion.choices?.[0]?.message?.content ?? '';
-      return NextResponse.json({ text });
-    } catch (err) {
-      lastErr = err;
-      // 429/5xx backoff
-      await new Promise(r => setTimeout(r, 300 * attempt));
-    }
-  }
-  return NextResponse.json({ error: 'Upstream failed' }, { status: 502 });
-}
-```
-
-Streaming variant (Next.js)
-
-```ts
-// Sketch: respond as tokens arrive
-// Use the OpenAI SDK streaming APIs or fetch with ReadableStream.
-// Stream to the client using `new TransformStream()` in edge/runtime.
-```
-
-Client call example
-
-```ts
-// strictly client-side: fetch your own server route
-async function ask(question: string) {
-  const res = await fetch('/api/chat', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ userMessage: question })
+  const client = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
+  const response = await client.chat.completions.create({
+    model: "gpt-4o-mini",
+    stream: true,
+    messages: [
+      { role: "system", content: "You are a concise and friendly assistant." },
+      { role: "user", content: userMessage }
+    ]
   });
-  if (!res.ok) throw new Error('Request failed');
-  return (await res.json()).text as string;
+
+  const stream = OpenAI.toReadableStream(response);
+  const data = new experimental_StreamData();
+  data.append({ timestamp: Date.now() });
+
+  return new StreamingTextResponse(stream, { data });
 }
 ```
 
-Option B: Express
+On the client, consume the SSE stream with the `fetch` API or utilities such as `ai/react`. If you only need JSON responses, stick with the Node runtime example above.
+
+## Express alternative
+
+If you prefer a lighter server, build an Express route with identical validation and retry logic. Add middleware for rate limiting (for example, `express-rate-limit`) and structured logging (`pino`, `winston`).
 
 ```ts
-import express from 'express';
-import OpenAI from 'openai';
+import express from "express";
+import OpenAI from "openai";
 
 const app = express();
 app.use(express.json());
+
 const client = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 
-app.post('/api/chat', async (req, res) => {
-  const { userMessage } = req.body ?? {};
-  if (!userMessage) return res.status(400).json({ error: 'Missing userMessage' });
-  try {
-    const result = await client.chat.completions.create({
-      model: 'gpt-4o-mini',
-      messages: [
-        { role: 'system', content: 'You are a concise and friendly assistant.' },
-        { role: 'user', content: userMessage }
-      ]
-    });
-    res.json({ text: result.choices?.[0]?.message?.content ?? '' });
-  } catch (e) {
-    res.status(502).json({ error: 'Upstream failed' });
+app.post("/api/chat", async (req, res) => {
+  const userMessage = typeof req.body?.userMessage === "string" ? req.body.userMessage.trim() : "";
+  if (!userMessage) {
+    return res.status(400).json({ error: "userMessage must be a non-empty string" });
   }
+
+  let attempt = 0;
+  while (attempt++ < 3) {
+    try {
+      const completion = await client.chat.completions.create({
+        model: "gpt-4o-mini",
+        messages: [
+          { role: "system", content: "You are a concise and friendly assistant." },
+          { role: "user", content: userMessage }
+        ],
+        max_tokens: 300
+      });
+
+      return res.json({
+        text: completion.choices?.[0]?.message?.content ?? "",
+        usage: completion.usage
+      });
+    } catch (error) {
+      if (!(error instanceof OpenAI.APIError) || ![429, 500, 502, 503].includes(error.status ?? 0)) {
+        console.error("Non-retriable error", error);
+        return res.status(500).json({ error: "Unexpected provider error" });
+      }
+      await new Promise((resolve) => setTimeout(resolve, 300 * attempt));
+    }
+  }
+
+  return res.status(502).json({ error: "Provider unavailable after retries" });
 });
 
-app.listen(3000, () => console.log('http://localhost:3000'));
+app.listen(3000, () => {
+  console.log("Server running on http://localhost:3000");
+});
 ```
 
-Notes
+To stream responses from Express, wrap the OpenAI SDK’s readable stream in an SSE helper such as `eventsource-parser` and flush chunks as they arrive.
 
-- Do not ship `OPENAI_API_KEY` to the browser; keep it server-side.
-- Add logging without including prompts/outputs if they contain sensitive data; prefer metadata.
-- Handle 429 (rate limits) and provider transient 5xx with short backoff and caps.
-- Validate inputs from untrusted clients; consider per-IP or per-user quotas on your route.
-- If you expose this route publicly, add CORS rules and consider an allowlist.
+## Harden the endpoint before launch
 
-Test and verify
+- **Validate inputs and enforce quotas.** Combine schema validation (for example, `zod`) with per-user and per-IP quotas. Reject prompts that exceed your max token budget before calling the provider.
+- **Log metadata, not secrets.** Capture request IDs, user IDs, model names, latency, and cost estimates. Avoid storing raw prompts or responses unless users consent.
+- **Set circuit breakers.** Abort requests that exceed timeouts, and surface friendly 504 messages to clients when the provider is slow.
+- **Protect against replay and CSRF.** Require authentication for internal tools and attach CSRF tokens if the route is consumed by browsers.
+- **Plan for auditing.** Emit structured logs to observability tools (Datadog, OpenTelemetry) and sample successful/failed responses for QA.
 
-- Use `curl` or REST clients to exercise error paths (missing body, large inputs, forced 500).
-- Add a small unit test for input validation and a smoke test for a successful call.
+## Test and monitor
 
-References
+1. Use unit tests to assert validation behavior (missing `userMessage`, empty strings, oversize payloads).
+2. Add integration tests that stub the OpenAI client and verify retry behavior and timeouts. With Next.js, use `@testing-library/jest-dom` or `vitest` plus `msw` to mock provider responses.
+3. Run manual smoke tests:
+   - `curl -X POST http://localhost:3000/api/chat -H 'Content-Type: application/json' -d '{"userMessage":"Hello"}'`
+   - Force a 429 by reducing rate limits and confirm the route backs off.
+4. Monitor production latency, error rate, and cost per request. Alert on sustained 5xx or unusual spikes in token usage.
 
-- OpenAI Node SDK
----
+## References
+
+- OpenAI Platform docs — [Chat completions API](https://platform.openai.com/docs/guides/text-generation)
+- Vercel — [Next.js App Router route handlers](https://nextjs.org/docs/app/building-your-application/routing/route-handlers)
+- MDN Web Docs — [Server-Sent Events](https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events/Using_server-sent_events)
+- Express.js — [Production best practices: security](https://expressjs.com/en/advanced/best-practice-security.html)
