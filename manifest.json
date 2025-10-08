@@ -1,8 +1,8 @@
 {
   "$schema": "./tools/schemas/manifest.schema.json",
   "version": "2025.10.1",
-  "generated_at": "2025-10-08T23:12:19.141Z",
-  "hash": "f482770d0c3954b6",
+  "generated_at": "2025-10-08T23:19:47.288Z",
+  "hash": "84faf4f6e90cc821",
   "docs": [
     {
       "path": "/docs/index.md",
@@ -37,6 +37,46 @@
       "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/index.md",
       "min_read_minutes": 8,
       "lastUpdated": "2025-10-08T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/concepts/ethics-responsible-ai.md",
+      "slug": "concepts/ethics-responsible-ai",
+      "category": "concepts",
+      "title": "Responsible AI essentials",
+      "description": "Practical guardrails for bias, transparency, and human oversight in applied AI teams.",
+      "audience_levels": [
+        "beginner",
+        "intermediate",
+        "advanced"
+      ],
+      "personas": [
+        "PM",
+        "developer",
+        "data-analyst",
+        "admin"
+      ],
+      "categories": [
+        "concepts",
+        "safety"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "responsible ai",
+        "bias",
+        "oversight",
+        "transparency",
+        "governance"
+      ],
+      "related": [
+        "/docs/concepts/safety-basics.md",
+        "/docs/concepts/structured-outputs.md",
+        "/docs/evaluations/rubric-prompts.md"
+      ],
+      "sourcePath": "docs/concepts/ethics-responsible-ai.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/concepts/ethics-responsible-ai.md",
+      "min_read_minutes": 13,
+      "lastUpdated": "2025-02-14T00:00:00.000Z"
     },
     {
       "path": "/docs/concepts/genai-vs-agentic.md",
@@ -200,6 +240,41 @@
       "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/concepts/safety-basics.md",
       "min_read_minutes": 9,
       "lastUpdated": "2025-05-05T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/concepts/structured-outputs.md",
+      "slug": "concepts/structured-outputs",
+      "category": "concepts",
+      "title": "Structured outputs in practice",
+      "description": "Design JSON schemas, validate responses, and choose providers that support constrained generation.",
+      "audience_levels": [
+        "intermediate"
+      ],
+      "personas": [
+        "developer",
+        "data-analyst"
+      ],
+      "categories": [
+        "concepts"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "structured output",
+        "json schema",
+        "validation",
+        "constrained generation",
+        "tool calling"
+      ],
+      "related": [
+        "/docs/concepts/prompting-styles.md",
+        "/docs/patterns/tools/function-calling.md",
+        "/docs/examples/data-quality-qa.md"
+      ],
+      "sourcePath": "docs/concepts/structured-outputs.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/concepts/structured-outputs.md",
+      "min_read_minutes": 12,
+      "lastUpdated": "2025-02-14T00:00:00.000Z"
     },
     {
       "path": "/docs/concepts/token-costs-latency.md",
@@ -600,8 +675,8 @@
       "path": "/docs/examples/content-drafter.md",
       "slug": "examples/content-drafter",
       "category": "examples",
-      "title": "Example: Content Drafter",
-      "description": "Straight‑through generation with tone/voice controls and a draft quality rubric.",
+      "title": "Example: Content drafter",
+      "description": "Build a writing assistant with tone controls, iteration loops, and a review rubric.",
       "audience_levels": [
         "beginner",
         "intermediate"
@@ -619,23 +694,25 @@
         "content",
         "draft",
         "tone",
-        "voice",
-        "rubric"
+        "rubric",
+        "review loop"
       ],
       "related": [
-        "/docs/evaluations/rubric-prompts.md"
+        "/docs/concepts/prompting-styles.md",
+        "/docs/evaluations/rubric-prompts.md",
+        "/docs/examples/meeting-summarizer.md"
       ],
       "sourcePath": "docs/examples/content-drafter.md",
       "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/examples/content-drafter.md",
-      "min_read_minutes": 6,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
+      "min_read_minutes": 10,
+      "lastUpdated": "2025-02-14T00:00:00.000Z"
     },
     {
       "path": "/docs/examples/data-quality-qa.md",
       "slug": "examples/data-quality-qa",
       "category": "examples",
-      "title": "Example: Data Quality QA",
-      "description": "Use tool calls to read-only SQL/APIs to verify data checks; measure defects caught and false positives.",
+      "title": "Example: Data quality QA assistant",
+      "description": "Run read-only checks against databases and APIs, score issues, and surface false positives.",
       "audience_levels": [
         "intermediate",
         "advanced"
@@ -652,32 +729,34 @@
       "search_keywords": [
         "data quality",
         "sql",
-        "qa",
-        "read-only",
-        "tools"
+        "validation",
+        "tool calling",
+        "false positives"
       ],
       "related": [
+        "/docs/concepts/structured-outputs.md",
         "/docs/patterns/tools/function-calling.md",
         "/docs/evaluations/tool-use-evals.md"
       ],
       "sourcePath": "docs/examples/data-quality-qa.md",
       "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/examples/data-quality-qa.md",
-      "min_read_minutes": 8,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
+      "min_read_minutes": 12,
+      "lastUpdated": "2025-02-14T00:00:00.000Z"
     },
     {
       "path": "/docs/examples/meeting-summarizer.md",
       "slug": "examples/meeting-summarizer",
       "category": "examples",
-      "title": "Example: Meeting Summarizer",
-      "description": "Generate structured notes with action items and owners.",
+      "title": "Example: Meeting summarizer",
+      "description": "Generate structured minutes, decisions, and action items with traceable context.",
       "audience_levels": [
         "beginner",
         "intermediate"
       ],
       "personas": [
         "PM",
-        "developer"
+        "developer",
+        "data-analyst"
       ],
       "categories": [
         "examples"
@@ -688,15 +767,18 @@
         "meeting",
         "summary",
         "actions",
-        "owners"
+        "owner",
+        "transcript"
       ],
       "related": [
-        "/docs/patterns/workflows/batch-processing.md"
+        "/docs/concepts/structured-outputs.md",
+        "/docs/examples/content-drafter.md",
+        "/docs/evaluations/tool-use-evals.md"
       ],
       "sourcePath": "docs/examples/meeting-summarizer.md",
       "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/examples/meeting-summarizer.md",
-      "min_read_minutes": 6,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
+      "min_read_minutes": 11,
+      "lastUpdated": "2025-02-14T00:00:00.000Z"
     },
     {
       "path": "/docs/examples/provider-switching.md",
@@ -1860,6 +1942,42 @@
       "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
     {
+      "path": "/docs/providers/gemini/overview.md",
+      "slug": "providers/gemini/overview",
+      "category": "providers",
+      "title": "Google Gemini overview",
+      "description": "A quick start with Gemini models, multimodal examples, and function calling.",
+      "audience_levels": [
+        "beginner",
+        "intermediate",
+        "advanced"
+      ],
+      "personas": [
+        "developer",
+        "PM"
+      ],
+      "categories": [
+        "providers"
+      ],
+      "tags": [
+        "gemini",
+        "multimodal"
+      ],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "gemini",
+        "google",
+        "multimodal"
+      ],
+      "related": [
+        "/docs/providers/compare-providers.md"
+      ],
+      "sourcePath": "docs/providers/gemini/overview.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/providers/gemini/overview.md",
+      "min_read_minutes": 9,
+      "lastUpdated": "2025-10-08T00:00:00.000Z"
+    },
+    {
       "path": "/docs/providers/openai/auth-models-limits.md",
       "slug": "providers/openai/auth-models-limits",
       "category": "providers",
@@ -1963,42 +2081,6 @@
       "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/providers/openai/overview.md",
       "min_read_minutes": 7,
       "lastUpdated": "2025-10-06T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/providers/gemini/overview.md",
-      "slug": "providers/gemini/overview",
-      "category": "providers",
-      "title": "Google Gemini overview",
-      "description": "A quick start with Gemini models, multimodal examples, and function calling.",
-      "audience_levels": [
-        "beginner",
-        "intermediate",
-        "advanced"
-      ],
-      "personas": [
-        "developer",
-        "PM"
-      ],
-      "categories": [
-        "providers"
-      ],
-      "tags": [
-        "gemini",
-        "multimodal"
-      ],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "gemini",
-        "google",
-        "multimodal"
-      ],
-      "related": [
-        "/docs/providers/compare-providers.md"
-      ],
-      "sourcePath": "docs/providers/gemini/overview.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/providers/gemini/overview.md",
-      "min_read_minutes": 9,
-      "lastUpdated": "2025-10-08T00:00:00.000Z"
     },
     {
       "path": "/docs/tutorials/chatgpt-business/overview.md",

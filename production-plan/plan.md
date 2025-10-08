@@ -90,27 +90,27 @@ Keep arrays deduped; include at least one category; use `primary_category` if yo
    - Audience: all.
    - Success: simple “safety checklist” for early prototypes.
 
-10. [ ] /docs/concepts/structured-outputs.md
+10. [qa ready] /docs/concepts/structured-outputs.md
     - Purpose: JSON outputs, schemas, validation; pros/cons by provider.
     - Audience: intermediate.
     - Success: examples with OpenAI/Anthropic tools.
 
-11. [ ] /docs/examples/content-drafter.md (expand)
+11. [qa ready] /docs/examples/content-drafter.md (expand)
     - Purpose: A simple writing assistant; rubric for quality.
     - Audience: beginner → intermediate.
     - Success: readers adapt the template to their tone/voice.
 
-12. [ ] /docs/examples/meeting-summarizer.md (expand)
+12. [qa ready] /docs/examples/meeting-summarizer.md (expand)
     - Purpose: Structured minutes + action items; summarization patterns.
     - Audience: all.
     - Success: JSON schema for outputs; action extraction tips.
 
-13. [ ] /docs/examples/data-quality-qa.md (expand)
+13. [qa ready] /docs/examples/data-quality-qa.md (expand)
     - Purpose: Read‑only tool calls to check datasets; precision/recall tradeoffs.
     - Audience: data‑analyst, developer.
     - Success: canned checks; false‑positive mitigation.
 
-14. [ ] /docs/concepts/ethics-responsible-ai.md
+14. [qa ready] /docs/concepts/ethics-responsible-ai.md
     - Purpose: Human oversight, disclosure, bias and fairness at a high level.
     - Audience: all.
     - Success: practical “do/don’t” list + links to deeper safety pages.
