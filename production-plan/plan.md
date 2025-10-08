@@ -60,17 +60,17 @@ Keep arrays deduped; include at least one category; use `primary_category` if yo
    - Audience: all.
    - Success: side‑by‑side examples with pros/cons and failure modes.
 
-4. [ ] /docs/concepts/token-costs-latency.md
+4. [qa ready] /docs/concepts/token-costs-latency.md
    - Purpose: Tokens, context windows, streaming; cost vs speed tradeoffs.
    - Audience: beginner → intermediate.
    - Success: readers estimate cost/latency; choose streaming appropriately.
 
-5. [ ] /docs/concepts/glossary.md
+5. [qa ready] /docs/concepts/glossary.md
    - Purpose: Definitions for core terms (prompt, context window, RAG, tool, grounding, eval).
    - Audience: beginner.
    - Success: cross‑linked to all pages.
 
-6. [ ] /docs/quickstarts/try-genai-in-10-min.md (expand)
+6. [qa ready] /docs/quickstarts/try-genai-in-10-min.md (expand)
    - Purpose: Zero‑to‑first result; Node and Python single‑file.
    - Audience: beginner; non‑technical, PM, developer.
    - Success: runnable snippet + explanation of each parameter.
