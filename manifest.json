@@ -1,8 +1,8 @@
 {
   "$schema": "./tools/schemas/manifest.schema.json",
   "version": "2025.10.1",
-  "generated_at": "2025-10-08T21:13:21.575Z",
-  "hash": "0bf10405cb5a7185",
+  "generated_at": "2025-10-08T21:49:04.340Z",
+  "hash": "69e7f8647030f26d",
   "docs": [
     {
       "path": "/docs/index.md",
@@ -43,10 +43,50 @@
       "slug": "concepts/genai-vs-agentic",
       "category": "concepts",
       "title": "Generative AI vs. Agentic Systems",
-      "description": "What changes when you move from single-shot generation to multi-step, tool-using agents.",
+      "description": "Compare single-shot GenAI prompting with multi-step agentic systems and learn when to choose each.",
       "audience_levels": [
         "beginner",
-        "intermediate"
+        "intermediate",
+        "advanced"
+      ],
+      "personas": [
+        "PM",
+        "developer",
+        "non-technical"
+      ],
+      "categories": [
+        "concepts"
+      ],
+      "tags": [
+        "agentic",
+        "planning",
+        "tools",
+        "workflows"
+      ],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "agent",
+        "prompting",
+        "workflow",
+        "tool use"
+      ],
+      "related": [
+        "/docs/patterns/agentic/planner-executor.md",
+        "/docs/patterns/agentic/router-multi-tool.md"
+      ],
+      "sourcePath": "docs/concepts/genai-vs-agentic.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/concepts/genai-vs-agentic.md",
+      "min_read_minutes": 10,
+      "lastUpdated": "2025-10-08T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/concepts/glossary.md",
+      "slug": "concepts/glossary",
+      "category": "concepts",
+      "title": "AI glossary",
+      "description": "Concise definitions for common AI terms used throughout the hub.",
+      "audience_levels": [
+        "beginner"
       ],
       "personas": [
         "non-technical",
@@ -58,17 +98,178 @@
         "concepts"
       ],
       "tags": [
-        "gen-ai",
-        "agents",
-        "concepts"
+        "glossary"
       ],
       "relatedProjectTypes": [],
-      "search_keywords": [],
-      "related": [],
-      "sourcePath": "docs/concepts/genai-vs-agentic.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/concepts/genai-vs-agentic.md",
+      "search_keywords": [
+        "glossary",
+        "definitions"
+      ],
+      "related": [
+        "/docs/concepts/what-is-genai.md"
+      ],
+      "sourcePath": "docs/concepts/glossary.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/concepts/glossary.md",
+      "min_read_minutes": 6,
+      "lastUpdated": "2025-10-08T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/concepts/prompting-styles.md",
+      "slug": "concepts/prompting-styles",
+      "category": "concepts",
+      "title": "Prompting styles and when to use them",
+      "description": "Instruction, few-shot, critique-and-repair, chain-of-thought, and more—with pros and cons.",
+      "audience_levels": [
+        "beginner",
+        "intermediate",
+        "advanced"
+      ],
+      "personas": [
+        "PM",
+        "developer",
+        "data-analyst"
+      ],
+      "categories": [
+        "concepts"
+      ],
+      "tags": [
+        "prompting",
+        "examples",
+        "chain-of-thought"
+      ],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "prompting styles",
+        "few-shot",
+        "cot",
+        "critique repair"
+      ],
+      "related": [
+        "/docs/patterns/prompting/recipes.md",
+        "/docs/patterns/agentic/reflection-self-heal.md"
+      ],
+      "sourcePath": "docs/concepts/prompting-styles.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/concepts/prompting-styles.md",
+      "min_read_minutes": 12,
+      "lastUpdated": "2025-10-08T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/concepts/safety-basics.md",
+      "slug": "concepts/safety-basics",
+      "category": "concepts",
+      "title": "Safety basics for AI projects",
+      "description": "Common risks and a simple checklist for early prototypes.",
+      "audience_levels": [
+        "beginner",
+        "intermediate"
+      ],
+      "personas": [
+        "PM",
+        "developer"
+      ],
+      "categories": [
+        "concepts"
+      ],
+      "tags": [
+        "safety"
+      ],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "safety",
+        "jailbreak",
+        "privacy"
+      ],
+      "related": [
+        "/docs/safety/overview.md",
+        "/docs/safety/prompt-safety.md"
+      ],
+      "sourcePath": "docs/concepts/safety-basics.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/concepts/safety-basics.md",
+      "min_read_minutes": 7,
+      "lastUpdated": "2025-10-08T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/concepts/token-costs-latency.md",
+      "slug": "concepts/token-costs-latency",
+      "category": "concepts",
+      "title": "Tokens, context windows, and latency",
+      "description": "Understand tokens, context windows, streaming, and the cost–latency tradeoffs.",
+      "audience_levels": [
+        "beginner",
+        "intermediate"
+      ],
+      "personas": [
+        "PM",
+        "developer"
+      ],
+      "categories": [
+        "concepts"
+      ],
+      "tags": [
+        "tokens",
+        "latency",
+        "streaming",
+        "costs"
+      ],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "tokens",
+        "context window",
+        "latency",
+        "cost"
+      ],
+      "related": [
+        "/docs/patterns/cost-controls.md",
+        "/docs/evaluations/latency-cost-tradeoffs.md"
+      ],
+      "sourcePath": "docs/concepts/token-costs-latency.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/concepts/token-costs-latency.md",
       "min_read_minutes": 8,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
+      "lastUpdated": "2025-10-08T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/concepts/what-is-genai.md",
+      "slug": "concepts/what-is-genai",
+      "category": "concepts",
+      "title": "What is Generative AI?",
+      "description": "A friendly introduction to Generative AI, what it can and cannot do, and when to use it.",
+      "audience_levels": [
+        "beginner",
+        "intermediate",
+        "advanced"
+      ],
+      "personas": [
+        "non-technical",
+        "PM",
+        "developer",
+        "data-analyst",
+        "admin"
+      ],
+      "categories": [
+        "concepts"
+      ],
+      "tags": [
+        "genai",
+        "llm",
+        "introduction",
+        "basics"
+      ],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "generative ai",
+        "llm",
+        "basics",
+        "capabilities",
+        "limitations"
+      ],
+      "related": [
+        "/docs/concepts/genai-vs-agentic.md",
+        "/docs/concepts/ai-landscape-ml-expert-rpa.md"
+      ],
+      "sourcePath": "docs/concepts/what-is-genai.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/concepts/what-is-genai.md",
+      "min_read_minutes": 8,
+      "lastUpdated": "2025-10-08T00:00:00.000Z"
     },
     {
       "path": "/docs/evaluations/data-platform-benchmarks.md",
@@ -485,6 +686,38 @@
       "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
     {
+      "path": "/docs/examples/provider-switching.md",
+      "slug": "examples/provider-switching",
+      "category": "examples",
+      "title": "Provider switching with a thin abstraction",
+      "description": "Swap AI providers behind a small interface and avoid vendor lock-in.",
+      "audience_levels": [
+        "intermediate"
+      ],
+      "personas": [
+        "developer"
+      ],
+      "categories": [
+        "examples"
+      ],
+      "tags": [
+        "providers",
+        "abstraction"
+      ],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "provider switch",
+        "abstraction"
+      ],
+      "related": [
+        "/docs/providers/compare-providers.md"
+      ],
+      "sourcePath": "docs/examples/provider-switching.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/examples/provider-switching.md",
+      "min_read_minutes": 9,
+      "lastUpdated": "2025-10-08T00:00:00.000Z"
+    },
+    {
       "path": "/docs/patterns/a2a-agent-to-agent.md",
       "slug": "patterns/a2a-agent-to-agent",
       "category": "patterns",
@@ -587,6 +820,150 @@
       ],
       "sourcePath": "docs/patterns/observability-context.md",
       "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/patterns/observability-context.md",
+      "min_read_minutes": 7,
+      "lastUpdated": "2025-10-06T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/safety/human-in-the-loop.md",
+      "slug": "safety/human-in-the-loop",
+      "category": "safety",
+      "title": "Human-in-the-Loop",
+      "description": "Introduce approval gates for sensitive actions and define reviewer workflows.",
+      "audience_levels": [
+        "intermediate",
+        "advanced"
+      ],
+      "personas": [
+        "developer",
+        "PM",
+        "admin"
+      ],
+      "categories": [
+        "safety",
+        "operations"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "human in the loop",
+        "approval",
+        "review",
+        "gate"
+      ],
+      "related": [
+        "/docs/safety/overview.md",
+        "/docs/safety/output-filters.md"
+      ],
+      "sourcePath": "docs/safety/human-in-the-loop.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/safety/human-in-the-loop.md",
+      "min_read_minutes": 7,
+      "lastUpdated": "2025-10-06T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/safety/output-filters.md",
+      "slug": "safety/output-filters",
+      "category": "safety",
+      "title": "Output Filters",
+      "description": "Add classifier/rule-based filters to block or redact unsafe outputs before they reach users.",
+      "audience_levels": [
+        "intermediate",
+        "advanced"
+      ],
+      "personas": [
+        "developer",
+        "admin"
+      ],
+      "categories": [
+        "safety",
+        "operations"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "safety filter",
+        "classifier",
+        "rules",
+        "redaction"
+      ],
+      "related": [
+        "/docs/safety/overview.md",
+        "/docs/safety/prompt-safety.md",
+        "/docs/safety/human-in-the-loop.md"
+      ],
+      "sourcePath": "docs/safety/output-filters.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/safety/output-filters.md",
+      "min_read_minutes": 8,
+      "lastUpdated": "2025-10-06T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/safety/overview.md",
+      "slug": "safety/overview",
+      "category": "safety",
+      "title": "Safety & Responsible AI: Overview",
+      "description": "Define what we block, what we log, when we escalate, and how we mitigate abuse cases.",
+      "audience_levels": [
+        "intermediate",
+        "advanced"
+      ],
+      "personas": [
+        "developer",
+        "PM",
+        "admin"
+      ],
+      "categories": [
+        "safety",
+        "concepts"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "safety",
+        "responsible ai",
+        "policy",
+        "logging",
+        "escalation"
+      ],
+      "related": [
+        "/docs/safety/prompt-safety.md",
+        "/docs/safety/output-filters.md",
+        "/docs/safety/human-in-the-loop.md"
+      ],
+      "sourcePath": "docs/safety/overview.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/safety/overview.md",
+      "min_read_minutes": 8,
+      "lastUpdated": "2025-10-06T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/safety/prompt-safety.md",
+      "slug": "safety/prompt-safety",
+      "category": "safety",
+      "title": "Prompt Safety",
+      "description": "Write prompts that minimize risk: scope clearly, avoid data leakage, and instruct models to refuse unsafe tasks.",
+      "audience_levels": [
+        "intermediate"
+      ],
+      "personas": [
+        "developer",
+        "PM"
+      ],
+      "categories": [
+        "safety",
+        "how-to"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "prompt safety",
+        "guardrails",
+        "refusal",
+        "scope"
+      ],
+      "related": [
+        "/docs/safety/overview.md",
+        "/docs/safety/output-filters.md"
+      ],
+      "sourcePath": "docs/safety/prompt-safety.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/safety/prompt-safety.md",
       "min_read_minutes": 7,
       "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
@@ -738,6 +1115,82 @@
       "sourcePath": "docs/quickstarts/try-genai-in-10-min.md",
       "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/quickstarts/try-genai-in-10-min.md",
       "min_read_minutes": 8,
+      "lastUpdated": "2025-10-06T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/providers/compare-providers.md",
+      "slug": "providers/compare-providers",
+      "category": "providers",
+      "title": "Compare Providers: Request Shapes and Tradeoffs",
+      "description": "A neutral comparison of common request/response patterns, limits, and typical costs.",
+      "audience_levels": [
+        "beginner",
+        "intermediate"
+      ],
+      "personas": [
+        "PM",
+        "developer",
+        "admin"
+      ],
+      "categories": [
+        "providers",
+        "concepts",
+        "reference"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "compare providers",
+        "openai vs anthropic",
+        "azure openai",
+        "request response"
+      ],
+      "related": [
+        "/docs/providers/openai/auth-models-limits.md",
+        "/docs/providers/anthropic/overview.md",
+        "/docs/providers/azure-openai/setup.md"
+      ],
+      "sourcePath": "docs/providers/compare-providers.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/providers/compare-providers.md",
+      "min_read_minutes": 8,
+      "lastUpdated": "2025-10-06T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/providers/security-best-practices.md",
+      "slug": "providers/security-best-practices",
+      "category": "providers",
+      "title": "Security Best Practices for AI Providers",
+      "description": "Handle keys, proxies, rotation, and logging safely across environments.",
+      "audience_levels": [
+        "intermediate",
+        "advanced"
+      ],
+      "personas": [
+        "developer",
+        "admin"
+      ],
+      "categories": [
+        "providers",
+        "operations",
+        "safety"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "api key handling",
+        "secrets",
+        "key rotation",
+        "proxy",
+        "redaction"
+      ],
+      "related": [
+        "/docs/providers/openai/auth-models-limits.md",
+        "/docs/safety/prompt-safety.md",
+        "/docs/evaluations/latency-cost-tradeoffs.md"
+      ],
+      "sourcePath": "docs/providers/security-best-practices.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/providers/security-best-practices.md",
+      "min_read_minutes": 9,
       "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
     {
@@ -983,121 +1436,45 @@
       "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
     {
-      "path": "/docs/safety/human-in-the-loop.md",
-      "slug": "safety/human-in-the-loop",
-      "category": "safety",
-      "title": "Human-in-the-Loop",
-      "description": "Introduce approval gates for sensitive actions and define reviewer workflows.",
+      "path": "/docs/patterns/rag/basics.md",
+      "slug": "patterns/rag/basics",
+      "category": "patterns",
+      "title": "RAG Basics",
+      "description": "Minimal retrieval-augmented generation: chunking, indexing, and grounded citations.",
       "audience_levels": [
-        "intermediate",
-        "advanced"
+        "intermediate"
       ],
       "personas": [
         "developer",
-        "PM",
-        "admin"
+        "data-analyst"
       ],
       "categories": [
-        "safety",
-        "operations"
+        "patterns"
       ],
       "tags": [],
       "relatedProjectTypes": [],
       "search_keywords": [
-        "human in the loop",
-        "approval",
-        "review",
-        "gate"
+        "rag",
+        "chunking",
+        "embeddings",
+        "citations",
+        "grounding"
       ],
       "related": [
-        "/docs/safety/overview.md",
-        "/docs/safety/output-filters.md"
+        "/docs/patterns/rag/faq-rag.md",
+        "/docs/evaluations/grounded-qa-evals.md"
       ],
-      "sourcePath": "docs/safety/human-in-the-loop.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/safety/human-in-the-loop.md",
-      "min_read_minutes": 7,
+      "sourcePath": "docs/patterns/rag/basics.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/patterns/rag/basics.md",
+      "min_read_minutes": 9,
       "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
     {
-      "path": "/docs/safety/output-filters.md",
-      "slug": "safety/output-filters",
-      "category": "safety",
-      "title": "Output Filters",
-      "description": "Add classifier/rule-based filters to block or redact unsafe outputs before they reach users.",
-      "audience_levels": [
-        "intermediate",
-        "advanced"
-      ],
-      "personas": [
-        "developer",
-        "admin"
-      ],
-      "categories": [
-        "safety",
-        "operations"
-      ],
-      "tags": [],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "safety filter",
-        "classifier",
-        "rules",
-        "redaction"
-      ],
-      "related": [
-        "/docs/safety/overview.md",
-        "/docs/safety/prompt-safety.md",
-        "/docs/safety/human-in-the-loop.md"
-      ],
-      "sourcePath": "docs/safety/output-filters.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/safety/output-filters.md",
-      "min_read_minutes": 8,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/safety/overview.md",
-      "slug": "safety/overview",
-      "category": "safety",
-      "title": "Safety & Responsible AI: Overview",
-      "description": "Define what we block, what we log, when we escalate, and how we mitigate abuse cases.",
-      "audience_levels": [
-        "intermediate",
-        "advanced"
-      ],
-      "personas": [
-        "developer",
-        "PM",
-        "admin"
-      ],
-      "categories": [
-        "safety",
-        "concepts"
-      ],
-      "tags": [],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "safety",
-        "responsible ai",
-        "policy",
-        "logging",
-        "escalation"
-      ],
-      "related": [
-        "/docs/safety/prompt-safety.md",
-        "/docs/safety/output-filters.md",
-        "/docs/safety/human-in-the-loop.md"
-      ],
-      "sourcePath": "docs/safety/overview.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/safety/overview.md",
-      "min_read_minutes": 8,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/safety/prompt-safety.md",
-      "slug": "safety/prompt-safety",
-      "category": "safety",
-      "title": "Prompt Safety",
-      "description": "Write prompts that minimize risk: scope clearly, avoid data leakage, and instruct models to refuse unsafe tasks.",
+      "path": "/docs/patterns/rag/faq-rag.md",
+      "slug": "patterns/rag/faq-rag",
+      "category": "patterns",
+      "title": "FAQ RAG Pattern",
+      "description": "Build a FAQ-style RAG with a simple eval hook to keep answers grounded.",
       "audience_levels": [
         "intermediate"
       ],
@@ -1106,101 +1483,59 @@
         "PM"
       ],
       "categories": [
-        "safety",
-        "how-to"
+        "patterns"
       ],
       "tags": [],
       "relatedProjectTypes": [],
       "search_keywords": [
-        "prompt safety",
-        "guardrails",
-        "refusal",
-        "scope"
+        "faq rag",
+        "grounded qa",
+        "eval hook",
+        "faithfulness"
       ],
       "related": [
-        "/docs/safety/overview.md",
-        "/docs/safety/output-filters.md"
+        "/docs/patterns/rag/basics.md",
+        "/docs/evaluations/grounded-qa-evals.md",
+        "/docs/evaluations/offline-batch-evals.md"
       ],
-      "sourcePath": "docs/safety/prompt-safety.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/safety/prompt-safety.md",
+      "sourcePath": "docs/patterns/rag/faq-rag.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/patterns/rag/faq-rag.md",
       "min_read_minutes": 7,
       "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
     {
-      "path": "/docs/providers/compare-providers.md",
-      "slug": "providers/compare-providers",
-      "category": "providers",
-      "title": "Compare Providers: Request Shapes and Tradeoffs",
-      "description": "A neutral comparison of common request/response patterns, limits, and typical costs.",
-      "audience_levels": [
-        "beginner",
-        "intermediate"
-      ],
-      "personas": [
-        "PM",
-        "developer",
-        "admin"
-      ],
-      "categories": [
-        "providers",
-        "concepts",
-        "reference"
-      ],
-      "tags": [],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "compare providers",
-        "openai vs anthropic",
-        "azure openai",
-        "request response"
-      ],
-      "related": [
-        "/docs/providers/openai/auth-models-limits.md",
-        "/docs/providers/anthropic/overview.md",
-        "/docs/providers/azure-openai/setup.md"
-      ],
-      "sourcePath": "docs/providers/compare-providers.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/providers/compare-providers.md",
-      "min_read_minutes": 8,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/providers/security-best-practices.md",
-      "slug": "providers/security-best-practices",
-      "category": "providers",
-      "title": "Security Best Practices for AI Providers",
-      "description": "Handle keys, proxies, rotation, and logging safely across environments.",
+      "path": "/docs/patterns/rag/hybrid-ranking.md",
+      "slug": "patterns/rag/hybrid-ranking",
+      "category": "patterns",
+      "title": "Hybrid ranking for RAG",
+      "description": "Combine sparse and dense retrieval with reranking for better relevance.",
       "audience_levels": [
         "intermediate",
         "advanced"
       ],
       "personas": [
-        "developer",
-        "admin"
+        "developer"
       ],
       "categories": [
-        "providers",
-        "operations",
-        "safety"
+        "patterns"
       ],
-      "tags": [],
+      "tags": [
+        "rag",
+        "retrieval",
+        "rerank"
+      ],
       "relatedProjectTypes": [],
       "search_keywords": [
-        "api key handling",
-        "secrets",
-        "key rotation",
-        "proxy",
-        "redaction"
+        "hybrid retrieval",
+        "rerank"
       ],
       "related": [
-        "/docs/providers/openai/auth-models-limits.md",
-        "/docs/safety/prompt-safety.md",
-        "/docs/evaluations/latency-cost-tradeoffs.md"
+        "/docs/patterns/rag/basics.md"
       ],
-      "sourcePath": "docs/providers/security-best-practices.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/providers/security-best-practices.md",
-      "min_read_minutes": 9,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
+      "sourcePath": "docs/patterns/rag/hybrid-ranking.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/patterns/rag/hybrid-ranking.md",
+      "min_read_minutes": 10,
+      "lastUpdated": "2025-10-08T00:00:00.000Z"
     },
     {
       "path": "/docs/patterns/agentic/planner-executor.md",
@@ -1304,109 +1639,6 @@
       "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
     {
-      "path": "/docs/patterns/workflows/batch-processing.md",
-      "slug": "patterns/workflows/batch-processing",
-      "category": "patterns",
-      "title": "Batch Processing Workflows",
-      "description": "Run offline batches with retries, cost caps, and resumability.",
-      "audience_levels": [
-        "intermediate",
-        "advanced"
-      ],
-      "personas": [
-        "developer",
-        "PM"
-      ],
-      "categories": [
-        "patterns"
-      ],
-      "tags": [],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "batch",
-        "offline",
-        "retries",
-        "resume",
-        "cost cap"
-      ],
-      "related": [
-        "/docs/evaluations/offline-batch-evals.md",
-        "/docs/patterns/cost-controls.md"
-      ],
-      "sourcePath": "docs/patterns/workflows/batch-processing.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/patterns/workflows/batch-processing.md",
-      "min_read_minutes": 8,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/patterns/rag/basics.md",
-      "slug": "patterns/rag/basics",
-      "category": "patterns",
-      "title": "RAG Basics",
-      "description": "Minimal retrieval-augmented generation: chunking, indexing, and grounded citations.",
-      "audience_levels": [
-        "intermediate"
-      ],
-      "personas": [
-        "developer",
-        "data-analyst"
-      ],
-      "categories": [
-        "patterns"
-      ],
-      "tags": [],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "rag",
-        "chunking",
-        "embeddings",
-        "citations",
-        "grounding"
-      ],
-      "related": [
-        "/docs/patterns/rag/faq-rag.md",
-        "/docs/evaluations/grounded-qa-evals.md"
-      ],
-      "sourcePath": "docs/patterns/rag/basics.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/patterns/rag/basics.md",
-      "min_read_minutes": 9,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/patterns/rag/faq-rag.md",
-      "slug": "patterns/rag/faq-rag",
-      "category": "patterns",
-      "title": "FAQ RAG Pattern",
-      "description": "Build a FAQ-style RAG with a simple eval hook to keep answers grounded.",
-      "audience_levels": [
-        "intermediate"
-      ],
-      "personas": [
-        "developer",
-        "PM"
-      ],
-      "categories": [
-        "patterns"
-      ],
-      "tags": [],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "faq rag",
-        "grounded qa",
-        "eval hook",
-        "faithfulness"
-      ],
-      "related": [
-        "/docs/patterns/rag/basics.md",
-        "/docs/evaluations/grounded-qa-evals.md",
-        "/docs/evaluations/offline-batch-evals.md"
-      ],
-      "sourcePath": "docs/patterns/rag/faq-rag.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/patterns/rag/faq-rag.md",
-      "min_read_minutes": 7,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
-    },
-    {
       "path": "/docs/patterns/tools/function-calling.md",
       "slug": "patterns/tools/function-calling",
       "category": "patterns",
@@ -1442,39 +1674,73 @@
       "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
     {
-      "path": "/docs/providers/anthropic/overview.md",
-      "slug": "providers/anthropic/overview",
-      "category": "providers",
-      "title": "Anthropic: Overview and Setup",
-      "description": "Configure Anthropic, auth headers, model notes, basic tool use, and common errors.",
+      "path": "/docs/patterns/specs/prompt-spec-template.md",
+      "slug": "patterns/specs/prompt-spec-template",
+      "category": "patterns",
+      "title": "Prompt spec template",
+      "description": "A lightweight prompt specification inspired by spec-kit.",
       "audience_levels": [
-        "intermediate"
+        "intermediate",
+        "advanced"
       ],
       "personas": [
         "developer",
-        "admin"
+        "PM"
       ],
       "categories": [
-        "providers",
-        "how-to",
-        "reference"
+        "patterns"
+      ],
+      "tags": [
+        "spec",
+        "prompting"
+      ],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "prompt spec",
+        "template"
+      ],
+      "related": [
+        "/docs/concepts/spec-vs-vibe-coding.md",
+        "/docs/patterns/specs/eval-spec-template.md"
+      ],
+      "sourcePath": "docs/patterns/specs/prompt-spec-template.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/patterns/specs/prompt-spec-template.md",
+      "min_read_minutes": 7,
+      "lastUpdated": "2025-10-08T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/patterns/workflows/batch-processing.md",
+      "slug": "patterns/workflows/batch-processing",
+      "category": "patterns",
+      "title": "Batch Processing Workflows",
+      "description": "Run offline batches with retries, cost caps, and resumability.",
+      "audience_levels": [
+        "intermediate",
+        "advanced"
+      ],
+      "personas": [
+        "developer",
+        "PM"
+      ],
+      "categories": [
+        "patterns"
       ],
       "tags": [],
       "relatedProjectTypes": [],
       "search_keywords": [
-        "anthropic",
-        "claude",
-        "auth header",
-        "tool use",
-        "safety"
+        "batch",
+        "offline",
+        "retries",
+        "resume",
+        "cost cap"
       ],
       "related": [
-        "/docs/providers/compare-providers.md",
-        "/docs/providers/security-best-practices.md"
+        "/docs/evaluations/offline-batch-evals.md",
+        "/docs/patterns/cost-controls.md"
       ],
-      "sourcePath": "docs/providers/anthropic/overview.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/providers/anthropic/overview.md",
-      "min_read_minutes": 7,
+      "sourcePath": "docs/patterns/workflows/batch-processing.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/patterns/workflows/batch-processing.md",
+      "min_read_minutes": 8,
       "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
     {
@@ -1583,6 +1849,42 @@
       "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
     {
+      "path": "/docs/providers/anthropic/overview.md",
+      "slug": "providers/anthropic/overview",
+      "category": "providers",
+      "title": "Anthropic: Overview and Setup",
+      "description": "Configure Anthropic, auth headers, model notes, basic tool use, and common errors.",
+      "audience_levels": [
+        "intermediate"
+      ],
+      "personas": [
+        "developer",
+        "admin"
+      ],
+      "categories": [
+        "providers",
+        "how-to",
+        "reference"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "anthropic",
+        "claude",
+        "auth header",
+        "tool use",
+        "safety"
+      ],
+      "related": [
+        "/docs/providers/compare-providers.md",
+        "/docs/providers/security-best-practices.md"
+      ],
+      "sourcePath": "docs/providers/anthropic/overview.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/providers/anthropic/overview.md",
+      "min_read_minutes": 7,
+      "lastUpdated": "2025-10-06T00:00:00.000Z"
+    },
+    {
       "path": "/docs/providers/azure-openai/migrate-from-openai.md",
       "slug": "providers/azure-openai/migrate-from-openai",
       "category": "providers",
@@ -1652,6 +1954,79 @@
       "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/providers/azure-openai/setup.md",
       "min_read_minutes": 10,
       "lastUpdated": "2025-10-06T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/providers/gemini/overview.md",
+      "slug": "providers/gemini/overview",
+      "category": "providers",
+      "title": "Google Gemini overview",
+      "description": "A quick start with Gemini models, multimodal examples, and function calling.",
+      "audience_levels": [
+        "beginner",
+        "intermediate",
+        "advanced"
+      ],
+      "personas": [
+        "developer",
+        "PM"
+      ],
+      "categories": [
+        "providers"
+      ],
+      "tags": [
+        "gemini",
+        "multimodal"
+      ],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "gemini",
+        "google",
+        "multimodal"
+      ],
+      "related": [
+        "/docs/providers/compare-providers.md"
+      ],
+      "sourcePath": "docs/providers/gemini/overview.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/providers/gemini/overview.md",
+      "min_read_minutes": 9,
+      "lastUpdated": "2025-10-08T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/tutorials/chatgpt-business/overview.md",
+      "slug": "tutorials/chatgpt-business/overview",
+      "category": "tutorials",
+      "title": "ChatGPT Business overview for teams",
+      "description": "Workspaces, sharing, privacy, and using ChatGPT effectively at work.",
+      "audience_levels": [
+        "beginner",
+        "intermediate"
+      ],
+      "personas": [
+        "non-technical",
+        "PM",
+        "developer"
+      ],
+      "categories": [
+        "tutorials"
+      ],
+      "tags": [
+        "chatgpt",
+        "business",
+        "privacy"
+      ],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "chatgpt business",
+        "workspace",
+        "privacy"
+      ],
+      "related": [
+        "/docs/tutorials/chatgpt-business/canvas-python-starters.md"
+      ],
+      "sourcePath": "docs/tutorials/chatgpt-business/overview.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/tutorials/chatgpt-business/overview.md",
+      "min_read_minutes": 10,
+      "lastUpdated": "2025-10-08T00:00:00.000Z"
     }
   ]
 }

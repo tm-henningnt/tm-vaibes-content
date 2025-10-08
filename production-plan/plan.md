@@ -1,80 +1,25 @@
-# AI Docs – Content Production Plan (copy‑friendly)
+# AI Learning Hub — Content Production Plan (copy‑friendly)
 
-A structured, copy‑pastable plan your junior writers can execute. Organized into waves; each task has purpose, audience, success criteria, and pointers.
+A structured, copy‑pastable plan that grows this repo into a comprehensive, multi‑audience AI handbook. Organized into waves; every task lists purpose, audience, success criteria, and pointers. Scope is education only: concepts, providers/models, patterns, evaluations, safety, quickstarts, tutorials, examples.
 
 ---
 
 ## Production roadmap (high level)
 
-* **Wave 0 (done):** Seed 12 pages scaffolded.
-* **Wave 1 (2–3 weeks):** Onboarding paths, Providers, Operations, Troubleshooting & FAQ.
-* **Wave 2 (3–5 weeks):** Patterns, Evaluations, Safety, Accessibility & Performance.
-* **Wave 3 (ongoing):** Tutorials/deep dives, Case studies, Advanced reference.
+* Wave 0 (done): Seed core scaffolding and manifest pipeline.
+* Wave 1 (2–3 weeks): Foundations & Onboarding (AI 101, glossary, core quickstarts).
+* Wave 2 (3–4 weeks): Providers & Models (OpenAI, Azure OpenAI, Anthropic, Google Gemini, Meta Llama, Mistral, Cohere).
+* Wave 3 (3–4 weeks): Patterns & RAG (prompting styles, tool use, agentic patterns, workflows).
+* Wave 4 (2–3 weeks): Evaluations & Safety (metrics, offline evals, rubric prompts, guardrails).
+* Wave 5 (ongoing): Tutorials, Use cases, Examples (end‑to‑end builds across domains).
 
-> Create a GitHub Issue per task with labels: `docs`, `audience:<X>`, `category:<concepts|how-to|tutorials|patterns|providers|operations|troubleshooting|faq|evaluations|safety>`, `wave:<1|2|3>`.
+> Create a GitHub Issue per task with labels: `docs`, `audience:<beginner|intermediate|advanced>`, `category:<concepts|quickstarts|tutorials|patterns|providers|evaluations|safety|examples>`, `wave:<1|2|3|4|5>`.
 
 ---
 
-Status legend
+## Status legend
 
-- [x] done • [ ] pending • [~] in progress
-
-Clarity expansion pass (multi-audience)
-
-- [x] /docs/quickstarts/try-genai-in-10-min.md
-- [x] /docs/quickstarts/js-server-route.md
-- [x] /docs/quickstarts/python-fastapi.md
-- [x] /docs/providers/openai/auth-models-limits.md
-- [x] /docs/providers/compare-providers.md
-- [x] /docs/providers/security-best-practices.md
-- [x] /docs/troubleshooting/provider-errors.md
-- [x] /docs/operations/content-sync-deep-dive.md
-- [x] /docs/evaluations/overview.md
-- [x] /docs/patterns/rag/basics.md
-- [x] /docs/patterns/tools/function-calling.md
-- [x] /docs/operations/github-flow-for-docs.md
- - [x] /docs/providers/anthropic/overview.md
- - [x] /docs/providers/azure-openai/setup.md
- - [x] /docs/providers/azure-openai/migrate-from-openai.md
- - [x] /docs/operations/env-and-healthcheck.md
- - [x] /docs/operations/vscode-setup-and-extensions.md
- - [x] /docs/troubleshooting/auth-errors.md
- - [x] /docs/troubleshooting/revalidation-failures.md
- - [x] /docs/safety/overview.md
- - [x] /docs/safety/output-filters.md
- - [x] /docs/patterns/agentic/router-multi-tool.md
-- [x] /docs/operations/deploy-vercel.md
-- [x] /docs/faq/providers-and-costs.md
- - [x] /docs/operations/entra-sign-in-flow.md
- - [x] /docs/operations/entra-role-assignment.md
- - [x] /docs/operations/nextauth-azuread.md
- - [x] /docs/operations/admin-dashboard.md
- - [x] /docs/troubleshooting/github-actions-ci.md
- - [x] /docs/patterns/workflows/batch-processing.md
- - [x] /docs/patterns/observability-context.md
- - [x] /docs/patterns/cost-controls.md
- - [x] /docs/patterns/a2a-agent-to-agent.md
- - [x] /docs/patterns/agentic/reflection-self-heal.md
- - [x] /docs/patterns/rag/faq-rag.md
- - [x] /docs/evaluations/offline-batch-evals.md
- - [x] /docs/reference/provider-abstraction.md
- - [x] /docs/reference/session-record-schema.md
- - [x] /docs/reference/data-platform-integration-guides.md
-
-## Main tools / platform focus (Not exclusive)
-
-> These reflect the company toolset and inform where our docs go deeper. We still link to alternatives when helpful.
-
-* **OpenAI:** ChatGPT, APIs (server-side only).
-* **Microsoft developer stack:** VS Code, GitHub, VS Code extensions.
-* **MCP & A2A:** Model Context Protocol servers and agent‑to‑agent patterns.
-* **Data platforms:** Microsoft Fabric, Snowflake, Databricks, Qlik Cloud.
-* **AI app deployments:** Vercel; **Data/ORM:** Prisma (for app projects that persist sessions).
-
-**How this changes the plan**
-
-* We add platform‑specific pages (setup, patterns, troubleshooting) and cross‑link them from generic guides.
-* Each platform page includes: when to use it, minimal setup, gotchas, and links to the official docs.
+• [ ] pending • [~] in progress • [x] done
 
 ---
 
@@ -84,358 +29,364 @@ Clarity expansion pass (multi-audience)
 ---
 audience_levels: [beginner|intermediate|advanced]
 personas: [non-technical, PM, developer, data-analyst, admin]
-categories: [concepts|how-to|tutorials|patterns|reference|providers|wizard|operations|troubleshooting|faq|evaluations|safety]
+categories: [concepts|quickstarts|tutorials|patterns|providers|evaluations|safety|examples]
 min_read_minutes: <int>
 last_reviewed: YYYY-MM-DD
 related: ["/path/one.md", "/path/two.md"]
 search_keywords: ["term one", "term two", "term three"]
+show_toc: true
 ---
 ```
 
----
-
-## Wave 1 — Core foundations (28 tasks)
-
-### 1) Audience landing & quickstarts (4)
-
-1. [x] **/docs/quickstarts/try-genai-in-10-min.md**
-   **Purpose:** zero‑to‑first result for beginners.
-   **Audience:** beginner; non‑technical, PM.
-   **Success:** user runs a prompt end‑to‑end; understands limits; links to Wizard Overview.
-   **Pointers:** OpenAI API overview & quickstart.
-
-2. [x] **/docs/quickstarts/js-server-route.md**
-   **Purpose:** JS/TS server route calling provider safely.
-   **Audience:** beginner–intermediate; developer.
-   **Success:** working POST route; “no client-side keys” callout; rate limit note.
-   **Pointers:** OpenAI API reference; ISR docs (if showing results in page).
-
-3. [x] **/docs/quickstarts/python-fastapi.md**
-   **Purpose:** Minimal FastAPI endpoint for completions/tools.
-   **Audience:** developer, data‑analyst.
-   **Success:** FastAPI example with retries/timeouts; error handling template.
-   **Pointers:** OpenAI Python library.
-
-4. [x] **/docs/how-to/pick-your-path.md**
-   **Purpose:** chooser page for paths (beginner/PM/dev).
-   **Audience:** all.
-   **Success:** clear tiles; 3 clicks to a useful result.
-   **Pointers:** Link to your own quickstarts & concepts.
-
-### 2) Providers (7)
-
-5. [x] **/docs/providers/openai/auth-models-limits.md**
-   **Purpose:** authenticate, select models, understand limits.
-   **Audience:** developer, admin.
-   **Success:** server‑only keys; env var mapping; model selection table.
-   **Pointers:** OpenAI API overview & reference.
-
-6. [x] **/docs/providers/anthropic/overview.md**
-   **Purpose:** configure Anthropic; model notes; tool use basics.
-   **Audience:** developer, admin.
-   **Success:** auth header example; common errors; safety levers.
-   **Pointers:** Anthropic official docs.
-
-7. [x] **/docs/providers/azure-openai/setup.md**
-   **Purpose:** Azure OpenAI resource + deployment setup.
-   **Audience:** admin, developer.
-   **Success:** portal click‑path; endpoint/key usage; region/latency notes.
-   **Pointers:** Microsoft Learn (Create Azure OpenAI resource).
-
-8. [x] **/docs/providers/azure-openai/migrate-from-openai.md**
-   **Purpose:** map OpenAI patterns to Azure endpoints.
-   **Audience:** developer.
-   **Success:** base URL pattern; `api-version`; deployment name vs model; error cheatsheet.
-   **Pointers:** Microsoft Learn Azure OpenAI.
-
-9. [x] **/docs/providers/compare-providers.md**
-   **Purpose:** neutral comparison of request patterns/tradeoffs.
-   **Audience:** PM, developer, admin.
-   **Success:** table of request/response shapes, limits, typical costs; links to official docs.
-   **Pointers:** OpenAI, Anthropic, Azure OpenAI docs.
-
-10. [x] **/docs/providers/security-best-practices.md**
-    **Purpose:** secure key handling, proxies, rotation.
-    **Audience:** developer, admin.
-    **Success:** server proxy patterns; least privilege; rotation cadence.
-    **Pointers:** OpenAI guidance; optional Azure Key Vault link.
-
-11. [x] **/docs/providers/openai/chatgpt-productivity.md**
-    **Purpose:** safe & effective use of ChatGPT for ideation, code review, and doc drafting (no keys required).
-    **Audience:** non‑technical, PM, developer.
-    **Success:** task recipes (prompt templates), privacy caveats, when to switch to API‑based flows.
-    **Pointers:** OpenAI ChatGPT help guides; company privacy policy.
-
-### 3) Operations (8)
-
-11. [x] **/docs/operations/entra-sign-in-flow.md**
-    **Purpose:** click‑path sign‑in with screenshots.
-    **Audience:** admin, PM.
-    **Success:** sign‑in, consent, role display; no JSON editing.
-    **Pointers:** Entra app registration quickstart; NextAuth Azure AD provider.
-
-12. [x] **/docs/operations/entra-role-assignment.md**
-    **Purpose:** assign `User`/`Admin` roles.
-    **Audience:** admin.
-    **Success:** portal steps + verification in app.
-    **Pointers:** Entra app roles docs.
-
-13. [x] **/docs/operations/nextauth-azuread.md**
-    **Purpose:** wire NextAuth provider + middleware.
-    **Audience:** developer.
-    **Success:** provider config; callback URL; role claims mapping.
-    **Pointers:** NextAuth Azure AD provider docs.
-
-14. [x] **/docs/operations/content-sync-deep-dive.md**
-    **Purpose:** ISR + on‑demand revalidation + ETags.
-    **Audience:** developer, admin.
-    **Success:** app‑router example; webhook payload; `If-None-Match` usage.
-    **Pointers:** Vercel ISR; Next.js on‑demand; MDN `If‑None‑Match`; GitHub webhooks.
-
-15. [x] **/docs/operations/env-and-healthcheck.md**
-    **Purpose:** `.env.example` mapping + health check outputs.
-    **Audience:** developer, admin.
-    **Success:** table of vars; expected non‑prod error messages.
-
-16. [x] **/docs/operations/admin-dashboard.md**
-    **Purpose:** sync health (manifest hash + fetch timestamp).
-    **Audience:** admin.
-    **Success:** define green/stale; how to force revalidation.
-
-17. [x] **/docs/operations/vscode-setup-and-extensions.md**
-    **Purpose:** standardize VS Code setup (recommended settings + extensions).
-    **Audience:** developer, PM (editing docs).
-    **Success:** install steps, settings JSON snippet, recommended extensions (Markdown, YAML, frontmatter, spell‑check), how to preview MDX.
-    **Pointers:** VS Code docs; Markdown/MDX extensions (link official marketplace pages).
-
-18. [x] **/docs/operations/github-flow-for-docs.md**
-    **Purpose:** PR workflow for this repo (branching, reviews, CI, release notes).
-    **Audience:** all contributors.
-    **Success:** step‑by‑step from fork/branch → PR → manifest CI → merge → live.
-    **Pointers:** GitHub Docs (pull requests, required reviews); our CI workflow file reference.
-
-### 4) Troubleshooting & FAQ (7)
-
-17. [x] **/docs/troubleshooting/auth-errors.md**
-    **Purpose:** decode Entra/NextAuth errors (redirect URI, consent, audience).
-    **Pointers:** NextAuth Azure AD; Entra quickstart.
-
-18. [x] **/docs/troubleshooting/provider-errors.md**
-    **Purpose:** handle 401/429/5xx; retry/backoff; structured logs (metadata only).
-    **Pointers:** OpenAI error reference.
-
-19. [x] **/docs/troubleshooting/revalidation-failures.md**
-    **Purpose:** inspect GitHub webhook delivery; redelivery; secrets.
-    **Pointers:** GitHub webhooks overview + creating webhooks.
-
-20. [x] **/docs/faq/wizard-vs-examples.md**
-    **Purpose:** when to use Wizard vs hand‑coded examples; link to separate app docs.
-
-21. [x] **/docs/faq/providers-and-costs.md**
-    **Purpose:** cost basics; rate limits; when to switch providers.
-    **Pointers:** OpenAI, Anthropic, Azure OpenAI docs.
-
-22. [x] **/docs/faq/vscode-and-extensions.md**
-    **Purpose:** common questions about VS Code settings, MDX preview, spell‑check, and markdown linting.
-    **Audience:** all contributors.
-    **Pointers:** VS Code docs; recommended extensions pages.
-
-23. [x] **/docs/troubleshooting/github-actions-ci.md**
-    **Purpose:** fix failing manifest builds in CI, Node version mismatches, missing deps.
-    **Audience:** developer.
-    **Pointers:** GitHub Actions docs; Node setup‑node action.
+Keep arrays deduped; include at least one category; use `primary_category` if you need a canonical route; convert `last_reviewed` to ISO `lastUpdated` in the manifest.
 
 ---
 
-## Wave 2 — Patterns, Evaluations, Safety, Accessibility, Data Platforms (30 tasks)
+## Wave 1 — Foundations & Onboarding (17 tasks)
 
-### 5) Patterns (9)
+1. [ ] /docs/concepts/what-is-genai.md
+   - Purpose: Define Generative AI, capabilities/limits, and mental models.
+   - Audience: beginner → advanced.
+   - Success: readers can articulate strengths/limits and when to avoid LLMs.
+   - Pointers: OpenAI “How it works”, Anthropic “Constitutional AI”.
 
-22. [x] **/docs/patterns/agentic/router-multi-tool.md**
-    **Purpose:** router agent selects tools.
-    **Success:** tool registry; guardrails; timeout strategy.
-    **Pointers:** Tool/function calling patterns.
+2. [ ] /docs/concepts/genai-vs-agentic.md (expand)
+   - Purpose: Single‑shot vs multi‑step agentic systems; when agents help.
+   - Audience: all.
+   - Success: clear comparison table; decision checklist.
 
-23. [x] **/docs/patterns/agentic/reflection-self-heal.md**
-    **Purpose:** reflection loop improves outputs.
-    **Success:** rubric prompt + retry budget.
+3. [ ] /docs/concepts/prompting-styles.md
+   - Purpose: Instruction, few‑shot, chain‑of‑thought, self‑ask, critique/repair.
+   - Audience: all.
+   - Success: side‑by‑side examples with pros/cons and failure modes.
 
-24. [x] **/docs/patterns/rag/basics.md**
-    **Purpose:** minimal RAG.
-    **Success:** chunking, indexing, citations.
-    **Pointers:** Embeddings & responses guidance.
+4. [ ] /docs/concepts/token-costs-latency.md
+   - Purpose: Tokens, context windows, streaming; cost vs speed tradeoffs.
+   - Audience: beginner → intermediate.
+   - Success: readers estimate cost/latency; choose streaming appropriately.
 
-25. [x] **/docs/patterns/rag/faq-rag.md** *(expand seed with eval hook)*
+5. [ ] /docs/concepts/glossary.md
+   - Purpose: Definitions for core terms (prompt, context window, RAG, tool, grounding, eval).
+   - Audience: beginner.
+   - Success: cross‑linked to all pages.
 
-26. [x] **/docs/patterns/tools/function-calling.md**
-    **Purpose:** cross‑provider tool/function calling.
-    **Success:** schema design; idempotent tools; error propagation.
-    **Pointers:** OpenAI tools; Anthropic tools.
+6. [ ] /docs/quickstarts/try-genai-in-10-min.md (expand)
+   - Purpose: Zero‑to‑first result; Node and Python single‑file.
+   - Audience: beginner; non‑technical, PM, developer.
+   - Success: runnable snippet + explanation of each parameter.
 
-27. [x] **/docs/patterns/workflows/batch-processing.md** *(expand seed with retries & cost caps)*
+7. [ ] /docs/quickstarts/js-server-route.md (expand)
+   - Purpose: Safe server route with retries/timeouts and streaming.
+   - Audience: beginner → intermediate developers.
+   - Success: working POST route; no client‑side keys; error handling template.
 
-28. [x] **/docs/patterns/observability-context.md**
-    **Purpose:** what to log (metadata only); correlation IDs; PII avoidance.
-    **Pointers:** OpenTelemetry concepts (if adopted later).
+8. [ ] /docs/quickstarts/python-fastapi.md (expand)
+   - Purpose: Minimal FastAPI endpoint for chat/tools; typed responses.
+   - Audience: developer, data‑analyst.
+   - Success: endpoint returns structured JSON with metadata.
 
-29. [x] **/docs/patterns/cost-controls.md**
-    **Purpose:** max tokens; streaming; truncation; caching hints; retries.
-    **Pointers:** API parameters & streaming guidance.
+9. [ ] /docs/concepts/safety-basics.md
+   - Purpose: Intro to safety risks (jailbreaks, data leakage, toxicity).
+   - Audience: all.
+   - Success: simple “safety checklist” for early prototypes.
 
-30. [x] **/docs/patterns/a2a-agent-to-agent.md**
-    **Purpose:** patterns for agent‑to‑agent collaboration (A2A): task handoff, negotiation, tool sharing.
-    **Audience:** developer, PM.
-    **Success:** sequence diagrams; message contracts; failure modes; escalation to human.
+10. [ ] /docs/concepts/structured-outputs.md
+    - Purpose: JSON outputs, schemas, validation; pros/cons by provider.
+    - Audience: intermediate.
+    - Success: examples with OpenAI/Anthropic tools.
 
-### 6) Evaluations (7)
+11. [ ] /docs/examples/content-drafter.md (expand)
+    - Purpose: A simple writing assistant; rubric for quality.
+    - Audience: beginner → intermediate.
+    - Success: readers adapt the template to their tone/voice.
 
-30. [x] **/docs/evaluations/overview.md**
-    **Purpose:** goals, golden sets, human review.
-    **Success:** taxonomy (correctness, helpfulness, safety, latency/cost).
+12. [ ] /docs/examples/meeting-summarizer.md (expand)
+    - Purpose: Structured minutes + action items; summarization patterns.
+    - Audience: all.
+    - Success: JSON schema for outputs; action extraction tips.
 
-31. [x] **/docs/evaluations/offline-batch-evals.md**
-    **Purpose:** nightly evals; diff reports.
+13. [ ] /docs/examples/data-quality-qa.md (expand)
+    - Purpose: Read‑only tool calls to check datasets; precision/recall tradeoffs.
+    - Audience: data‑analyst, developer.
+    - Success: canned checks; false‑positive mitigation.
 
-32. [x] **/docs/evaluations/rubric-prompts.md**
-    **Purpose:** design rubric prompts; inter‑rater agreement.
+14. [ ] /docs/concepts/ethics-responsible-ai.md
+    - Purpose: Human oversight, disclosure, bias and fairness at a high level.
+    - Audience: all.
+    - Success: practical “do/don’t” list + links to deeper safety pages.
 
-33. [x] **/docs/evaluations/grounded-qa-evals.md**
-    **Purpose:** RAG faithfulness & citation accuracy.
+15. [ ] /docs/concepts/agents-vs-automation.md
+    - Purpose: When classic automation beats agents; cost/latency boundaries.
+    - Audience: PM, developer.
+    - Success: decision tree and examples.
 
-34. [x] **/docs/evaluations/latency-cost-tradeoffs.md** *(expand seed)*
+16. [ ] /docs/concepts/ai-landscape-ml-expert-rpa.md
+    - Purpose: Place GenAI among ML, expert systems, and RPA; strengths/limits.
+    - Audience: beginner → intermediate.
+    - Success: readers can contrast approaches and pick the right tool.
 
-35. [x] **/docs/evaluations/tool-use-evals.md**
-    **Purpose:** success rate per tool; timeout/error taxonomy.
-
-36. [x] **/docs/evaluations/data-platform-benchmarks.md**
-    **Purpose:** measure end‑to‑end latency & cost when calls touch Fabric/Snowflake/Databricks (where applicable).
-    **Success:** reproducible harness; dataset notes; report template.
-
-### 7) Safety & Responsible AI (4)
-
-36. [x] **/docs/safety/overview.md**
-    **Purpose:** what you block, log, escalate; abuse cases.
-
-37. [x] **/docs/safety/prompt-safety.md** *(expand seed with examples)*
-
-38. [x] **/docs/safety/output-filters.md** *(expand seed with classifier/rules examples)*
-
-39. [x] **/docs/safety/human-in-the-loop.md** *(expand seed with approval gates)*
-
-### 8) Accessibility & Performance (5)
-
-40. [x] **/docs/operations/accessibility.md**
-    **Purpose:** WCAG 2.2 & ARIA practices.
-    **Success:** keyboard focus order; landmarks; contrast checklist.
-    **Pointers:** WCAG 2.2 quick ref; WAI‑ARIA APG.
-
-41. [x] **/docs/operations/aria-recipes.md**
-    **Purpose:** ARIA patterns for Tabs/Dialogs/Toasts.
-    **Pointers:** WAI‑ARIA Authoring Practices.
-
-42. [x] **/docs/operations/performance-principles.md**
-    **Purpose:** keep docs list <~2s; caching/streaming.
-    **Pointers:** ISR docs; ETag `If‑None‑Match` conditioning.
-
-43. [x] **/docs/operations/caching-http-basics.md**
-    **Purpose:** strong vs weak validators; ETag vs Last‑Modified; `Cache-Control`.
-    **Pointers:** MDN HTTP caching primers.
-
-44. [x] **/docs/operations/deploy-vercel.md**
-    **Purpose:** deploy static docs site (or app) to Vercel with ISR enabled; env var tips.
-    **Audience:** developer, admin.
-    **Success:** project import, build settings, environment setup, custom domains.
-    **Pointers:** Vercel docs.
+17. [ ] /docs/concepts/spec-vs-vibe-coding.md
+    - Purpose: Compare “vibe coding” with spec-driven development; introduce spec‑kit‑style artifacts.
+    - Audience: developer, PM.
+    - Success: readers adopt lightweight specs before coding with LLMs.
 
 ---
 
-## Wave 3 — Tutorials, case studies, advanced reference (18 tasks)
+## Wave 2 — Providers & Models (18 tasks)
 
-### 9) Tutorials (7)
+16. [ ] /docs/providers/compare-providers.md (expand)
+    - Purpose: Capabilities matrix (modalities, context, tools, rate limits, pricing).
+    - Audience: PM, developer, admin.
+    - Success: updated table with quick recommendations by use case.
 
-44. [x] **/docs/tutorials/agentic-helpdesk.md** *(expand seed with tool schema & evals)*
+17. [ ] /docs/providers/openai/auth-models-limits.md (expand)
+    - Purpose: Model lineup (o3, gpt‑4o‑mini, gpt‑4.1), tokens, vision/audio, tools.
+    - Success: selection guidance by latency/cost and quality bands.
 
-45. [x] **/docs/tutorials/rag-starter.md** *(expand seed with dataset curation & eval loop)*
+18. [ ] /docs/providers/anthropic/overview.md (expand)
+    - Purpose: Claude models; tool use; safety settings.
 
-46. [x] **/docs/tutorials/cost-guardrails.md** *(expand seed with budgets + alerts)*
+19. [ ] /docs/providers/azure-openai/setup.md (expand)
+    - Purpose: Azure specifics; deployment vs model; region/capacity notes.
 
-47. [x] **/docs/tutorials/observability-end-to-end.md**
-    **Purpose:** logs → traces → dashboards; sampling & PII guards.
+20. [ ] /docs/providers/azure-openai/migrate-from-openai.md (expand)
+    - Purpose: Mapping of parameters; common pitfalls and fixes.
 
-48. [x] **/docs/tutorials/production-hardening.md**
-    **Purpose:** retries, rate limits, backpressure, circuit breakers.
+21. [ ] /docs/providers/gemini/overview.md
+    - Purpose: Google Gemini models; API basics; multimodal examples.
+    - Audience: developer.
+    - Success: text+image prompt and function‑call sample.
 
-49. [x] **/docs/tutorials/mcp-in-vscode.md**
-    **Purpose:** use MCP servers in VS Code to connect tools securely; examples and common pitfalls.
-    **Audience:** developer.
-    **Success:** install steps, configuration file samples, verify with a sample tool server.
-    **Pointers:** Official MCP docs (link when available) and VS Code guides.
+22. [ ] /docs/providers/meta-llama/overview.md
+    - Purpose: Meta Llama model families; when to consider open weights.
+    - Success: request examples via selected hosts (e.g., together.ai/Fireworks).
 
-50. [x] **/docs/tutorials/prisma-and-postgres-for-sessions.md**
-    **Purpose:** (for app projects) schema modeling with Prisma for session storage; migrations & rollback.
-    **Audience:** developer.
-    **Success:** Prisma schema snippet, migration commands, rollback recipe.
-    **Pointers:** Prisma Docs.
+23. [ ] /docs/providers/mistral/overview.md
+    - Purpose: Mistral models; pricing and strengths.
 
-### 10) Case studies & examples (5)
+24. [ ] /docs/providers/cohere/overview.md
+    - Purpose: Command/Rerank models; embeddings quality notes.
 
-49. [x] **/docs/examples/content-drafter.md**
-    **Purpose:** straight‑through generation with tone/voice controls; success: draft quality rubric.
+25. [ ] /docs/concepts/embeddings.md
+    - Purpose: What embeddings are; search vs clustering vs reranking.
+    - Success: readers pick dimensions/models; normalize vectors.
 
-50. [x] **/docs/examples/meeting-summarizer.md**
-    **Purpose:** structured notes + action items; success: action completion rate.
+26. [ ] /docs/concepts/multimodal-fundamentals.md
+    - Purpose: Vision, audio, doc understanding; constraints and safety.
 
-51. [x] **/docs/examples/data-quality-qa.md**
-    **Purpose:** tool calls to SQL/read‑only APIs; success: defects caught, false positives.
+27. [ ] /docs/concepts/caching-and-retries.md
+    - Purpose: Response caching basics; idempotency; retry budgets.
 
-52. [x] **/docs/examples/ai-customer-support-triage.md**
-    **Purpose:** router agent with escalation rules.
+28. [ ] /docs/examples/provider-switching.md
+    - Purpose: Swap providers behind a thin abstraction; pitfalls.
 
-53. [x] **/docs/examples/a2a-coordination.md**
-    **Purpose:** show two agents collaborating (planner ↔ executor or QA ↔ fixer) with a transcript and outcome metrics.
+33. [ ] /docs/examples/toolformer-style-extraction.md
+    - Purpose: Use tools to extract structured data from messy inputs.
 
-### 11) Advanced reference & governance (6)
+---
 
-53. [x] **/docs/reference/session-record-schema.md** *(expand seed with audit fields)*
+## Wave 3 — Patterns & RAG (19 tasks)
 
-54. [x] **/docs/reference/provider-abstraction.md** *(expand seed with retries/timeouts/fallbacks)*
+34. [ ] /docs/patterns/prompting/recipes.md
+    - Purpose: Reusable prompts: brainstorming, critique, plan‑then‑write, review.
 
-55. [x] **/docs/reference/components.md**
-    **Purpose:** MDX components (Tabs, Callout, CodeBlock w/ copy); usage snippets.
-    **Pointers:** MDX official docs.
+35. [ ] /docs/patterns/tools/function-calling.md (expand)
+    - Purpose: Cross‑provider tool calling; schema design; error propagation.
 
-56. [x] **/docs/operations/backups-retention.md** *(expand seed with rotation cadences & exports)*
+36. [ ] /docs/patterns/agentic/planner-executor.md (expand)
+    - Purpose: Decompose → plan → execute; memory and context updates.
 
-57. [x] **/docs/operations/runbooks.md**
-    **Purpose:** “Page me when…” (webhook failures; auth outage; provider 5xx spikes).
+37. [ ] /docs/patterns/agentic/router-multi-tool.md (expand)
+    - Purpose: Tool routing; fallback; timeouts and budget caps.
 
-58. [x] **/docs/reference/data-platform-integration-guides.md**
-    **Purpose:** index page that links to Fabric, Snowflake, Databricks, Qlik Cloud pages.
+38. [ ] /docs/patterns/agentic/reflection-self-heal.md (expand)
+    - Purpose: Critique/repair loops; rubric prompts; stop conditions.
+
+39. [ ] /docs/patterns/rag/basics.md (expand)
+    - Purpose: Chunking, indexing, citations; failure modes; latency budgets.
+
+40. [ ] /docs/patterns/rag/hybrid-ranking.md
+    - Purpose: Sparse+dense retrieval; reranking; query rewriting.
+
+41. [ ] /docs/patterns/rag/evals-hook.md
+    - Purpose: Wire evals into RAG loop; accuracy dashboards.
+
+42. [ ] /docs/patterns/workflows/batch-processing.md (expand)
+    - Purpose: Offline jobs; retries; cost caps.
+
+43. [ ] /docs/patterns/cost-controls.md (expand)
+    - Purpose: Truncation, streaming, cache, sampling; practical defaults.
+
+44. [ ] /docs/patterns/observability-context.md (expand)
+    - Purpose: What to log; IDs; redaction; privacy notes.
+
+45. [ ] /docs/patterns/specs/prompt-spec-template.md
+    - Purpose: A lightweight prompt spec format (intent, inputs/outputs, constraints, eval hooks, risks).
+    - Audience: developer, PM.
+    - Success: reproducible prompt artifacts that plug into evals.
+
+46. [ ] /docs/patterns/specs/tool-spec-template.md
+    - Purpose: Tool contract template (schema, idempotency, timeout/retry behavior, errors).
+    - Audience: developer.
+    - Success: coherent, testable tool definitions across providers.
+
+47. [ ] /docs/patterns/specs/eval-spec-template.md
+    - Purpose: Evaluation spec (metrics, datasets, thresholds, review cadence).
+    - Audience: developer, PM.
+    - Success: teams can run the same evals and compare results apples‑to‑apples.
+
+---
+
+## Wave 4 — Evaluations & Safety (12 tasks)
+
+45. [ ] /docs/evaluations/overview.md (expand)
+46. [ ] /docs/evaluations/rubric-prompts.md (expand)
+47. [ ] /docs/evaluations/grounded-qa-evals.md (expand)
+48. [ ] /docs/evaluations/latency-cost-tradeoffs.md (expand)
+49. [ ] /docs/evaluations/tool-use-evals.md (expand)
+50. [ ] /docs/evaluations/offline-batch-evals.md (expand)
+51. [ ] /docs/evaluations/data-platform-benchmarks.md (expand with methodology)
+52. [ ] /docs/safety/overview.md (expand)
+53. [ ] /docs/safety/prompt-safety.md (expand)
+54. [ ] /docs/safety/output-filters.md (expand)
+55. [ ] /docs/safety/human-in-the-loop.md (expand)
+56. [ ] /docs/concepts/safety-taxonomy.md
+    - Purpose: Taxonomy of risk categories; mapping to mitigations.
+
+---
+
+## Wave 5 — Tutorials & Examples (20 tasks)
+
+57. [ ] /docs/tutorials/agentic-helpdesk.md (expand)
+58. [ ] /docs/tutorials/rag-starter.md (expand)
+59. [ ] /docs/tutorials/cost-guardrails.md (expand)
+60. [ ] /docs/tutorials/observability-end-to-end.md (expand)
+61. [ ] /docs/tutorials/production-hardening.md (expand)
+62. [ ] /docs/examples/ai-customer-support-triage.md (expand)
+63. [ ] /docs/examples/a2a-coordination.md (expand)
+64. [ ] /docs/tutorials/chatgpt-business/overview.md
+    - Purpose: Onboarding to ChatGPT Business: workspaces, shared conversations, privacy controls, file uploads, GPT Store access.
+    - Audience: non-technical, PM, developer.
+    - Success: users configure workspace settings and share a tutorial conversation responsibly.
+65. [ ] /docs/tutorials/chatgpt-business/canvas-python-starters.md
+    - Purpose: Use ChatGPT Canvas to scaffold small Python projects (CLI utility, data cleaner, scraper).
+    - Audience: beginner → intermediate.
+    - Success: create a runnable venv project with tests inside Canvas, export to local repo.
+66. [ ] /docs/tutorials/chatgpt-business/canvas-nodejs-starters.md
+    - Purpose: Use ChatGPT Canvas to scaffold Node.js/TypeScript small projects (CLI, API client, cron worker).
+    - Audience: beginner → intermediate.
+    - Success: build a Node project with tsconfig/eslint/jest and run locally.
+67. [ ] /docs/tutorials/chatgpt-business/code-assist-copiloting.md
+    - Purpose: Effective prompting for code assistance (diffs, patches, refactors, debugging) in ChatGPT.
+    - Audience: developer.
+    - Success: readers drive iterative code changes with clear prompts and guardrails.
+68. [ ] /docs/tutorials/chatgpt-business/data-analysis-and-files.md
+    - Purpose: Use file uploads, charts, and data analysis features safely (PII caveats) within ChatGPT.
+    - Audience: PM, data-analyst, developer.
+    - Success: analyze a CSV, generate a chart, and summarize insights with correctness checks.
+69. [ ] /docs/tutorials/chatgpt-business/custom-gpts-and-policies.md
+    - Purpose: Create and govern custom GPTs for teams: instructions, actions, and safe sharing.
+    - Audience: developer, PM.
+    - Success: publish a custom GPT with a narrow scope and clear usage notes.
+70. [ ] /docs/tutorials/chatgpt-business/canvas-mini-apps.md
+    - Purpose: Build a mini app in Canvas that calls provider APIs (mocked locally), then export to Next.js/Python.
+    - Audience: developer.
+    - Success: working minimal app exported from Canvas and run locally.
+71. [ ] /docs/tutorials/nextjs-vercel-prisma-sqlite.md
+    - Purpose: Build a Next.js App Router app with Prisma and SQLite; deploy to Vercel.
+    - Audience: developer.
+    - Success: local dev with SQLite, Prisma migrations, Vercel deployment with env setup.
+72. [ ] /docs/tutorials/python-fastapi-sqlite-ai-service.md
+    - Purpose: Python FastAPI service that calls an AI provider, persists sessions in SQLite, and exposes a minimal API.
+    - Audience: developer, data‑analyst.
+    - Success: local SQLite DB, migrations, retry/backoff, structured JSON responses.
+73. [ ] /docs/tutorials/dbt-llm-assistant.md
+    - Purpose: Use LLMs to scaffold dbt models/tests/docs with human review gates.
+    - Audience: data‑analyst, developer.
+    - Success: create a model + tests, generate docs, and review diffs safely.
+74. [ ] /docs/tutorials/sql-agent-patterns.md
+    - Purpose: SQL‑aware agents: schema grounding, read‑only constraints, and safe execution.
+    - Audience: developer, data‑analyst.
+    - Success: execute parameterized queries with guardrails and result summaries.
+75. [ ] /docs/tutorials/analytics-assistants-qlik-powerbi.md
+    - Purpose: Assist with chart/spec generation and narrative insights for Qlik Cloud and Power BI.
+    - Audience: PM, data‑analyst.
+    - Success: propose visuals from a dataset and produce a short narrative with caveats.
+76. [ ] /docs/examples/finance-expense-audit.md
+    - Purpose: Detect anomalies and route to human review.
+77. [ ] /docs/examples/hr-candidate-screen.md
+    - Purpose: Summarize resumes; extract skills; fairness caveats.
+78. [ ] /docs/examples/it-knowledge-bot.md
+    - Purpose: Retrieval over internal docs; citations.
+79. [ ] /docs/examples/sales-email-drafter.md
+    - Purpose: Persona‑aware outreach; compliance checkpoints.
+80. [ ] /docs/examples/marketing-brief-generator.md
+81. [ ] /docs/examples/legal-clause-extractor.md
+82. [ ] /docs/examples/education-lesson-planner.md
+83. [ ] /docs/examples/healthcare-intake-assistant.md (privacy notes)
+84. [ ] /docs/examples/software-code-reviewer.md (LLM tips + static checks)
+85. [ ] /docs/examples/data-science-notebook-helper.md
+86. [ ] /docs/examples/translation-qc.md
+87. [ ] /docs/examples/research-citation-checker.md
 
 ---
 
 ## Writer playbook
 
-* Use the frontmatter template above on every page.
-* Outline first, get a fast review, then draft.
-* Cross‑link 2–4 related pages.
-* Screenshots → `/assets/images/...` with descriptive alt text.
-* Shared code → `/assets/snippets/...` and embed via MDX.
-* Add a short **References** section to each page; prefer official docs.
+- Every article should offer value for all proficiency levels:
+  - Beginner: plain‑language summary + small runnable/interactive example.
+  - Intermediate: design tradeoffs, parameters, and failure modes.
+  - Advanced: performance/cost levers, edge cases, and evaluation hooks.
+- Cross‑link 2–4 related pages using `/docs/...` paths.
+- Prefer structured outputs and include short References (official docs first).
+- Keep `audience_levels` and `personas` accurate; update `last_reviewed`.
+- Stack emphasis for code samples and tutorials:
+    - Prefer Node.js/TypeScript and Next.js (App Router) for web/app scenarios.
+    - Prefer Python for data, scripting, and service backends.
+    - When showing provider usage, include one Node and one Python example whenever feasible.
+    - For lightweight ideation or scaffolding, demonstrate ChatGPT Canvas and provide export steps to a local repo.
+    - Use VS Code as the default IDE and highlight GitHub Copilot (and Codex-style prompting) for code assistance.
+    - For web apps, prefer deployment on Vercel with Prisma ORM; for local/dev apps, prefer SQLite where possible.
+    - When relevant, add data engineering and analytics angles (SQL patterns, dbt workflows, Qlik Cloud/Power BI consumers) and call out ML handoffs.
+
+### Style, structure, and review rules
+
+- Writing style
+    - Prefer clear, direct prose. Short paragraphs. Use active voice.
+    - Start pages with a 2–3 sentence summary and a “You’ll learn” bullet list (3–5 items).
+    - Use sentence‑case headings. One H1 in frontmatter title; start content with H2.
+    - Show decisions and tradeoffs; avoid hype. Link to sources for claims.
+- Bullets vs prose
+    - Use bullets for checklists, tradeoffs, and step recipes; use prose for explanations and context.
+    - Keep bullets parallel and concise; max ~7 per list.
+- Diagrams (Mermaid)
+    - Include sequence diagrams for flows (agentic patterns, RAG pipelines, tool calls) and state diagrams for lifecycles.
+    - Place diagrams after a short explanation and before code. Keep them small and labeled.
+- Code examples
+    - Prefer complete, runnable snippets; include minimal setup and a brief “try it” section.
+    - Show both Node and Python where feasible; otherwise pick the stack that best fits the task.
+    - Annotate tricky lines with comments; show error handling, timeouts, retries, and schema validation.
+    - For structured outputs, include expected JSON examples and simple validators.
+- Spec‑driven workflow (spec‑kit inspired)
+    - Before coding, draft a prompt spec (intent, inputs/outputs, constraints, risks, eval hooks).
+    - Draft tool specs (idempotency, schema, timeouts, error codes) and wire them to prompts.
+    - Define eval specs (datasets, metrics, thresholds) and connect them to CI/nightly jobs.
+- Review checklist (per PR)
+    - Frontmatter complete and valid; arrays deduped; `last_reviewed` updated.
+    - Links valid and within scope; no ops/admin/site‑management content.
+    - Examples run locally; commands tested; sensitive data scrubbed.
+    - References present; at least one provider‑official doc linked.
 
 ---
 
 ## Source pointers (authoritative)
 
-* OpenAI Platform docs (API overview & reference)
-* Anthropic docs (models & API)
-* Azure OpenAI (Microsoft Learn)
-* **VS Code**: official docs; Marketplace pages for extensions (Markdown, YAML, frontmatter, MDX preview)
-* **GitHub**: PRs, protected branches, Actions (setup‑node)
-* **Microsoft Entra**: app registration quickstart; role assignments
-* **Vercel**: ISR / on‑demand revalidation; project deploy guides
-* **Prisma**: schema, migrations, deploy checklists
-* **Data platforms**: Microsoft Fabric (OneLake/Lakehouse), Snowflake (Warehouses/Snowpark), Databricks (Lakehouse/Unity Catalog), Qlik Cloud (data connections & app publishing)
-* GitHub Webhooks (overview + creating webhooks)
-* MDN HTTP caching (`If‑None‑Match`, `Cache-Control`)
-* Accessibility: WCAG 2.2 quick ref; WAI‑ARIA APG
+- OpenAI Platform docs (API overview & reference)
+- Anthropic (Claude) docs
+- Azure OpenAI (Microsoft Learn)
+- Google Gemini docs
+- Meta Llama model cards and hosting providers
+- Mistral docs
+- Cohere docs
+- MDN (HTTP, caching, JSON)
+- Responsible AI & safety pages from providers
