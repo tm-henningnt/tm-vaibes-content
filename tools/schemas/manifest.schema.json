@@ -1,24 +1,62 @@
 {
   "$id": "manifest.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Documentation Manifest",
   "type": "object",
-  "required": [
-    "version",
-    "generated_at",
-    "hash",
-    "docs"
-  ],
+  "additionalProperties": false,
+  "required": ["version", "generated_at", "hash", "docs"],
   "properties": {
-    "version": {
-      "type": "string"
-    },
-    "generated_at": {
-      "type": "string"
-    },
-    "hash": {
-      "type": "string"
-    },
+    "version": { "type": "string", "minLength": 1 },
+    "generated_at": { "type": "string", "format": "date-time" },
+    "hash": { "type": "string", "minLength": 1 },
     "docs": {
-      "type": "array"
+      "type": "array",
+      "items": { "$ref": "#/$defs/docEntry" },
+      "minItems": 1
+    }
+  },
+  "$defs": {
+    "docEntry": {
+      "type": "object",
+      "required": ["slug", "title", "description", "category"],
+      "properties": {
+        "slug": {
+          "type": "string",
+          "pattern": "^[a-z0-9][a-z0-9-/]*$",
+          "description": "URL-ready slug without /docs/ prefix or file extension."
+        },
+        "title": { "type": "string", "minLength": 1 },
+        "description": { "type": "string", "minLength": 1 },
+        "category": {
+          "type": "string",
+          "pattern": "^[a-z0-9-]+$",
+          "description": "Single kebab-case category (e.g., evaluations)."
+        },
+        "tags": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "uniqueItems": true,
+          "default": []
+        },
+        "relatedProjectTypes": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "uniqueItems": true,
+          "default": []
+        },
+        "lastUpdated": { "type": "string", "format": "date-time" },
+        "path": { "type": "string" },
+        "min_read_minutes": { "type": "integer", "minimum": 0 },
+        "audience_levels": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "personas": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 }
+        }
+      },
+      "additionalProperties": true
     }
   }
 }

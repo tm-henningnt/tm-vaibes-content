@@ -12,5 +12,9 @@ search_keywords: []
 show_toc: true
 ---
 
+## 2025-10-08
+- Manifest builder now emits `slug`, `category`, and ISO `lastUpdated` fields to match the consuming app's schema.
+- Frontmatter schema enforces at least one category and allows `related_project_types` for downstream filtering.
+
 ## 2025-10-06
 - Initial scaffold with 12 core pages, schemas, and manifest builder.

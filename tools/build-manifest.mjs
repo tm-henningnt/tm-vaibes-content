@@ -12,19 +12,52 @@ for (const path of files) {
     console.warn(`Skipping ${path}: missing frontmatter title`);
     continue;
   }
-  docs.push({
-    path: '/' + path.replace(/\\/g, '/'),
+
+  const normalizedPath = path.replace(/\\/g, '/');
+  const relativePath = normalizedPath.replace(/^docs\//, '');
+  const slug = relativePath.replace(/\.(md|mdx)$/i, '');
+  const category = slug.split('/')[0] || 'uncategorized';
+
+  const docEntry = {
+    path: '/' + normalizedPath,
+    slug,
+    category,
     title: data.title,
     description: data.description,
     audience_levels: data.audience_levels || [],
     personas: data.personas || [],
     categories: data.categories || [],
     tags: data.tags || [],
-    min_read_minutes: data.min_read_minutes || null,
-    last_reviewed: data.last_reviewed || null,
+    relatedProjectTypes: data.related_project_types || [],
     search_keywords: data.search_keywords || [],
     related: data.related || []
-  });
+  };
+
+  if (data.min_read_minutes !== undefined) {
+    docEntry.min_read_minutes = data.min_read_minutes;
+  }
+
+  if (data.last_reviewed) {
+    let asDate = null;
+    if (data.last_reviewed instanceof Date) {
+      asDate = new Date(Date.UTC(
+        data.last_reviewed.getUTCFullYear(),
+        data.last_reviewed.getUTCMonth(),
+        data.last_reviewed.getUTCDate()
+      ));
+    } else if (typeof data.last_reviewed === 'string') {
+      const match = data.last_reviewed.match(/^(\d{4})-(\d{2})-(\d{2})$/);
+      if (match) {
+        asDate = new Date(`${match[1]}-${match[2]}-${match[3]}T00:00:00.000Z`);
+      }
+    }
+
+    if (asDate && !Number.isNaN(asDate.getTime())) {
+      docEntry.lastUpdated = asDate.toISOString();
+    }
+  }
+
+  docs.push(docEntry);
 }
 
 const json = {
