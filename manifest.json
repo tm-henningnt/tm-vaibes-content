@@ -1,8 +1,8 @@
 {
   "$schema": "./tools/schemas/manifest.schema.json",
   "version": "2025.10.1",
-  "generated_at": "2025-10-09T12:43:16.390Z",
-  "hash": "a5fd2e01612d1977",
+  "generated_at": "2025-10-09T12:54:35.468Z",
+  "hash": "20fcb88704d0240b",
   "docs": [
     {
       "path": "/docs/index.md",
@@ -37,6 +37,271 @@
       "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/index.md",
       "min_read_minutes": 8,
       "lastUpdated": "2025-10-08T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/evaluations/data-platform-benchmarks.md",
+      "slug": "evaluations/data-platform-benchmarks",
+      "category": "evaluations",
+      "title": "Data platform benchmarks",
+      "description": "Benchmark end-to-end GenAI workflows that query Fabric, Snowflake, Databricks, or Qlik Cloud so you can size infrastructure correctly.",
+      "audience_levels": [
+        "advanced"
+      ],
+      "personas": [
+        "developer",
+        "PM",
+        "admin"
+      ],
+      "categories": [
+        "evaluations"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "data platform benchmark",
+        "snowflake latency",
+        "fabric synapse",
+        "databricks llm",
+        "qlik cloud"
+      ],
+      "related": [
+        "/docs/patterns/workflows/batch-processing.md",
+        "/docs/patterns/cost-controls.md",
+        "/docs/evaluations/latency-cost-tradeoffs.md",
+        "/docs/safety/overview.md"
+      ],
+      "sourcePath": "docs/evaluations/data-platform-benchmarks.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/evaluations/data-platform-benchmarks.md",
+      "min_read_minutes": 13,
+      "lastUpdated": "2025-03-16T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/evaluations/grounded-qa-evals.md",
+      "slug": "evaluations/grounded-qa-evals",
+      "category": "evaluations",
+      "title": "Grounded QA evaluations",
+      "description": "Measure whether retrieval-augmented answers stay faithful to source documents and cite evidence correctly.",
+      "audience_levels": [
+        "intermediate",
+        "advanced"
+      ],
+      "personas": [
+        "developer",
+        "PM"
+      ],
+      "categories": [
+        "evaluations"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "rag evaluation",
+        "faithfulness score",
+        "citation accuracy",
+        "grounded qa",
+        "retrieval eval"
+      ],
+      "related": [
+        "/docs/patterns/rag/basics.md",
+        "/docs/patterns/rag/faq-rag.md",
+        "/docs/evaluations/rubric-prompts.md",
+        "/docs/safety/prompt-safety.md"
+      ],
+      "sourcePath": "docs/evaluations/grounded-qa-evals.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/evaluations/grounded-qa-evals.md",
+      "min_read_minutes": 12,
+      "lastUpdated": "2025-03-16T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/evaluations/latency-cost-tradeoffs.md",
+      "slug": "evaluations/latency-cost-tradeoffs",
+      "category": "evaluations",
+      "title": "Latency–cost tradeoffs",
+      "description": "Instrument GenAI systems to balance perceived speed with spend using model selection, streaming, caching, and batching.",
+      "audience_levels": [
+        "intermediate",
+        "advanced"
+      ],
+      "personas": [
+        "developer",
+        "PM",
+        "admin"
+      ],
+      "categories": [
+        "evaluations",
+        "patterns"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "latency budgeting",
+        "token cost",
+        "streaming evaluation",
+        "model benchmarking",
+        "caching"
+      ],
+      "related": [
+        "/docs/concepts/token-costs-latency.md",
+        "/docs/patterns/cost-controls.md",
+        "/docs/quickstarts/js-server-route.md",
+        "/docs/evaluations/overview.md"
+      ],
+      "sourcePath": "docs/evaluations/latency-cost-tradeoffs.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/evaluations/latency-cost-tradeoffs.md",
+      "min_read_minutes": 11,
+      "lastUpdated": "2025-03-16T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/evaluations/offline-batch-evals.md",
+      "slug": "evaluations/offline-batch-evals",
+      "category": "evaluations",
+      "title": "Offline batch evaluations",
+      "description": "Automate nightly or on-demand evaluation runs that replay golden datasets, score outputs, and surface regressions fast.",
+      "audience_levels": [
+        "intermediate",
+        "advanced"
+      ],
+      "personas": [
+        "developer",
+        "PM"
+      ],
+      "categories": [
+        "evaluations",
+        "how-to"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "batch eval",
+        "nightly run",
+        "regression report",
+        "llm ci",
+        "quality gate"
+      ],
+      "related": [
+        "/docs/evaluations/overview.md",
+        "/docs/evaluations/rubric-prompts.md",
+        "/docs/patterns/workflows/batch-processing.md",
+        "/docs/safety/human-in-the-loop.md"
+      ],
+      "sourcePath": "docs/evaluations/offline-batch-evals.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/evaluations/offline-batch-evals.md",
+      "min_read_minutes": 12,
+      "lastUpdated": "2025-03-16T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/evaluations/overview.md",
+      "slug": "evaluations/overview",
+      "category": "evaluations",
+      "title": "Evaluations overview",
+      "description": "Establish goals, datasets, scoring methods, and feedback loops so GenAI systems improve without guesswork.",
+      "audience_levels": [
+        "intermediate",
+        "advanced"
+      ],
+      "personas": [
+        "developer",
+        "PM",
+        "admin"
+      ],
+      "categories": [
+        "evaluations",
+        "concepts"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "llm evals",
+        "golden dataset",
+        "rubric scoring",
+        "regression testing",
+        "ai quality metrics"
+      ],
+      "related": [
+        "/docs/evaluations/rubric-prompts.md",
+        "/docs/evaluations/grounded-qa-evals.md",
+        "/docs/evaluations/offline-batch-evals.md",
+        "/docs/safety/overview.md"
+      ],
+      "sourcePath": "docs/evaluations/overview.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/evaluations/overview.md",
+      "min_read_minutes": 12,
+      "lastUpdated": "2025-03-16T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/evaluations/rubric-prompts.md",
+      "slug": "evaluations/rubric-prompts",
+      "category": "evaluations",
+      "title": "Rubric prompts",
+      "description": "Design precise scoring prompts that grade correctness, tone, safety, and structure with repeatable outputs.",
+      "audience_levels": [
+        "intermediate",
+        "advanced"
+      ],
+      "personas": [
+        "developer",
+        "PM"
+      ],
+      "categories": [
+        "evaluations",
+        "how-to"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "rubric prompt",
+        "llm judge",
+        "evaluation prompt",
+        "score calibration",
+        "grader"
+      ],
+      "related": [
+        "/docs/evaluations/overview.md",
+        "/docs/evaluations/offline-batch-evals.md",
+        "/docs/safety/human-in-the-loop.md",
+        "/docs/patterns/agentic/reflection-self-heal.md"
+      ],
+      "sourcePath": "docs/evaluations/rubric-prompts.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/evaluations/rubric-prompts.md",
+      "min_read_minutes": 11,
+      "lastUpdated": "2025-03-16T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/evaluations/tool-use-evals.md",
+      "slug": "evaluations/tool-use-evals",
+      "category": "evaluations",
+      "title": "Tool-use evaluations",
+      "description": "Measure function-calling success, latency, and safety when models invoke tools in workflows.",
+      "audience_levels": [
+        "intermediate",
+        "advanced"
+      ],
+      "personas": [
+        "developer",
+        "PM"
+      ],
+      "categories": [
+        "evaluations"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "tool evals",
+        "function calling",
+        "success rate",
+        "tool latency",
+        "agent reliability"
+      ],
+      "related": [
+        "/docs/patterns/tools/function-calling.md",
+        "/docs/patterns/agentic/router-multi-tool.md",
+        "/docs/evaluations/overview.md",
+        "/docs/safety/human-in-the-loop.md"
+      ],
+      "sourcePath": "docs/evaluations/tool-use-evals.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/evaluations/tool-use-evals.md",
+      "min_read_minutes": 10,
+      "lastUpdated": "2025-03-16T00:00:00.000Z"
     },
     {
       "path": "/docs/concepts/agents-vs-automation.md",
@@ -617,271 +882,6 @@
       "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/concepts/what-is-genai.md",
       "min_read_minutes": 12,
       "lastUpdated": "2025-02-14T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/evaluations/data-platform-benchmarks.md",
-      "slug": "evaluations/data-platform-benchmarks",
-      "category": "evaluations",
-      "title": "Data platform benchmarks",
-      "description": "Benchmark end-to-end GenAI workflows that query Fabric, Snowflake, Databricks, or Qlik Cloud so you can size infrastructure correctly.",
-      "audience_levels": [
-        "advanced"
-      ],
-      "personas": [
-        "developer",
-        "PM",
-        "admin"
-      ],
-      "categories": [
-        "evaluations"
-      ],
-      "tags": [],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "data platform benchmark",
-        "snowflake latency",
-        "fabric synapse",
-        "databricks llm",
-        "qlik cloud"
-      ],
-      "related": [
-        "/docs/patterns/workflows/batch-processing.md",
-        "/docs/patterns/cost-controls.md",
-        "/docs/evaluations/latency-cost-tradeoffs.md",
-        "/docs/safety/overview.md"
-      ],
-      "sourcePath": "docs/evaluations/data-platform-benchmarks.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/evaluations/data-platform-benchmarks.md",
-      "min_read_minutes": 13,
-      "lastUpdated": "2025-03-16T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/evaluations/grounded-qa-evals.md",
-      "slug": "evaluations/grounded-qa-evals",
-      "category": "evaluations",
-      "title": "Grounded QA evaluations",
-      "description": "Measure whether retrieval-augmented answers stay faithful to source documents and cite evidence correctly.",
-      "audience_levels": [
-        "intermediate",
-        "advanced"
-      ],
-      "personas": [
-        "developer",
-        "PM"
-      ],
-      "categories": [
-        "evaluations"
-      ],
-      "tags": [],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "rag evaluation",
-        "faithfulness score",
-        "citation accuracy",
-        "grounded qa",
-        "retrieval eval"
-      ],
-      "related": [
-        "/docs/patterns/rag/basics.md",
-        "/docs/patterns/rag/faq-rag.md",
-        "/docs/evaluations/rubric-prompts.md",
-        "/docs/safety/prompt-safety.md"
-      ],
-      "sourcePath": "docs/evaluations/grounded-qa-evals.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/evaluations/grounded-qa-evals.md",
-      "min_read_minutes": 12,
-      "lastUpdated": "2025-03-16T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/evaluations/latency-cost-tradeoffs.md",
-      "slug": "evaluations/latency-cost-tradeoffs",
-      "category": "evaluations",
-      "title": "Latency–cost tradeoffs",
-      "description": "Instrument GenAI systems to balance perceived speed with spend using model selection, streaming, caching, and batching.",
-      "audience_levels": [
-        "intermediate",
-        "advanced"
-      ],
-      "personas": [
-        "developer",
-        "PM",
-        "admin"
-      ],
-      "categories": [
-        "evaluations",
-        "patterns"
-      ],
-      "tags": [],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "latency budgeting",
-        "token cost",
-        "streaming evaluation",
-        "model benchmarking",
-        "caching"
-      ],
-      "related": [
-        "/docs/concepts/token-costs-latency.md",
-        "/docs/patterns/cost-controls.md",
-        "/docs/quickstarts/js-server-route.md",
-        "/docs/evaluations/overview.md"
-      ],
-      "sourcePath": "docs/evaluations/latency-cost-tradeoffs.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/evaluations/latency-cost-tradeoffs.md",
-      "min_read_minutes": 11,
-      "lastUpdated": "2025-03-16T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/evaluations/offline-batch-evals.md",
-      "slug": "evaluations/offline-batch-evals",
-      "category": "evaluations",
-      "title": "Offline batch evaluations",
-      "description": "Automate nightly or on-demand evaluation runs that replay golden datasets, score outputs, and surface regressions fast.",
-      "audience_levels": [
-        "intermediate",
-        "advanced"
-      ],
-      "personas": [
-        "developer",
-        "PM"
-      ],
-      "categories": [
-        "evaluations",
-        "how-to"
-      ],
-      "tags": [],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "batch eval",
-        "nightly run",
-        "regression report",
-        "llm ci",
-        "quality gate"
-      ],
-      "related": [
-        "/docs/evaluations/overview.md",
-        "/docs/evaluations/rubric-prompts.md",
-        "/docs/patterns/workflows/batch-processing.md",
-        "/docs/safety/human-in-the-loop.md"
-      ],
-      "sourcePath": "docs/evaluations/offline-batch-evals.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/evaluations/offline-batch-evals.md",
-      "min_read_minutes": 12,
-      "lastUpdated": "2025-03-16T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/evaluations/overview.md",
-      "slug": "evaluations/overview",
-      "category": "evaluations",
-      "title": "Evaluations overview",
-      "description": "Establish goals, datasets, scoring methods, and feedback loops so GenAI systems improve without guesswork.",
-      "audience_levels": [
-        "intermediate",
-        "advanced"
-      ],
-      "personas": [
-        "developer",
-        "PM",
-        "admin"
-      ],
-      "categories": [
-        "evaluations",
-        "concepts"
-      ],
-      "tags": [],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "llm evals",
-        "golden dataset",
-        "rubric scoring",
-        "regression testing",
-        "ai quality metrics"
-      ],
-      "related": [
-        "/docs/evaluations/rubric-prompts.md",
-        "/docs/evaluations/grounded-qa-evals.md",
-        "/docs/evaluations/offline-batch-evals.md",
-        "/docs/safety/overview.md"
-      ],
-      "sourcePath": "docs/evaluations/overview.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/evaluations/overview.md",
-      "min_read_minutes": 12,
-      "lastUpdated": "2025-03-16T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/evaluations/rubric-prompts.md",
-      "slug": "evaluations/rubric-prompts",
-      "category": "evaluations",
-      "title": "Rubric prompts",
-      "description": "Design precise scoring prompts that grade correctness, tone, safety, and structure with repeatable outputs.",
-      "audience_levels": [
-        "intermediate",
-        "advanced"
-      ],
-      "personas": [
-        "developer",
-        "PM"
-      ],
-      "categories": [
-        "evaluations",
-        "how-to"
-      ],
-      "tags": [],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "rubric prompt",
-        "llm judge",
-        "evaluation prompt",
-        "score calibration",
-        "grader"
-      ],
-      "related": [
-        "/docs/evaluations/overview.md",
-        "/docs/evaluations/offline-batch-evals.md",
-        "/docs/safety/human-in-the-loop.md",
-        "/docs/patterns/agentic/reflection-self-heal.md"
-      ],
-      "sourcePath": "docs/evaluations/rubric-prompts.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/evaluations/rubric-prompts.md",
-      "min_read_minutes": 11,
-      "lastUpdated": "2025-03-16T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/evaluations/tool-use-evals.md",
-      "slug": "evaluations/tool-use-evals",
-      "category": "evaluations",
-      "title": "Tool-use evaluations",
-      "description": "Measure function-calling success, latency, and safety when models invoke tools in workflows.",
-      "audience_levels": [
-        "intermediate",
-        "advanced"
-      ],
-      "personas": [
-        "developer",
-        "PM"
-      ],
-      "categories": [
-        "evaluations"
-      ],
-      "tags": [],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "tool evals",
-        "function calling",
-        "success rate",
-        "tool latency",
-        "agent reliability"
-      ],
-      "related": [
-        "/docs/patterns/tools/function-calling.md",
-        "/docs/patterns/agentic/router-multi-tool.md",
-        "/docs/evaluations/overview.md",
-        "/docs/safety/human-in-the-loop.md"
-      ],
-      "sourcePath": "docs/evaluations/tool-use-evals.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/evaluations/tool-use-evals.md",
-      "min_read_minutes": 10,
-      "lastUpdated": "2025-03-16T00:00:00.000Z"
     },
     {
       "path": "/docs/examples/a2a-coordination.md",
@@ -1832,8 +1832,8 @@
       "path": "/docs/providers/security-best-practices.md",
       "slug": "providers/security-best-practices",
       "category": "providers",
-      "title": "Security Best Practices for AI Providers",
-      "description": "Handle keys, proxies, rotation, and logging safely across environments.",
+      "title": "Security best practices for AI providers",
+      "description": "Handle provider keys, proxies, rotation, and logging safely across environments.",
       "audience_levels": [
         "intermediate",
         "advanced"
@@ -1851,20 +1851,21 @@
       "relatedProjectTypes": [],
       "search_keywords": [
         "api key handling",
-        "secrets",
-        "key rotation",
-        "proxy",
-        "redaction"
+        "secrets rotation",
+        "llm proxy",
+        "redaction",
+        "quota enforcement"
       ],
       "related": [
         "/docs/providers/openai/auth-models-limits.md",
-        "/docs/safety/prompt-safety.md",
-        "/docs/evaluations/latency-cost-tradeoffs.md"
+        "/docs/operations/env-and-healthcheck.md",
+        "/docs/patterns/observability-context.md",
+        "/docs/concepts/safety-basics.md"
       ],
       "sourcePath": "docs/providers/security-best-practices.md",
       "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/providers/security-best-practices.md",
-      "min_read_minutes": 9,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
+      "min_read_minutes": 13,
+      "lastUpdated": "2025-03-20T00:00:00.000Z"
     },
     {
       "path": "/docs/quickstarts/first-idea.md",
@@ -2164,6 +2165,115 @@
       "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/safety/prompt-safety.md",
       "min_read_minutes": 10,
       "lastUpdated": "2025-03-16T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/patterns/agentic/planner-executor.md",
+      "slug": "patterns/agentic/planner-executor",
+      "category": "patterns",
+      "title": "Pattern: Planner–executor agent loop",
+      "description": "Coordinate a planning model with specialized executors, tools, and guardrails for multi-step tasks.",
+      "audience_levels": [
+        "intermediate",
+        "advanced"
+      ],
+      "personas": [
+        "developer",
+        "data-analyst"
+      ],
+      "categories": [
+        "patterns"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "planner executor",
+        "agent pattern",
+        "task decomposition",
+        "tool orchestration",
+        "llm planning"
+      ],
+      "related": [
+        "/docs/concepts/genai-vs-agentic.md",
+        "/docs/patterns/tools/function-calling.md",
+        "/docs/patterns/observability-context.md",
+        "/docs/examples/meeting-summarizer.md"
+      ],
+      "sourcePath": "docs/patterns/agentic/planner-executor.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/patterns/agentic/planner-executor.md",
+      "min_read_minutes": 20,
+      "lastUpdated": "2024-06-07T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/patterns/agentic/reflection-self-heal.md",
+      "slug": "patterns/agentic/reflection-self-heal",
+      "category": "patterns",
+      "title": "Reflection Loop: Self-Healing Outputs",
+      "description": "Use rubric prompts to critique model outputs, retry within a budget, and converge on quality.",
+      "audience_levels": [
+        "intermediate",
+        "advanced"
+      ],
+      "personas": [
+        "developer",
+        "PM"
+      ],
+      "categories": [
+        "patterns"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "reflection",
+        "self critique",
+        "retry budget",
+        "rubric",
+        "quality"
+      ],
+      "related": [
+        "/docs/evaluations/rubric-prompts.md",
+        "/docs/patterns/cost-controls.md",
+        "/docs/patterns/specs/eval-spec-template.md"
+      ],
+      "sourcePath": "docs/patterns/agentic/reflection-self-heal.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/patterns/agentic/reflection-self-heal.md",
+      "min_read_minutes": 12,
+      "lastUpdated": "2025-02-17T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/patterns/agentic/router-multi-tool.md",
+      "slug": "patterns/agentic/router-multi-tool",
+      "category": "patterns",
+      "title": "Router Agent: Multi-Tool Selection",
+      "description": "Design a router that classifies intents, selects the right tool, and enforces guardrails across a multi-provider stack.",
+      "audience_levels": [
+        "intermediate",
+        "advanced"
+      ],
+      "personas": [
+        "developer",
+        "PM"
+      ],
+      "categories": [
+        "patterns"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "router agent",
+        "tool selection",
+        "multi tool",
+        "guardrails",
+        "timeouts"
+      ],
+      "related": [
+        "/docs/patterns/tools/function-calling.md",
+        "/docs/patterns/a2a-agent-to-agent.md",
+        "/docs/patterns/observability-context.md"
+      ],
+      "sourcePath": "docs/patterns/agentic/router-multi-tool.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/patterns/agentic/router-multi-tool.md",
+      "min_read_minutes": 13,
+      "lastUpdated": "2025-02-17T00:00:00.000Z"
     },
     {
       "path": "/docs/tutorials/agentic-helpdesk.md",
@@ -2608,115 +2718,6 @@
       "lastUpdated": "2024-06-06T00:00:00.000Z"
     },
     {
-      "path": "/docs/patterns/agentic/planner-executor.md",
-      "slug": "patterns/agentic/planner-executor",
-      "category": "patterns",
-      "title": "Pattern: Planner–executor agent loop",
-      "description": "Coordinate a planning model with specialized executors, tools, and guardrails for multi-step tasks.",
-      "audience_levels": [
-        "intermediate",
-        "advanced"
-      ],
-      "personas": [
-        "developer",
-        "data-analyst"
-      ],
-      "categories": [
-        "patterns"
-      ],
-      "tags": [],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "planner executor",
-        "agent pattern",
-        "task decomposition",
-        "tool orchestration",
-        "llm planning"
-      ],
-      "related": [
-        "/docs/concepts/genai-vs-agentic.md",
-        "/docs/patterns/tools/function-calling.md",
-        "/docs/patterns/observability-context.md",
-        "/docs/examples/meeting-summarizer.md"
-      ],
-      "sourcePath": "docs/patterns/agentic/planner-executor.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/patterns/agentic/planner-executor.md",
-      "min_read_minutes": 20,
-      "lastUpdated": "2024-06-07T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/patterns/agentic/reflection-self-heal.md",
-      "slug": "patterns/agentic/reflection-self-heal",
-      "category": "patterns",
-      "title": "Reflection Loop: Self-Healing Outputs",
-      "description": "Use rubric prompts to critique model outputs, retry within a budget, and converge on quality.",
-      "audience_levels": [
-        "intermediate",
-        "advanced"
-      ],
-      "personas": [
-        "developer",
-        "PM"
-      ],
-      "categories": [
-        "patterns"
-      ],
-      "tags": [],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "reflection",
-        "self critique",
-        "retry budget",
-        "rubric",
-        "quality"
-      ],
-      "related": [
-        "/docs/evaluations/rubric-prompts.md",
-        "/docs/patterns/cost-controls.md",
-        "/docs/patterns/specs/eval-spec-template.md"
-      ],
-      "sourcePath": "docs/patterns/agentic/reflection-self-heal.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/patterns/agentic/reflection-self-heal.md",
-      "min_read_minutes": 12,
-      "lastUpdated": "2025-02-17T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/patterns/agentic/router-multi-tool.md",
-      "slug": "patterns/agentic/router-multi-tool",
-      "category": "patterns",
-      "title": "Router Agent: Multi-Tool Selection",
-      "description": "Design a router that classifies intents, selects the right tool, and enforces guardrails across a multi-provider stack.",
-      "audience_levels": [
-        "intermediate",
-        "advanced"
-      ],
-      "personas": [
-        "developer",
-        "PM"
-      ],
-      "categories": [
-        "patterns"
-      ],
-      "tags": [],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "router agent",
-        "tool selection",
-        "multi tool",
-        "guardrails",
-        "timeouts"
-      ],
-      "related": [
-        "/docs/patterns/tools/function-calling.md",
-        "/docs/patterns/a2a-agent-to-agent.md",
-        "/docs/patterns/observability-context.md"
-      ],
-      "sourcePath": "docs/patterns/agentic/router-multi-tool.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/patterns/agentic/router-multi-tool.md",
-      "min_read_minutes": 13,
-      "lastUpdated": "2025-02-17T00:00:00.000Z"
-    },
-    {
       "path": "/docs/patterns/prompting/recipes.md",
       "slug": "patterns/prompting/recipes",
       "category": "patterns",
@@ -3116,6 +3117,42 @@
       "lastUpdated": "2025-02-17T00:00:00.000Z"
     },
     {
+      "path": "/docs/providers/cohere/overview.md",
+      "slug": "providers/cohere/overview",
+      "category": "providers",
+      "title": "Cohere overview",
+      "description": "Integrate Cohere’s Command models, embeddings, and tool use features with secure authentication, streaming, and evaluation-ready prompts.",
+      "audience_levels": [
+        "intermediate"
+      ],
+      "personas": [
+        "developer",
+        "PM"
+      ],
+      "categories": [
+        "providers"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "cohere command r",
+        "cohere api setup",
+        "cohere embeddings",
+        "cohere tool use",
+        "command r plus"
+      ],
+      "related": [
+        "/docs/providers/compare-providers.md",
+        "/docs/concepts/structured-outputs.md",
+        "/docs/patterns/tools/function-calling.md",
+        "/docs/examples/translation-qc.md"
+      ],
+      "sourcePath": "docs/providers/cohere/overview.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/providers/cohere/overview.md",
+      "min_read_minutes": 10,
+      "lastUpdated": "2025-02-17T00:00:00.000Z"
+    },
+    {
       "path": "/docs/providers/azure-openai/migrate-from-openai.md",
       "slug": "providers/azure-openai/migrate-from-openai",
       "category": "providers",
@@ -3186,42 +3223,6 @@
       "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/providers/azure-openai/setup.md",
       "min_read_minutes": 15,
       "lastUpdated": "2025-02-15T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/providers/cohere/overview.md",
-      "slug": "providers/cohere/overview",
-      "category": "providers",
-      "title": "Cohere overview",
-      "description": "Integrate Cohere’s Command models, embeddings, and tool use features with secure authentication, streaming, and evaluation-ready prompts.",
-      "audience_levels": [
-        "intermediate"
-      ],
-      "personas": [
-        "developer",
-        "PM"
-      ],
-      "categories": [
-        "providers"
-      ],
-      "tags": [],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "cohere command r",
-        "cohere api setup",
-        "cohere embeddings",
-        "cohere tool use",
-        "command r plus"
-      ],
-      "related": [
-        "/docs/providers/compare-providers.md",
-        "/docs/concepts/structured-outputs.md",
-        "/docs/patterns/tools/function-calling.md",
-        "/docs/examples/translation-qc.md"
-      ],
-      "sourcePath": "docs/providers/cohere/overview.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/providers/cohere/overview.md",
-      "min_read_minutes": 10,
-      "lastUpdated": "2025-02-17T00:00:00.000Z"
     },
     {
       "path": "/docs/providers/gemini/overview.md",
