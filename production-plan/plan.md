@@ -257,14 +257,14 @@ Keep arrays deduped; include at least one category; use `primary_category` if yo
 
 ## Wave 5 — Tutorials & Examples (20 tasks)
 
-57. [ ] /docs/tutorials/agentic-helpdesk.md (expand)
-58. [ ] /docs/tutorials/rag-starter.md (expand)
-59. [ ] /docs/tutorials/cost-guardrails.md (expand)
-60. [ ] /docs/tutorials/observability-end-to-end.md (expand)
-61. [ ] /docs/tutorials/production-hardening.md (expand)
+57. [qa ready] /docs/tutorials/agentic-helpdesk.md (expand)
+58. [qa ready] /docs/tutorials/rag-starter.md (expand)
+59. [qa ready] /docs/tutorials/cost-guardrails.md (expand)
+60. [qa ready] /docs/tutorials/observability-end-to-end.md (expand)
+61. [qa ready] /docs/tutorials/production-hardening.md (expand)
 62. [qa ready] /docs/examples/ai-customer-support-triage.md (expand)
 63. [qa ready] /docs/examples/a2a-coordination.md (expand)
-64. [ ] /docs/tutorials/chatgpt-business/overview.md
+64. [qa ready] /docs/tutorials/chatgpt-business/overview.md
     - Purpose: Onboarding to ChatGPT Business: workspaces, shared conversations, privacy controls, file uploads, GPT Store access.
     - Audience: non-technical, PM, developer.
     - Success: users configure workspace settings and share a tutorial conversation responsibly.
