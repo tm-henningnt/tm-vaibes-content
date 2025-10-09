@@ -1,8 +1,8 @@
 {
   "$schema": "./tools/schemas/manifest.schema.json",
   "version": "2025.10.1",
-  "generated_at": "2025-10-09T05:20:18.084Z",
-  "hash": "0aa15f4f64f4b681",
+  "generated_at": "2025-10-09T05:34:08.915Z",
+  "hash": "efc2246627cfdf9a",
   "docs": [
     {
       "path": "/docs/index.md",
@@ -37,252 +37,6 @@
       "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/index.md",
       "min_read_minutes": 8,
       "lastUpdated": "2025-10-08T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/evaluations/data-platform-benchmarks.md",
-      "slug": "evaluations/data-platform-benchmarks",
-      "category": "evaluations",
-      "title": "Data Platform Benchmarks",
-      "description": "Measure end‑to‑end latency and cost when AI calls touch Fabric, Snowflake, Databricks, or Qlik Cloud.",
-      "audience_levels": [
-        "advanced"
-      ],
-      "personas": [
-        "developer",
-        "PM",
-        "admin"
-      ],
-      "categories": [
-        "evaluations"
-      ],
-      "tags": [],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "benchmark",
-        "fabric",
-        "snowflake",
-        "databricks",
-        "qlik",
-        "latency"
-      ],
-      "related": [
-        "/docs/patterns/workflows/batch-processing.md",
-        "/docs/patterns/cost-controls.md"
-      ],
-      "sourcePath": "docs/evaluations/data-platform-benchmarks.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/evaluations/data-platform-benchmarks.md",
-      "min_read_minutes": 10,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/evaluations/grounded-qa-evals.md",
-      "slug": "evaluations/grounded-qa-evals",
-      "category": "evaluations",
-      "title": "Grounded QA Evaluations",
-      "description": "Measure faithfulness and citation accuracy for RAG answers.",
-      "audience_levels": [
-        "intermediate",
-        "advanced"
-      ],
-      "personas": [
-        "developer",
-        "PM"
-      ],
-      "categories": [
-        "evaluations"
-      ],
-      "tags": [],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "faithfulness",
-        "citations",
-        "rag eval",
-        "grounded qa"
-      ],
-      "related": [
-        "/docs/patterns/rag/basics.md",
-        "/docs/patterns/rag/faq-rag.md"
-      ],
-      "sourcePath": "docs/evaluations/grounded-qa-evals.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/evaluations/grounded-qa-evals.md",
-      "min_read_minutes": 8,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/evaluations/latency-cost-tradeoffs.md",
-      "slug": "evaluations/latency-cost-tradeoffs",
-      "category": "evaluations",
-      "title": "Latency–Cost Tradeoffs",
-      "description": "Balance perceived speed with spend: model selection, streaming, caching, and truncation.",
-      "audience_levels": [
-        "intermediate",
-        "advanced"
-      ],
-      "personas": [
-        "developer",
-        "PM",
-        "admin"
-      ],
-      "categories": [
-        "evaluations",
-        "patterns"
-      ],
-      "tags": [],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "latency",
-        "cost",
-        "streaming",
-        "model size",
-        "cache"
-      ],
-      "related": [
-        "/docs/patterns/cost-controls.md",
-        "/docs/quickstarts/js-server-route.md"
-      ],
-      "sourcePath": "docs/evaluations/latency-cost-tradeoffs.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/evaluations/latency-cost-tradeoffs.md",
-      "min_read_minutes": 8,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/evaluations/offline-batch-evals.md",
-      "slug": "evaluations/offline-batch-evals",
-      "category": "evaluations",
-      "title": "Offline Batch Evaluations",
-      "description": "Run nightly evals with diff reports; store metrics to detect regressions.",
-      "audience_levels": [
-        "intermediate",
-        "advanced"
-      ],
-      "personas": [
-        "developer",
-        "PM"
-      ],
-      "categories": [
-        "evaluations",
-        "how-to"
-      ],
-      "tags": [],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "batch evals",
-        "regressions",
-        "diff report",
-        "metrics"
-      ],
-      "related": [
-        "/docs/patterns/workflows/batch-processing.md",
-        "/docs/evaluations/rubric-prompts.md"
-      ],
-      "sourcePath": "docs/evaluations/offline-batch-evals.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/evaluations/offline-batch-evals.md",
-      "min_read_minutes": 8,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/evaluations/overview.md",
-      "slug": "evaluations/overview",
-      "category": "evaluations",
-      "title": "Evaluations: Overview",
-      "description": "Define goals, golden sets, and a taxonomy for measuring correctness, helpfulness, safety, latency, and cost.",
-      "audience_levels": [
-        "intermediate"
-      ],
-      "personas": [
-        "developer",
-        "PM",
-        "admin"
-      ],
-      "categories": [
-        "evaluations",
-        "concepts"
-      ],
-      "tags": [],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "evals",
-        "golden set",
-        "taxonomy",
-        "metrics"
-      ],
-      "related": [
-        "/docs/evaluations/offline-batch-evals.md",
-        "/docs/evaluations/rubric-prompts.md"
-      ],
-      "sourcePath": "docs/evaluations/overview.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/evaluations/overview.md",
-      "min_read_minutes": 7,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/evaluations/rubric-prompts.md",
-      "slug": "evaluations/rubric-prompts",
-      "category": "evaluations",
-      "title": "Rubric Prompts",
-      "description": "Design rubrics for correctness, helpfulness, tone, and safety; improve inter‑rater agreement.",
-      "audience_levels": [
-        "intermediate"
-      ],
-      "personas": [
-        "developer",
-        "PM"
-      ],
-      "categories": [
-        "evaluations",
-        "how-to"
-      ],
-      "tags": [],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "rubric",
-        "prompt",
-        "scoring",
-        "agreement"
-      ],
-      "related": [
-        "/docs/patterns/agentic/reflection-self-heal.md",
-        "/docs/evaluations/overview.md"
-      ],
-      "sourcePath": "docs/evaluations/rubric-prompts.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/evaluations/rubric-prompts.md",
-      "min_read_minutes": 7,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/evaluations/tool-use-evals.md",
-      "slug": "evaluations/tool-use-evals",
-      "category": "evaluations",
-      "title": "Tool Use Evaluations",
-      "description": "Measure success rate per tool, categorize timeouts/errors, and find flaky behaviors.",
-      "audience_levels": [
-        "intermediate",
-        "advanced"
-      ],
-      "personas": [
-        "developer",
-        "PM"
-      ],
-      "categories": [
-        "evaluations"
-      ],
-      "tags": [],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "tools",
-        "function calling",
-        "evals",
-        "timeouts",
-        "errors"
-      ],
-      "related": [
-        "/docs/patterns/tools/function-calling.md",
-        "/docs/patterns/agentic/router-multi-tool.md"
-      ],
-      "sourcePath": "docs/evaluations/tool-use-evals.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/evaluations/tool-use-evals.md",
-      "min_read_minutes": 7,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
     {
       "path": "/docs/concepts/agents-vs-automation.md",
@@ -718,6 +472,252 @@
       "lastUpdated": "2025-02-14T00:00:00.000Z"
     },
     {
+      "path": "/docs/evaluations/data-platform-benchmarks.md",
+      "slug": "evaluations/data-platform-benchmarks",
+      "category": "evaluations",
+      "title": "Data Platform Benchmarks",
+      "description": "Measure end‑to‑end latency and cost when AI calls touch Fabric, Snowflake, Databricks, or Qlik Cloud.",
+      "audience_levels": [
+        "advanced"
+      ],
+      "personas": [
+        "developer",
+        "PM",
+        "admin"
+      ],
+      "categories": [
+        "evaluations"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "benchmark",
+        "fabric",
+        "snowflake",
+        "databricks",
+        "qlik",
+        "latency"
+      ],
+      "related": [
+        "/docs/patterns/workflows/batch-processing.md",
+        "/docs/patterns/cost-controls.md"
+      ],
+      "sourcePath": "docs/evaluations/data-platform-benchmarks.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/evaluations/data-platform-benchmarks.md",
+      "min_read_minutes": 10,
+      "lastUpdated": "2025-10-06T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/evaluations/grounded-qa-evals.md",
+      "slug": "evaluations/grounded-qa-evals",
+      "category": "evaluations",
+      "title": "Grounded QA Evaluations",
+      "description": "Measure faithfulness and citation accuracy for RAG answers.",
+      "audience_levels": [
+        "intermediate",
+        "advanced"
+      ],
+      "personas": [
+        "developer",
+        "PM"
+      ],
+      "categories": [
+        "evaluations"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "faithfulness",
+        "citations",
+        "rag eval",
+        "grounded qa"
+      ],
+      "related": [
+        "/docs/patterns/rag/basics.md",
+        "/docs/patterns/rag/faq-rag.md"
+      ],
+      "sourcePath": "docs/evaluations/grounded-qa-evals.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/evaluations/grounded-qa-evals.md",
+      "min_read_minutes": 8,
+      "lastUpdated": "2025-10-06T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/evaluations/latency-cost-tradeoffs.md",
+      "slug": "evaluations/latency-cost-tradeoffs",
+      "category": "evaluations",
+      "title": "Latency–Cost Tradeoffs",
+      "description": "Balance perceived speed with spend: model selection, streaming, caching, and truncation.",
+      "audience_levels": [
+        "intermediate",
+        "advanced"
+      ],
+      "personas": [
+        "developer",
+        "PM",
+        "admin"
+      ],
+      "categories": [
+        "evaluations",
+        "patterns"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "latency",
+        "cost",
+        "streaming",
+        "model size",
+        "cache"
+      ],
+      "related": [
+        "/docs/patterns/cost-controls.md",
+        "/docs/quickstarts/js-server-route.md"
+      ],
+      "sourcePath": "docs/evaluations/latency-cost-tradeoffs.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/evaluations/latency-cost-tradeoffs.md",
+      "min_read_minutes": 8,
+      "lastUpdated": "2025-10-06T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/evaluations/offline-batch-evals.md",
+      "slug": "evaluations/offline-batch-evals",
+      "category": "evaluations",
+      "title": "Offline Batch Evaluations",
+      "description": "Run nightly evals with diff reports; store metrics to detect regressions.",
+      "audience_levels": [
+        "intermediate",
+        "advanced"
+      ],
+      "personas": [
+        "developer",
+        "PM"
+      ],
+      "categories": [
+        "evaluations",
+        "how-to"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "batch evals",
+        "regressions",
+        "diff report",
+        "metrics"
+      ],
+      "related": [
+        "/docs/patterns/workflows/batch-processing.md",
+        "/docs/evaluations/rubric-prompts.md"
+      ],
+      "sourcePath": "docs/evaluations/offline-batch-evals.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/evaluations/offline-batch-evals.md",
+      "min_read_minutes": 8,
+      "lastUpdated": "2025-10-06T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/evaluations/overview.md",
+      "slug": "evaluations/overview",
+      "category": "evaluations",
+      "title": "Evaluations: Overview",
+      "description": "Define goals, golden sets, and a taxonomy for measuring correctness, helpfulness, safety, latency, and cost.",
+      "audience_levels": [
+        "intermediate"
+      ],
+      "personas": [
+        "developer",
+        "PM",
+        "admin"
+      ],
+      "categories": [
+        "evaluations",
+        "concepts"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "evals",
+        "golden set",
+        "taxonomy",
+        "metrics"
+      ],
+      "related": [
+        "/docs/evaluations/offline-batch-evals.md",
+        "/docs/evaluations/rubric-prompts.md"
+      ],
+      "sourcePath": "docs/evaluations/overview.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/evaluations/overview.md",
+      "min_read_minutes": 7,
+      "lastUpdated": "2025-10-06T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/evaluations/rubric-prompts.md",
+      "slug": "evaluations/rubric-prompts",
+      "category": "evaluations",
+      "title": "Rubric Prompts",
+      "description": "Design rubrics for correctness, helpfulness, tone, and safety; improve inter‑rater agreement.",
+      "audience_levels": [
+        "intermediate"
+      ],
+      "personas": [
+        "developer",
+        "PM"
+      ],
+      "categories": [
+        "evaluations",
+        "how-to"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "rubric",
+        "prompt",
+        "scoring",
+        "agreement"
+      ],
+      "related": [
+        "/docs/patterns/agentic/reflection-self-heal.md",
+        "/docs/evaluations/overview.md"
+      ],
+      "sourcePath": "docs/evaluations/rubric-prompts.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/evaluations/rubric-prompts.md",
+      "min_read_minutes": 7,
+      "lastUpdated": "2025-10-06T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/evaluations/tool-use-evals.md",
+      "slug": "evaluations/tool-use-evals",
+      "category": "evaluations",
+      "title": "Tool Use Evaluations",
+      "description": "Measure success rate per tool, categorize timeouts/errors, and find flaky behaviors.",
+      "audience_levels": [
+        "intermediate",
+        "advanced"
+      ],
+      "personas": [
+        "developer",
+        "PM"
+      ],
+      "categories": [
+        "evaluations"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "tools",
+        "function calling",
+        "evals",
+        "timeouts",
+        "errors"
+      ],
+      "related": [
+        "/docs/patterns/tools/function-calling.md",
+        "/docs/patterns/agentic/router-multi-tool.md"
+      ],
+      "sourcePath": "docs/evaluations/tool-use-evals.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/evaluations/tool-use-evals.md",
+      "min_read_minutes": 7,
+      "lastUpdated": "2025-10-06T00:00:00.000Z"
+    },
+    {
       "path": "/docs/examples/a2a-coordination.md",
       "slug": "examples/a2a-coordination",
       "category": "examples",
@@ -856,6 +856,296 @@
       "lastUpdated": "2025-02-14T00:00:00.000Z"
     },
     {
+      "path": "/docs/examples/data-science-notebook-helper.md",
+      "slug": "examples/data-science-notebook-helper",
+      "category": "examples",
+      "title": "Example: Data science notebook helper",
+      "description": "Assist analysts in Jupyter/Colab notebooks with code suggestions, data quality checks, and experiment tracking.",
+      "audience_levels": [
+        "beginner",
+        "intermediate",
+        "advanced"
+      ],
+      "personas": [
+        "data-analyst",
+        "developer",
+        "PM"
+      ],
+      "categories": [
+        "examples"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "notebook",
+        "data science",
+        "jupyter",
+        "analysis helper"
+      ],
+      "related": [
+        "/docs/examples/data-quality-qa.md",
+        "/docs/patterns/tool-use.md",
+        "/docs/evaluations/notebook-benchmarks.md"
+      ],
+      "sourcePath": "docs/examples/data-science-notebook-helper.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/examples/data-science-notebook-helper.md",
+      "min_read_minutes": 12,
+      "lastUpdated": "2025-02-15T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/examples/education-lesson-planner.md",
+      "slug": "examples/education-lesson-planner",
+      "category": "examples",
+      "title": "Example: Education lesson planner",
+      "description": "Create differentiated lesson plans aligned to learning objectives, assessments, and classroom constraints.",
+      "audience_levels": [
+        "beginner",
+        "intermediate"
+      ],
+      "personas": [
+        "education",
+        "PM",
+        "developer"
+      ],
+      "categories": [
+        "examples"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "lesson planning",
+        "education",
+        "differentiation",
+        "learning objectives"
+      ],
+      "related": [
+        "/docs/concepts/prompting-styles.md",
+        "/docs/examples/meeting-summarizer.md",
+        "/docs/safety/sensitive-data-handling.md"
+      ],
+      "sourcePath": "docs/examples/education-lesson-planner.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/examples/education-lesson-planner.md",
+      "min_read_minutes": 11,
+      "lastUpdated": "2025-02-15T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/examples/finance-expense-audit.md",
+      "slug": "examples/finance-expense-audit",
+      "category": "examples",
+      "title": "Example: Finance expense audit assistant",
+      "description": "Flag anomalous expenses, route high-risk items, and document review trails for finance teams.",
+      "audience_levels": [
+        "intermediate",
+        "advanced"
+      ],
+      "personas": [
+        "data-analyst",
+        "developer",
+        "admin"
+      ],
+      "categories": [
+        "examples"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "expense audit",
+        "anomaly detection",
+        "finance",
+        "approval workflow"
+      ],
+      "related": [
+        "/docs/patterns/tool-use.md",
+        "/docs/examples/data-quality-qa.md",
+        "/docs/concepts/safety-basics.md"
+      ],
+      "sourcePath": "docs/examples/finance-expense-audit.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/examples/finance-expense-audit.md",
+      "min_read_minutes": 12,
+      "lastUpdated": "2025-02-15T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/examples/healthcare-intake-assistant.md",
+      "slug": "examples/healthcare-intake-assistant",
+      "category": "examples",
+      "title": "Example: Healthcare intake assistant",
+      "description": "Collect patient intake details with consent prompts, triage hints, and privacy safeguards.",
+      "audience_levels": [
+        "intermediate",
+        "advanced"
+      ],
+      "personas": [
+        "healthcare",
+        "developer",
+        "admin"
+      ],
+      "categories": [
+        "examples"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "patient intake",
+        "healthcare ai",
+        "triage",
+        "hipaa"
+      ],
+      "related": [
+        "/docs/safety/sensitive-data-handling.md",
+        "/docs/concepts/structured-outputs.md",
+        "/docs/patterns/tool-use.md"
+      ],
+      "sourcePath": "docs/examples/healthcare-intake-assistant.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/examples/healthcare-intake-assistant.md",
+      "min_read_minutes": 12,
+      "lastUpdated": "2025-02-15T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/examples/hr-candidate-screen.md",
+      "slug": "examples/hr-candidate-screen",
+      "category": "examples",
+      "title": "Example: HR candidate screening assistant",
+      "description": "Summarize resumes, extract skills, and document fairness considerations before recruiter review.",
+      "audience_levels": [
+        "beginner",
+        "intermediate"
+      ],
+      "personas": [
+        "PM",
+        "developer",
+        "admin"
+      ],
+      "categories": [
+        "examples"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "resume screening",
+        "skills extraction",
+        "hr automation",
+        "fair hiring"
+      ],
+      "related": [
+        "/docs/concepts/ethics-responsible-ai.md",
+        "/docs/examples/meeting-summarizer.md",
+        "/docs/patterns/rag-overview.md"
+      ],
+      "sourcePath": "docs/examples/hr-candidate-screen.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/examples/hr-candidate-screen.md",
+      "min_read_minutes": 11,
+      "lastUpdated": "2025-02-15T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/examples/it-knowledge-bot.md",
+      "slug": "examples/it-knowledge-bot",
+      "category": "examples",
+      "title": "Example: IT knowledge base assistant",
+      "description": "Ground internal IT support answers in documented SOPs with citations and escalation logic.",
+      "audience_levels": [
+        "beginner",
+        "intermediate",
+        "advanced"
+      ],
+      "personas": [
+        "admin",
+        "developer",
+        "PM"
+      ],
+      "categories": [
+        "examples"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "IT support",
+        "knowledge base",
+        "retrieval",
+        "citations"
+      ],
+      "related": [
+        "/docs/patterns/rag-overview.md",
+        "/docs/examples/a2a-coordination.md",
+        "/docs/safety/sensitive-data-handling.md"
+      ],
+      "sourcePath": "docs/examples/it-knowledge-bot.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/examples/it-knowledge-bot.md",
+      "min_read_minutes": 13,
+      "lastUpdated": "2025-02-15T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/examples/legal-clause-extractor.md",
+      "slug": "examples/legal-clause-extractor",
+      "category": "examples",
+      "title": "Example: Legal clause extractor",
+      "description": "Identify and summarize contract clauses with structured outputs and human-in-the-loop review.",
+      "audience_levels": [
+        "intermediate",
+        "advanced"
+      ],
+      "personas": [
+        "legal",
+        "developer",
+        "PM"
+      ],
+      "categories": [
+        "examples"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "contract analysis",
+        "clause extraction",
+        "legal ai",
+        "document review"
+      ],
+      "related": [
+        "/docs/patterns/tool-use.md",
+        "/docs/concepts/structured-outputs.md",
+        "/docs/safety/compliance-disclosure.md"
+      ],
+      "sourcePath": "docs/examples/legal-clause-extractor.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/examples/legal-clause-extractor.md",
+      "min_read_minutes": 12,
+      "lastUpdated": "2025-02-15T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/examples/marketing-brief-generator.md",
+      "slug": "examples/marketing-brief-generator",
+      "category": "examples",
+      "title": "Example: Marketing campaign brief generator",
+      "description": "Compile product positioning, audience insights, and channel plans into a structured brief for creative teams.",
+      "audience_levels": [
+        "beginner",
+        "intermediate"
+      ],
+      "personas": [
+        "PM",
+        "marketing",
+        "developer"
+      ],
+      "categories": [
+        "examples"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "marketing brief",
+        "campaign planning",
+        "creative strategy",
+        "structured output"
+      ],
+      "related": [
+        "/docs/examples/content-drafter.md",
+        "/docs/concepts/structured-outputs.md",
+        "/docs/evaluations/rubric-prompts.md"
+      ],
+      "sourcePath": "docs/examples/marketing-brief-generator.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/examples/marketing-brief-generator.md",
+      "min_read_minutes": 11,
+      "lastUpdated": "2025-02-15T00:00:00.000Z"
+    },
+    {
       "path": "/docs/examples/meeting-summarizer.md",
       "slug": "examples/meeting-summarizer",
       "category": "examples",
@@ -923,6 +1213,150 @@
       "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/examples/provider-switching.md",
       "min_read_minutes": 9,
       "lastUpdated": "2025-10-08T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/examples/research-citation-checker.md",
+      "slug": "examples/research-citation-checker",
+      "category": "examples",
+      "title": "Example: Research citation checker",
+      "description": "Verify claims in research drafts by validating citations, detecting broken links, and surfacing primary sources.",
+      "audience_levels": [
+        "intermediate",
+        "advanced"
+      ],
+      "personas": [
+        "researcher",
+        "PM",
+        "developer"
+      ],
+      "categories": [
+        "examples"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "citation checking",
+        "research verification",
+        "source validation",
+        "reference qa"
+      ],
+      "related": [
+        "/docs/examples/data-quality-qa.md",
+        "/docs/patterns/rag-overview.md",
+        "/docs/evaluations/evidence-checks.md"
+      ],
+      "sourcePath": "docs/examples/research-citation-checker.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/examples/research-citation-checker.md",
+      "min_read_minutes": 12,
+      "lastUpdated": "2025-02-15T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/examples/sales-email-drafter.md",
+      "slug": "examples/sales-email-drafter",
+      "category": "examples",
+      "title": "Example: Sales email drafter",
+      "description": "Generate persona-aware outreach emails with compliance checkpoints and adaptive follow-ups.",
+      "audience_levels": [
+        "beginner",
+        "intermediate"
+      ],
+      "personas": [
+        "PM",
+        "developer",
+        "sales"
+      ],
+      "categories": [
+        "examples"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "sales outreach",
+        "email drafting",
+        "personalization",
+        "compliance"
+      ],
+      "related": [
+        "/docs/concepts/prompting-styles.md",
+        "/docs/examples/content-drafter.md",
+        "/docs/safety/compliance-disclosure.md"
+      ],
+      "sourcePath": "docs/examples/sales-email-drafter.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/examples/sales-email-drafter.md",
+      "min_read_minutes": 10,
+      "lastUpdated": "2025-02-15T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/examples/software-code-reviewer.md",
+      "slug": "examples/software-code-reviewer",
+      "category": "examples",
+      "title": "Example: Software code reviewer assistant",
+      "description": "Augment pull request reviews with static checks, test suggestions, and risk notes.",
+      "audience_levels": [
+        "intermediate",
+        "advanced"
+      ],
+      "personas": [
+        "developer",
+        "admin",
+        "PM"
+      ],
+      "categories": [
+        "examples"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "code review",
+        "pull requests",
+        "static analysis",
+        "ai reviewer"
+      ],
+      "related": [
+        "/docs/patterns/tool-use.md",
+        "/docs/examples/provider-switching.md",
+        "/docs/evaluations/automation-benchmarks.md"
+      ],
+      "sourcePath": "docs/examples/software-code-reviewer.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/examples/software-code-reviewer.md",
+      "min_read_minutes": 12,
+      "lastUpdated": "2025-02-15T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/examples/translation-qc.md",
+      "slug": "examples/translation-qc",
+      "category": "examples",
+      "title": "Example: Translation quality checker",
+      "description": "Evaluate multilingual content for accuracy, tone, and regulatory requirements before publication.",
+      "audience_levels": [
+        "intermediate",
+        "advanced"
+      ],
+      "personas": [
+        "PM",
+        "marketing",
+        "developer"
+      ],
+      "categories": [
+        "examples"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "translation",
+        "quality control",
+        "localization",
+        "multilingual ai"
+      ],
+      "related": [
+        "/docs/concepts/structured-outputs.md",
+        "/docs/examples/content-drafter.md",
+        "/docs/safety/compliance-disclosure.md"
+      ],
+      "sourcePath": "docs/examples/translation-qc.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/examples/translation-qc.md",
+      "min_read_minutes": 11,
+      "lastUpdated": "2025-02-15T00:00:00.000Z"
     },
     {
       "path": "/docs/patterns/a2a-agent-to-agent.md",
