@@ -1,8 +1,8 @@
 {
   "$schema": "./tools/schemas/manifest.schema.json",
   "version": "2025.10.1",
-  "generated_at": "2025-10-09T04:51:29.770Z",
-  "hash": "dc1dbc027cc54b38",
+  "generated_at": "2025-10-09T04:57:35.753Z",
+  "hash": "2b2ac0973e2bb514",
   "docs": [
     {
       "path": "/docs/index.md",
@@ -1501,6 +1501,42 @@
       "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
     {
+      "path": "/docs/tutorials/nextjs-vercel-prisma-sqlite.md",
+      "slug": "tutorials/nextjs-vercel-prisma-sqlite",
+      "category": "tutorials",
+      "title": "Next.js + Prisma + SQLite to Vercel deployment",
+      "description": "Build an App Router project backed by Prisma and SQLite, then deploy it to Vercel with environment-safe settings.",
+      "audience_levels": [
+        "intermediate",
+        "advanced"
+      ],
+      "personas": [
+        "developer"
+      ],
+      "categories": [
+        "tutorials"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "next.js prisma sqlite",
+        "vercel deployment guide",
+        "app router tutorial",
+        "next-auth sqlite",
+        "fullstack ai starter"
+      ],
+      "related": [
+        "/docs/quickstarts/js-server-route.md",
+        "/docs/tutorials/prisma-and-postgres-for-sessions.md",
+        "/docs/patterns/rag-starter.md",
+        "/docs/concepts/token-costs-latency.md"
+      ],
+      "sourcePath": "docs/tutorials/nextjs-vercel-prisma-sqlite.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/tutorials/nextjs-vercel-prisma-sqlite.md",
+      "min_read_minutes": 22,
+      "lastUpdated": "2025-02-14T00:00:00.000Z"
+    },
+    {
       "path": "/docs/tutorials/observability-end-to-end.md",
       "slug": "tutorials/observability-end-to-end",
       "category": "tutorials",
@@ -1603,6 +1639,42 @@
       "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/tutorials/production-hardening.md",
       "min_read_minutes": 13,
       "lastUpdated": "2025-10-06T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/tutorials/python-fastapi-sqlite-ai-service.md",
+      "slug": "tutorials/python-fastapi-sqlite-ai-service",
+      "category": "tutorials",
+      "title": "FastAPI + SQLite AI session service",
+      "description": "Build a FastAPI backend that stores chat sessions in SQLite, calls an AI provider with retries, and exposes a typed API.",
+      "audience_levels": [
+        "intermediate"
+      ],
+      "personas": [
+        "developer",
+        "data-analyst"
+      ],
+      "categories": [
+        "tutorials"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "fastapi sqlite tutorial",
+        "llm session storage",
+        "openai retry backoff",
+        "pydantic schema",
+        "alembic migrations"
+      ],
+      "related": [
+        "/docs/quickstarts/python-fastapi.md",
+        "/docs/examples/meeting-summarizer.md",
+        "/docs/patterns/rag-starter.md",
+        "/docs/concepts/structured-outputs.md"
+      ],
+      "sourcePath": "docs/tutorials/python-fastapi-sqlite-ai-service.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/tutorials/python-fastapi-sqlite-ai-service.md",
+      "min_read_minutes": 24,
+      "lastUpdated": "2025-02-14T00:00:00.000Z"
     },
     {
       "path": "/docs/tutorials/rag-starter.md",
