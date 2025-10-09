@@ -312,22 +312,22 @@ Keep arrays deduped; include at least one category; use `primary_category` if yo
     - Purpose: Assist with chart/spec generation and narrative insights for Qlik Cloud and Power BI.
     - Audience: PM, data‑analyst.
     - Success: propose visuals from a dataset and produce a short narrative with caveats.
-76. [ ] /docs/examples/finance-expense-audit.md
+76. [qa ready] /docs/examples/finance-expense-audit.md
     - Purpose: Detect anomalies and route to human review.
-77. [ ] /docs/examples/hr-candidate-screen.md
+77. [qa ready] /docs/examples/hr-candidate-screen.md
     - Purpose: Summarize resumes; extract skills; fairness caveats.
-78. [ ] /docs/examples/it-knowledge-bot.md
+78. [qa ready] /docs/examples/it-knowledge-bot.md
     - Purpose: Retrieval over internal docs; citations.
-79. [ ] /docs/examples/sales-email-drafter.md
+79. [qa ready] /docs/examples/sales-email-drafter.md
     - Purpose: Persona‑aware outreach; compliance checkpoints.
-80. [ ] /docs/examples/marketing-brief-generator.md
-81. [ ] /docs/examples/legal-clause-extractor.md
-82. [ ] /docs/examples/education-lesson-planner.md
-83. [ ] /docs/examples/healthcare-intake-assistant.md (privacy notes)
-84. [ ] /docs/examples/software-code-reviewer.md (LLM tips + static checks)
-85. [ ] /docs/examples/data-science-notebook-helper.md
-86. [ ] /docs/examples/translation-qc.md
-87. [ ] /docs/examples/research-citation-checker.md
+80. [qa ready] /docs/examples/marketing-brief-generator.md
+81. [qa ready] /docs/examples/legal-clause-extractor.md
+82. [qa ready] /docs/examples/education-lesson-planner.md
+83. [qa ready] /docs/examples/healthcare-intake-assistant.md (privacy notes)
+84. [qa ready] /docs/examples/software-code-reviewer.md (LLM tips + static checks)
+85. [qa ready] /docs/examples/data-science-notebook-helper.md
+86. [qa ready] /docs/examples/translation-qc.md
+87. [qa ready] /docs/examples/research-citation-checker.md
 
 ---
 
