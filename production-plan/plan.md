@@ -143,28 +143,28 @@ Keep arrays deduped; include at least one category; use `primary_category` if yo
     - Purpose: Model lineup (o3, gpt‑4o‑mini, gpt‑4.1), tokens, vision/audio, tools.
     - Success: selection guidance by latency/cost and quality bands.
 
-18. [ ] /docs/providers/anthropic/overview.md (expand)
+18. [qa ready] /docs/providers/anthropic/overview.md (expand)
     - Purpose: Claude models; tool use; safety settings.
 
 19. [qa ready] /docs/providers/azure-openai/setup.md (expand)
     - Purpose: Azure specifics; deployment vs model; region/capacity notes.
 
-20. [ ] /docs/providers/azure-openai/migrate-from-openai.md (expand)
+20. [qa ready] /docs/providers/azure-openai/migrate-from-openai.md (expand)
     - Purpose: Mapping of parameters; common pitfalls and fixes.
 
-21. [ ] /docs/providers/gemini/overview.md
+21. [qa ready] /docs/providers/gemini/overview.md
     - Purpose: Google Gemini models; API basics; multimodal examples.
     - Audience: developer.
     - Success: text+image prompt and function‑call sample.
 
-22. [ ] /docs/providers/meta-llama/overview.md
+22. [qa ready] /docs/providers/meta-llama/overview.md
     - Purpose: Meta Llama model families; when to consider open weights.
     - Success: request examples via selected hosts (e.g., together.ai/Fireworks).
 
-23. [ ] /docs/providers/mistral/overview.md
+23. [qa ready] /docs/providers/mistral/overview.md
     - Purpose: Mistral models; pricing and strengths.
 
-24. [ ] /docs/providers/cohere/overview.md
+24. [qa ready] /docs/providers/cohere/overview.md
     - Purpose: Command/Rerank models; embeddings quality notes.
 
 25. [ ] /docs/concepts/embeddings.md
