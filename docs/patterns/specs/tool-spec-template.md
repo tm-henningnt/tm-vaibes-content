@@ -5,7 +5,7 @@ audience_levels: ["intermediate", "advanced"]
 personas: ["developer"]
 categories: ["patterns"]
 min_read_minutes: 11
-last_reviewed: 2025-02-17
+last_reviewed: 2025-03-18
 related:
   [
     "/docs/patterns/tools/function-calling.md",
@@ -25,7 +25,7 @@ show_toc: true
 
 ## Purpose of a tool spec
 
-Tool specs turn opaque API calls into auditable contracts. They describe inputs, outputs, side effects, retries, and failure handling so LLM agents can invoke tools safely. A well-structured spec prevents duplicate tickets, enforces least privilege, and accelerates reviews with legal and compliance teams.【F:docs/patterns/specs/tool-spec-template.md†L45-L140】
+Tool specs turn opaque API calls into auditable contracts. They describe inputs, outputs, side effects, retries, and failure handling so LLM agents can invoke tools safely. A well-structured spec prevents duplicate tickets, enforces least privilege, and accelerates reviews with legal and compliance teams.
 
 ## Anatomy of a tool spec
 
@@ -79,7 +79,7 @@ request:
       maxItems: 5
 ```
 
-Include validation snippets for server-side enforcement (e.g., Zod schema, Pydantic model). Reference the same schema when registering tools with OpenAI or Anthropic to keep definitions synchronized.【F:docs/patterns/agentic/router-multi-tool.md†L67-L120】
+Include validation snippets for server-side enforcement (e.g., Zod schema, Pydantic model). Reference the same schema when registering tools with OpenAI or Anthropic to keep definitions synchronized, as shown in the planner/executor example in [/docs/patterns/agentic/router-multi-tool.md](/docs/patterns/agentic/router-multi-tool.md).
 
 ## Response schema
 

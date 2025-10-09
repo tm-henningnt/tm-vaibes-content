@@ -5,7 +5,7 @@ audience_levels: ["intermediate", "advanced"]
 personas: ["developer", "PM"]
 categories: ["patterns", "evaluations"]
 min_read_minutes: 10
-last_reviewed: 2025-02-17
+last_reviewed: 2025-03-18
 related:
   [
     "/docs/evaluations/overview.md",
@@ -25,7 +25,7 @@ show_toc: true
 
 ## Why evaluation specs matter
 
-Without a shared template, evaluation results become hard to reproduce and compare. Evaluation specs formalize the metrics, datasets, thresholds, and reviewer procedures so teams can assess prompts, tools, and models consistently over time.【F:docs/patterns/specs/eval-spec-template.md†L45-L118】
+Without a shared template, evaluation results become hard to reproduce and compare. Evaluation specs formalize the metrics, datasets, thresholds, and reviewer procedures so teams can assess prompts, tools, and models consistently over time. Link each spec to the automation practices described in [/docs/patterns/rag/evals-hook.md](/docs/patterns/rag/evals-hook.md) so regression testing remains continuous.
 
 ## Template overview
 

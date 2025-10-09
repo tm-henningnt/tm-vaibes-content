@@ -225,17 +225,17 @@ Keep arrays deduped; include at least one category; use `primary_category` if yo
 44. [qa ready] /docs/patterns/observability-context.md (expand)
     - Purpose: What to log; IDs; redaction; privacy notes.
 
-45. [qa ready] /docs/patterns/specs/prompt-spec-template.md
+45. [qa ready ✅ 2025-03-18] /docs/patterns/specs/prompt-spec-template.md
     - Purpose: A lightweight prompt spec format (intent, inputs/outputs, constraints, eval hooks, risks).
     - Audience: developer, PM.
     - Success: reproducible prompt artifacts that plug into evals.
 
-46. [qa ready] /docs/patterns/specs/tool-spec-template.md
+46. [qa ready ✅ 2025-03-18] /docs/patterns/specs/tool-spec-template.md
     - Purpose: Tool contract template (schema, idempotency, timeout/retry behavior, errors).
     - Audience: developer.
     - Success: coherent, testable tool definitions across providers.
 
-47. [qa ready] /docs/patterns/specs/eval-spec-template.md
+47. [qa ready ✅ 2025-03-18] /docs/patterns/specs/eval-spec-template.md
     - Purpose: Evaluation spec (metrics, datasets, thresholds, review cadence).
     - Audience: developer, PM.
     - Success: teams can run the same evals and compare results apples‑to‑apples.
