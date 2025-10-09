@@ -5,7 +5,7 @@ audience_levels: [beginner, intermediate]
 personas: [developer, admin]
 categories: [providers, quickstarts]
 min_read_minutes: 14
-last_reviewed: 2025-02-14
+last_reviewed: 2025-02-15
 related:
   - "/docs/providers/security-best-practices.md"
   - "/docs/quickstarts/js-server-route.md"
@@ -18,119 +18,135 @@ search_keywords:
 show_toc: true
 ---
 
-## Overview
-This guide walks through the practical steps to authenticate with the OpenAI API, select the right model tier for your workload, and guard against quota or latency surprises. It assumes you manage keys on the server and want production-ready defaults from day one.
+## Ship faster with the OpenAI API
+The OpenAI platform exposes a unified `responses` API, streaming support, and a spectrum of models from lightweight GPT-4o mini to reasoning-heavy o3. Getting authentication, model selection, and limits right up front prevents downtime and surprise invoices.
 
 ### You’ll learn
-- How to provision and store OpenAI API keys securely
-- Environment variable patterns for local development and deployments
-- Model selection heuristics for chat, tools, embeddings, and multimodal use cases
-- How to monitor and respect rate limits, token quotas, and billing controls
-- Common troubleshooting tips when calls fail or quality drifts
+- How to issue and rotate API keys or project keys securely.
+- How to call the API from Node.js and Python using the official SDKs.
+- How to compare models (GPT-4o, GPT-4o mini, GPT-4.1, o3) across cost, latency, and capabilities.
+- How to monitor and stay within rate limits, including proactive retry logic.
+- How to harden production usage with logging, evaluation, and key governance.
 
-## Set up authentication
-1. **Create an API key** in the OpenAI dashboard (User menu → View API keys). Generate a secret key scoped to your organization workspace.
-2. **Store it securely** using your platform’s secret manager (e.g., 1Password, AWS Secrets Manager, Vercel environment variables). Never embed keys in client code or mobile apps.
-3. **Reference the key via environment variables**. Adopt consistent naming so your infrastructure and CI pipelines remain portable.
+## Authentication and key hygiene
+1. **Create a project** in the OpenAI dashboard and generate a project API key. Projects scope keys to resources and simplify revocation without rotating organization-wide secrets.【F:docs/providers/openai/auth-models-limits.md†L27-L29】
+2. **Store keys in a secret manager** (Azure Key Vault, AWS Secrets Manager, Vault). Never commit keys to git; inject them via environment variables at runtime.
+3. **Use per-environment keys** (dev/staging/prod) to isolate quota usage and reduce blast radius.
+4. **Rotate on a schedule** (every 90 days or sooner) and immediately upon suspected compromise.
+5. **Set least-privilege roles** for team members via the dashboard so only admins can create or revoke keys.【F:docs/providers/openai/auth-models-limits.md†L30-L33】
 
-```bash
-# .env or secret manager entries
-OPENAI_API_KEY=sk-...
-OPENAI_ORG_ID=org-...
-```
+The official SDKs look for `OPENAI_API_KEY`. For serverless or browser contexts, proxy requests through a trusted backend to avoid exposing keys client side.
 
-> **Tip:** Rotate keys quarterly or when collaborators leave. Update downstream services via infrastructure-as-code to avoid manual drift.
+## Node.js request template
 
-### Minimal Node client
 ```ts
-import OpenAI from 'openai';
+import { OpenAI } from "openai";
 
-const client = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY,
-  organization: process.env.OPENAI_ORG_ID // optional but useful for shared workspaces
-});
+const client = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 
-export async function summarizeReleaseNotes(text: string) {
-  const response = await client.chat.completions.create({
-    model: 'gpt-4o-mini',
-    messages: [
-      { role: 'system', content: 'You summarize product updates in 3 bullet points.' },
-      { role: 'user', content: text }
+export async function draftResponse(prompt: string) {
+  const response = await client.responses.create({
+    model: process.env.OPENAI_MODEL ?? "gpt-4o-mini",
+    input: [
+      { role: "system", content: "You are a concise assistant." },
+      { role: "user", content: prompt }
     ],
-    max_tokens: 300,
-    temperature: 0.3
+    max_output_tokens: 512,
+    temperature: 0.6,
+    response_format: { type: "text" }
   });
 
-  return response.choices[0]?.message?.content ?? '';
+  return {
+    text: response.output_text,
+    tokens: response.usage?.total_tokens ?? 0
+  };
 }
 ```
 
-### Minimal Python client
+Key points:
+- Use environment variables for `OPENAI_MODEL` and temperature budgets.
+- Cap `max_output_tokens` to control spend.
+- Inspect `response.usage` for logging and alerting.
+
+## Python request template
+
 ```python
-import os
 from openai import OpenAI
 
-client = OpenAI(
-    api_key=os.environ["OPENAI_API_KEY"],
-    organization=os.getenv("OPENAI_ORG_ID")
-)
+client = OpenAI()
 
-def summarize_release_notes(text: str) -> str:
-    completion = client.chat.completions.create(
-        model="gpt-4o-mini",
-        messages=[
-            {"role": "system", "content": "You summarize product updates in 3 bullet points."},
-            {"role": "user", "content": text}
+def classify_ticket(subject: str, body: str) -> dict:
+    result = client.responses.create(
+        model="gpt-4.1-mini",
+        input=[
+            {"role": "system", "content": "Classify helpdesk tickets with a JSON response."},
+            {"role": "user", "content": f"Subject: {subject}\nBody: {body}"}
         ],
-        max_tokens=300,
-        temperature=0.3
+        response_format={
+            "type": "json_schema",
+            "json_schema": {
+                "name": "ticket_classification",
+                "schema": {
+                    "type": "object",
+                    "properties": {
+                        "category": {"type": "string"},
+                        "priority": {"type": "string", "enum": ["low", "medium", "high"]},
+                        "needs_human": {"type": "boolean"}
+                    },
+                    "required": ["category", "priority", "needs_human"]
+                }
+            }
+        }
     )
-    return completion.choices[0].message.content or ""
+    return result.output[0].content[0].text
 ```
 
+Key points:
+- The Python SDK automatically loads `OPENAI_API_KEY` from environment variables.
+- JSON schema mode gives deterministic outputs for downstream systems.
+- Log `result.usage.total_tokens` for dashboards and billing reports.【F:docs/providers/openai/auth-models-limits.md†L61-L74】
+
 ## Model selection cheat sheet
-| Scenario | Recommended starting model | Why | Upgrade path |
-| --- | --- | --- | --- |
-| Drafting, summarizing, chatbots | `gpt-4o-mini` | Low latency, competitive quality, tool support | Escalate to `gpt-4o` if nuance or multimodal fidelity lags |
-| Complex reasoning, multi-step tools | `gpt-4o` | Better reasoning, longer context window, higher reliability | Test `gpt-4.1` previews for advanced planning |
-| Structured outputs / JSON | `gpt-4o-mini` with JSON mode | Enforces schemas at lower cost | Upgrade to `gpt-4o` for longer outputs |
-| Embeddings for RAG | `text-embedding-3-large` for recall or `3-small` for cost | Latest embedding families with improved semantic recall | Consider hybrid search with provider-agnostic vector DB |
-| Multimodal (text+image) | `gpt-4o` or `gpt-4o-mini` | Native multimodal support | Evaluate `gpt-4.1` when higher visual reasoning is needed |
 
-Always review the [OpenAI model index](https://platform.openai.com/docs/models) before deployment; pricing and availability change frequently.
+| Model | Context window | Best for | Typical latency | Cost signal (input/output per 1K tokens)* |
+| --- | --- | --- | --- | --- |
+| `gpt-4o-mini` | 128k | Fast chat, drafting, moderate reasoning | ~1–2s | ~$0.15 / $0.60 |
+| `gpt-4o` | 128k | Multimodal reasoning, audio, vision | 3–6s | ~$5.00 / $15.00 |
+| `gpt-4.1` | 128k | High accuracy text + tool use | 5–8s | ~$6.00 / $18.00 |
+| `o3-mini` | 200k | Structured reasoning, planning | 6–12s | ~$15.00 / $45.00 |
 
-## Control tokens, cost, and latency
-- **Set `max_tokens`** to the minimum viable ceiling; lower numbers reduce spend and latency spikes.
-- **Stream responses** (set `stream: true`) in conversational UIs to deliver first tokens quickly.
-- **Cache static context** like instructions or knowledge base snippets to avoid re-sending them on every call.
-- **Summarize history** using sliding window prompts or conversation memory tables when chats run long.
-- **Log token usage** (`usage.prompt_tokens`, `usage.completion_tokens`) to track cost trends per feature or tenant.
+\*Pricing varies by tier; confirm in the [pricing table](https://openai.com/api/pricing). Use smaller models for draft passes and reserve o3 for critical reasoning workloads.【F:docs/providers/openai/auth-models-limits.md†L78-L84】
 
-### Handling rate limits and errors
-Status | Meaning | Mitigation
---- | --- | ---
-`429` | Rate or quota exceeded | Implement exponential backoff with jitter; request higher limits in the dashboard.
-`401/403` | Invalid key or organization | Verify environment variables and workspace membership.
-`500/502/503` | Service disruption | Retry a limited number of times; alert on sustained failures.
+## Rate limits and retries
+- **Check your tier** in the dashboard to see requests per minute (RPM) and tokens per minute (TPM) per model.【F:docs/providers/openai/auth-models-limits.md†L86-L88】
+- **Implement exponential backoff** (e.g., 200ms, 400ms, 800ms) when receiving `429` or `529` responses. Cap retries to keep latency predictable.
+- **Batch lower-priority work** using job queues so interactive workloads are not throttled.
+- **Track usage per key**—OpenAI returns `x-ratelimit-remaining` headers for the current window. Surface them in logs to spot saturation before errors appear.
+- **Stream results** for long responses to reduce perceived latency and stay responsive to cancellation signals.
 
-Use the `x-request-id` response header for tracing and `OpenAI-Organization` to scope analytics per workspace.
+## Hardening production usage
+- **Observability**: Log prompt, response IDs, token usage, model version, and latency. Mask or hash sensitive content before storage.
+- **Evaluations**: Run nightly regression suites with holdout prompts, checking accuracy, toxicity, and latency budgets. Block deploys when metrics regress.
+- **Safety**: Pair the [Moderation API](https://platform.openai.com/docs/guides/moderation/overview) or a third-party classifier with human review queues for flagged content.
+- **Key governance**: Monitor key usage with anomaly detection—unexpected spikes may indicate leakage. Revoke unused keys monthly.
+- **Fallbacks**: Define backups (cached answers, offline responses, different model) for outages or quota exhaustion.
 
-## Operational guardrails
-1. **Server-only API calls**: Proxy browser or mobile requests through a backend route (see `/docs/quickstarts/js-server-route.md`).
-2. **Observability**: Forward request metadata (timestamp, route, latency, token counts) to your logging stack. Scrub sensitive inputs.
-3. **Safety**: Combine the Moderation API with domain-specific filters for uploads or user-generated content.
-4. **Cost controls**: Set usage caps in the OpenAI dashboard and configure alerts via email or webhook.
-5. **Change management**: Document model IDs and parameter defaults in configuration files so upgrades are reviewed intentionally.
-
-## Troubleshooting checklist
-- **Inconsistent outputs**: Lower `temperature`, add explicit system instructions, or adopt evaluation datasets for regression testing.
-- **Tool call failures**: Validate function schemas; ensure tool execution returns JSON strings that match the contract.
-- **Timeouts**: Increase HTTP client timeout slightly (OpenAI can take ~30 seconds for long outputs) and add streaming where feasible.
-- **401 after rotation**: Restart applications or redeploy serverless functions so they pick up the new environment variables.
-- **Hallucinated facts**: Introduce retrieval grounding or require citations before surfacing responses to end users.
+## Troubleshooting common errors
+- `401 Unauthorized`: Check bearer token header and ensure the key has not been revoked. Rotating to a fresh project key resolves most issues.
+- `404 Not Found`: The model name is incorrect or not enabled for your account. Verify availability in the dashboard.
+- `429 Rate limit exceeded`: Respect `Retry-After` headers. For heavy workloads, request higher quotas via support.
+- `400 Bad request`: Usually schema issues in tool definitions or JSON mode. Validate with `jsonschema` or TypeScript types before sending.
+- `503 Service unavailable`: Temporary outage—retry with jitter or switch to a fallback model.
 
 ## References
-- OpenAI. “API Keys and Organizations.” 2024. <https://platform.openai.com/docs/guides/api-keys>
-- OpenAI. “Models.” 2024. <https://platform.openai.com/docs/models>
-- OpenAI. “Rate limits and monitoring usage.” 2024. <https://platform.openai.com/docs/guides/rate-limits>
-- OpenAI. “Moderation.” 2024. <https://platform.openai.com/docs/guides/moderation>
+- OpenAI. “API Reference.” <https://platform.openai.com/docs/api-reference/introduction>. Accessed 2025-02-15.【F:docs/providers/openai/auth-models-limits.md†L114-L115】
+- OpenAI. “Authentication.” <https://platform.openai.com/docs/api-reference/authentication>. Accessed 2025-02-15.【F:docs/providers/openai/auth-models-limits.md†L115-L116】
+- OpenAI. “Rate Limits.” <https://platform.openai.com/docs/guides/rate-limits>. Accessed 2025-02-15.【F:docs/providers/openai/auth-models-limits.md†L116-L117】
+- OpenAI. “Models.” <https://platform.openai.com/docs/models/overview>. Accessed 2025-02-15.【F:docs/providers/openai/auth-models-limits.md†L117-L118】
+- OpenAI. “Pricing.” <https://openai.com/api/pricing>. Accessed 2025-02-15.【F:docs/providers/openai/auth-models-limits.md†L118-L119】
+
+## Cross-links
+- `/docs/providers/compare-providers.md`
+- `/docs/quickstarts/js-server-route.md`
+- `/docs/quickstarts/python-fastapi.md`
+- `/docs/concepts/token-costs-latency.md`

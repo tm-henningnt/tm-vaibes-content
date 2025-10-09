@@ -1,8 +1,8 @@
 {
   "$schema": "./tools/schemas/manifest.schema.json",
   "version": "2025.10.1",
-  "generated_at": "2025-10-09T05:53:47.545Z",
-  "hash": "d62df408307b518d",
+  "generated_at": "2025-10-09T06:10:27.765Z",
+  "hash": "e9fa26a94d8edf91",
   "docs": [
     {
       "path": "/docs/index.md",
@@ -1499,7 +1499,7 @@
       "sourcePath": "docs/providers/compare-providers.md",
       "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/providers/compare-providers.md",
       "min_read_minutes": 12,
-      "lastUpdated": "2025-02-14T00:00:00.000Z"
+      "lastUpdated": "2025-02-15T00:00:00.000Z"
     },
     {
       "path": "/docs/providers/security-best-practices.md",
@@ -2667,7 +2667,7 @@
       "sourcePath": "docs/providers/azure-openai/setup.md",
       "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/providers/azure-openai/setup.md",
       "min_read_minutes": 15,
-      "lastUpdated": "2025-02-14T00:00:00.000Z"
+      "lastUpdated": "2025-02-15T00:00:00.000Z"
     },
     {
       "path": "/docs/providers/gemini/overview.md",
@@ -2739,7 +2739,7 @@
       "sourcePath": "docs/providers/openai/auth-models-limits.md",
       "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/providers/openai/auth-models-limits.md",
       "min_read_minutes": 14,
-      "lastUpdated": "2025-02-14T00:00:00.000Z"
+      "lastUpdated": "2025-02-15T00:00:00.000Z"
     },
     {
       "path": "/docs/providers/openai/chatgpt-productivity.md",
