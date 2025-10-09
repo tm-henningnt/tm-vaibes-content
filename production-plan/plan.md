@@ -280,15 +280,15 @@ Keep arrays deduped; include at least one category; use `primary_category` if yo
     - Purpose: Effective prompting for code assistance (diffs, patches, refactors, debugging) in ChatGPT.
     - Audience: developer.
     - Success: readers drive iterative code changes with clear prompts and guardrails.
-68. [ ] /docs/tutorials/chatgpt-business/data-analysis-and-files.md
+68. [qa ready] /docs/tutorials/chatgpt-business/data-analysis-and-files.md
     - Purpose: Use file uploads, charts, and data analysis features safely (PII caveats) within ChatGPT.
     - Audience: PM, data-analyst, developer.
     - Success: analyze a CSV, generate a chart, and summarize insights with correctness checks.
-69. [ ] /docs/tutorials/chatgpt-business/custom-gpts-and-policies.md
+69. [qa ready] /docs/tutorials/chatgpt-business/custom-gpts-and-policies.md
     - Purpose: Create and govern custom GPTs for teams: instructions, actions, and safe sharing.
     - Audience: developer, PM.
     - Success: publish a custom GPT with a narrow scope and clear usage notes.
-70. [ ] /docs/tutorials/chatgpt-business/canvas-mini-apps.md
+70. [qa ready] /docs/tutorials/chatgpt-business/canvas-mini-apps.md
     - Purpose: Build a mini app in Canvas that calls provider APIs (mocked locally), then export to Next.js/Python.
     - Audience: developer.
     - Success: working minimal app exported from Canvas and run locally.
