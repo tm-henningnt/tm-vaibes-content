@@ -1,8 +1,8 @@
 {
   "$schema": "./tools/schemas/manifest.schema.json",
   "version": "2025.10.1",
-  "generated_at": "2025-10-09T09:05:50.321Z",
-  "hash": "940c27d521c7e0a2",
+  "generated_at": "2025-10-09T11:00:53.939Z",
+  "hash": "c4291e9565e98c6a",
   "docs": [
     {
       "path": "/docs/index.md",
@@ -1449,6 +1449,43 @@
       "lastUpdated": "2025-02-15T00:00:00.000Z"
     },
     {
+      "path": "/docs/examples/toolformer-style-extraction.md",
+      "slug": "examples/toolformer-style-extraction",
+      "category": "examples",
+      "title": "Example: Toolformer-style information extractor",
+      "description": "Teach an LLM to trigger data-extraction tools only when useful, combining free-form reasoning with structured outputs.",
+      "audience_levels": [
+        "intermediate",
+        "advanced"
+      ],
+      "personas": [
+        "developer",
+        "data-analyst"
+      ],
+      "categories": [
+        "examples"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "toolformer",
+        "information extraction",
+        "tool calling",
+        "entity extraction",
+        "structured output"
+      ],
+      "related": [
+        "/docs/patterns/tools/function-calling.md",
+        "/docs/patterns/agentic/planner-executor.md",
+        "/docs/concepts/structured-outputs.md",
+        "/docs/examples/data-quality-qa.md"
+      ],
+      "sourcePath": "docs/examples/toolformer-style-extraction.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/examples/toolformer-style-extraction.md",
+      "min_read_minutes": 17,
+      "lastUpdated": "2024-06-07T00:00:00.000Z"
+    },
+    {
       "path": "/docs/examples/translation-qc.md",
       "slug": "examples/translation-qc",
       "category": "examples",
@@ -1701,81 +1738,6 @@
       "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
     {
-      "path": "/docs/providers/compare-providers.md",
-      "slug": "providers/compare-providers",
-      "category": "providers",
-      "title": "Compare Providers: Request Shapes and Tradeoffs",
-      "description": "Contrast OpenAI, Azure OpenAI, and Anthropic across authentication, request formats, safety levers, and operational considerations.",
-      "audience_levels": [
-        "beginner",
-        "intermediate"
-      ],
-      "personas": [
-        "PM",
-        "developer",
-        "admin"
-      ],
-      "categories": [
-        "providers",
-        "concepts"
-      ],
-      "tags": [],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "compare providers",
-        "openai vs anthropic",
-        "azure openai",
-        "llm request patterns"
-      ],
-      "related": [
-        "/docs/providers/openai/auth-models-limits.md",
-        "/docs/providers/anthropic/overview.md",
-        "/docs/providers/azure-openai/setup.md"
-      ],
-      "sourcePath": "docs/providers/compare-providers.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/providers/compare-providers.md",
-      "min_read_minutes": 12,
-      "lastUpdated": "2025-02-15T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/providers/security-best-practices.md",
-      "slug": "providers/security-best-practices",
-      "category": "providers",
-      "title": "Security Best Practices for AI Providers",
-      "description": "Handle keys, proxies, rotation, and logging safely across environments.",
-      "audience_levels": [
-        "intermediate",
-        "advanced"
-      ],
-      "personas": [
-        "developer",
-        "admin"
-      ],
-      "categories": [
-        "providers",
-        "operations",
-        "safety"
-      ],
-      "tags": [],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "api key handling",
-        "secrets",
-        "key rotation",
-        "proxy",
-        "redaction"
-      ],
-      "related": [
-        "/docs/providers/openai/auth-models-limits.md",
-        "/docs/safety/prompt-safety.md",
-        "/docs/evaluations/latency-cost-tradeoffs.md"
-      ],
-      "sourcePath": "docs/providers/security-best-practices.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/providers/security-best-practices.md",
-      "min_read_minutes": 9,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
-    },
-    {
       "path": "/docs/quickstarts/first-idea.md",
       "slug": "quickstarts/first-idea",
       "category": "quickstarts",
@@ -1920,6 +1882,81 @@
       "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/quickstarts/try-genai-in-10-min.md",
       "min_read_minutes": 10,
       "lastUpdated": "2025-03-15T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/providers/compare-providers.md",
+      "slug": "providers/compare-providers",
+      "category": "providers",
+      "title": "Compare Providers: Request Shapes and Tradeoffs",
+      "description": "Contrast OpenAI, Azure OpenAI, and Anthropic across authentication, request formats, safety levers, and operational considerations.",
+      "audience_levels": [
+        "beginner",
+        "intermediate"
+      ],
+      "personas": [
+        "PM",
+        "developer",
+        "admin"
+      ],
+      "categories": [
+        "providers",
+        "concepts"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "compare providers",
+        "openai vs anthropic",
+        "azure openai",
+        "llm request patterns"
+      ],
+      "related": [
+        "/docs/providers/openai/auth-models-limits.md",
+        "/docs/providers/anthropic/overview.md",
+        "/docs/providers/azure-openai/setup.md"
+      ],
+      "sourcePath": "docs/providers/compare-providers.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/providers/compare-providers.md",
+      "min_read_minutes": 12,
+      "lastUpdated": "2025-02-15T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/providers/security-best-practices.md",
+      "slug": "providers/security-best-practices",
+      "category": "providers",
+      "title": "Security Best Practices for AI Providers",
+      "description": "Handle keys, proxies, rotation, and logging safely across environments.",
+      "audience_levels": [
+        "intermediate",
+        "advanced"
+      ],
+      "personas": [
+        "developer",
+        "admin"
+      ],
+      "categories": [
+        "providers",
+        "operations",
+        "safety"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "api key handling",
+        "secrets",
+        "key rotation",
+        "proxy",
+        "redaction"
+      ],
+      "related": [
+        "/docs/providers/openai/auth-models-limits.md",
+        "/docs/safety/prompt-safety.md",
+        "/docs/evaluations/latency-cost-tradeoffs.md"
+      ],
+      "sourcePath": "docs/providers/security-best-practices.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/providers/security-best-practices.md",
+      "min_read_minutes": 9,
+      "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
     {
       "path": "/docs/safety/human-in-the-loop.md",
@@ -2495,8 +2532,8 @@
       "path": "/docs/patterns/agentic/planner-executor.md",
       "slug": "patterns/agentic/planner-executor",
       "category": "patterns",
-      "title": "Pattern: Planner–Executor",
-      "description": "A classic agent loop where a planner decides next steps and an executor performs them with tools.",
+      "title": "Pattern: Planner–executor agent loop",
+      "description": "Coordinate a planning model with specialized executors, tools, and guardrails for multi-step tasks.",
       "audience_levels": [
         "intermediate",
         "advanced"
@@ -2508,18 +2545,25 @@
       "categories": [
         "patterns"
       ],
-      "tags": [
-        "agent",
-        "planner",
-        "tools"
-      ],
+      "tags": [],
       "relatedProjectTypes": [],
-      "search_keywords": [],
-      "related": [],
+      "search_keywords": [
+        "planner executor",
+        "agent pattern",
+        "task decomposition",
+        "tool orchestration",
+        "llm planning"
+      ],
+      "related": [
+        "/docs/concepts/genai-vs-agentic.md",
+        "/docs/patterns/tools/function-calling.md",
+        "/docs/patterns/observability-context.md",
+        "/docs/examples/meeting-summarizer.md"
+      ],
       "sourcePath": "docs/patterns/agentic/planner-executor.md",
       "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/patterns/agentic/planner-executor.md",
-      "min_read_minutes": 12,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
+      "min_read_minutes": 20,
+      "lastUpdated": "2024-06-07T00:00:00.000Z"
     },
     {
       "path": "/docs/patterns/agentic/reflection-self-heal.md",
@@ -2591,6 +2635,45 @@
       "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/patterns/agentic/router-multi-tool.md",
       "min_read_minutes": 9,
       "lastUpdated": "2025-10-06T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/patterns/prompting/recipes.md",
+      "slug": "patterns/prompting/recipes",
+      "category": "patterns",
+      "title": "Prompting recipe patterns",
+      "description": "A reusable library of prompt templates for instruction following, reasoning, critique, and retrieval-backed tasks.",
+      "audience_levels": [
+        "beginner",
+        "intermediate",
+        "advanced"
+      ],
+      "personas": [
+        "PM",
+        "developer",
+        "data-analyst"
+      ],
+      "categories": [
+        "patterns"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "prompt recipes",
+        "instruction prompt",
+        "chain of thought",
+        "critique repair",
+        "retrieval prompting"
+      ],
+      "related": [
+        "/docs/concepts/prompting-styles.md",
+        "/docs/patterns/specs/prompt-spec-template.md",
+        "/docs/examples/content-drafter.md",
+        "/docs/patterns/tools/function-calling.md"
+      ],
+      "sourcePath": "docs/patterns/prompting/recipes.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/patterns/prompting/recipes.md",
+      "min_read_minutes": 19,
+      "lastUpdated": "2024-06-07T00:00:00.000Z"
     },
     {
       "path": "/docs/patterns/rag/basics.md",
@@ -2733,14 +2816,15 @@
       "path": "/docs/patterns/tools/function-calling.md",
       "slug": "patterns/tools/function-calling",
       "category": "patterns",
-      "title": "Cross‑Provider Tool/Function Calling",
-      "description": "Design schemas, ensure idempotency, and propagate errors consistently across providers.",
+      "title": "Cross-provider tool calling pattern",
+      "description": "Design robust JSON schemas, manage execution loops, and keep observability consistent across OpenAI, Anthropic, and other LLM providers.",
       "audience_levels": [
         "intermediate",
         "advanced"
       ],
       "personas": [
-        "developer"
+        "developer",
+        "data-analyst"
       ],
       "categories": [
         "patterns"
@@ -2749,20 +2833,22 @@
       "relatedProjectTypes": [],
       "search_keywords": [
         "function calling",
-        "tools",
-        "schema",
-        "errors",
-        "openai",
-        "anthropic"
+        "tool schema",
+        "json validation",
+        "llm tooling",
+        "openai responses",
+        "anthropic tools"
       ],
       "related": [
-        "/docs/patterns/agentic/router-multi-tool.md",
-        "/docs/patterns/workflows/batch-processing.md"
+        "/docs/patterns/agentic/planner-executor.md",
+        "/docs/patterns/observability-context.md",
+        "/docs/patterns/specs/tool-spec-template.md",
+        "/docs/concepts/structured-outputs.md"
       ],
       "sourcePath": "docs/patterns/tools/function-calling.md",
       "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/patterns/tools/function-calling.md",
-      "min_read_minutes": 10,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
+      "min_read_minutes": 18,
+      "lastUpdated": "2024-06-07T00:00:00.000Z"
     },
     {
       "path": "/docs/patterns/workflows/batch-processing.md",
@@ -2837,6 +2923,42 @@
       "lastUpdated": "2025-02-17T00:00:00.000Z"
     },
     {
+      "path": "/docs/providers/cohere/overview.md",
+      "slug": "providers/cohere/overview",
+      "category": "providers",
+      "title": "Cohere overview",
+      "description": "Integrate Cohere’s Command models, embeddings, and tool use features with secure authentication, streaming, and evaluation-ready prompts.",
+      "audience_levels": [
+        "intermediate"
+      ],
+      "personas": [
+        "developer",
+        "PM"
+      ],
+      "categories": [
+        "providers"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "cohere command r",
+        "cohere api setup",
+        "cohere embeddings",
+        "cohere tool use",
+        "command r plus"
+      ],
+      "related": [
+        "/docs/providers/compare-providers.md",
+        "/docs/concepts/structured-outputs.md",
+        "/docs/patterns/tools/function-calling.md",
+        "/docs/examples/translation-qc.md"
+      ],
+      "sourcePath": "docs/providers/cohere/overview.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/providers/cohere/overview.md",
+      "min_read_minutes": 10,
+      "lastUpdated": "2025-02-17T00:00:00.000Z"
+    },
+    {
       "path": "/docs/providers/azure-openai/migrate-from-openai.md",
       "slug": "providers/azure-openai/migrate-from-openai",
       "category": "providers",
@@ -2907,42 +3029,6 @@
       "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/providers/azure-openai/setup.md",
       "min_read_minutes": 15,
       "lastUpdated": "2025-02-15T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/providers/cohere/overview.md",
-      "slug": "providers/cohere/overview",
-      "category": "providers",
-      "title": "Cohere overview",
-      "description": "Integrate Cohere’s Command models, embeddings, and tool use features with secure authentication, streaming, and evaluation-ready prompts.",
-      "audience_levels": [
-        "intermediate"
-      ],
-      "personas": [
-        "developer",
-        "PM"
-      ],
-      "categories": [
-        "providers"
-      ],
-      "tags": [],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "cohere command r",
-        "cohere api setup",
-        "cohere embeddings",
-        "cohere tool use",
-        "command r plus"
-      ],
-      "related": [
-        "/docs/providers/compare-providers.md",
-        "/docs/concepts/structured-outputs.md",
-        "/docs/patterns/tools/function-calling.md",
-        "/docs/examples/translation-qc.md"
-      ],
-      "sourcePath": "docs/providers/cohere/overview.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/providers/cohere/overview.md",
-      "min_read_minutes": 10,
-      "lastUpdated": "2025-02-17T00:00:00.000Z"
     },
     {
       "path": "/docs/providers/gemini/overview.md",
