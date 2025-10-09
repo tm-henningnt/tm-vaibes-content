@@ -5,7 +5,7 @@ audience_levels: ["intermediate", "advanced"]
 personas: ["developer", "PM"]
 categories: ["patterns"]
 min_read_minutes: 10
-last_reviewed: 2025-02-17
+last_reviewed: 2025-03-18
 related:
   [
     "/docs/concepts/spec-vs-vibe-coding.md",
@@ -25,7 +25,7 @@ show_toc: true
 
 ## Why write a prompt spec?
 
-Prompt specs make behavior explicit so teams can reuse, test, and govern prompts like software. They prevent ad-hoc “vibe coding,” clarify success metrics, and enable faster reviews across product, legal, and safety stakeholders.【F:docs/patterns/specs/prompt-spec-template.md†L47-L120】
+Prompt specs make behavior explicit so teams can reuse, test, and govern prompts like software. They prevent ad-hoc “vibe coding,” clarify success metrics, and enable faster reviews across product, legal, and safety stakeholders. Pair this template with the alignment checklist in [/docs/concepts/spec-vs-vibe-coding.md](/docs/concepts/spec-vs-vibe-coding.md) to keep prompts auditable as they evolve.
 
 ## Recommended structure
 
