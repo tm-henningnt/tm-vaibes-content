@@ -239,18 +239,18 @@ Keep arrays deduped; include at least one category; use `primary_category` if yo
 
 ## Wave 4 — Evaluations & Safety (12 tasks)
 
-45. [ ] /docs/evaluations/overview.md (expand)
-46. [ ] /docs/evaluations/rubric-prompts.md (expand)
-47. [ ] /docs/evaluations/grounded-qa-evals.md (expand)
-48. [ ] /docs/evaluations/latency-cost-tradeoffs.md (expand)
-49. [ ] /docs/evaluations/tool-use-evals.md (expand)
-50. [ ] /docs/evaluations/offline-batch-evals.md (expand)
-51. [ ] /docs/evaluations/data-platform-benchmarks.md (expand with methodology)
-52. [ ] /docs/safety/overview.md (expand)
-53. [ ] /docs/safety/prompt-safety.md (expand)
-54. [ ] /docs/safety/output-filters.md (expand)
-55. [ ] /docs/safety/human-in-the-loop.md (expand)
-56. [ ] /docs/concepts/safety-taxonomy.md
+45. [qa ready] /docs/evaluations/overview.md (expand)
+46. [qa ready] /docs/evaluations/rubric-prompts.md (expand)
+47. [qa ready] /docs/evaluations/grounded-qa-evals.md (expand)
+48. [qa ready] /docs/evaluations/latency-cost-tradeoffs.md (expand)
+49. [qa ready] /docs/evaluations/tool-use-evals.md (expand)
+50. [qa ready] /docs/evaluations/offline-batch-evals.md (expand)
+51. [qa ready] /docs/evaluations/data-platform-benchmarks.md (expand with methodology)
+52. [qa ready] /docs/safety/overview.md (expand)
+53. [qa ready] /docs/safety/prompt-safety.md (expand)
+54. [qa ready] /docs/safety/output-filters.md (expand)
+55. [qa ready] /docs/safety/human-in-the-loop.md (expand)
+56. [qa ready] /docs/concepts/safety-taxonomy.md
     - Purpose: Taxonomy of risk categories; mapping to mitigations.
 
 ---
