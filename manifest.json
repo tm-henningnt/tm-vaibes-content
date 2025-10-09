@@ -1,8 +1,8 @@
 {
   "$schema": "./tools/schemas/manifest.schema.json",
   "version": "2025.10.1",
-  "generated_at": "2025-10-09T11:00:53.939Z",
-  "hash": "c4291e9565e98c6a",
+  "generated_at": "2025-10-09T11:22:42.779Z",
+  "hash": "feac4f002ddb3360",
   "docs": [
     {
       "path": "/docs/index.md",
@@ -544,7 +544,7 @@
       "slug": "concepts/what-is-genai",
       "category": "concepts",
       "title": "What is Generative AI?",
-      "description": "Understand what generative AI can do, its limits, and how to decide when it is the right tool for the job.",
+      "description": "Understand how generative models produce text, images, and code, what they do well, and when to reach for other techniques.",
       "audience_levels": [
         "beginner",
         "intermediate",
@@ -554,31 +554,25 @@
         "non-technical",
         "PM",
         "developer",
-        "data-analyst",
-        "admin"
+        "data-analyst"
       ],
       "categories": [
         "concepts"
       ],
-      "tags": [
-        "generative-ai",
-        "llm",
-        "capabilities",
-        "limitations"
-      ],
+      "tags": [],
       "relatedProjectTypes": [],
       "search_keywords": [
-        "generative ai definition",
-        "llm capabilities",
-        "genai limitations",
-        "mental models",
-        "use cases"
+        "generative ai basics",
+        "foundation models",
+        "large language models",
+        "diffusion models",
+        "genai limitations"
       ],
       "related": [
-        "/docs/concepts/genai-vs-agentic.md",
         "/docs/concepts/prompting-styles.md",
-        "/docs/concepts/token-costs-latency.md",
-        "/docs/concepts/safety-basics.md"
+        "/docs/concepts/genai-vs-agentic.md",
+        "/docs/concepts/safety-basics.md",
+        "/docs/quickstarts/try-genai-in-10-min.md"
       ],
       "sourcePath": "docs/concepts/what-is-genai.md",
       "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/concepts/what-is-genai.md",
@@ -1738,6 +1732,81 @@
       "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
     {
+      "path": "/docs/providers/compare-providers.md",
+      "slug": "providers/compare-providers",
+      "category": "providers",
+      "title": "Compare Providers: Request Shapes and Tradeoffs",
+      "description": "Contrast OpenAI, Azure OpenAI, and Anthropic across authentication, request formats, safety levers, and operational considerations.",
+      "audience_levels": [
+        "beginner",
+        "intermediate"
+      ],
+      "personas": [
+        "PM",
+        "developer",
+        "admin"
+      ],
+      "categories": [
+        "providers",
+        "concepts"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "compare providers",
+        "openai vs anthropic",
+        "azure openai",
+        "llm request patterns"
+      ],
+      "related": [
+        "/docs/providers/openai/auth-models-limits.md",
+        "/docs/providers/anthropic/overview.md",
+        "/docs/providers/azure-openai/setup.md"
+      ],
+      "sourcePath": "docs/providers/compare-providers.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/providers/compare-providers.md",
+      "min_read_minutes": 12,
+      "lastUpdated": "2025-02-15T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/providers/security-best-practices.md",
+      "slug": "providers/security-best-practices",
+      "category": "providers",
+      "title": "Security Best Practices for AI Providers",
+      "description": "Handle keys, proxies, rotation, and logging safely across environments.",
+      "audience_levels": [
+        "intermediate",
+        "advanced"
+      ],
+      "personas": [
+        "developer",
+        "admin"
+      ],
+      "categories": [
+        "providers",
+        "operations",
+        "safety"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "api key handling",
+        "secrets",
+        "key rotation",
+        "proxy",
+        "redaction"
+      ],
+      "related": [
+        "/docs/providers/openai/auth-models-limits.md",
+        "/docs/safety/prompt-safety.md",
+        "/docs/evaluations/latency-cost-tradeoffs.md"
+      ],
+      "sourcePath": "docs/providers/security-best-practices.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/providers/security-best-practices.md",
+      "min_read_minutes": 9,
+      "lastUpdated": "2025-10-06T00:00:00.000Z"
+    },
+    {
       "path": "/docs/quickstarts/first-idea.md",
       "slug": "quickstarts/first-idea",
       "category": "quickstarts",
@@ -1882,81 +1951,6 @@
       "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/quickstarts/try-genai-in-10-min.md",
       "min_read_minutes": 10,
       "lastUpdated": "2025-03-15T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/providers/compare-providers.md",
-      "slug": "providers/compare-providers",
-      "category": "providers",
-      "title": "Compare Providers: Request Shapes and Tradeoffs",
-      "description": "Contrast OpenAI, Azure OpenAI, and Anthropic across authentication, request formats, safety levers, and operational considerations.",
-      "audience_levels": [
-        "beginner",
-        "intermediate"
-      ],
-      "personas": [
-        "PM",
-        "developer",
-        "admin"
-      ],
-      "categories": [
-        "providers",
-        "concepts"
-      ],
-      "tags": [],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "compare providers",
-        "openai vs anthropic",
-        "azure openai",
-        "llm request patterns"
-      ],
-      "related": [
-        "/docs/providers/openai/auth-models-limits.md",
-        "/docs/providers/anthropic/overview.md",
-        "/docs/providers/azure-openai/setup.md"
-      ],
-      "sourcePath": "docs/providers/compare-providers.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/providers/compare-providers.md",
-      "min_read_minutes": 12,
-      "lastUpdated": "2025-02-15T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/providers/security-best-practices.md",
-      "slug": "providers/security-best-practices",
-      "category": "providers",
-      "title": "Security Best Practices for AI Providers",
-      "description": "Handle keys, proxies, rotation, and logging safely across environments.",
-      "audience_levels": [
-        "intermediate",
-        "advanced"
-      ],
-      "personas": [
-        "developer",
-        "admin"
-      ],
-      "categories": [
-        "providers",
-        "operations",
-        "safety"
-      ],
-      "tags": [],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "api key handling",
-        "secrets",
-        "key rotation",
-        "proxy",
-        "redaction"
-      ],
-      "related": [
-        "/docs/providers/openai/auth-models-limits.md",
-        "/docs/safety/prompt-safety.md",
-        "/docs/evaluations/latency-cost-tradeoffs.md"
-      ],
-      "sourcePath": "docs/providers/security-best-practices.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/providers/security-best-practices.md",
-      "min_read_minutes": 9,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
     {
       "path": "/docs/safety/human-in-the-loop.md",
@@ -2923,42 +2917,6 @@
       "lastUpdated": "2025-02-17T00:00:00.000Z"
     },
     {
-      "path": "/docs/providers/cohere/overview.md",
-      "slug": "providers/cohere/overview",
-      "category": "providers",
-      "title": "Cohere overview",
-      "description": "Integrate Cohere’s Command models, embeddings, and tool use features with secure authentication, streaming, and evaluation-ready prompts.",
-      "audience_levels": [
-        "intermediate"
-      ],
-      "personas": [
-        "developer",
-        "PM"
-      ],
-      "categories": [
-        "providers"
-      ],
-      "tags": [],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "cohere command r",
-        "cohere api setup",
-        "cohere embeddings",
-        "cohere tool use",
-        "command r plus"
-      ],
-      "related": [
-        "/docs/providers/compare-providers.md",
-        "/docs/concepts/structured-outputs.md",
-        "/docs/patterns/tools/function-calling.md",
-        "/docs/examples/translation-qc.md"
-      ],
-      "sourcePath": "docs/providers/cohere/overview.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/providers/cohere/overview.md",
-      "min_read_minutes": 10,
-      "lastUpdated": "2025-02-17T00:00:00.000Z"
-    },
-    {
       "path": "/docs/providers/azure-openai/migrate-from-openai.md",
       "slug": "providers/azure-openai/migrate-from-openai",
       "category": "providers",
@@ -3029,6 +2987,42 @@
       "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/providers/azure-openai/setup.md",
       "min_read_minutes": 15,
       "lastUpdated": "2025-02-15T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/providers/cohere/overview.md",
+      "slug": "providers/cohere/overview",
+      "category": "providers",
+      "title": "Cohere overview",
+      "description": "Integrate Cohere’s Command models, embeddings, and tool use features with secure authentication, streaming, and evaluation-ready prompts.",
+      "audience_levels": [
+        "intermediate"
+      ],
+      "personas": [
+        "developer",
+        "PM"
+      ],
+      "categories": [
+        "providers"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "cohere command r",
+        "cohere api setup",
+        "cohere embeddings",
+        "cohere tool use",
+        "command r plus"
+      ],
+      "related": [
+        "/docs/providers/compare-providers.md",
+        "/docs/concepts/structured-outputs.md",
+        "/docs/patterns/tools/function-calling.md",
+        "/docs/examples/translation-qc.md"
+      ],
+      "sourcePath": "docs/providers/cohere/overview.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/providers/cohere/overview.md",
+      "min_read_minutes": 10,
+      "lastUpdated": "2025-02-17T00:00:00.000Z"
     },
     {
       "path": "/docs/providers/gemini/overview.md",
