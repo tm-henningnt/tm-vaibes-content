@@ -300,15 +300,15 @@ Keep arrays deduped; include at least one category; use `primary_category` if yo
     - Purpose: Python FastAPI service that calls an AI provider, persists sessions in SQLite, and exposes a minimal API.
     - Audience: developer, data‑analyst.
     - Success: local SQLite DB, migrations, retry/backoff, structured JSON responses.
-73. [ ] /docs/tutorials/dbt-llm-assistant.md
+73. [qa ready] /docs/tutorials/dbt-llm-assistant.md
     - Purpose: Use LLMs to scaffold dbt models/tests/docs with human review gates.
     - Audience: data‑analyst, developer.
     - Success: create a model + tests, generate docs, and review diffs safely.
-74. [ ] /docs/tutorials/sql-agent-patterns.md
+74. [qa ready] /docs/tutorials/sql-agent-patterns.md
     - Purpose: SQL‑aware agents: schema grounding, read‑only constraints, and safe execution.
     - Audience: developer, data‑analyst.
     - Success: execute parameterized queries with guardrails and result summaries.
-75. [ ] /docs/tutorials/analytics-assistants-qlik-powerbi.md
+75. [qa ready] /docs/tutorials/analytics-assistants-qlik-powerbi.md
     - Purpose: Assist with chart/spec generation and narrative insights for Qlik Cloud and Power BI.
     - Audience: PM, data‑analyst.
     - Success: propose visuals from a dataset and produce a short narrative with caveats.
