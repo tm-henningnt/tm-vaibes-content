@@ -1,8 +1,8 @@
 {
   "$schema": "./tools/schemas/manifest.schema.json",
   "version": "2025.10.1",
-  "generated_at": "2025-10-09T05:34:08.915Z",
-  "hash": "efc2246627cfdf9a",
+  "generated_at": "2025-10-09T05:53:47.545Z",
+  "hash": "d62df408307b518d",
   "docs": [
     {
       "path": "/docs/index.md",
@@ -1469,7 +1469,7 @@
       "slug": "providers/compare-providers",
       "category": "providers",
       "title": "Compare Providers: Request Shapes and Tradeoffs",
-      "description": "A neutral comparison of common request/response patterns, limits, and typical costs.",
+      "description": "Contrast OpenAI, Azure OpenAI, and Anthropic across authentication, request formats, safety levers, and operational considerations.",
       "audience_levels": [
         "beginner",
         "intermediate"
@@ -1481,8 +1481,7 @@
       ],
       "categories": [
         "providers",
-        "concepts",
-        "reference"
+        "concepts"
       ],
       "tags": [],
       "relatedProjectTypes": [],
@@ -1490,7 +1489,7 @@
         "compare providers",
         "openai vs anthropic",
         "azure openai",
-        "request response"
+        "llm request patterns"
       ],
       "related": [
         "/docs/providers/openai/auth-models-limits.md",
@@ -1499,8 +1498,8 @@
       ],
       "sourcePath": "docs/providers/compare-providers.md",
       "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/providers/compare-providers.md",
-      "min_read_minutes": 8,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
+      "min_read_minutes": 12,
+      "lastUpdated": "2025-02-14T00:00:00.000Z"
     },
     {
       "path": "/docs/providers/security-best-practices.md",
@@ -2639,7 +2638,7 @@
       "slug": "providers/azure-openai/setup",
       "category": "providers",
       "title": "Azure OpenAI: Setup and First Call",
-      "description": "Create an Azure OpenAI resource and deployment, then call it from Node and Python.",
+      "description": "Provision Azure OpenAI safely, deploy a model, and make your first call from Node.js and Python.",
       "audience_levels": [
         "beginner",
         "intermediate"
@@ -2650,26 +2649,25 @@
       ],
       "categories": [
         "providers",
-        "how-to"
+        "quickstarts"
       ],
       "tags": [],
       "relatedProjectTypes": [],
       "search_keywords": [
-        "azure openai",
-        "deployment",
+        "azure openai setup",
+        "deployment name",
         "api-version",
-        "endpoint",
-        "node",
-        "python"
+        "azure cli"
       ],
       "related": [
         "/docs/providers/azure-openai/migrate-from-openai.md",
-        "/docs/providers/compare-providers.md"
+        "/docs/providers/compare-providers.md",
+        "/docs/providers/security-best-practices.md"
       ],
       "sourcePath": "docs/providers/azure-openai/setup.md",
       "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/providers/azure-openai/setup.md",
-      "min_read_minutes": 10,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
+      "min_read_minutes": 15,
+      "lastUpdated": "2025-02-14T00:00:00.000Z"
     },
     {
       "path": "/docs/providers/gemini/overview.md",
@@ -2712,7 +2710,7 @@
       "slug": "providers/openai/auth-models-limits",
       "category": "providers",
       "title": "OpenAI: Auth, Models, and Limits",
-      "description": "Authenticate safely, map environment variables, and choose a sensible model for your use case.",
+      "description": "Configure authentication safely, choose models intentionally, and stay within rate and token limits when using the OpenAI API.",
       "audience_levels": [
         "beginner",
         "intermediate"
@@ -2723,8 +2721,7 @@
       ],
       "categories": [
         "providers",
-        "how-to",
-        "reference"
+        "quickstarts"
       ],
       "tags": [],
       "relatedProjectTypes": [],
@@ -2732,7 +2729,7 @@
         "openai auth",
         "model selection",
         "rate limits",
-        "server-side keys"
+        "api quotas"
       ],
       "related": [
         "/docs/providers/security-best-practices.md",
@@ -2741,8 +2738,8 @@
       ],
       "sourcePath": "docs/providers/openai/auth-models-limits.md",
       "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/providers/openai/auth-models-limits.md",
-      "min_read_minutes": 8,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
+      "min_read_minutes": 14,
+      "lastUpdated": "2025-02-14T00:00:00.000Z"
     },
     {
       "path": "/docs/providers/openai/chatgpt-productivity.md",
