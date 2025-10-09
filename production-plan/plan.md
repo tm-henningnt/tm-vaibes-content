@@ -180,6 +180,11 @@ Keep arrays deduped; include at least one category; use `primary_category` if yo
 28. [qa ready] /docs/examples/provider-switching.md
     - Purpose: Swap providers behind a thin abstraction; pitfalls.
 
+29. [qa ready] /docs/providers/security-best-practices.md (expand)
+    - Purpose: Vault-backed secrets, proxy enforcement, rotation playbooks.
+    - Audience: developer, admin.
+    - Success: readers implement managed vault access and quota-enforcing proxies.
+
 33. [qa ready] /docs/examples/toolformer-style-extraction.md
     - Purpose: Use tools to extract structured data from messy inputs.
 
