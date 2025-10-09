@@ -180,20 +180,20 @@ Keep arrays deduped; include at least one category; use `primary_category` if yo
 28. [qa ready] /docs/examples/provider-switching.md
     - Purpose: Swap providers behind a thin abstraction; pitfalls.
 
-33. [ ] /docs/examples/toolformer-style-extraction.md
+33. [qa ready] /docs/examples/toolformer-style-extraction.md
     - Purpose: Use tools to extract structured data from messy inputs.
 
 ---
 
 ## Wave 3 — Patterns & RAG (19 tasks)
 
-34. [ ] /docs/patterns/prompting/recipes.md
+34. [qa ready] /docs/patterns/prompting/recipes.md
     - Purpose: Reusable prompts: brainstorming, critique, plan‑then‑write, review.
 
-35. [ ] /docs/patterns/tools/function-calling.md (expand)
+35. [qa ready] /docs/patterns/tools/function-calling.md (expand)
     - Purpose: Cross‑provider tool calling; schema design; error propagation.
 
-36. [ ] /docs/patterns/agentic/planner-executor.md (expand)
+36. [qa ready] /docs/patterns/agentic/planner-executor.md (expand)
     - Purpose: Decompose → plan → execute; memory and context updates.
 
 37. [ ] /docs/patterns/agentic/router-multi-tool.md (expand)
