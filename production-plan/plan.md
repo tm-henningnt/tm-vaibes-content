@@ -196,41 +196,41 @@ Keep arrays deduped; include at least one category; use `primary_category` if yo
 36. [qa ready] /docs/patterns/agentic/planner-executor.md (expand)
     - Purpose: Decompose → plan → execute; memory and context updates.
 
-37. [ ] /docs/patterns/agentic/router-multi-tool.md (expand)
+37. [qa ready] /docs/patterns/agentic/router-multi-tool.md (expand)
     - Purpose: Tool routing; fallback; timeouts and budget caps.
 
-38. [ ] /docs/patterns/agentic/reflection-self-heal.md (expand)
+38. [qa ready] /docs/patterns/agentic/reflection-self-heal.md (expand)
     - Purpose: Critique/repair loops; rubric prompts; stop conditions.
 
-39. [ ] /docs/patterns/rag/basics.md (expand)
+39. [qa ready] /docs/patterns/rag/basics.md (expand)
     - Purpose: Chunking, indexing, citations; failure modes; latency budgets.
 
-40. [ ] /docs/patterns/rag/hybrid-ranking.md
+40. [qa ready] /docs/patterns/rag/hybrid-ranking.md
     - Purpose: Sparse+dense retrieval; reranking; query rewriting.
 
-41. [ ] /docs/patterns/rag/evals-hook.md
+41. [qa ready] /docs/patterns/rag/evals-hook.md
     - Purpose: Wire evals into RAG loop; accuracy dashboards.
 
-42. [ ] /docs/patterns/workflows/batch-processing.md (expand)
+42. [qa ready] /docs/patterns/workflows/batch-processing.md (expand)
     - Purpose: Offline jobs; retries; cost caps.
 
-43. [ ] /docs/patterns/cost-controls.md (expand)
+43. [qa ready] /docs/patterns/cost-controls.md (expand)
     - Purpose: Truncation, streaming, cache, sampling; practical defaults.
 
-44. [ ] /docs/patterns/observability-context.md (expand)
+44. [qa ready] /docs/patterns/observability-context.md (expand)
     - Purpose: What to log; IDs; redaction; privacy notes.
 
-45. [ ] /docs/patterns/specs/prompt-spec-template.md
+45. [qa ready] /docs/patterns/specs/prompt-spec-template.md
     - Purpose: A lightweight prompt spec format (intent, inputs/outputs, constraints, eval hooks, risks).
     - Audience: developer, PM.
     - Success: reproducible prompt artifacts that plug into evals.
 
-46. [ ] /docs/patterns/specs/tool-spec-template.md
+46. [qa ready] /docs/patterns/specs/tool-spec-template.md
     - Purpose: Tool contract template (schema, idempotency, timeout/retry behavior, errors).
     - Audience: developer.
     - Success: coherent, testable tool definitions across providers.
 
-47. [ ] /docs/patterns/specs/eval-spec-template.md
+47. [qa ready] /docs/patterns/specs/eval-spec-template.md
     - Purpose: Evaluation spec (metrics, datasets, thresholds, review cadence).
     - Audience: developer, PM.
     - Success: teams can run the same evals and compare results apples‑to‑apples.
