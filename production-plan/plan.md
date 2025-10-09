@@ -167,7 +167,7 @@ Keep arrays deduped; include at least one category; use `primary_category` if yo
 24. [qa ready] /docs/providers/cohere/overview.md
     - Purpose: Command/Rerank models; embeddings quality notes.
 
-25. [ ] /docs/concepts/embeddings.md
+25. [qa ready] /docs/concepts/embeddings.md
     - Purpose: What embeddings are; search vs clustering vs reranking.
     - Success: readers pick dimensions/models; normalize vectors.
 
