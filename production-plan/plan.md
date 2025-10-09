@@ -134,19 +134,19 @@ Keep arrays deduped; include at least one category; use `primary_category` if yo
 
 ## Wave 2 — Providers & Models (18 tasks)
 
-16. [ ] /docs/providers/compare-providers.md (expand)
+16. [qa ready] /docs/providers/compare-providers.md (expand)
     - Purpose: Capabilities matrix (modalities, context, tools, rate limits, pricing).
     - Audience: PM, developer, admin.
     - Success: updated table with quick recommendations by use case.
 
-17. [ ] /docs/providers/openai/auth-models-limits.md (expand)
+17. [qa ready] /docs/providers/openai/auth-models-limits.md (expand)
     - Purpose: Model lineup (o3, gpt‑4o‑mini, gpt‑4.1), tokens, vision/audio, tools.
     - Success: selection guidance by latency/cost and quality bands.
 
 18. [ ] /docs/providers/anthropic/overview.md (expand)
     - Purpose: Claude models; tool use; safety settings.
 
-19. [ ] /docs/providers/azure-openai/setup.md (expand)
+19. [qa ready] /docs/providers/azure-openai/setup.md (expand)
     - Purpose: Azure specifics; deployment vs model; region/capacity notes.
 
 20. [ ] /docs/providers/azure-openai/migrate-from-openai.md (expand)
