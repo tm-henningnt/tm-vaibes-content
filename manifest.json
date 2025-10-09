@@ -1,8 +1,8 @@
 {
   "$schema": "./tools/schemas/manifest.schema.json",
   "version": "2025.10.1",
-  "generated_at": "2025-10-09T08:08:25.847Z",
-  "hash": "d6636da9ad82f81b",
+  "generated_at": "2025-10-09T09:05:50.321Z",
+  "hash": "940c27d521c7e0a2",
   "docs": [
     {
       "path": "/docs/index.md",
@@ -112,6 +112,44 @@
       "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/concepts/ai-landscape-ml-expert-rpa.md",
       "min_read_minutes": 12,
       "lastUpdated": "2025-02-14T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/concepts/caching-and-retries.md",
+      "slug": "concepts/caching-and-retries",
+      "category": "concepts",
+      "title": "Caching and retry strategies for GenAI apps",
+      "description": "Reduce cost and flakiness in AI applications with pragmatic caching layers, retry policies, and observability hooks.",
+      "audience_levels": [
+        "intermediate",
+        "advanced"
+      ],
+      "personas": [
+        "developer",
+        "data-analyst",
+        "PM"
+      ],
+      "categories": [
+        "concepts"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "genai caching",
+        "retry backoff",
+        "idempotent ai",
+        "rate limits",
+        "memoization"
+      ],
+      "related": [
+        "/docs/concepts/token-costs-latency.md",
+        "/docs/patterns/cost-controls.md",
+        "/docs/patterns/observability-context.md",
+        "/docs/concepts/structured-outputs.md"
+      ],
+      "sourcePath": "docs/concepts/caching-and-retries.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/concepts/caching-and-retries.md",
+      "min_read_minutes": 14,
+      "lastUpdated": "2025-02-17T00:00:00.000Z"
     },
     {
       "path": "/docs/concepts/embeddings.md",
@@ -270,6 +308,45 @@
       "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/concepts/glossary.md",
       "min_read_minutes": 9,
       "lastUpdated": "2025-03-15T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/concepts/multimodal-fundamentals.md",
+      "slug": "concepts/multimodal-fundamentals",
+      "category": "concepts",
+      "title": "Multimodal model fundamentals",
+      "description": "Learn how text, image, and audio-capable foundation models ingest data, what design patterns they enable, and how to evaluate them safely.",
+      "audience_levels": [
+        "beginner",
+        "intermediate",
+        "advanced"
+      ],
+      "personas": [
+        "PM",
+        "developer",
+        "data-analyst"
+      ],
+      "categories": [
+        "concepts"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "multimodal llm",
+        "gpt-4o",
+        "claude 3 opus",
+        "gemini 1.5",
+        "vision prompt"
+      ],
+      "related": [
+        "/docs/concepts/what-is-genai.md",
+        "/docs/patterns/prompting/recipes.md",
+        "/docs/patterns/rag/basics.md",
+        "/docs/concepts/structured-outputs.md"
+      ],
+      "sourcePath": "docs/concepts/multimodal-fundamentals.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/concepts/multimodal-fundamentals.md",
+      "min_read_minutes": 16,
+      "lastUpdated": "2025-02-17T00:00:00.000Z"
     },
     {
       "path": "/docs/concepts/prompting-styles.md",
@@ -758,8 +835,8 @@
       "path": "/docs/examples/a2a-coordination.md",
       "slug": "examples/a2a-coordination",
       "category": "examples",
-      "title": "Example: A2A Coordination",
-      "description": "Show two agents collaborating (planner → executor or QA → fixer) with a short transcript and outcomes.",
+      "title": "Example: Agent-to-agent coordination",
+      "description": "Orchestrate a planner and executor agent that collaborate on QA tasks with budgets, confidence scoring, and human handoffs.",
       "audience_levels": [
         "intermediate",
         "advanced"
@@ -775,25 +852,28 @@
       "relatedProjectTypes": [],
       "search_keywords": [
         "multi-agent",
-        "planner",
-        "executor",
-        "qa",
-        "fixer"
+        "planner executor",
+        "agent coordination",
+        "budgeted agents",
+        "self-heal loop"
       ],
       "related": [
-        "/docs/patterns/a2a-agent-to-agent.md"
+        "/docs/patterns/agentic/planner-executor.md",
+        "/docs/patterns/agentic/reflection-self-heal.md",
+        "/docs/patterns/observability-context.md",
+        "/docs/concepts/agents-vs-automation.md"
       ],
       "sourcePath": "docs/examples/a2a-coordination.md",
       "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/examples/a2a-coordination.md",
-      "min_read_minutes": 8,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
+      "min_read_minutes": 13,
+      "lastUpdated": "2025-02-17T00:00:00.000Z"
     },
     {
       "path": "/docs/examples/ai-customer-support-triage.md",
       "slug": "examples/ai-customer-support-triage",
       "category": "examples",
-      "title": "Example: AI Customer Support Triage",
-      "description": "Router agent triages incoming messages with escalation rules and summaries.",
+      "title": "Example: AI customer support triage",
+      "description": "Design a router agent that classifies inbound tickets, drafts internal notes, and escalates safely.",
       "audience_levels": [
         "intermediate"
       ],
@@ -807,18 +887,22 @@
       "tags": [],
       "relatedProjectTypes": [],
       "search_keywords": [
-        "support",
-        "triage",
-        "router",
-        "escalation"
+        "support triage",
+        "ticket routing",
+        "customer service ai",
+        "escalation rules",
+        "router agent"
       ],
       "related": [
-        "/docs/patterns/agentic/router-multi-tool.md"
+        "/docs/patterns/agentic/router-multi-tool.md",
+        "/docs/concepts/safety-basics.md",
+        "/docs/concepts/structured-outputs.md",
+        "/docs/examples/meeting-summarizer.md"
       ],
       "sourcePath": "docs/examples/ai-customer-support-triage.md",
       "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/examples/ai-customer-support-triage.md",
-      "min_read_minutes": 7,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
+      "min_read_minutes": 12,
+      "lastUpdated": "2025-02-17T00:00:00.000Z"
     },
     {
       "path": "/docs/examples/content-drafter.md",
@@ -1223,33 +1307,38 @@
       "path": "/docs/examples/provider-switching.md",
       "slug": "examples/provider-switching",
       "category": "examples",
-      "title": "Provider switching with a thin abstraction",
-      "description": "Swap AI providers behind a small interface and avoid vendor lock-in.",
+      "title": "Example: Provider switching playbook",
+      "description": "Build a thin abstraction so you can route GenAI workloads between OpenAI and Anthropic with minimal downtime.",
       "audience_levels": [
-        "intermediate"
+        "intermediate",
+        "advanced"
       ],
       "personas": [
-        "developer"
+        "developer",
+        "PM"
       ],
       "categories": [
         "examples"
       ],
-      "tags": [
-        "providers",
-        "abstraction"
-      ],
+      "tags": [],
       "relatedProjectTypes": [],
       "search_keywords": [
-        "provider switch",
-        "abstraction"
+        "multi provider llm",
+        "openai anthropic switch",
+        "provider abstraction",
+        "fallback llm",
+        "routing guardrail"
       ],
       "related": [
-        "/docs/providers/compare-providers.md"
+        "/docs/providers/compare-providers.md",
+        "/docs/patterns/observability-context.md",
+        "/docs/tutorials/production-hardening.md",
+        "/docs/concepts/caching-and-retries.md"
       ],
       "sourcePath": "docs/examples/provider-switching.md",
       "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/examples/provider-switching.md",
-      "min_read_minutes": 9,
-      "lastUpdated": "2025-10-08T00:00:00.000Z"
+      "min_read_minutes": 13,
+      "lastUpdated": "2025-02-17T00:00:00.000Z"
     },
     {
       "path": "/docs/examples/research-citation-checker.md",
@@ -1506,6 +1595,112 @@
       "lastUpdated": "2025-03-20T00:00:00.000Z"
     },
     {
+      "path": "/docs/patterns/a2a-agent-to-agent.md",
+      "slug": "patterns/a2a-agent-to-agent",
+      "category": "patterns",
+      "title": "Agent‑to‑Agent (A2A) Collaboration",
+      "description": "Patterns for agents to hand off tasks, negotiate, and escalate to humans.",
+      "audience_levels": [
+        "intermediate",
+        "advanced"
+      ],
+      "personas": [
+        "developer",
+        "PM"
+      ],
+      "categories": [
+        "patterns"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "a2a",
+        "multi agent",
+        "handoff",
+        "negotiation",
+        "escalation"
+      ],
+      "related": [
+        "/docs/patterns/agentic/router-multi-tool.md",
+        "/docs/patterns/agentic/reflection-self-heal.md"
+      ],
+      "sourcePath": "docs/patterns/a2a-agent-to-agent.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/patterns/a2a-agent-to-agent.md",
+      "min_read_minutes": 9,
+      "lastUpdated": "2025-10-06T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/patterns/cost-controls.md",
+      "slug": "patterns/cost-controls",
+      "category": "patterns",
+      "title": "Cost Controls for AI Apps",
+      "description": "Apply max tokens, streaming, truncation, caching hints, and retries to manage spend.",
+      "audience_levels": [
+        "intermediate",
+        "advanced"
+      ],
+      "personas": [
+        "developer",
+        "PM",
+        "admin"
+      ],
+      "categories": [
+        "patterns"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "cost",
+        "tokens",
+        "streaming",
+        "truncation",
+        "cache"
+      ],
+      "related": [
+        "/docs/evaluations/latency-cost-tradeoffs.md",
+        "/docs/patterns/workflows/batch-processing.md"
+      ],
+      "sourcePath": "docs/patterns/cost-controls.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/patterns/cost-controls.md",
+      "min_read_minutes": 8,
+      "lastUpdated": "2025-10-06T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/patterns/observability-context.md",
+      "slug": "patterns/observability-context",
+      "category": "patterns",
+      "title": "Observability for AI Context",
+      "description": "Log the right metadata (not raw prompts) with correlation IDs and PII avoidance.",
+      "audience_levels": [
+        "intermediate"
+      ],
+      "personas": [
+        "developer",
+        "PM"
+      ],
+      "categories": [
+        "patterns",
+        "operations"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "observability",
+        "metadata",
+        "pii",
+        "correlation id",
+        "logs"
+      ],
+      "related": [
+        "/docs/operations/observability.md",
+        "/docs/providers/security-best-practices.md"
+      ],
+      "sourcePath": "docs/patterns/observability-context.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/patterns/observability-context.md",
+      "min_read_minutes": 7,
+      "lastUpdated": "2025-10-06T00:00:00.000Z"
+    },
+    {
       "path": "/docs/providers/compare-providers.md",
       "slug": "providers/compare-providers",
       "category": "providers",
@@ -1725,112 +1920,6 @@
       "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/quickstarts/try-genai-in-10-min.md",
       "min_read_minutes": 10,
       "lastUpdated": "2025-03-15T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/patterns/a2a-agent-to-agent.md",
-      "slug": "patterns/a2a-agent-to-agent",
-      "category": "patterns",
-      "title": "Agent‑to‑Agent (A2A) Collaboration",
-      "description": "Patterns for agents to hand off tasks, negotiate, and escalate to humans.",
-      "audience_levels": [
-        "intermediate",
-        "advanced"
-      ],
-      "personas": [
-        "developer",
-        "PM"
-      ],
-      "categories": [
-        "patterns"
-      ],
-      "tags": [],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "a2a",
-        "multi agent",
-        "handoff",
-        "negotiation",
-        "escalation"
-      ],
-      "related": [
-        "/docs/patterns/agentic/router-multi-tool.md",
-        "/docs/patterns/agentic/reflection-self-heal.md"
-      ],
-      "sourcePath": "docs/patterns/a2a-agent-to-agent.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/patterns/a2a-agent-to-agent.md",
-      "min_read_minutes": 9,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/patterns/cost-controls.md",
-      "slug": "patterns/cost-controls",
-      "category": "patterns",
-      "title": "Cost Controls for AI Apps",
-      "description": "Apply max tokens, streaming, truncation, caching hints, and retries to manage spend.",
-      "audience_levels": [
-        "intermediate",
-        "advanced"
-      ],
-      "personas": [
-        "developer",
-        "PM",
-        "admin"
-      ],
-      "categories": [
-        "patterns"
-      ],
-      "tags": [],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "cost",
-        "tokens",
-        "streaming",
-        "truncation",
-        "cache"
-      ],
-      "related": [
-        "/docs/evaluations/latency-cost-tradeoffs.md",
-        "/docs/patterns/workflows/batch-processing.md"
-      ],
-      "sourcePath": "docs/patterns/cost-controls.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/patterns/cost-controls.md",
-      "min_read_minutes": 8,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/patterns/observability-context.md",
-      "slug": "patterns/observability-context",
-      "category": "patterns",
-      "title": "Observability for AI Context",
-      "description": "Log the right metadata (not raw prompts) with correlation IDs and PII avoidance.",
-      "audience_levels": [
-        "intermediate"
-      ],
-      "personas": [
-        "developer",
-        "PM"
-      ],
-      "categories": [
-        "patterns",
-        "operations"
-      ],
-      "tags": [],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "observability",
-        "metadata",
-        "pii",
-        "correlation id",
-        "logs"
-      ],
-      "related": [
-        "/docs/operations/observability.md",
-        "/docs/providers/security-best-practices.md"
-      ],
-      "sourcePath": "docs/patterns/observability-context.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/patterns/observability-context.md",
-      "min_read_minutes": 7,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
     {
       "path": "/docs/safety/human-in-the-loop.md",
@@ -2403,6 +2492,314 @@
       "lastUpdated": "2024-06-06T00:00:00.000Z"
     },
     {
+      "path": "/docs/patterns/agentic/planner-executor.md",
+      "slug": "patterns/agentic/planner-executor",
+      "category": "patterns",
+      "title": "Pattern: Planner–Executor",
+      "description": "A classic agent loop where a planner decides next steps and an executor performs them with tools.",
+      "audience_levels": [
+        "intermediate",
+        "advanced"
+      ],
+      "personas": [
+        "developer",
+        "data-analyst"
+      ],
+      "categories": [
+        "patterns"
+      ],
+      "tags": [
+        "agent",
+        "planner",
+        "tools"
+      ],
+      "relatedProjectTypes": [],
+      "search_keywords": [],
+      "related": [],
+      "sourcePath": "docs/patterns/agentic/planner-executor.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/patterns/agentic/planner-executor.md",
+      "min_read_minutes": 12,
+      "lastUpdated": "2025-10-06T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/patterns/agentic/reflection-self-heal.md",
+      "slug": "patterns/agentic/reflection-self-heal",
+      "category": "patterns",
+      "title": "Reflection Loop: Self‑Healing Outputs",
+      "description": "Use rubric prompts to critique model outputs, retry within a budget, and converge on quality.",
+      "audience_levels": [
+        "intermediate",
+        "advanced"
+      ],
+      "personas": [
+        "developer",
+        "PM"
+      ],
+      "categories": [
+        "patterns"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "reflection",
+        "self critique",
+        "retry budget",
+        "rubric",
+        "quality"
+      ],
+      "related": [
+        "/docs/evaluations/rubric-prompts.md",
+        "/docs/patterns/cost-controls.md"
+      ],
+      "sourcePath": "docs/patterns/agentic/reflection-self-heal.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/patterns/agentic/reflection-self-heal.md",
+      "min_read_minutes": 8,
+      "lastUpdated": "2025-10-06T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/patterns/agentic/router-multi-tool.md",
+      "slug": "patterns/agentic/router-multi-tool",
+      "category": "patterns",
+      "title": "Router Agent: Multi‑Tool Selection",
+      "description": "Design a router that selects among tools based on user intent, with guardrails and timeouts.",
+      "audience_levels": [
+        "intermediate",
+        "advanced"
+      ],
+      "personas": [
+        "developer",
+        "PM"
+      ],
+      "categories": [
+        "patterns"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "router agent",
+        "tool selection",
+        "multi tool",
+        "guardrails",
+        "timeouts"
+      ],
+      "related": [
+        "/docs/patterns/tools/function-calling.md",
+        "/docs/patterns/a2a-agent-to-agent.md",
+        "/docs/patterns/observability-context.md"
+      ],
+      "sourcePath": "docs/patterns/agentic/router-multi-tool.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/patterns/agentic/router-multi-tool.md",
+      "min_read_minutes": 9,
+      "lastUpdated": "2025-10-06T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/patterns/rag/basics.md",
+      "slug": "patterns/rag/basics",
+      "category": "patterns",
+      "title": "RAG Basics",
+      "description": "Minimal retrieval-augmented generation: chunking, indexing, and grounded citations.",
+      "audience_levels": [
+        "intermediate"
+      ],
+      "personas": [
+        "developer",
+        "data-analyst"
+      ],
+      "categories": [
+        "patterns"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "rag",
+        "chunking",
+        "embeddings",
+        "citations",
+        "grounding"
+      ],
+      "related": [
+        "/docs/patterns/rag/faq-rag.md",
+        "/docs/evaluations/grounded-qa-evals.md"
+      ],
+      "sourcePath": "docs/patterns/rag/basics.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/patterns/rag/basics.md",
+      "min_read_minutes": 9,
+      "lastUpdated": "2025-10-06T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/patterns/rag/faq-rag.md",
+      "slug": "patterns/rag/faq-rag",
+      "category": "patterns",
+      "title": "FAQ RAG Pattern",
+      "description": "Build a FAQ-style RAG with a simple eval hook to keep answers grounded.",
+      "audience_levels": [
+        "intermediate"
+      ],
+      "personas": [
+        "developer",
+        "PM"
+      ],
+      "categories": [
+        "patterns"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "faq rag",
+        "grounded qa",
+        "eval hook",
+        "faithfulness"
+      ],
+      "related": [
+        "/docs/patterns/rag/basics.md",
+        "/docs/evaluations/grounded-qa-evals.md",
+        "/docs/evaluations/offline-batch-evals.md"
+      ],
+      "sourcePath": "docs/patterns/rag/faq-rag.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/patterns/rag/faq-rag.md",
+      "min_read_minutes": 7,
+      "lastUpdated": "2025-10-06T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/patterns/rag/hybrid-ranking.md",
+      "slug": "patterns/rag/hybrid-ranking",
+      "category": "patterns",
+      "title": "Hybrid ranking for RAG",
+      "description": "Combine sparse and dense retrieval with reranking for better relevance.",
+      "audience_levels": [
+        "intermediate",
+        "advanced"
+      ],
+      "personas": [
+        "developer"
+      ],
+      "categories": [
+        "patterns"
+      ],
+      "tags": [
+        "rag",
+        "retrieval",
+        "rerank"
+      ],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "hybrid retrieval",
+        "rerank"
+      ],
+      "related": [
+        "/docs/patterns/rag/basics.md"
+      ],
+      "sourcePath": "docs/patterns/rag/hybrid-ranking.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/patterns/rag/hybrid-ranking.md",
+      "min_read_minutes": 10,
+      "lastUpdated": "2025-10-08T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/patterns/specs/prompt-spec-template.md",
+      "slug": "patterns/specs/prompt-spec-template",
+      "category": "patterns",
+      "title": "Prompt spec template",
+      "description": "A lightweight prompt specification inspired by spec-kit.",
+      "audience_levels": [
+        "intermediate",
+        "advanced"
+      ],
+      "personas": [
+        "developer",
+        "PM"
+      ],
+      "categories": [
+        "patterns"
+      ],
+      "tags": [
+        "spec",
+        "prompting"
+      ],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "prompt spec",
+        "template"
+      ],
+      "related": [
+        "/docs/concepts/spec-vs-vibe-coding.md",
+        "/docs/patterns/specs/eval-spec-template.md"
+      ],
+      "sourcePath": "docs/patterns/specs/prompt-spec-template.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/patterns/specs/prompt-spec-template.md",
+      "min_read_minutes": 7,
+      "lastUpdated": "2025-10-08T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/patterns/tools/function-calling.md",
+      "slug": "patterns/tools/function-calling",
+      "category": "patterns",
+      "title": "Cross‑Provider Tool/Function Calling",
+      "description": "Design schemas, ensure idempotency, and propagate errors consistently across providers.",
+      "audience_levels": [
+        "intermediate",
+        "advanced"
+      ],
+      "personas": [
+        "developer"
+      ],
+      "categories": [
+        "patterns"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "function calling",
+        "tools",
+        "schema",
+        "errors",
+        "openai",
+        "anthropic"
+      ],
+      "related": [
+        "/docs/patterns/agentic/router-multi-tool.md",
+        "/docs/patterns/workflows/batch-processing.md"
+      ],
+      "sourcePath": "docs/patterns/tools/function-calling.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/patterns/tools/function-calling.md",
+      "min_read_minutes": 10,
+      "lastUpdated": "2025-10-06T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/patterns/workflows/batch-processing.md",
+      "slug": "patterns/workflows/batch-processing",
+      "category": "patterns",
+      "title": "Batch Processing Workflows",
+      "description": "Run offline batches with retries, cost caps, and resumability.",
+      "audience_levels": [
+        "intermediate",
+        "advanced"
+      ],
+      "personas": [
+        "developer",
+        "PM"
+      ],
+      "categories": [
+        "patterns"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "batch",
+        "offline",
+        "retries",
+        "resume",
+        "cost cap"
+      ],
+      "related": [
+        "/docs/evaluations/offline-batch-evals.md",
+        "/docs/patterns/cost-controls.md"
+      ],
+      "sourcePath": "docs/patterns/workflows/batch-processing.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/patterns/workflows/batch-processing.md",
+      "min_read_minutes": 8,
+      "lastUpdated": "2025-10-06T00:00:00.000Z"
+    },
+    {
       "path": "/docs/providers/anthropic/overview.md",
       "slug": "providers/anthropic/overview",
       "category": "providers",
@@ -2761,314 +3158,6 @@
       "sourcePath": "docs/providers/openai/overview.md",
       "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/providers/openai/overview.md",
       "min_read_minutes": 7,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/patterns/agentic/planner-executor.md",
-      "slug": "patterns/agentic/planner-executor",
-      "category": "patterns",
-      "title": "Pattern: Planner–Executor",
-      "description": "A classic agent loop where a planner decides next steps and an executor performs them with tools.",
-      "audience_levels": [
-        "intermediate",
-        "advanced"
-      ],
-      "personas": [
-        "developer",
-        "data-analyst"
-      ],
-      "categories": [
-        "patterns"
-      ],
-      "tags": [
-        "agent",
-        "planner",
-        "tools"
-      ],
-      "relatedProjectTypes": [],
-      "search_keywords": [],
-      "related": [],
-      "sourcePath": "docs/patterns/agentic/planner-executor.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/patterns/agentic/planner-executor.md",
-      "min_read_minutes": 12,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/patterns/agentic/reflection-self-heal.md",
-      "slug": "patterns/agentic/reflection-self-heal",
-      "category": "patterns",
-      "title": "Reflection Loop: Self‑Healing Outputs",
-      "description": "Use rubric prompts to critique model outputs, retry within a budget, and converge on quality.",
-      "audience_levels": [
-        "intermediate",
-        "advanced"
-      ],
-      "personas": [
-        "developer",
-        "PM"
-      ],
-      "categories": [
-        "patterns"
-      ],
-      "tags": [],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "reflection",
-        "self critique",
-        "retry budget",
-        "rubric",
-        "quality"
-      ],
-      "related": [
-        "/docs/evaluations/rubric-prompts.md",
-        "/docs/patterns/cost-controls.md"
-      ],
-      "sourcePath": "docs/patterns/agentic/reflection-self-heal.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/patterns/agentic/reflection-self-heal.md",
-      "min_read_minutes": 8,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/patterns/agentic/router-multi-tool.md",
-      "slug": "patterns/agentic/router-multi-tool",
-      "category": "patterns",
-      "title": "Router Agent: Multi‑Tool Selection",
-      "description": "Design a router that selects among tools based on user intent, with guardrails and timeouts.",
-      "audience_levels": [
-        "intermediate",
-        "advanced"
-      ],
-      "personas": [
-        "developer",
-        "PM"
-      ],
-      "categories": [
-        "patterns"
-      ],
-      "tags": [],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "router agent",
-        "tool selection",
-        "multi tool",
-        "guardrails",
-        "timeouts"
-      ],
-      "related": [
-        "/docs/patterns/tools/function-calling.md",
-        "/docs/patterns/a2a-agent-to-agent.md",
-        "/docs/patterns/observability-context.md"
-      ],
-      "sourcePath": "docs/patterns/agentic/router-multi-tool.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/patterns/agentic/router-multi-tool.md",
-      "min_read_minutes": 9,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/patterns/rag/basics.md",
-      "slug": "patterns/rag/basics",
-      "category": "patterns",
-      "title": "RAG Basics",
-      "description": "Minimal retrieval-augmented generation: chunking, indexing, and grounded citations.",
-      "audience_levels": [
-        "intermediate"
-      ],
-      "personas": [
-        "developer",
-        "data-analyst"
-      ],
-      "categories": [
-        "patterns"
-      ],
-      "tags": [],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "rag",
-        "chunking",
-        "embeddings",
-        "citations",
-        "grounding"
-      ],
-      "related": [
-        "/docs/patterns/rag/faq-rag.md",
-        "/docs/evaluations/grounded-qa-evals.md"
-      ],
-      "sourcePath": "docs/patterns/rag/basics.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/patterns/rag/basics.md",
-      "min_read_minutes": 9,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/patterns/rag/faq-rag.md",
-      "slug": "patterns/rag/faq-rag",
-      "category": "patterns",
-      "title": "FAQ RAG Pattern",
-      "description": "Build a FAQ-style RAG with a simple eval hook to keep answers grounded.",
-      "audience_levels": [
-        "intermediate"
-      ],
-      "personas": [
-        "developer",
-        "PM"
-      ],
-      "categories": [
-        "patterns"
-      ],
-      "tags": [],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "faq rag",
-        "grounded qa",
-        "eval hook",
-        "faithfulness"
-      ],
-      "related": [
-        "/docs/patterns/rag/basics.md",
-        "/docs/evaluations/grounded-qa-evals.md",
-        "/docs/evaluations/offline-batch-evals.md"
-      ],
-      "sourcePath": "docs/patterns/rag/faq-rag.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/patterns/rag/faq-rag.md",
-      "min_read_minutes": 7,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/patterns/rag/hybrid-ranking.md",
-      "slug": "patterns/rag/hybrid-ranking",
-      "category": "patterns",
-      "title": "Hybrid ranking for RAG",
-      "description": "Combine sparse and dense retrieval with reranking for better relevance.",
-      "audience_levels": [
-        "intermediate",
-        "advanced"
-      ],
-      "personas": [
-        "developer"
-      ],
-      "categories": [
-        "patterns"
-      ],
-      "tags": [
-        "rag",
-        "retrieval",
-        "rerank"
-      ],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "hybrid retrieval",
-        "rerank"
-      ],
-      "related": [
-        "/docs/patterns/rag/basics.md"
-      ],
-      "sourcePath": "docs/patterns/rag/hybrid-ranking.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/patterns/rag/hybrid-ranking.md",
-      "min_read_minutes": 10,
-      "lastUpdated": "2025-10-08T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/patterns/specs/prompt-spec-template.md",
-      "slug": "patterns/specs/prompt-spec-template",
-      "category": "patterns",
-      "title": "Prompt spec template",
-      "description": "A lightweight prompt specification inspired by spec-kit.",
-      "audience_levels": [
-        "intermediate",
-        "advanced"
-      ],
-      "personas": [
-        "developer",
-        "PM"
-      ],
-      "categories": [
-        "patterns"
-      ],
-      "tags": [
-        "spec",
-        "prompting"
-      ],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "prompt spec",
-        "template"
-      ],
-      "related": [
-        "/docs/concepts/spec-vs-vibe-coding.md",
-        "/docs/patterns/specs/eval-spec-template.md"
-      ],
-      "sourcePath": "docs/patterns/specs/prompt-spec-template.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/patterns/specs/prompt-spec-template.md",
-      "min_read_minutes": 7,
-      "lastUpdated": "2025-10-08T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/patterns/tools/function-calling.md",
-      "slug": "patterns/tools/function-calling",
-      "category": "patterns",
-      "title": "Cross‑Provider Tool/Function Calling",
-      "description": "Design schemas, ensure idempotency, and propagate errors consistently across providers.",
-      "audience_levels": [
-        "intermediate",
-        "advanced"
-      ],
-      "personas": [
-        "developer"
-      ],
-      "categories": [
-        "patterns"
-      ],
-      "tags": [],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "function calling",
-        "tools",
-        "schema",
-        "errors",
-        "openai",
-        "anthropic"
-      ],
-      "related": [
-        "/docs/patterns/agentic/router-multi-tool.md",
-        "/docs/patterns/workflows/batch-processing.md"
-      ],
-      "sourcePath": "docs/patterns/tools/function-calling.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/patterns/tools/function-calling.md",
-      "min_read_minutes": 10,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/patterns/workflows/batch-processing.md",
-      "slug": "patterns/workflows/batch-processing",
-      "category": "patterns",
-      "title": "Batch Processing Workflows",
-      "description": "Run offline batches with retries, cost caps, and resumability.",
-      "audience_levels": [
-        "intermediate",
-        "advanced"
-      ],
-      "personas": [
-        "developer",
-        "PM"
-      ],
-      "categories": [
-        "patterns"
-      ],
-      "tags": [],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "batch",
-        "offline",
-        "retries",
-        "resume",
-        "cost cap"
-      ],
-      "related": [
-        "/docs/evaluations/offline-batch-evals.md",
-        "/docs/patterns/cost-controls.md"
-      ],
-      "sourcePath": "docs/patterns/workflows/batch-processing.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/patterns/workflows/batch-processing.md",
-      "min_read_minutes": 8,
       "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
     {
