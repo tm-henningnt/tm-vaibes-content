@@ -292,11 +292,11 @@ Keep arrays deduped; include at least one category; use `primary_category` if yo
     - Purpose: Build a mini app in Canvas that calls provider APIs (mocked locally), then export to Next.js/Python.
     - Audience: developer.
     - Success: working minimal app exported from Canvas and run locally.
-71. [ ] /docs/tutorials/nextjs-vercel-prisma-sqlite.md
+71. [qa ready] /docs/tutorials/nextjs-vercel-prisma-sqlite.md
     - Purpose: Build a Next.js App Router app with Prisma and SQLite; deploy to Vercel.
     - Audience: developer.
     - Success: local dev with SQLite, Prisma migrations, Vercel deployment with env setup.
-72. [ ] /docs/tutorials/python-fastapi-sqlite-ai-service.md
+72. [qa ready] /docs/tutorials/python-fastapi-sqlite-ai-service.md
     - Purpose: Python FastAPI service that calls an AI provider, persists sessions in SQLite, and exposes a minimal API.
     - Audience: developer, data‑analyst.
     - Success: local SQLite DB, migrations, retry/backoff, structured JSON responses.
