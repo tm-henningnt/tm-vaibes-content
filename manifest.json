@@ -1,8 +1,8 @@
 {
   "$schema": "./tools/schemas/manifest.schema.json",
   "version": "2025.10.1",
-  "generated_at": "2025-10-08T23:34:18.404Z",
-  "hash": "98e69d1e25ae95e5",
+  "generated_at": "2025-10-09T04:51:29.770Z",
+  "hash": "dc1dbc027cc54b38",
   "docs": [
     {
       "path": "/docs/index.md",
@@ -2195,6 +2195,40 @@
       "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
     {
+      "path": "/docs/tutorials/chatgpt-business/canvas-mini-apps.md",
+      "slug": "tutorials/chatgpt-business/canvas-mini-apps",
+      "category": "tutorials",
+      "title": "Canvas mini apps from prototype to production",
+      "description": "Build a mini app inside ChatGPT Canvas, wire it to mocked provider APIs, and export the project to Next.js or Python.",
+      "audience_levels": [
+        "intermediate"
+      ],
+      "personas": [
+        "developer"
+      ],
+      "categories": [
+        "tutorials"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "chatgpt canvas",
+        "mini app",
+        "next.js export",
+        "api mocking",
+        "rapid prototyping"
+      ],
+      "related": [
+        "/docs/tutorials/chatgpt-business/canvas-python-starters.md",
+        "/docs/tutorials/chatgpt-business/canvas-nodejs-starters.md",
+        "/docs/quickstarts/js-server-route.md"
+      ],
+      "sourcePath": "docs/tutorials/chatgpt-business/canvas-mini-apps.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/tutorials/chatgpt-business/canvas-mini-apps.md",
+      "min_read_minutes": 24,
+      "lastUpdated": "2025-02-15T00:00:00.000Z"
+    },
+    {
       "path": "/docs/tutorials/chatgpt-business/canvas-nodejs-starters.md",
       "slug": "tutorials/chatgpt-business/canvas-nodejs-starters",
       "category": "tutorials",
@@ -2303,6 +2337,78 @@
       "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/tutorials/chatgpt-business/code-assist-copiloting.md",
       "min_read_minutes": 22,
       "lastUpdated": "2025-02-14T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/tutorials/chatgpt-business/custom-gpts-and-policies.md",
+      "slug": "tutorials/chatgpt-business/custom-gpts-and-policies",
+      "category": "tutorials",
+      "title": "Governed custom GPTs for teams",
+      "description": "Design, publish, and maintain custom GPTs with clear instructions, actions, and safety policies for your workspace.",
+      "audience_levels": [
+        "intermediate"
+      ],
+      "personas": [
+        "PM",
+        "developer"
+      ],
+      "categories": [
+        "tutorials"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "custom gpt",
+        "workspace policies",
+        "chatgpt actions",
+        "governance",
+        "deployment checklist"
+      ],
+      "related": [
+        "/docs/tutorials/chatgpt-business/overview.md",
+        "/docs/concepts/ethics-responsible-ai.md",
+        "/docs/concepts/safety-basics.md"
+      ],
+      "sourcePath": "docs/tutorials/chatgpt-business/custom-gpts-and-policies.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/tutorials/chatgpt-business/custom-gpts-and-policies.md",
+      "min_read_minutes": 22,
+      "lastUpdated": "2025-02-15T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/tutorials/chatgpt-business/data-analysis-and-files.md",
+      "slug": "tutorials/chatgpt-business/data-analysis-and-files",
+      "category": "tutorials",
+      "title": "ChatGPT data analysis and file workflows",
+      "description": "Use ChatGPT Business to analyze uploaded datasets, generate charts, and validate insights safely.",
+      "audience_levels": [
+        "beginner",
+        "intermediate"
+      ],
+      "personas": [
+        "PM",
+        "data-analyst",
+        "developer"
+      ],
+      "categories": [
+        "tutorials"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "chatgpt data analysis",
+        "file uploads",
+        "chart generation",
+        "csv insights",
+        "analysis safety"
+      ],
+      "related": [
+        "/docs/tutorials/chatgpt-business/overview.md",
+        "/docs/tutorials/chatgpt-business/code-assist-copiloting.md",
+        "/docs/concepts/safety-basics.md"
+      ],
+      "sourcePath": "docs/tutorials/chatgpt-business/data-analysis-and-files.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/tutorials/chatgpt-business/data-analysis-and-files.md",
+      "min_read_minutes": 20,
+      "lastUpdated": "2025-02-15T00:00:00.000Z"
     },
     {
       "path": "/docs/tutorials/chatgpt-business/overview.md",
