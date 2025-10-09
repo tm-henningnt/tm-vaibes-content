@@ -171,13 +171,13 @@ Keep arrays deduped; include at least one category; use `primary_category` if yo
     - Purpose: What embeddings are; search vs clustering vs reranking.
     - Success: readers pick dimensions/models; normalize vectors.
 
-26. [ ] /docs/concepts/multimodal-fundamentals.md
+26. [qa ready] /docs/concepts/multimodal-fundamentals.md
     - Purpose: Vision, audio, doc understanding; constraints and safety.
 
-27. [ ] /docs/concepts/caching-and-retries.md
+27. [qa ready] /docs/concepts/caching-and-retries.md
     - Purpose: Response caching basics; idempotency; retry budgets.
 
-28. [ ] /docs/examples/provider-switching.md
+28. [qa ready] /docs/examples/provider-switching.md
     - Purpose: Swap providers behind a thin abstraction; pitfalls.
 
 33. [ ] /docs/examples/toolformer-style-extraction.md
@@ -262,8 +262,8 @@ Keep arrays deduped; include at least one category; use `primary_category` if yo
 59. [ ] /docs/tutorials/cost-guardrails.md (expand)
 60. [ ] /docs/tutorials/observability-end-to-end.md (expand)
 61. [ ] /docs/tutorials/production-hardening.md (expand)
-62. [ ] /docs/examples/ai-customer-support-triage.md (expand)
-63. [ ] /docs/examples/a2a-coordination.md (expand)
+62. [qa ready] /docs/examples/ai-customer-support-triage.md (expand)
+63. [qa ready] /docs/examples/a2a-coordination.md (expand)
 64. [ ] /docs/tutorials/chatgpt-business/overview.md
     - Purpose: Onboarding to ChatGPT Business: workspaces, shared conversations, privacy controls, file uploads, GPT Store access.
     - Audience: non-technical, PM, developer.
