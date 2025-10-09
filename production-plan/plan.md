@@ -44,7 +44,7 @@ Keep arrays deduped; include at least one category; use `primary_category` if yo
 
 ## Wave 1 — Foundations & Onboarding (17 tasks)
 
-1. [qa ready] /docs/concepts/what-is-genai.md
+1. [qa ready] /docs/concepts/what-is-genai.md — refreshed to qa ready (2025-02-14)
    - Purpose: Define Generative AI, capabilities/limits, and mental models.
    - Audience: beginner → advanced.
    - Success: readers can articulate strengths/limits and when to avoid LLMs.

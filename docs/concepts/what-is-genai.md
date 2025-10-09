@@ -1,109 +1,163 @@
 ---
 title: What is Generative AI?
-description: Understand what generative AI can do, its limits, and how to decide when it is the right tool for the job.
+description: Understand how generative models produce text, images, and code, what they do well, and when to reach for other techniques.
 audience_levels: [beginner, intermediate, advanced]
-personas: [non-technical, PM, developer, data-analyst, admin]
+personas: [non-technical, PM, developer, data-analyst]
 categories: [concepts]
 min_read_minutes: 12
 last_reviewed: 2025-02-14
-tags: [generative-ai, llm, capabilities, limitations]
 related:
   [
-    "/docs/concepts/genai-vs-agentic.md",
     "/docs/concepts/prompting-styles.md",
-    "/docs/concepts/token-costs-latency.md",
-    "/docs/concepts/safety-basics.md"
+    "/docs/concepts/genai-vs-agentic.md",
+    "/docs/concepts/safety-basics.md",
+    "/docs/quickstarts/try-genai-in-10-min.md"
   ]
 search_keywords:
   [
-    "generative ai definition",
-    "llm capabilities",
-    "genai limitations",
-    "mental models",
-    "use cases"
+    "generative ai basics",
+    "foundation models",
+    "large language models",
+    "diffusion models",
+    "genai limitations"
   ]
 show_toc: true
 ---
 
-## Introduction
-Generative AI (GenAI) refers to models that synthesize new content—text, code, images, audio, or video—conditioned on human instructions or other inputs. These models are trained on large corpora and can generalize to new prompts without task-specific fine-tuning. This guide explains what GenAI is, what it excels at, where it fails, and how to decide whether it belongs in your solution.
+## Why generative AI matters
+
+Generative AI (GenAI) systems learn patterns from vast datasets and then produce new content—text, code, images, audio, or video—that stays statistically close to their training data. They unlock natural-language interfaces, faster prototyping, and personalized experiences without bespoke rule engines. The tradeoff: models are probabilistic, so you must design guardrails and evaluations before putting them in front of customers.
 
 ### You’ll learn
-- Core mental models for how large language models (LLMs) generate outputs
-- Practical strengths and limitations you can explain to non-technical stakeholders
-- A decision checklist to assess GenAI fit before building
-- How to frame prompts and guardrails for safe, reliable deployments
-- Where to find deeper dives on prompting, agents, and safety
+- Core building blocks behind today’s foundation models
+- Common capabilities and failure modes when working with LLMs
+- How to reason about costs, latency, and quality tradeoffs
+- When to combine GenAI with retrieval, tools, or deterministic logic
+- Governance practices to keep experiments safe and measurable
 
-## Mental models for generative AI
-Think about GenAI using two complementary perspectives:
+## Foundations of generative models
 
-1. **Statistical next-token prediction.** At inference time, an LLM predicts the most likely next token based on the prior tokens and its training data. This explains variability, hallucinations, and why clear instructions matter.
-2. **Tool-augmented reasoning.** Modern systems pair the core model with retrieval, function calling, or external tools to ground answers in current data and extend beyond raw training knowledge.
+Large language models (LLMs) and diffusion models dominate GenAI today. They share two ideas: pretraining on massive corpora and fine-tuning for downstream tasks.
 
-These mental models help you reason about tradeoffs:
+- **Autoregressive transformers** predict the next token given prior context. Architectures like GPT-4o or Claude 3 pair multi-head attention with billions of parameters to capture linguistic patterns.
+- **Diffusion models** generate images or audio by iteratively denoising random noise, guided by text or image conditioning prompts. OpenAI’s DALL·E and Stability AI’s Stable Diffusion are popular examples.
+- **Fine-tuning and alignment** adapt pretrained models with supervised instructions, reinforcement learning from human feedback (RLHF), or constitutional techniques that encode policy rules.
 
-- **Prompt clarity** reduces ambiguity for the probabilistic predictor.
-- **Context windows** bound how much information the model can consider at once.
-- **External tools** mitigate knowledge gaps but add latency, cost, and complexity.
+> Mental model: treat GenAI as a probabilistic function `f(context) -> distribution over tokens`. You steer the distribution with prompts, examples, retrieval context, or tool outputs.
 
-## Strengths and limitations
+## Capabilities you can rely on
 
-| Area | Where GenAI shines | Where it struggles |
+| Capability | What works well | Implementation tips |
 | --- | --- | --- |
-| **Language understanding** | Summaries, translations, tone adjustments, draft generation | Domain-specific jargon without examples; long legal or regulatory nuance |
-| **Reasoning** | Lightweight planning, brainstorming alternatives, data explanation when context is supplied | Multi-step arithmetic, strict logical proofs, adversarial or ambiguous instructions |
-| **Knowledge** | Broad coverage of public web content up to training cutoff; codifies best practices | Real-time facts, proprietary data, evolving regulations |
-| **Output formats** | Flexible natural language, pseudo-code, structured JSON (with schema guidance) | Strictly deterministic outputs, binary files, raw media generation without specialized models |
-| **Safety** | Built-in policy filters, can refuse unsafe requests | Susceptible to jailbreak prompts, may leak sensitive training data if misconfigured |
+| Natural-language summarization | Condense long text, explain code, or generate meeting notes. | Provide role, audience, and length constraints; chunk long docs and merge summaries. |
+| Structured drafting | Produce outlines, tables, JSON payloads, or marketing briefs. | Define explicit schemas; validate outputs before downstream use. |
+| Reasoning over context | Answer questions from supplied documents or search results. | Keep context windows under provider limits; highlight critical facts. |
+| Lightweight tool orchestration | Call calculators, calendars, or ticketing APIs via function calling. | Document tool contracts and add retries/timeouts; log payload metadata. |
+| Multimodal interpretation | Some models interpret images, code blocks, or charts to provide narratives. | Redact sensitive data before upload; pair with human review for critical insights. |
 
-> **Tip:** Pair every GenAI workflow with human review, logging, or automated evaluation when outcomes influence compliance, revenue, or safety-critical systems.
+Backstop every capability with monitoring—token usage, latency, quality scores, and incident reports—so you can catch regressions early.
 
-## Cost, latency, and reliability constraints
+## Limitations and failure modes
 
-- **Tokens drive cost and latency.** Each request consumes input and output tokens, billed per model. Favor concise prompts, caching, and streaming responses when users need fast feedback.
-- **Model selection matters.** Smaller, cheaper models (e.g., GPT-4o mini) handle drafting or summarization; larger models (e.g., GPT-4.1, Claude 3 Opus) deliver stronger reasoning at higher latency and cost.
-- **Determinism is limited.** Even with `temperature: 0`, LLMs can vary across runs. Use guardrails such as schema validation, retries, and eval suites to monitor quality.
+Generative models guess the most likely continuation, so they can introduce risks:
 
-## Decision checklist: Should you use GenAI?
+- **Hallucinations:** Confident-sounding but incorrect answers when the model lacks facts or misinterprets context. Mitigate with retrieval, citations, and automated evaluators.
+- **Context sensitivity:** Outputs can swing based on prompt phrasing or order of examples. Version and regression-test prompts just like code.
+- **Data leakage:** Customer inputs may get logged or used for future training if you skip enterprise opt-outs. Review provider policies and scrub PII.
+- **Bias and safety gaps:** Models reflect their training data. Build red-team prompts, block disallowed topics, and maintain escalation paths.
+- **Latency and cost variability:** Larger models cost more tokens and milliseconds. Measure 95th percentile latency, not just averages.
 
-1. **Define the outcome.** Can the task tolerate non-deterministic outputs or require creativity? If precise, rule-based outcomes are required, consider classic automation first.
-2. **Check data availability.** Do you have high-quality prompts, examples, or retrieval sources to ground answers? Without them, expect hallucinations.
-3. **Evaluate constraints.** Identify latency budgets, cost ceilings, and privacy requirements. If you cannot keep data server-side or anonymized, GenAI may be off the table.
-4. **Plan for review.** Decide who verifies outputs, how feedback is captured, and what metrics define success (accuracy, tone, safety).
-5. **Start small.** Pilot with a single narrow use case, measure performance, and expand only when the system consistently meets acceptance criteria.
+## Cost and latency at a glance
 
-## Common use cases
+Use the smallest model that meets quality requirements. Track these levers:
 
-- **Drafting and ideation:** Marketing copy, meeting agendas, support replies, product brainstorms.
-- **Summarization and classification:** Condensing long documents, tagging customer feedback, extracting key entities.
-- **Transformation and localization:** Converting formats (JSON ↔️ prose), rewriting for tone, translating content with glossaries.
-- **Conversational assistants:** Context-aware chatbots that retrieve internal knowledge and maintain session state.
-- **Developer productivity:** Code review assistance, test scaffolding, API exploration with built-in safety guardrails.
+- **Model size:** GPT-4o mini or Claude Haiku cost less and respond faster than flagship models, making them ideal for drafts or lightweight tooling.
+- **Context window:** More context = more tokens. Trim prompts, summarize history, or use retrieval with short citations.
+- **Streaming vs. batch:** Stream responses to improve perceived latency for chat UIs; use batch completions for offline processing.
+- **Caching:** Cache deterministic prompts or store embeddings to avoid repeated calls.
+- **Hybrid stacks:** Combine deterministic preprocessing (regex, SQL) with model calls to cut tokens and improve reliability.
 
-Avoid deploying GenAI without additional controls for:
+## Choosing the right workflow
 
-- **Safety-critical domains** (medical, legal, financial decisions) unless humans remain in the loop.
-- **Deterministic transformations** where regexes or rules guarantee accuracy.
-- **Bulk personal data processing** if you cannot comply with privacy policies or data residency requirements.
+Start with the least complex approach and scale up only when metrics demand it.
 
-## Implementation guardrails
+1. **Single-shot prompt:** A well-crafted instruction plus context often solves focused tasks (e.g., draft an email). Evaluate accuracy with golden examples before shipping.
+2. **Retrieval-augmented generation (RAG):** When knowledge must stay current or cite sources, index documents with embeddings and inject top matches into prompts.
+3. **Tool use:** Use function calling for calculations, database lookups, or workflow triggers. Model outputs should include structured JSON with tool arguments and results.
+4. **Agentic orchestration:** Introduce planners, memory, or multi-step loops only when single prompts hit reliability ceilings. Observe each step and enforce budgets.
 
-- **Secure the API key.** Keep provider keys on the server, rotate them regularly, and restrict scopes.
-- **Instrument everything.** Log request IDs, token usage, latency, and user/session metadata (no raw prompts or PII) to spot regressions.
-- **Test with eval sets.** Build a small golden dataset and use automatic grading or human review cycles to gauge accuracy before launch.
-- **Plan for fallback paths.** Offer manual escalation, cached answers, or deterministic flows when the model cannot comply.
+## Quick look: calling a model
 
-## Where to learn more
+Below are minimal examples for OpenAI’s Responses API. They show the moving parts you must configure regardless of provider: model name, instructions, input messages, and safety settings.
 
-- **Prompting techniques:** `/docs/concepts/prompting-styles.md`
-- **Agentic workflows:** `/docs/concepts/genai-vs-agentic.md`
-- **Cost management:** `/docs/concepts/token-costs-latency.md`
-- **Safety fundamentals:** `/docs/concepts/safety-basics.md`
+```python
+import os
+from openai import OpenAI
+
+client = OpenAI(api_key=os.environ["OPENAI_API_KEY"])
+
+response = client.responses.create(
+    model="gpt-4o-mini",
+    input=[
+        {
+            "role": "system",
+            "content": "You draft concise product briefs with bullet points."
+        },
+        {
+            "role": "user",
+            "content": "Summarize the key value props of our analytics assistant for sales leaders."
+        }
+    ],
+    temperature=0.7,
+    max_output_tokens=400
+)
+
+print(response.output_text)
+```
+
+```ts
+import OpenAI from "openai";
+
+const client = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
+
+const response = await client.responses.create({
+  model: "gpt-4o-mini",
+  input: [
+    { role: "system", content: "You write meeting recaps with decisions and owners." },
+    { role: "user", content: "Summarize the attached transcript in under 200 words." }
+  ],
+  temperature: 0.6,
+  max_output_tokens: 300
+});
+
+console.log(response.output_text);
+```
+
+Both snippets highlight where to tune tone, creativity, and token budgets. Wrap them in retries with exponential backoff, log token usage, and redact sensitive data before storing requests.
+
+## Evaluation checklist
+
+- Define success metrics: accuracy rubric, grounded citations, response time, customer satisfaction.
+- Build a curated evaluation set (10–50 examples) with expected outputs or scoring criteria.
+- Automate regression tests using provider batch APIs or open-source tools (e.g., Evals, LangSmith). Track deltas when models update.
+- Monitor production traffic for drift: log prompt IDs, anonymized inputs, token counts, and moderation flags.
+- Establish human review loops for high-impact tasks (financial advice, policy decisions, medical insights).
+
+## When not to use generative AI
+
+Skip or defer GenAI when:
+
+- Regulatory requirements demand deterministic, audit-friendly outputs you can justify line-by-line.
+- Latency budgets are tighter than ~150 ms end-to-end, making LLM calls impractical without heavy caching.
+- Training data is scarce or sensitive, and contracts forbid sending it to third-party providers.
+- Simple heuristics, SQL queries, or rule engines already meet stakeholder needs.
+
+Pair GenAI with conventional automation: use scripts for structured updates, then generate narrative summaries or suggestions for humans to review.
 
 ## References
 
-- OpenAI. “How does ChatGPT work?” (2023). <https://platform.openai.com/docs/how-chatgpt-works>
-- Anthropic. “Overview of Claude 3.” (2024). <https://docs.anthropic.com/en/docs/about-claude/models>
-- Google DeepMind. “Gemini Models.” (2024). <https://ai.google.dev/models/gemini>
-- Microsoft. “Responsible AI practices for Azure OpenAI Service.” (2024). <https://learn.microsoft.com/azure/ai-services/openai/concepts/responsible-use>
+- OpenAI. “Introduction to the API.” 2024. <https://platform.openai.com/docs/overview>
+- Anthropic. “Claude model card and usage guidance.” 2024. <https://docs.anthropic.com/en/docs/about-claude/models>
+- Google. “Gemini API quickstart.” 2024. <https://ai.google.dev/gemini-api/docs/quickstart>
+- Microsoft. “Responsible AI for Azure OpenAI.” 2024. <https://learn.microsoft.com/azure/ai-services/openai/concepts/responsible-ai-overview>
+- NIST. “AI Risk Management Framework (AI RMF 1.0).” 2023. <https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf>
