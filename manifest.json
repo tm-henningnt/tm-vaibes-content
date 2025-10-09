@@ -1,8 +1,8 @@
 {
   "$schema": "./tools/schemas/manifest.schema.json",
   "version": "2025.10.1",
-  "generated_at": "2025-10-09T11:22:42.779Z",
-  "hash": "feac4f002ddb3360",
+  "generated_at": "2025-10-09T11:32:44.696Z",
+  "hash": "bd4c239c1c1863b5",
   "docs": [
     {
       "path": "/docs/index.md",
@@ -1664,8 +1664,8 @@
       "path": "/docs/patterns/cost-controls.md",
       "slug": "patterns/cost-controls",
       "category": "patterns",
-      "title": "Cost Controls for AI Apps",
-      "description": "Apply max tokens, streaming, truncation, caching hints, and retries to manage spend.",
+      "title": "Cost controls for AI apps",
+      "description": "Apply token budgets, truncation, caching, and adaptive model selection to manage spend without sacrificing quality.",
       "audience_levels": [
         "intermediate",
         "advanced"
@@ -1689,19 +1689,20 @@
       ],
       "related": [
         "/docs/evaluations/latency-cost-tradeoffs.md",
-        "/docs/patterns/workflows/batch-processing.md"
+        "/docs/patterns/workflows/batch-processing.md",
+        "/docs/patterns/observability-context.md"
       ],
       "sourcePath": "docs/patterns/cost-controls.md",
       "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/patterns/cost-controls.md",
-      "min_read_minutes": 8,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
+      "min_read_minutes": 11,
+      "lastUpdated": "2025-02-17T00:00:00.000Z"
     },
     {
       "path": "/docs/patterns/observability-context.md",
       "slug": "patterns/observability-context",
       "category": "patterns",
-      "title": "Observability for AI Context",
-      "description": "Log the right metadata (not raw prompts) with correlation IDs and PII avoidance.",
+      "title": "Observability for AI context",
+      "description": "Log actionable metadata for LLM calls while protecting user privacy and enabling traceability across tools.",
       "audience_levels": [
         "intermediate"
       ],
@@ -1724,12 +1725,13 @@
       ],
       "related": [
         "/docs/operations/observability.md",
-        "/docs/providers/security-best-practices.md"
+        "/docs/patterns/specs/tool-spec-template.md",
+        "/docs/patterns/rag/evals-hook.md"
       ],
       "sourcePath": "docs/patterns/observability-context.md",
       "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/patterns/observability-context.md",
-      "min_read_minutes": 7,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
+      "min_read_minutes": 10,
+      "lastUpdated": "2025-02-17T00:00:00.000Z"
     },
     {
       "path": "/docs/providers/compare-providers.md",
@@ -2563,7 +2565,7 @@
       "path": "/docs/patterns/agentic/reflection-self-heal.md",
       "slug": "patterns/agentic/reflection-self-heal",
       "category": "patterns",
-      "title": "Reflection Loop: Self‑Healing Outputs",
+      "title": "Reflection Loop: Self-Healing Outputs",
       "description": "Use rubric prompts to critique model outputs, retry within a budget, and converge on quality.",
       "audience_levels": [
         "intermediate",
@@ -2587,19 +2589,20 @@
       ],
       "related": [
         "/docs/evaluations/rubric-prompts.md",
-        "/docs/patterns/cost-controls.md"
+        "/docs/patterns/cost-controls.md",
+        "/docs/patterns/specs/eval-spec-template.md"
       ],
       "sourcePath": "docs/patterns/agentic/reflection-self-heal.md",
       "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/patterns/agentic/reflection-self-heal.md",
-      "min_read_minutes": 8,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
+      "min_read_minutes": 12,
+      "lastUpdated": "2025-02-17T00:00:00.000Z"
     },
     {
       "path": "/docs/patterns/agentic/router-multi-tool.md",
       "slug": "patterns/agentic/router-multi-tool",
       "category": "patterns",
-      "title": "Router Agent: Multi‑Tool Selection",
-      "description": "Design a router that selects among tools based on user intent, with guardrails and timeouts.",
+      "title": "Router Agent: Multi-Tool Selection",
+      "description": "Design a router that classifies intents, selects the right tool, and enforces guardrails across a multi-provider stack.",
       "audience_levels": [
         "intermediate",
         "advanced"
@@ -2627,8 +2630,8 @@
       ],
       "sourcePath": "docs/patterns/agentic/router-multi-tool.md",
       "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/patterns/agentic/router-multi-tool.md",
-      "min_read_minutes": 9,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
+      "min_read_minutes": 13,
+      "lastUpdated": "2025-02-17T00:00:00.000Z"
     },
     {
       "path": "/docs/patterns/prompting/recipes.md",
@@ -2674,7 +2677,7 @@
       "slug": "patterns/rag/basics",
       "category": "patterns",
       "title": "RAG Basics",
-      "description": "Minimal retrieval-augmented generation: chunking, indexing, and grounded citations.",
+      "description": "Implement retrieval-augmented generation end to end: chunking, indexing, prompt grounding, and monitoring.",
       "audience_levels": [
         "intermediate"
       ],
@@ -2696,12 +2699,50 @@
       ],
       "related": [
         "/docs/patterns/rag/faq-rag.md",
-        "/docs/evaluations/grounded-qa-evals.md"
+        "/docs/evaluations/grounded-qa-evals.md",
+        "/docs/concepts/embeddings.md"
       ],
       "sourcePath": "docs/patterns/rag/basics.md",
       "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/patterns/rag/basics.md",
-      "min_read_minutes": 9,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
+      "min_read_minutes": 14,
+      "lastUpdated": "2025-02-17T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/patterns/rag/evals-hook.md",
+      "slug": "patterns/rag/evals-hook",
+      "category": "patterns",
+      "title": "RAG eval hooks",
+      "description": "Wire automated evaluations into your retrieval-augmented generation pipeline for continuous quality tracking.",
+      "audience_levels": [
+        "intermediate",
+        "advanced"
+      ],
+      "personas": [
+        "developer",
+        "PM"
+      ],
+      "categories": [
+        "patterns",
+        "evaluations"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "rag evals",
+        "grounded qa",
+        "quality monitoring",
+        "automatic evaluations",
+        "retrieval instrumentation"
+      ],
+      "related": [
+        "/docs/evaluations/grounded-qa-evals.md",
+        "/docs/patterns/rag/basics.md",
+        "/docs/patterns/observability-context.md"
+      ],
+      "sourcePath": "docs/patterns/rag/evals-hook.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/patterns/rag/evals-hook.md",
+      "min_read_minutes": 11,
+      "lastUpdated": "2025-02-17T00:00:00.000Z"
     },
     {
       "path": "/docs/patterns/rag/faq-rag.md",
@@ -2742,7 +2783,7 @@
       "slug": "patterns/rag/hybrid-ranking",
       "category": "patterns",
       "title": "Hybrid ranking for RAG",
-      "description": "Combine sparse and dense retrieval with reranking for better relevance.",
+      "description": "Blend sparse and dense retrieval with reranking to maximize relevance and citation quality.",
       "audience_levels": [
         "intermediate",
         "advanced"
@@ -2753,30 +2794,68 @@
       "categories": [
         "patterns"
       ],
-      "tags": [
-        "rag",
-        "retrieval",
-        "rerank"
-      ],
+      "tags": [],
       "relatedProjectTypes": [],
       "search_keywords": [
         "hybrid retrieval",
-        "rerank"
+        "rerank",
+        "bm25",
+        "dense vectors",
+        "rag"
       ],
       "related": [
-        "/docs/patterns/rag/basics.md"
+        "/docs/patterns/rag/basics.md",
+        "/docs/patterns/rag/faq-rag.md",
+        "/docs/patterns/rag/evals-hook.md"
       ],
       "sourcePath": "docs/patterns/rag/hybrid-ranking.md",
       "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/patterns/rag/hybrid-ranking.md",
+      "min_read_minutes": 12,
+      "lastUpdated": "2025-02-17T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/patterns/specs/eval-spec-template.md",
+      "slug": "patterns/specs/eval-spec-template",
+      "category": "patterns",
+      "title": "Evaluation spec template",
+      "description": "Capture metrics, datasets, thresholds, and reviewer workflows so AI teams can run consistent evaluations.",
+      "audience_levels": [
+        "intermediate",
+        "advanced"
+      ],
+      "personas": [
+        "developer",
+        "PM"
+      ],
+      "categories": [
+        "patterns",
+        "evaluations"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "evaluation spec",
+        "metrics",
+        "llm evals",
+        "rubric",
+        "dataset"
+      ],
+      "related": [
+        "/docs/evaluations/overview.md",
+        "/docs/patterns/specs/prompt-spec-template.md",
+        "/docs/patterns/rag/evals-hook.md"
+      ],
+      "sourcePath": "docs/patterns/specs/eval-spec-template.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/patterns/specs/eval-spec-template.md",
       "min_read_minutes": 10,
-      "lastUpdated": "2025-10-08T00:00:00.000Z"
+      "lastUpdated": "2025-02-17T00:00:00.000Z"
     },
     {
       "path": "/docs/patterns/specs/prompt-spec-template.md",
       "slug": "patterns/specs/prompt-spec-template",
       "category": "patterns",
       "title": "Prompt spec template",
-      "description": "A lightweight prompt specification inspired by spec-kit.",
+      "description": "Document intent, inputs, outputs, constraints, and evaluation hooks for reusable prompts.",
       "audience_levels": [
         "intermediate",
         "advanced"
@@ -2788,23 +2867,59 @@
       "categories": [
         "patterns"
       ],
-      "tags": [
-        "spec",
-        "prompting"
-      ],
+      "tags": [],
       "relatedProjectTypes": [],
       "search_keywords": [
         "prompt spec",
-        "template"
+        "template",
+        "prompt design",
+        "documentation",
+        "rubric"
       ],
       "related": [
         "/docs/concepts/spec-vs-vibe-coding.md",
+        "/docs/patterns/specs/tool-spec-template.md",
         "/docs/patterns/specs/eval-spec-template.md"
       ],
       "sourcePath": "docs/patterns/specs/prompt-spec-template.md",
       "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/patterns/specs/prompt-spec-template.md",
-      "min_read_minutes": 7,
-      "lastUpdated": "2025-10-08T00:00:00.000Z"
+      "min_read_minutes": 10,
+      "lastUpdated": "2025-02-17T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/patterns/specs/tool-spec-template.md",
+      "slug": "patterns/specs/tool-spec-template",
+      "category": "patterns",
+      "title": "Tool spec template",
+      "description": "Define tool contracts with schemas, idempotency rules, and operational guardrails for LLM orchestration.",
+      "audience_levels": [
+        "intermediate",
+        "advanced"
+      ],
+      "personas": [
+        "developer"
+      ],
+      "categories": [
+        "patterns"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "tool spec",
+        "function calling",
+        "schema",
+        "idempotency",
+        "timeouts"
+      ],
+      "related": [
+        "/docs/patterns/tools/function-calling.md",
+        "/docs/patterns/specs/prompt-spec-template.md",
+        "/docs/patterns/agentic/router-multi-tool.md"
+      ],
+      "sourcePath": "docs/patterns/specs/tool-spec-template.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/patterns/specs/tool-spec-template.md",
+      "min_read_minutes": 11,
+      "lastUpdated": "2025-02-17T00:00:00.000Z"
     },
     {
       "path": "/docs/patterns/tools/function-calling.md",
@@ -2848,8 +2963,8 @@
       "path": "/docs/patterns/workflows/batch-processing.md",
       "slug": "patterns/workflows/batch-processing",
       "category": "patterns",
-      "title": "Batch Processing Workflows",
-      "description": "Run offline batches with retries, cost caps, and resumability.",
+      "title": "Batch processing workflows",
+      "description": "Design offline pipelines for LLM workloads with retries, resumability, and cost controls.",
       "audience_levels": [
         "intermediate",
         "advanced"
@@ -2872,12 +2987,13 @@
       ],
       "related": [
         "/docs/evaluations/offline-batch-evals.md",
-        "/docs/patterns/cost-controls.md"
+        "/docs/patterns/cost-controls.md",
+        "/docs/patterns/observability-context.md"
       ],
       "sourcePath": "docs/patterns/workflows/batch-processing.md",
       "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/patterns/workflows/batch-processing.md",
-      "min_read_minutes": 8,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
+      "min_read_minutes": 11,
+      "lastUpdated": "2025-02-17T00:00:00.000Z"
     },
     {
       "path": "/docs/providers/anthropic/overview.md",
