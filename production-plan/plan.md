@@ -268,15 +268,15 @@ Keep arrays deduped; include at least one category; use `primary_category` if yo
     - Purpose: Onboarding to ChatGPT Business: workspaces, shared conversations, privacy controls, file uploads, GPT Store access.
     - Audience: non-technical, PM, developer.
     - Success: users configure workspace settings and share a tutorial conversation responsibly.
-65. [ ] /docs/tutorials/chatgpt-business/canvas-python-starters.md
+65. [qa ready] /docs/tutorials/chatgpt-business/canvas-python-starters.md
     - Purpose: Use ChatGPT Canvas to scaffold small Python projects (CLI utility, data cleaner, scraper).
     - Audience: beginner → intermediate.
     - Success: create a runnable venv project with tests inside Canvas, export to local repo.
-66. [ ] /docs/tutorials/chatgpt-business/canvas-nodejs-starters.md
+66. [qa ready] /docs/tutorials/chatgpt-business/canvas-nodejs-starters.md
     - Purpose: Use ChatGPT Canvas to scaffold Node.js/TypeScript small projects (CLI, API client, cron worker).
     - Audience: beginner → intermediate.
     - Success: build a Node project with tsconfig/eslint/jest and run locally.
-67. [ ] /docs/tutorials/chatgpt-business/code-assist-copiloting.md
+67. [qa ready] /docs/tutorials/chatgpt-business/code-assist-copiloting.md
     - Purpose: Effective prompting for code assistance (diffs, patches, refactors, debugging) in ChatGPT.
     - Audience: developer.
     - Success: readers drive iterative code changes with clear prompts and guardrails.

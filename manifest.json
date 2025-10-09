@@ -1,8 +1,8 @@
 {
   "$schema": "./tools/schemas/manifest.schema.json",
   "version": "2025.10.1",
-  "generated_at": "2025-10-08T23:26:17.606Z",
-  "hash": "74bb620fa97edde0",
+  "generated_at": "2025-10-08T23:34:18.404Z",
+  "hash": "98e69d1e25ae95e5",
   "docs": [
     {
       "path": "/docs/index.md",
@@ -37,252 +37,6 @@
       "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/index.md",
       "min_read_minutes": 8,
       "lastUpdated": "2025-10-08T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/evaluations/data-platform-benchmarks.md",
-      "slug": "evaluations/data-platform-benchmarks",
-      "category": "evaluations",
-      "title": "Data Platform Benchmarks",
-      "description": "Measure end‑to‑end latency and cost when AI calls touch Fabric, Snowflake, Databricks, or Qlik Cloud.",
-      "audience_levels": [
-        "advanced"
-      ],
-      "personas": [
-        "developer",
-        "PM",
-        "admin"
-      ],
-      "categories": [
-        "evaluations"
-      ],
-      "tags": [],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "benchmark",
-        "fabric",
-        "snowflake",
-        "databricks",
-        "qlik",
-        "latency"
-      ],
-      "related": [
-        "/docs/patterns/workflows/batch-processing.md",
-        "/docs/patterns/cost-controls.md"
-      ],
-      "sourcePath": "docs/evaluations/data-platform-benchmarks.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/evaluations/data-platform-benchmarks.md",
-      "min_read_minutes": 10,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/evaluations/grounded-qa-evals.md",
-      "slug": "evaluations/grounded-qa-evals",
-      "category": "evaluations",
-      "title": "Grounded QA Evaluations",
-      "description": "Measure faithfulness and citation accuracy for RAG answers.",
-      "audience_levels": [
-        "intermediate",
-        "advanced"
-      ],
-      "personas": [
-        "developer",
-        "PM"
-      ],
-      "categories": [
-        "evaluations"
-      ],
-      "tags": [],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "faithfulness",
-        "citations",
-        "rag eval",
-        "grounded qa"
-      ],
-      "related": [
-        "/docs/patterns/rag/basics.md",
-        "/docs/patterns/rag/faq-rag.md"
-      ],
-      "sourcePath": "docs/evaluations/grounded-qa-evals.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/evaluations/grounded-qa-evals.md",
-      "min_read_minutes": 8,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/evaluations/latency-cost-tradeoffs.md",
-      "slug": "evaluations/latency-cost-tradeoffs",
-      "category": "evaluations",
-      "title": "Latency–Cost Tradeoffs",
-      "description": "Balance perceived speed with spend: model selection, streaming, caching, and truncation.",
-      "audience_levels": [
-        "intermediate",
-        "advanced"
-      ],
-      "personas": [
-        "developer",
-        "PM",
-        "admin"
-      ],
-      "categories": [
-        "evaluations",
-        "patterns"
-      ],
-      "tags": [],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "latency",
-        "cost",
-        "streaming",
-        "model size",
-        "cache"
-      ],
-      "related": [
-        "/docs/patterns/cost-controls.md",
-        "/docs/quickstarts/js-server-route.md"
-      ],
-      "sourcePath": "docs/evaluations/latency-cost-tradeoffs.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/evaluations/latency-cost-tradeoffs.md",
-      "min_read_minutes": 8,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/evaluations/offline-batch-evals.md",
-      "slug": "evaluations/offline-batch-evals",
-      "category": "evaluations",
-      "title": "Offline Batch Evaluations",
-      "description": "Run nightly evals with diff reports; store metrics to detect regressions.",
-      "audience_levels": [
-        "intermediate",
-        "advanced"
-      ],
-      "personas": [
-        "developer",
-        "PM"
-      ],
-      "categories": [
-        "evaluations",
-        "how-to"
-      ],
-      "tags": [],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "batch evals",
-        "regressions",
-        "diff report",
-        "metrics"
-      ],
-      "related": [
-        "/docs/patterns/workflows/batch-processing.md",
-        "/docs/evaluations/rubric-prompts.md"
-      ],
-      "sourcePath": "docs/evaluations/offline-batch-evals.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/evaluations/offline-batch-evals.md",
-      "min_read_minutes": 8,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/evaluations/overview.md",
-      "slug": "evaluations/overview",
-      "category": "evaluations",
-      "title": "Evaluations: Overview",
-      "description": "Define goals, golden sets, and a taxonomy for measuring correctness, helpfulness, safety, latency, and cost.",
-      "audience_levels": [
-        "intermediate"
-      ],
-      "personas": [
-        "developer",
-        "PM",
-        "admin"
-      ],
-      "categories": [
-        "evaluations",
-        "concepts"
-      ],
-      "tags": [],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "evals",
-        "golden set",
-        "taxonomy",
-        "metrics"
-      ],
-      "related": [
-        "/docs/evaluations/offline-batch-evals.md",
-        "/docs/evaluations/rubric-prompts.md"
-      ],
-      "sourcePath": "docs/evaluations/overview.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/evaluations/overview.md",
-      "min_read_minutes": 7,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/evaluations/rubric-prompts.md",
-      "slug": "evaluations/rubric-prompts",
-      "category": "evaluations",
-      "title": "Rubric Prompts",
-      "description": "Design rubrics for correctness, helpfulness, tone, and safety; improve inter‑rater agreement.",
-      "audience_levels": [
-        "intermediate"
-      ],
-      "personas": [
-        "developer",
-        "PM"
-      ],
-      "categories": [
-        "evaluations",
-        "how-to"
-      ],
-      "tags": [],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "rubric",
-        "prompt",
-        "scoring",
-        "agreement"
-      ],
-      "related": [
-        "/docs/patterns/agentic/reflection-self-heal.md",
-        "/docs/evaluations/overview.md"
-      ],
-      "sourcePath": "docs/evaluations/rubric-prompts.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/evaluations/rubric-prompts.md",
-      "min_read_minutes": 7,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
-    },
-    {
-      "path": "/docs/evaluations/tool-use-evals.md",
-      "slug": "evaluations/tool-use-evals",
-      "category": "evaluations",
-      "title": "Tool Use Evaluations",
-      "description": "Measure success rate per tool, categorize timeouts/errors, and find flaky behaviors.",
-      "audience_levels": [
-        "intermediate",
-        "advanced"
-      ],
-      "personas": [
-        "developer",
-        "PM"
-      ],
-      "categories": [
-        "evaluations"
-      ],
-      "tags": [],
-      "relatedProjectTypes": [],
-      "search_keywords": [
-        "tools",
-        "function calling",
-        "evals",
-        "timeouts",
-        "errors"
-      ],
-      "related": [
-        "/docs/patterns/tools/function-calling.md",
-        "/docs/patterns/agentic/router-multi-tool.md"
-      ],
-      "sourcePath": "docs/evaluations/tool-use-evals.md",
-      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/evaluations/tool-use-evals.md",
-      "min_read_minutes": 7,
-      "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
     {
       "path": "/docs/concepts/agents-vs-automation.md",
@@ -716,6 +470,252 @@
       "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/concepts/what-is-genai.md",
       "min_read_minutes": 12,
       "lastUpdated": "2025-02-14T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/evaluations/data-platform-benchmarks.md",
+      "slug": "evaluations/data-platform-benchmarks",
+      "category": "evaluations",
+      "title": "Data Platform Benchmarks",
+      "description": "Measure end‑to‑end latency and cost when AI calls touch Fabric, Snowflake, Databricks, or Qlik Cloud.",
+      "audience_levels": [
+        "advanced"
+      ],
+      "personas": [
+        "developer",
+        "PM",
+        "admin"
+      ],
+      "categories": [
+        "evaluations"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "benchmark",
+        "fabric",
+        "snowflake",
+        "databricks",
+        "qlik",
+        "latency"
+      ],
+      "related": [
+        "/docs/patterns/workflows/batch-processing.md",
+        "/docs/patterns/cost-controls.md"
+      ],
+      "sourcePath": "docs/evaluations/data-platform-benchmarks.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/evaluations/data-platform-benchmarks.md",
+      "min_read_minutes": 10,
+      "lastUpdated": "2025-10-06T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/evaluations/grounded-qa-evals.md",
+      "slug": "evaluations/grounded-qa-evals",
+      "category": "evaluations",
+      "title": "Grounded QA Evaluations",
+      "description": "Measure faithfulness and citation accuracy for RAG answers.",
+      "audience_levels": [
+        "intermediate",
+        "advanced"
+      ],
+      "personas": [
+        "developer",
+        "PM"
+      ],
+      "categories": [
+        "evaluations"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "faithfulness",
+        "citations",
+        "rag eval",
+        "grounded qa"
+      ],
+      "related": [
+        "/docs/patterns/rag/basics.md",
+        "/docs/patterns/rag/faq-rag.md"
+      ],
+      "sourcePath": "docs/evaluations/grounded-qa-evals.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/evaluations/grounded-qa-evals.md",
+      "min_read_minutes": 8,
+      "lastUpdated": "2025-10-06T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/evaluations/latency-cost-tradeoffs.md",
+      "slug": "evaluations/latency-cost-tradeoffs",
+      "category": "evaluations",
+      "title": "Latency–Cost Tradeoffs",
+      "description": "Balance perceived speed with spend: model selection, streaming, caching, and truncation.",
+      "audience_levels": [
+        "intermediate",
+        "advanced"
+      ],
+      "personas": [
+        "developer",
+        "PM",
+        "admin"
+      ],
+      "categories": [
+        "evaluations",
+        "patterns"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "latency",
+        "cost",
+        "streaming",
+        "model size",
+        "cache"
+      ],
+      "related": [
+        "/docs/patterns/cost-controls.md",
+        "/docs/quickstarts/js-server-route.md"
+      ],
+      "sourcePath": "docs/evaluations/latency-cost-tradeoffs.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/evaluations/latency-cost-tradeoffs.md",
+      "min_read_minutes": 8,
+      "lastUpdated": "2025-10-06T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/evaluations/offline-batch-evals.md",
+      "slug": "evaluations/offline-batch-evals",
+      "category": "evaluations",
+      "title": "Offline Batch Evaluations",
+      "description": "Run nightly evals with diff reports; store metrics to detect regressions.",
+      "audience_levels": [
+        "intermediate",
+        "advanced"
+      ],
+      "personas": [
+        "developer",
+        "PM"
+      ],
+      "categories": [
+        "evaluations",
+        "how-to"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "batch evals",
+        "regressions",
+        "diff report",
+        "metrics"
+      ],
+      "related": [
+        "/docs/patterns/workflows/batch-processing.md",
+        "/docs/evaluations/rubric-prompts.md"
+      ],
+      "sourcePath": "docs/evaluations/offline-batch-evals.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/evaluations/offline-batch-evals.md",
+      "min_read_minutes": 8,
+      "lastUpdated": "2025-10-06T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/evaluations/overview.md",
+      "slug": "evaluations/overview",
+      "category": "evaluations",
+      "title": "Evaluations: Overview",
+      "description": "Define goals, golden sets, and a taxonomy for measuring correctness, helpfulness, safety, latency, and cost.",
+      "audience_levels": [
+        "intermediate"
+      ],
+      "personas": [
+        "developer",
+        "PM",
+        "admin"
+      ],
+      "categories": [
+        "evaluations",
+        "concepts"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "evals",
+        "golden set",
+        "taxonomy",
+        "metrics"
+      ],
+      "related": [
+        "/docs/evaluations/offline-batch-evals.md",
+        "/docs/evaluations/rubric-prompts.md"
+      ],
+      "sourcePath": "docs/evaluations/overview.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/evaluations/overview.md",
+      "min_read_minutes": 7,
+      "lastUpdated": "2025-10-06T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/evaluations/rubric-prompts.md",
+      "slug": "evaluations/rubric-prompts",
+      "category": "evaluations",
+      "title": "Rubric Prompts",
+      "description": "Design rubrics for correctness, helpfulness, tone, and safety; improve inter‑rater agreement.",
+      "audience_levels": [
+        "intermediate"
+      ],
+      "personas": [
+        "developer",
+        "PM"
+      ],
+      "categories": [
+        "evaluations",
+        "how-to"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "rubric",
+        "prompt",
+        "scoring",
+        "agreement"
+      ],
+      "related": [
+        "/docs/patterns/agentic/reflection-self-heal.md",
+        "/docs/evaluations/overview.md"
+      ],
+      "sourcePath": "docs/evaluations/rubric-prompts.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/evaluations/rubric-prompts.md",
+      "min_read_minutes": 7,
+      "lastUpdated": "2025-10-06T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/evaluations/tool-use-evals.md",
+      "slug": "evaluations/tool-use-evals",
+      "category": "evaluations",
+      "title": "Tool Use Evaluations",
+      "description": "Measure success rate per tool, categorize timeouts/errors, and find flaky behaviors.",
+      "audience_levels": [
+        "intermediate",
+        "advanced"
+      ],
+      "personas": [
+        "developer",
+        "PM"
+      ],
+      "categories": [
+        "evaluations"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "tools",
+        "function calling",
+        "evals",
+        "timeouts",
+        "errors"
+      ],
+      "related": [
+        "/docs/patterns/tools/function-calling.md",
+        "/docs/patterns/agentic/router-multi-tool.md"
+      ],
+      "sourcePath": "docs/evaluations/tool-use-evals.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/evaluations/tool-use-evals.md",
+      "min_read_minutes": 7,
+      "lastUpdated": "2025-10-06T00:00:00.000Z"
     },
     {
       "path": "/docs/examples/a2a-coordination.md",
@@ -2193,6 +2193,116 @@
       "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/providers/openai/overview.md",
       "min_read_minutes": 7,
       "lastUpdated": "2025-10-06T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/tutorials/chatgpt-business/canvas-nodejs-starters.md",
+      "slug": "tutorials/chatgpt-business/canvas-nodejs-starters",
+      "category": "tutorials",
+      "title": "ChatGPT Canvas Node.js starters",
+      "description": "Use ChatGPT Canvas to scaffold Node.js and TypeScript projects, then export and run them with linting and tests.",
+      "audience_levels": [
+        "beginner",
+        "intermediate"
+      ],
+      "personas": [
+        "developer",
+        "PM"
+      ],
+      "categories": [
+        "tutorials"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "chatgpt canvas",
+        "nodejs starter",
+        "typescript project",
+        "jest",
+        "eslint"
+      ],
+      "related": [
+        "/docs/tutorials/chatgpt-business/overview.md",
+        "/docs/tutorials/chatgpt-business/canvas-python-starters.md",
+        "/docs/quickstarts/js-server-route.md"
+      ],
+      "sourcePath": "docs/tutorials/chatgpt-business/canvas-nodejs-starters.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/tutorials/chatgpt-business/canvas-nodejs-starters.md",
+      "min_read_minutes": 20,
+      "lastUpdated": "2025-02-14T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/tutorials/chatgpt-business/canvas-python-starters.md",
+      "slug": "tutorials/chatgpt-business/canvas-python-starters",
+      "category": "tutorials",
+      "title": "ChatGPT Canvas Python starters",
+      "description": "Scaffold small Python projects with ChatGPT Canvas, then export and run them locally with tests.",
+      "audience_levels": [
+        "beginner",
+        "intermediate"
+      ],
+      "personas": [
+        "developer",
+        "data-analyst",
+        "PM"
+      ],
+      "categories": [
+        "tutorials"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "chatgpt canvas",
+        "python starter",
+        "scaffold project",
+        "virtual environment",
+        "pytest"
+      ],
+      "related": [
+        "/docs/tutorials/chatgpt-business/overview.md",
+        "/docs/tutorials/chatgpt-business/canvas-nodejs-starters.md",
+        "/docs/quickstarts/python-fastapi.md"
+      ],
+      "sourcePath": "docs/tutorials/chatgpt-business/canvas-python-starters.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/tutorials/chatgpt-business/canvas-python-starters.md",
+      "min_read_minutes": 18,
+      "lastUpdated": "2025-02-14T00:00:00.000Z"
+    },
+    {
+      "path": "/docs/tutorials/chatgpt-business/code-assist-copiloting.md",
+      "slug": "tutorials/chatgpt-business/code-assist-copiloting",
+      "category": "tutorials",
+      "title": "ChatGPT code-assist and copiloting workflows",
+      "description": "Drive iterative coding sessions with ChatGPT, from diff requests to debugging and review guardrails.",
+      "audience_levels": [
+        "intermediate",
+        "advanced"
+      ],
+      "personas": [
+        "developer",
+        "PM"
+      ],
+      "categories": [
+        "tutorials"
+      ],
+      "tags": [],
+      "relatedProjectTypes": [],
+      "search_keywords": [
+        "chatgpt copiloting",
+        "code diff prompts",
+        "debugging",
+        "pair programming",
+        "guardrails"
+      ],
+      "related": [
+        "/docs/tutorials/chatgpt-business/overview.md",
+        "/docs/tutorials/chatgpt-business/canvas-python-starters.md",
+        "/docs/tutorials/chatgpt-business/canvas-nodejs-starters.md",
+        "/docs/patterns/prompt-engineering.md"
+      ],
+      "sourcePath": "docs/tutorials/chatgpt-business/code-assist-copiloting.md",
+      "sourceUrl": "https://raw.githubusercontent.com/tm-henningnt/tm-vaibes-content/main/docs/tutorials/chatgpt-business/code-assist-copiloting.md",
+      "min_read_minutes": 22,
+      "lastUpdated": "2025-02-14T00:00:00.000Z"
     },
     {
       "path": "/docs/tutorials/chatgpt-business/overview.md",
